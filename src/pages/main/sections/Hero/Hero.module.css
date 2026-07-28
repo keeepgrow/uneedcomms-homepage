@@ -1,0 +1,51 @@
+.hero {
+  min-height: 760px;
+  padding-top: var(--header-h);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+  animation: scroll 24s linear infinite;
+}
+
+.phrase {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(3rem, 10vw, 168px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--color-black);
+}
+
+.gap {
+  display: inline-block;
+  width: 12vw;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* 문구 1벌(문구+gap)만큼 이동 → 2벌째가 이어져 무한 루프 */
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

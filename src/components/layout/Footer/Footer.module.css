@@ -1,0 +1,50 @@
+.footer {
+  background: var(--color-navy);
+  color: var(--color-gray-02);
+  padding-block: 44px;
+}
+
+.company {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
+.bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.info {
+  font-size: 13px;
+  color: var(--color-gray-05);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 0;
+}
+
+.infoItem {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dot {
+  margin: 0 8px;
+  color: var(--color-gray-07);
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--color-gray-05);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    white-space: normal;
+  }
+}

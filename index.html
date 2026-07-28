@@ -1,116 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>유니드컴즈 | UNEEDCOMMS</title>
-  <meta name="description" content="유니드컴즈 회사 홈페이지" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
-      color: #1a1a2e;
-      background: #ffffff;
-      line-height: 1.6;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.25rem 6vw;
-      border-bottom: 1px solid #eee;
-    }
-
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    nav a:hover {
-      color: #1a1a2e;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      min-height: 70vh;
-      padding: 4rem 6vw;
-      background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%);
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: clamp(1rem, 2vw, 1.25rem);
-      color: #666;
-      max-width: 32rem;
-      margin-bottom: 2rem;
-    }
-
-    .cta {
-      display: inline-block;
-      padding: 0.9rem 2.2rem;
-      background: #1a1a2e;
-      color: #fff;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: opacity 0.2s;
-    }
-
-    .cta:hover {
-      opacity: 0.85;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 6vw;
-      border-top: 1px solid #eee;
-      color: #999;
-      font-size: 0.85rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">UNEEDCOMMS</div>
-    <nav>
-      <a href="#">회사소개</a>
-      <a href="#">서비스</a>
-      <a href="#">문의하기</a>
-    </nav>
-  </header>
-
-  <main class="hero">
-    <h1>유니드컴즈에 오신 것을<br />환영합니다</h1>
-    <p>고객과 함께 성장하는 커머스 파트너, 유니드컴즈입니다.</p>
-    <a class="cta" href="#">더 알아보기</a>
-  </main>
-
-  <footer>
-    &copy; 2026 UNEEDCOMMS. All rights reserved.
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유니드컴즈 | UNEEDCOMMS</title>
+    <meta name="description" content="한 사람이 해낼 수 있는 일의 최대치. 커머스 특화 AI로 성장을 만드는 유니드컴즈." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

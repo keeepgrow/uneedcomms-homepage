@@ -1,0 +1,28 @@
+:root {
+  /* ── Colors (Figma variables) ───────────────────────── */
+  --color-white: #ffffff;
+  --color-black: #000111;
+  --color-uneed-blue: #312fd8;
+  --color-gray-00: #f3f3f6;
+  --color-gray-01: #e5e5e7;
+  --color-gray-02: #c6c6ca;
+  --color-gray-05: #9999a0;
+  --color-gray-07: #4a4a56;
+
+  /* 다크 섹션(투자사/파트너·푸터) 네이비 */
+  --color-navy: #14142b;
+
+  /* ── Layout ─────────────────────────────────────────── */
+  --content-max: 1600px;   /* 콘텐츠 기준폭 */
+  --gutter: 160px;         /* 데스크톱 좌우 여백 (1920 기준) */
+  --header-h: 84px;
+
+  /* ── Radius ─────────────────────────────────────────── */
+  --radius-lg: 40px;
+  --radius-md: 24px;
+  --radius-sm: 16px;
+
+  /* ── Typography ─────────────────────────────────────── */
+  --font-sans: 'Pretendard', 'Pretendard Variable', -apple-system,
+    BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}

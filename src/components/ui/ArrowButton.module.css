@@ -1,0 +1,21 @@
+.button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray-01);
+  display: grid;
+  place-items: center;
+  color: var(--color-black);
+  background: var(--color-white);
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.button:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+.button[data-direction='left'] svg {
+  transform: rotate(180deg);
+}
