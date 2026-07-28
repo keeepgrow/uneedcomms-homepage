@@ -9,12 +9,7 @@ export default function ProductCard({ product }) {
       </div>
 
       <div className={styles.cardMedia}>
-        {product.image ? (
-          <img src={product.image} alt={`${product.name} 제품 이미지`} />
-        ) : (
-          // 디자인 확정 후 3D 렌더로 교체될 자리표시
-          <span className={styles.mediaPlaceholder} data-product={product.id} />
-        )}
+        <img src={product.image} alt={`${product.name} 제품 이미지`} />
       </div>
     </article>
   )
