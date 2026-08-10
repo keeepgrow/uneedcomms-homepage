@@ -8,97 +8,110 @@
   top: 0;
   height: 100vh; /* JS가 스크롤에 따라 760px까지 축소 */
   overflow: hidden;
-}
-
-/* 라이트/다크 공통 레이어 */
-.layer {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--header-h) 6vw 0;
-}
-
-/* 레이어 1: 라이트 (흰 배경 + 검은 글자) */
-.light {
-  background: var(--color-white);
-  color: var(--color-black);
-  z-index: 1;
-}
-
-/* 레이어 2: 다크 (다크 배경 + 흰 글자) — 원형 clip-path로 확장 리빌 */
-.dark {
   background: radial-gradient(120% 80% at 50% 45%, #1a1440 0%, #05030f 60%, #000000 100%);
   color: var(--color-white);
-  z-index: 2;
-  clip-path: circle(0% at 50% 50%);
-  animation: reveal 1.4s cubic-bezier(0.76, 0, 0.24, 1) 0.5s forwards;
 }
 
-@keyframes reveal {
-  to {
-    clip-path: circle(150% at 50% 50%);
-  }
-}
-
-/* 3D 파티클: 리빌 완료(~1.9s) 후 페이드인 */
-.particles {
+/* 3D 캔버스 레이어 (텍스트 뒤) — 로드 후 페이드인 */
+.bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
   opacity: 0;
-  animation: fadeIn 1.2s ease 1.8s forwards;
+  animation: bgIn 1s ease 0.2s forwards;
 }
 
-.particles canvas {
+.bg canvas {
   display: block;
 }
 
-@keyframes fadeIn {
+@keyframes bgIn {
   to {
     opacity: 1;
   }
 }
 
-/* ── 헤드라인 (두 레이어 동일 위치) ─────────────────── */
-.headline {
-  position: relative;
+/* 텍스트 스테이지: 두 문구를 같은 중심에 겹쳐 배치 */
+.stage {
+  position: absolute;
+  inset: 0;
   z-index: 1;
-  text-align: center;
-  max-width: 1120px;
+  padding: var(--header-h) 6vw 0;
 }
 
-.lead {
-  font-size: clamp(1.75rem, 3.4vw, 3.25rem);
+.line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(1120px, 88vw);
+  transform: translate(-50%, -50%);
+  text-align: center;
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.3;
+  font-size: clamp(1.6rem, 3.1vw, 3rem);
+  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.55);
+  will-change: transform, opacity;
 }
 
-.sub {
-  margin-top: 1.6rem;
-  font-size: clamp(1rem, 1.6vw, 1.4rem);
-  font-weight: 500;
-  line-height: 1.6;
-  opacity: 0.7;
+/* 1단계: 크게(화면 넘침) 시작 → 축소 → 살짝 줄며 사라짐 */
+.phase1 {
+  transform-origin: center;
+  animation: phase1 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-@media (max-width: 768px) {
-  .sub {
-    margin-top: 1.1rem;
+@keyframes phase1 {
+  0% {
+    transform: translate(-50%, -50%) scale(3.4);
+    opacity: 1;
+  }
+  55% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  72% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.94);
+    opacity: 0;
   }
 }
 
-/* 모션 최소화: 리빌 없이 다크 최종 상태로 즉시 표시 */
+/* 2단계: 1단계가 사라질 즈음 페이드/슬라이드인되어 최종 유지 */
+.phase2 {
+  opacity: 0;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 2.6vw, 2.6rem);
+  animation: phase2 0.8s ease 1.75s forwards;
+}
+
+@keyframes phase2 {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 12px));
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* 모션 최소화: 애니메이션 없이 최종 상태(2행 + 파티클)로 표시 */
 @media (prefers-reduced-motion: reduce) {
-  .dark {
-    animation: none;
-    clip-path: circle(150% at 50% 50%);
-  }
-  .particles {
+  .bg {
     animation: none;
     opacity: 1;
+  }
+  .phase1 {
+    animation: none;
+    opacity: 0;
+  }
+  .phase2 {
+    animation: none;
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
 }

@@ -6,24 +6,6 @@ const HeroBackground = lazy(() => import('./HeroBackground.jsx'))
 
 const MIN_HEIGHT = 760 // 스크롤 후 도달할 '지금 사이즈'
 
-// 라이트/다크 레이어에서 동일 위치로 재사용되는 헤드라인 (원형 리빌 색 반전용)
-function Headline() {
-  return (
-    <div className={styles.headline}>
-      <p className={styles.lead}>
-        한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는,
-        <br />
-        지혜로운 AI 에이전트를 만듭니다.
-      </p>
-      <p className={styles.sub}>
-        지식이 넘쳐나는 세상에서, 우리는 지혜로운 AI를 만듭니다.
-        <br />
-        한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸도록.
-      </p>
-    </div>
-  )
-}
-
 export default function Hero() {
   const heroRef = useRef(null)
 
@@ -59,20 +41,28 @@ export default function Hero() {
   return (
     <div className={styles.track} id="top">
       <section className={styles.hero} ref={heroRef}>
-        {/* 레이어 1: 라이트 상태 (흰 배경 + 검은 글자) */}
-        <div className={`${styles.layer} ${styles.light}`}>
-          <Headline />
+        {/* 3D 파티클 배경 */}
+        <div className={styles.bg}>
+          <Suspense fallback={null}>
+            <HeroBackground />
+          </Suspense>
         </div>
 
-        {/* 레이어 2: 다크 상태 — 중앙에서 원형으로 확장되며 라이트 위를 덮음 */}
-        <div className={`${styles.layer} ${styles.dark}`}>
-          {/* 리빌 완료 후 페이드인되는 3D 파티클 배경 */}
-          <div className={styles.particles}>
-            <Suspense fallback={null}>
-              <HeroBackground />
-            </Suspense>
-          </div>
-          <Headline />
+        {/* 텍스트 인터랙션: (1) 대형→축소  (2) 크로스페이드로 2행 전환 */}
+        <div className={styles.stage}>
+          {/* 1단계: 크게 시작해 축소된 뒤 사라지는 리드 문구 */}
+          <p className={`${styles.line} ${styles.phase1}`}>
+            한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는,
+            <br />
+            지혜로운 AI 에이전트를 만듭니다.
+          </p>
+
+          {/* 2단계: 페이드인되어 남는 최종 문구 */}
+          <p className={`${styles.line} ${styles.phase2}`}>
+            지식이 넘쳐나는 세상에서, 우리는 지혜로운 AI를 만듭니다.
+            <br />
+            한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸도록.
+          </p>
         </div>
       </section>
     </div>
