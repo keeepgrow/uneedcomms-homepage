@@ -1,15 +1,33 @@
 .hero {
+  position: relative;
   min-height: 760px;
   padding-top: var(--header-h);
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: var(--color-white);
+  /* 캔버스 로딩 전/미지원 시 폴백 배경 */
+  background: radial-gradient(120% 80% at 50% 45%, #1a1440 0%, #05030f 60%, #000000 100%);
+}
+
+/* 3D 캔버스 레이어 (텍스트 뒤) */
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none; /* 스크롤 방해 방지 */
+}
+
+.bg canvas {
+  display: block;
 }
 
 .marquee {
+  position: relative;
+  z-index: 1;
   width: 100%;
   overflow: hidden;
+  /* 입자 코어와 겹쳐도 글자가 뭉개지지 않도록 미묘한 그림자 */
+  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.6);
 }
 
 .track {
@@ -26,7 +44,7 @@
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .gap {
@@ -39,7 +57,6 @@
     transform: translateX(0);
   }
   to {
-    /* 문구 1벌(문구+gap)만큼 이동 → 2벌째가 이어져 무한 루프 */
     transform: translateX(-50%);
   }
 }
