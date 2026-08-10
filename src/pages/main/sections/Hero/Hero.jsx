@@ -4,8 +4,25 @@ import styles from './Hero.module.css'
 // 3D 배경은 three.js 번들이 크므로 지연 로딩 (초기 페인트 블로킹 방지)
 const HeroBackground = lazy(() => import('./HeroBackground.jsx'))
 
-const HEADLINE = '한 사람이 해낼 수 있는 일의'
 const MIN_HEIGHT = 760 // 스크롤 후 도달할 '지금 사이즈'
+
+// 라이트/다크 레이어에서 동일 위치로 재사용되는 헤드라인 (원형 리빌 색 반전용)
+function Headline() {
+  return (
+    <div className={styles.headline}>
+      <p className={styles.lead}>
+        한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는,
+        <br />
+        지혜로운 AI 에이전트를 만듭니다.
+      </p>
+      <p className={styles.sub}>
+        지식이 넘쳐나는 세상에서, 우리는 지혜로운 AI를 만듭니다.
+        <br />
+        한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸도록.
+      </p>
+    </div>
+  )
+}
 
 export default function Hero() {
   const heroRef = useRef(null)
@@ -42,23 +59,20 @@ export default function Hero() {
   return (
     <div className={styles.track} id="top">
       <section className={styles.hero} ref={heroRef}>
-        {/* 3D 파티클 스웜 배경 */}
-        <div className={styles.bg}>
-          <Suspense fallback={null}>
-            <HeroBackground />
-          </Suspense>
+        {/* 레이어 1: 라이트 상태 (흰 배경 + 검은 글자) */}
+        <div className={`${styles.layer} ${styles.light}`}>
+          <Headline />
         </div>
 
-        {/* 헤드라인 마퀴 (배경 위에 표시) */}
-        <div className={styles.marquee} aria-label={HEADLINE}>
-          <div className={styles.marqueeTrack} aria-hidden="true">
-            {[0, 1].map((n) => (
-              <span key={n} className={styles.phrase}>
-                {HEADLINE}
-                <span className={styles.gap} />
-              </span>
-            ))}
+        {/* 레이어 2: 다크 상태 — 중앙에서 원형으로 확장되며 라이트 위를 덮음 */}
+        <div className={`${styles.layer} ${styles.dark}`}>
+          {/* 리빌 완료 후 페이드인되는 3D 파티클 배경 */}
+          <div className={styles.particles}>
+            <Suspense fallback={null}>
+              <HeroBackground />
+            </Suspense>
           </div>
+          <Headline />
         </div>
       </section>
     </div>

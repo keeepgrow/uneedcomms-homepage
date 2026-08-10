@@ -7,67 +7,98 @@
   position: sticky;
   top: 0;
   height: 100vh; /* JS가 스크롤에 따라 760px까지 축소 */
-  padding-top: var(--header-h);
-  display: flex;
-  align-items: center;
   overflow: hidden;
-  /* 캔버스 로딩 전/미지원 시 폴백 배경 */
-  background: radial-gradient(120% 80% at 50% 45%, #1a1440 0%, #05030f 60%, #000000 100%);
 }
 
-/* 3D 캔버스 레이어 (텍스트 뒤) */
-.bg {
+/* 라이트/다크 공통 레이어 */
+.layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--header-h) 6vw 0;
+}
+
+/* 레이어 1: 라이트 (흰 배경 + 검은 글자) */
+.light {
+  background: var(--color-white);
+  color: var(--color-black);
+  z-index: 1;
+}
+
+/* 레이어 2: 다크 (다크 배경 + 흰 글자) — 원형 clip-path로 확장 리빌 */
+.dark {
+  background: radial-gradient(120% 80% at 50% 45%, #1a1440 0%, #05030f 60%, #000000 100%);
+  color: var(--color-white);
+  z-index: 2;
+  clip-path: circle(0% at 50% 50%);
+  animation: reveal 1.4s cubic-bezier(0.76, 0, 0.24, 1) 0.5s forwards;
+}
+
+@keyframes reveal {
+  to {
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+
+/* 3D 파티클: 리빌 완료(~1.9s) 후 페이드인 */
+.particles {
   position: absolute;
   inset: 0;
   z-index: 0;
-  pointer-events: none; /* 스크롤 방해 방지 */
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 1.2s ease 1.8s forwards;
 }
 
-.bg canvas {
+.particles canvas {
   display: block;
 }
 
-.marquee {
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ── 헤드라인 (두 레이어 동일 위치) ─────────────────── */
+.headline {
   position: relative;
   z-index: 1;
-  width: 100%;
-  overflow: hidden;
-  text-shadow: 0 2px 40px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  max-width: 1120px;
 }
 
-.marqueeTrack {
-  display: inline-flex;
-  white-space: nowrap;
-  will-change: transform;
-  animation: scroll 24s linear infinite;
-}
-
-.phrase {
-  display: inline-flex;
-  align-items: center;
-  font-size: clamp(3rem, 10vw, 168px);
+.lead {
+  font-size: clamp(1.75rem, 3.4vw, 3.25rem);
   font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  color: var(--color-white);
+  letter-spacing: -0.03em;
+  line-height: 1.3;
 }
 
-.gap {
-  display: inline-block;
-  width: 12vw;
+.sub {
+  margin-top: 1.6rem;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.6;
+  opacity: 0.7;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
+@media (max-width: 768px) {
+  .sub {
+    margin-top: 1.1rem;
   }
-  to {
-    transform: translateX(-50%);
-  }
 }
 
+/* 모션 최소화: 리빌 없이 다크 최종 상태로 즉시 표시 */
 @media (prefers-reduced-motion: reduce) {
-  .marqueeTrack {
+  .dark {
     animation: none;
+    clip-path: circle(150% at 50% 50%);
+  }
+  .particles {
+    animation: none;
+    opacity: 1;
   }
 }
