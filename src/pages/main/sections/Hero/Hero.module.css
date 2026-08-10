@@ -1,6 +1,12 @@
+/* 스크롤 트랙: 이 구간(100vh)을 지나는 동안 히어로가 축소됨 */
+.track {
+  height: 100vh;
+}
+
 .hero {
-  position: relative;
-  min-height: 760px;
+  position: sticky;
+  top: 0;
+  height: 100vh; /* JS가 스크롤에 따라 760px까지 축소 */
   padding-top: var(--header-h);
   display: flex;
   align-items: center;
@@ -26,11 +32,10 @@
   z-index: 1;
   width: 100%;
   overflow: hidden;
-  /* 입자 코어와 겹쳐도 글자가 뭉개지지 않도록 미묘한 그림자 */
   text-shadow: 0 2px 40px rgba(0, 0, 0, 0.6);
 }
 
-.track {
+.marqueeTrack {
   display: inline-flex;
   white-space: nowrap;
   will-change: transform;
@@ -62,7 +67,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .track {
+  .marqueeTrack {
     animation: none;
   }
 }
