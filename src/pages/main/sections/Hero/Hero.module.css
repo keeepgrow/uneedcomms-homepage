@@ -12,18 +12,48 @@
   color: var(--color-white);
 }
 
-/* 3D 캔버스 레이어 (텍스트 뒤) — 로드 후 페이드인 */
+/* 배경 영상 레이어 (텍스트 뒤) — 로드 후 페이드인 */
 .bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
   opacity: 0;
   animation: bgIn 1s ease 0.2s forwards;
 }
 
-.bg canvas {
+/* 원본 영상은 화면에서 숨기고 canvas 렌더 소스로만 사용 */
+.hiddenVideo {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 점묘(도트) 디더링 캔버스 */
+.dither {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   display: block;
+}
+
+/* 밝은 영상 구간에서도 흰 텍스트가 읽히도록 살짝 어둡게 */
+.scrim {
+  position: absolute;
+  inset: 0;
+  /* 중앙 텍스트 뒤만 살짝 어둡게 (ASCII 디테일은 유지) */
+  background: radial-gradient(
+    75% 55% at 50% 50%,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.12) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 @keyframes bgIn {
@@ -32,86 +62,180 @@
   }
 }
 
-/* 텍스트 스테이지: 두 문구를 같은 중심에 겹쳐 배치 */
+/* 텍스트 스테이지: 모든 문구를 같은 중심에 겹쳐 배치 (중앙 정렬) */
 .stage {
   position: absolute;
   inset: 0;
   z-index: 1;
-  padding: var(--header-h) 6vw 0;
 }
 
-.line {
+/* 공통: 화면 중앙 정렬 */
+.s1,
+.seq,
+.s4 {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: min(1120px, 88vw);
-  transform: translate(-50%, -50%);
   text-align: center;
-  font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 1.3;
-  font-size: clamp(1.6rem, 3.1vw, 3rem);
   text-shadow: 0 2px 40px rgba(0, 0, 0, 0.55);
   will-change: transform, opacity;
 }
 
-/* 1단계: 크게(화면 넘침) 시작 → 축소 → 살짝 줄며 사라짐 */
-.phase1 {
+/* ── S1: 좌·우 합체(대형) → 축소 → 페이드아웃 ─────────── */
+.s1 {
+  white-space: nowrap;
+  line-height: 1.2;
+  transform: translate(-50%, -50%) scale(3);
   transform-origin: center;
-  animation: phase1 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 4vw, 3.4rem);
+  animation: s1Scale 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards,
+    s1Out 0.4s ease 2.0s forwards;
 }
 
-@keyframes phase1 {
-  0% {
-    transform: translate(-50%, -50%) scale(3.4);
+.halfLeft,
+.halfRight {
+  display: inline-block;
+  opacity: 0;
+}
+
+.halfLeft {
+  transform: translateX(-60%);
+  animation: inLeft 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.halfRight {
+  transform: translateX(60%);
+  animation: inRight 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+@keyframes inLeft {
+  to {
+    transform: translateX(0);
     opacity: 1;
   }
-  55% {
-    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes inRight {
+  to {
+    transform: translateX(0);
     opacity: 1;
   }
-  72% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
+}
+
+@keyframes s1Scale {
+  0%,
+  45% {
+    transform: translate(-50%, -50%) scale(3);
   }
   100% {
-    transform: translate(-50%, -50%) scale(0.94);
-    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
-/* 2단계: 1단계가 사라질 즈음 페이드/슬라이드인되어 최종 유지 */
-.phase2 {
+@keyframes s1Out {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.97);
+  }
+}
+
+/* ── S2, S3: 차례로 페이드업 등장 후 다음으로 넘어감 ──── */
+.seq {
+  white-space: nowrap;
+  line-height: 1.2;
   opacity: 0;
   font-weight: 700;
-  font-size: clamp(1.4rem, 2.6vw, 2.6rem);
-  animation: phase2 0.8s ease 1.75s forwards;
+  font-size: clamp(1.6rem, 3.4vw, 2.9rem);
+  transform: translate(-50%, calc(-50% + 16px));
 }
 
-@keyframes phase2 {
+.s2 {
+  animation: seqInOut 1.5s ease 2.3s forwards;
+}
+
+.s3 {
+  animation: seqInOut 1.5s ease 3.5s forwards;
+}
+
+@keyframes seqInOut {
   0% {
     opacity: 0;
-    transform: translate(-50%, calc(-50% + 12px));
+    transform: translate(-50%, calc(-50% + 16px));
+  }
+  22% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
   100% {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% - 16px));
+  }
+}
+
+/* ── S4: 최종 결론 (메인 굵게 2줄 + 서브 작게) ─────────── */
+.s4 {
+  width: min(1120px, 90vw);
+  opacity: 0;
+  transform: translate(-50%, calc(-50% + 16px));
+  animation: seqIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 4.7s forwards;
+}
+
+.s4main {
+  font-weight: 800;
+  font-size: clamp(1.7rem, 3.6vw, 3rem);
+  line-height: 1.35;
+}
+
+.s4main b {
+  color: #8b88ff; /* 브랜드 블루(다크 배경용 라이트 톤) */
+  font-weight: 800;
+}
+
+.s4sub {
+  margin-top: 1.4rem;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  line-height: 1.5;
+  opacity: 0.72;
+}
+
+@keyframes seqIn {
+  to {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
 }
 
-/* 모션 최소화: 애니메이션 없이 최종 상태(2행 + 파티클)로 표시 */
+/* 모션 최소화: 애니메이션 없이 최종 상태(S4 + 파티클)로 */
 @media (prefers-reduced-motion: reduce) {
   .bg {
     animation: none;
     opacity: 1;
   }
-  .phase1 {
+  .s1,
+  .s2,
+  .s3 {
     animation: none;
     opacity: 0;
   }
-  .phase2 {
+  .s4 {
     animation: none;
     opacity: 1;
     transform: translate(-50%, -50%);
+  }
+}
+
+/* 좁은 화면: 긴 문장이 잘리지 않도록 줄바꿈 허용 */
+@media (max-width: 640px) {
+  .s1,
+  .seq {
+    white-space: normal;
+    width: 92vw;
   }
 }

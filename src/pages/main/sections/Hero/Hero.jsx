@@ -1,8 +1,9 @@
 import { Suspense, lazy, useEffect, useRef } from 'react'
 import styles from './Hero.module.css'
 
-// 3D 배경은 three.js 번들이 크므로 지연 로딩 (초기 페인트 블로킹 방지)
-const HeroBackground = lazy(() => import('./HeroBackground.jsx'))
+// three.js 번들이 크므로 지연 로딩
+const ParticleField = lazy(() => import('./ParticleRing.jsx'))
+const SplashCursor = lazy(() => import('../../../../components/ui/SplashCursor.jsx'))
 
 const MIN_HEIGHT = 760 // 스크롤 후 도달할 '지금 사이즈'
 
@@ -41,28 +42,50 @@ export default function Hero() {
   return (
     <div className={styles.track} id="top">
       <section className={styles.hero} ref={heroRef}>
-        {/* 3D 파티클 배경 */}
+        {/* 배경: 3D 파티클 지혜의 고리 + 유체 커서 */}
         <div className={styles.bg}>
           <Suspense fallback={null}>
-            <HeroBackground />
+            <ParticleField />
           </Suspense>
+          <Suspense fallback={null}>
+            <SplashCursor
+              SIM_RESOLUTION={128}
+              DYE_RESOLUTION={1440}
+              DENSITY_DISSIPATION={3.5}
+              VELOCITY_DISSIPATION={2}
+              PRESSURE={0.1}
+              CURL={3}
+              SPLAT_RADIUS={0.2}
+              SPLAT_FORCE={6000}
+              COLOR_UPDATE_SPEED={10}
+            />
+          </Suspense>
+          {/* 텍스트 가독성을 위한 스크림 */}
+          <div className={styles.scrim} />
         </div>
 
-        {/* 텍스트 인터랙션: (1) 대형→축소  (2) 크로스페이드로 2행 전환 */}
         <div className={styles.stage}>
-          {/* 1단계: 크게 시작해 축소된 뒤 사라지는 리드 문구 */}
-          <p className={`${styles.line} ${styles.phase1}`}>
-            한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는,
-            <br />
-            지혜로운 AI 에이전트를 만듭니다.
-          </p>
+          {/* S1: 두 조각이 좌·우에서 한 줄로 합쳐짐 (대형) → 축소 → 사라짐 */}
+          <div className={styles.s1}>
+            <span className={styles.halfLeft}>한&nbsp;사람이&nbsp;해낼&nbsp;수&nbsp;</span>
+            <span className={styles.halfRight}>있는&nbsp;일의</span>
+          </div>
 
-          {/* 2단계: 페이드인되어 남는 최종 문구 */}
-          <p className={`${styles.line} ${styles.phase2}`}>
-            지식이 넘쳐나는 세상에서, 우리는 지혜로운 AI를 만듭니다.
-            <br />
-            한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸도록.
-          </p>
+          {/* S2, S3: 차례로 등장하며 첫 문장을 이어감 */}
+          <p className={`${styles.seq} ${styles.s2}`}>넓이와 깊이를 바꾸는,</p>
+          <p className={`${styles.seq} ${styles.s3}`}>지혜로운 AI 에이전트를 만듭니다.</p>
+
+          {/* S4: 최종 결론 문구 (메인 굵게 2줄 + 서브 작게) */}
+          <div className={styles.s4}>
+            <p className={styles.s4main}>
+              지식이 넘쳐나는 세상에서,
+              <br />
+              우리는 <b>지혜로운 AI</b>를 만듭니다.
+            </p>
+            <p className={styles.s4sub}>
+              한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸도록.
+            </p>
+          </div>
         </div>
       </section>
     </div>
