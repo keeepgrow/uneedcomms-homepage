@@ -64,7 +64,9 @@ const vertexShader = /* glsl */ `
       mv.z += (rj - 0.5) * infl * 1.6;
     }
 
-    gl_PointSize = uSize * (260.0 / -mv.z) * (0.4 + 0.6 * e);
+    // 입자마다 크기 편차 (usta처럼 작은 미세점 + 드문 큰 점)
+    float sv = 0.5 + 1.15 * fract(sin(aDelay * 57.31) * 434.17);
+    gl_PointSize = uSize * sv * (260.0 / -mv.z) * (0.4 + 0.6 * e);
     gl_Position = projectionMatrix * mv;
   }
 `
@@ -85,7 +87,7 @@ function Ring() {
   const ref = useRef()
   const matRef = useRef()
   const { gl, size } = useThree()
-  const COUNT = 75000
+  const COUNT = 30000
 
   const { targets, starts, delays, colors, radii } = useMemo(() => {
     const rand = mulberry32(20240811)
@@ -112,14 +114,13 @@ function Ring() {
       ]
     }
 
-    // 소용돌이 팔레트: 안쪽 골드/오렌지/핑크 → 바깥 블루/퍼플
-    const HOT = new THREE.Color('#fff0d2') // 화이트-핫(안쪽 링)
-    const GOLD = new THREE.Color('#f6a81e')
-    const ORANGE = new THREE.Color('#f0673a')
-    const PINK = new THREE.Color('#e0468e')
-    const WHITE = new THREE.Color('#fbf3e6')
-    const BLUE = new THREE.Color('#3aa0e6')
-    const PURPLE = new THREE.Color('#6a4fd0')
+    // usta 팔레트: 골드/앰버 · 블루 · 화이트/실버 (핑크·퍼플 없음)
+    const GOLD = new THREE.Color('#f0a828')
+    const AMBER = new THREE.Color('#df7f18')
+    const BLUE = new THREE.Color('#3f6fd0')
+    const BLUE2 = new THREE.Color('#7aa6f0')
+    const WHITE = new THREE.Color('#eef2f7')
+    const SILVER = new THREE.Color('#aeb8c6')
 
     const tgt = new Float32Array(COUNT * 3)
     const st = new Float32Array(COUNT * 3)
@@ -173,19 +174,16 @@ function Ring() {
       // 스태거 지연
       dl[i] = rand() * 1.3
 
-      // 색: 안쪽 화이트-핫/골드 → 핑크/퍼플 → 바깥 블루
-      if (tf < 0.13) {
-        tmp.copy(rand() < 0.55 ? HOT : GOLD)
-      } else if (tf < 0.34) {
-        const p = rand()
-        tmp.copy(p < 0.4 ? GOLD : p < 0.75 ? ORANGE : PINK)
-      } else if (tf < 0.62) {
-        const p = rand()
-        tmp.copy(p < 0.4 ? PINK : p < 0.7 ? PURPLE : WHITE)
+      // 색: 노이즈 군집으로 골드/블루/화이트 패치 (usta식, 골드 우세)
+      const cn = noise3D(tx * 0.28 + 12, ty * 0.28, tz * 0.28) * 0.5 + 0.5
+      if (cn > 0.56) {
+        tmp.copy(rand() < 0.6 ? GOLD : AMBER)
+      } else if (cn < 0.36) {
+        tmp.copy(rand() < 0.62 ? BLUE : BLUE2)
       } else {
-        tmp.copy(rand() < 0.62 ? BLUE : PURPLE)
+        tmp.copy(rand() < 0.55 ? WHITE : SILVER)
       }
-      const bright = (isStreamer ? 0.6 : 1.6) - tf * 0.9 // 안쪽 매우 밝게
+      const bright = (isStreamer ? 0.72 : 1.15) - tf * 0.35 // 코어 근처만 약간 밝게
       col[i * 3] = Math.min(1, tmp.r * bright)
       col[i * 3 + 1] = Math.min(1, tmp.g * bright)
       col[i * 3 + 2] = Math.min(1, tmp.b * bright)
@@ -275,7 +273,7 @@ function Stars() {
         pos[i * 3 + 2] = r * Math.cos(phi) - spreadZ
         // 대부분 흰색, 일부 골드/블루 별
         const t = rand()
-        const b = 0.45 + rand() * 0.55
+        const b = 0.22 + rand() * 0.38
         let cr = 1
         let cg = 1
         let cb = 1
@@ -294,7 +292,7 @@ function Stars() {
       }
       return { pos, col }
     }
-    return { far: build(1300, 10), near: build(160, 6) }
+    return { far: build(520, 10), near: build(34, 6) }
   }, [])
 
   // 아주 천천히 회전(패럴랙스 느낌)
@@ -316,7 +314,7 @@ function Stars() {
           <bufferAttribute attach="attributes-position" args={[layers.near.pos, 3]} />
           <bufferAttribute attach="attributes-color" args={[layers.near.col, 3]} />
         </bufferGeometry>
-        <pointsMaterial size={0.11} sizeAttenuation vertexColors transparent opacity={0.95} depthWrite={false} />
+        <pointsMaterial size={0.08} sizeAttenuation vertexColors transparent opacity={0.9} depthWrite={false} />
       </points>
     </group>
   )
@@ -366,12 +364,11 @@ export default function ParticleRing() {
       dpr={[1, 1.5]}
       gl={{ antialias: true, powerPreference: 'high-performance' }}
     >
-      <color attach="background" args={['#000005']} />
-      <Nebula />
+      <color attach="background" args={['#000000']} />
       <Stars />
       <Ring />
       <Effects disableGamma>
-        <unrealBloomPass threshold={0.08} strength={0.95} radius={0.62} />
+        <unrealBloomPass threshold={0.3} strength={0.28} radius={0.4} />
       </Effects>
     </Canvas>
   )
