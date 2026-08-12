@@ -23,6 +23,6 @@
   --radius-sm: 16px;
 
   /* ── Typography ─────────────────────────────────────── */
-  --font-sans: 'Pretendard', 'Pretendard Variable', -apple-system,
+  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system,
     BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
 }

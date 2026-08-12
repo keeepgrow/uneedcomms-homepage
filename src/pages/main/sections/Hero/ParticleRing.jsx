@@ -34,8 +34,9 @@ const vertexShader = /* glsl */ `
     float t = clamp((uTime - aDelay) / dur, 0.0, 1.0);
     float e = 1.0 - pow(1.0 - t, 3.0);           // easeOutCubic
 
-    // 소용돌이: 안쪽일수록 빠르게 중심을 돎 (차등 회전)
-    float sw = uTime * (0.3 / (aRadius + 0.4));
+    // 소용돌이: 초반 빠르게 → 형성되며 현재 속도로 감속 (안쪽일수록 빠른 차등 회전)
+    float spin = uTime + 7.8 * (1.0 - exp(-uTime / 1.3));
+    float sw = spin * (0.3 / (aRadius + 0.4));
     float cs = cos(sw);
     float sn = sin(sw);
     vec3 disc = vec3(
@@ -64,9 +65,11 @@ const vertexShader = /* glsl */ `
       mv.z += (rj - 0.5) * infl * 1.6;
     }
 
-    // 입자마다 크기 편차 (usta처럼 작은 미세점 + 드문 큰 점)
+    // 입자마다 크기 편차 (작은 미세점 + 드문 큰 점)
     float sv = 0.5 + 1.15 * fract(sin(aDelay * 57.31) * 434.17);
-    gl_PointSize = uSize * sv * (260.0 / -mv.z) * (0.4 + 0.6 * e);
+    // 원근 깊이: 앞(카메라 가까움)은 크게, 뒤는 작게
+    float depthBoost = clamp((6.6 + mv.z) * 0.42 + 1.0, 0.4, 2.3);
+    gl_PointSize = uSize * sv * depthBoost * (260.0 / -mv.z) * (0.4 + 0.6 * e);
     gl_Position = projectionMatrix * mv;
   }
 `
@@ -86,8 +89,9 @@ const fragmentShader = /* glsl */ `
 function Ring() {
   const ref = useRef()
   const matRef = useRef()
+  const lastMoveRef = useRef(0) // 마지막 마우스 움직임 시각
   const { gl, size } = useThree()
-  const COUNT = 30000
+  const COUNT = 75000
 
   const { targets, starts, delays, colors, radii } = useMemo(() => {
     const rand = mulberry32(20240811)
@@ -114,13 +118,13 @@ function Ring() {
       ]
     }
 
-    // usta 팔레트: 골드/앰버 · 블루 · 화이트/실버 (핑크·퍼플 없음)
-    const GOLD = new THREE.Color('#f0a828')
-    const AMBER = new THREE.Color('#df7f18')
-    const BLUE = new THREE.Color('#3f6fd0')
-    const BLUE2 = new THREE.Color('#7aa6f0')
+    // 블랙홀 팔레트: 화이트핫/골드/앰버(밝은 링) · 블루/화이트(바깥)
+    const HOT = new THREE.Color('#fff3d8')
+    const GOLD = new THREE.Color('#f4a828')
+    const AMBER = new THREE.Color('#e07d1a')
+    const BLUE = new THREE.Color('#4a78d8')
+    const BLUE2 = new THREE.Color('#89b0f0')
     const WHITE = new THREE.Color('#eef2f7')
-    const SILVER = new THREE.Color('#aeb8c6')
 
     const tgt = new Float32Array(COUNT * 3)
     const st = new Float32Array(COUNT * 3)
@@ -130,29 +134,33 @@ function Ring() {
     const TAU = Math.PI * 2
     const tmp = new THREE.Color()
 
-    const rMin = 1.05 // 블랙홀 공백 반경
-    const rMax = 4.4
+    const rMin = 1.35 // 이벤트 호라이즌(다크 홀) 반경
+    const rMax = 3.3
 
     for (let i = 0; i < COUNT; i++) {
-      // 일부는 프레임 밖까지 뻗는 '긴 스위핑 팔' (웅장한 광활함)
-      const isStreamer = rand() < 0.17
-      const r = isStreamer
-        ? rMin + Math.pow(rand(), 0.7) * (8.5 - rMin)
-        : rMin + Math.pow(rand(), 2.1) * (rMax - rMin)
-      const tf = Math.min(1, (r - rMin) / (rMax - rMin)) // 색/두께 정규화
-      // 로그 나선 감김(스트릭) + 얇은 반경 산포
+      // 안쪽 밝은 링에 집중 / 일부는 바깥으로 흐르는 옅은 나선 팔
+      const isWisp = rand() < 0.22
+      const r = isWisp
+        ? rMin + Math.pow(rand(), 0.5) * (rMax * 1.7 - rMin)
+        : rMin + Math.pow(rand(), 2.6) * (rMax - rMin) // 홀 가장자리(링)에 강하게 집중
+      const tf = Math.min(1, (r - rMin) / (rMax - rMin))
+
+      // 정면 원반: 각도 + 완만한 소용돌이
       const a0 = rand() * TAU
-      const ang = a0 + 2.4 * Math.log(r + 0.4)
-      const rr = r + (rand() - 0.5) * (0.06 + tf * 0.55)
+      const ang = a0 + 1.6 * Math.log(r + 0.4)
+      const rr = r + (rand() - 0.5) * (0.015 + tf * 0.12) // 반경 산포 축소 → 가는 동심원 스트릭
       let tx = Math.cos(ang) * rr
       let ty = Math.sin(ang) * rr
-      // 볼륨 두께(가우시안): 안쪽 두툼, 스트리머는 얇게 → 입체감
-      const zAmp = isStreamer ? 0.07 : 0.16 + 0.34 * (1.0 - tf)
+      // 아주 얇은 원반(가는 동심원 스트릭 유지)
+      const zAmp = isWisp ? 0.04 : 0.05 + 0.1 * (1 - tf)
       let tz = (rand() + rand() + rand() - 1.5) * zAmp
+      // 렌즈: 안쪽 '뒤쪽' 원반만 홀 위로 살짝 감아올림(아치)
+      const back = Math.max(0, Math.sin(ang))
+      tz += Math.exp(-(r - rMin) * 1.3) * back * 0.9
 
-      // curl 노이즈로 유기적 결/솜털
+      // curl 유기적 결(약하게 — 스트릭 유지)
       const c = curl(tx * 0.5, ty * 0.5, tz * 0.5)
-      const wisp = 0.12
+      const wisp = 0.045
       tx += c[0] * wisp
       ty += c[1] * wisp
       tz += c[2] * wisp
@@ -162,11 +170,11 @@ function Ring() {
       tgt[i * 3 + 2] = tz
       rad[i] = r
 
-      // 시작점: 사방 먼 곳에서 날아옴
+      // 시작점: 중심의 한 점(작은 구름) → 회전하며 바깥으로 퍼져 커짐
       const su = rand() * 2 - 1
       const sth = rand() * TAU
       const ss = Math.sqrt(1 - su * su)
-      const sR = 7 + rand() * 7
+      const sR = rand() * 0.3
       st[i * 3] = ss * Math.cos(sth) * sR
       st[i * 3 + 1] = ss * Math.sin(sth) * sR
       st[i * 3 + 2] = su * sR
@@ -174,16 +182,18 @@ function Ring() {
       // 스태거 지연
       dl[i] = rand() * 1.3
 
-      // 색: 노이즈 군집으로 골드/블루/화이트 패치 (usta식, 골드 우세)
-      const cn = noise3D(tx * 0.28 + 12, ty * 0.28, tz * 0.28) * 0.5 + 0.5
-      if (cn > 0.56) {
-        tmp.copy(rand() < 0.6 ? GOLD : AMBER)
-      } else if (cn < 0.36) {
-        tmp.copy(rand() < 0.62 ? BLUE : BLUE2)
+      // 색: 안쪽 밝은 링(화이트핫→골드→앰버) → 바깥 블루
+      if (tf < 0.12) {
+        tmp.copy(rand() < 0.5 ? HOT : GOLD)
+      } else if (tf < 0.4) {
+        tmp.copy(rand() < 0.55 ? GOLD : AMBER)
+      } else if (tf < 0.68) {
+        const p = rand()
+        tmp.copy(p < 0.4 ? AMBER : p < 0.7 ? WHITE : BLUE2)
       } else {
-        tmp.copy(rand() < 0.55 ? WHITE : SILVER)
+        tmp.copy(rand() < 0.65 ? BLUE : BLUE2)
       }
-      const bright = (isStreamer ? 0.72 : 1.15) - tf * 0.35 // 코어 근처만 약간 밝게
+      const bright = (isWisp ? 0.55 : 1.7) - tf * 0.95 // 안쪽 링 매우 밝게
       col[i * 3] = Math.min(1, tmp.r * bright)
       col[i * 3 + 1] = Math.min(1, tmp.g * bright)
       col[i * 3 + 2] = Math.min(1, tmp.b * bright)
@@ -213,6 +223,7 @@ function Ring() {
       const inside =
         e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom
       uniforms.uActive.value = inside ? 1 : 0
+      lastMoveRef.current = performance.now()
     }
     const onLeave = () => (uniforms.uActive.value = 0)
     window.addEventListener('mousemove', onMove)
@@ -226,14 +237,25 @@ function Ring() {
   useFrame((state, delta) => {
     uniforms.uTime.value += delta
     uniforms.uAspect.value = size.width / size.height
-    // 소용돌이는 셰이더에서 처리 — 그룹은 정면(살짝 틸트)으로 미세 드리프트만
+    const et = state.clock.elapsedTime
     if (ref.current) {
-      ref.current.rotation.z = Math.sin(state.clock.elapsedTime * 0.05) * 0.04
+      // 마우스 방향에 따라 군체가 입체적으로 살짝 기울어짐 (패럴랙스, 부드럽게 lerp)
+      // 단, 움직임이 멈추고 ~2초 지나면 기본 방향으로 서서히 복귀
+      const idle = (performance.now() - lastMoveRef.current) / 1000
+      const recenter = Math.min(1, Math.max(0, (idle - 1.2) / 0.8)) // 1.2~2.0s에 0→1
+      const infl = uniforms.uActive.value * (1 - recenter)
+      const mx = uniforms.uMouse.value.x
+      const my = uniforms.uMouse.value.y
+      const targetX = 0.95 - my * 0.18 * infl // 살짝 눕힘 + 마우스 위 → 뒤로 젖힘
+      const targetY = mx * 0.28 * infl // 마우스 좌우 → 좌우로 기울임
+      ref.current.rotation.x += (targetX - ref.current.rotation.x) * 0.05
+      ref.current.rotation.y += (targetY - ref.current.rotation.y) * 0.05
+      ref.current.rotation.z = Math.sin(et * 0.05) * 0.03
     }
   })
 
   return (
-    <group ref={ref} rotation={[0.1, 0, 0]}>
+    <group ref={ref} rotation={[0.95, 0, 0]}>
       <points>
         <bufferGeometry>
           <bufferAttribute attach="attributes-position" args={[targets, 3]} />
@@ -273,7 +295,7 @@ function Stars() {
         pos[i * 3 + 2] = r * Math.cos(phi) - spreadZ
         // 대부분 흰색, 일부 골드/블루 별
         const t = rand()
-        const b = 0.22 + rand() * 0.38
+        const b = 0.42 + rand() * 0.55
         let cr = 1
         let cg = 1
         let cb = 1
@@ -292,7 +314,7 @@ function Stars() {
       }
       return { pos, col }
     }
-    return { far: build(520, 10), near: build(34, 6) }
+    return { far: build(1300, 10), near: build(150, 6) }
   }, [])
 
   // 아주 천천히 회전(패럴랙스 느낌)
@@ -360,7 +382,7 @@ function Nebula() {
 export default function ParticleRing() {
   return (
     <Canvas
-      camera={{ position: [0, 0, 5.7], fov: 60 }}
+      camera={{ position: [0, 0, 6.6], fov: 58 }}
       dpr={[1, 1.5]}
       gl={{ antialias: true, powerPreference: 'high-performance' }}
     >
@@ -368,7 +390,7 @@ export default function ParticleRing() {
       <Stars />
       <Ring />
       <Effects disableGamma>
-        <unrealBloomPass threshold={0.3} strength={0.28} radius={0.4} />
+        <unrealBloomPass threshold={0.12} strength={0.75} radius={0.55} />
       </Effects>
     </Canvas>
   )
