@@ -5,10 +5,25 @@
   right: 0;
   z-index: 100;
   height: var(--header-h);
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-gray-01);
+  /* 처음엔 배경 없음(완전 투명) */
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  /* 텍스트/로고 기본 흰색 → 밝은 섹션에서 다크로 */
+  color: #ffffff;
+  transition: background 0.3s, backdrop-filter 0.3s, color 0.3s;
+}
+
+/* 스크롤할 때만 DAN25 동일 프로스트 배경/오퍼시티 생성 */
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+}
+
+/* 밝은 섹션 위 → 텍스트·로고 #000111 로 전환 */
+.header.onLight {
+  color: #000111;
 }
 
 .inner {
@@ -19,10 +34,17 @@
 }
 
 .logo {
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.logoMark {
+  height: 25px;
+  width: auto;
+  display: block;
+  color: inherit; /* currentColor → 흰↔다크 */
+  transition: color 0.3s;
 }
 
 .right {
@@ -40,12 +62,13 @@
 .navLink {
   font-size: 17px;
   font-weight: 500;
-  color: var(--color-gray-07);
-  transition: color 0.2s;
+  color: inherit;
+  opacity: 0.85;
+  transition: opacity 0.2s;
 }
 
 .navLink:hover {
-  color: var(--color-black);
+  opacity: 1;
 }
 
 .lang {
@@ -58,20 +81,18 @@
 .langInactive {
   font-size: 15px;
   font-weight: 600;
-}
-
-.langActive {
-  color: var(--color-black);
+  color: inherit;
 }
 
 .langInactive {
-  color: var(--color-gray-05);
+  opacity: 0.5;
 }
 
 .langDivider {
   width: 1px;
   height: 12px;
-  background: var(--color-gray-02);
+  background: currentColor;
+  opacity: 0.35;
 }
 
 @media (max-width: 768px) {

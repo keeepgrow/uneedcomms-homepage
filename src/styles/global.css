@@ -44,10 +44,16 @@ ol {
   list-style: none;
 }
 
-/* 콘텐츠 컨테이너: 1600px 기준폭, 데스크톱 좌우 160px 여백 */
+/* 콘텐츠 컨테이너: 좌우 40px 여백으로 채우되, 2K(2560px)까지만 커짐 */
 .container {
   width: 100%;
-  max-width: var(--content-max);
+  max-width: 2560px; /* 2K 초과 해상도에선 더 커지지 않고 가운데 정렬 */
   margin-inline: auto;
-  padding-inline: clamp(20px, 8.33vw, var(--gutter));
+  padding-inline: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 20px;
+  }
 }
