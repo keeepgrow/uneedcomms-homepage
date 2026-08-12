@@ -138,32 +138,55 @@ function Ring() {
     const rMax = 3.3
 
     for (let i = 0; i < COUNT; i++) {
-      // 안쪽 밝은 링에 집중 / 일부는 바깥으로 흐르는 옅은 나선 팔
-      const isWisp = rand() < 0.22
-      const r = isWisp
-        ? rMin + Math.pow(rand(), 0.5) * (rMax * 1.7 - rMin)
-        : rMin + Math.pow(rand(), 2.6) * (rMax - rMin) // 홀 가장자리(링)에 강하게 집중
-      const tf = Math.min(1, (r - rMin) / (rMax - rMin))
+      // 24%: 구를 위/아래까지 감싸며 흐르는 낮은 밀도 3D 스트림
+      const isShell = rand() < 0.24
+      const isWisp = !isShell && rand() < 0.22
+      let tx
+      let ty
+      let tz
+      let r
+      let tf
+      if (isShell) {
+        const u = rand() * 2 - 1
+        const sp = Math.sqrt(1 - u * u)
+        r = rMin + 0.05 + Math.pow(rand(), 0.6) * 1.35
+        const ang2 = rand() * TAU + 1.4 * Math.log(r + 0.4)
+        tx = sp * Math.cos(ang2) * r
+        ty = sp * Math.sin(ang2) * r
+        tz = u * r
+        tf = Math.min(1, (r - rMin) / (rMax - rMin))
+      } else {
+        r = isWisp
+          ? rMin + Math.pow(rand(), 0.5) * (rMax * 1.7 - rMin)
+          : rMin + Math.pow(rand(), 2.6) * (rMax - rMin)
+        tf = Math.min(1, (r - rMin) / (rMax - rMin))
+        const a0 = rand() * TAU
+        const ang = a0 + 1.6 * Math.log(r + 0.4)
+        const rr = r + (rand() - 0.5) * (0.015 + tf * 0.12)
+        tx = Math.cos(ang) * rr
+        ty = Math.sin(ang) * rr
+        const zAmp = isWisp ? 0.04 : 0.05 + 0.1 * (1 - tf)
+        tz = (rand() + rand() + rand() - 1.5) * zAmp
+      }
 
-      // 정면 원반: 각도 + 완만한 소용돌이
-      const a0 = rand() * TAU
-      const ang = a0 + 1.6 * Math.log(r + 0.4)
-      const rr = r + (rand() - 0.5) * (0.015 + tf * 0.12) // 반경 산포 축소 → 가는 동심원 스트릭
-      let tx = Math.cos(ang) * rr
-      let ty = Math.sin(ang) * rr
-      // 아주 얇은 원반(가는 동심원 스트릭 유지)
-      const zAmp = isWisp ? 0.04 : 0.05 + 0.1 * (1 - tf)
-      let tz = (rand() + rand() + rand() - 1.5) * zAmp
-      // 렌즈: 안쪽 '뒤쪽' 원반만 홀 위로 살짝 감아올림(아치)
-      const back = Math.max(0, Math.sin(ang))
-      tz += Math.exp(-(r - rMin) * 1.3) * back * 0.9
-
-      // curl 유기적 결(약하게 — 스트릭 유지)
-      const c = curl(tx * 0.5, ty * 0.5, tz * 0.5)
-      const wisp = 0.045
+      // curl 유기적 결(약하게)
+      const c = curl(tx * 0.45, ty * 0.45, tz * 0.45)
+      const wisp = 0.05
       tx += c[0] * wisp
       ty += c[1] * wisp
       tz += c[2] * wisp
+
+      // 가운데 '투명 구'를 품은 느낌: 구 근처 입자를 표면 밖으로 부드럽게 밀어 감쌈
+      // (하드한 원형 경계 아님 — 부드러운 왜곡)
+      const sphR = 1.15
+      const d = Math.sqrt(tx * tx + ty * ty + tz * tz)
+      if (d > 0.0001) {
+        const bulge = sphR * Math.exp(-(d * d) / (sphR * sphR * 0.9))
+        const nd = (d + bulge) / d
+        tx *= nd
+        ty *= nd
+        tz *= nd
+      }
 
       tgt[i * 3] = tx
       tgt[i * 3 + 1] = ty
@@ -193,13 +216,14 @@ function Ring() {
       } else {
         tmp.copy(rand() < 0.65 ? BLUE : BLUE2)
       }
-      const bright = (isWisp ? 0.55 : 1.7) - tf * 0.95 // 안쪽 링 매우 밝게
+      const bright = (isShell ? 0.55 : isWisp ? 0.55 : 1.7) - tf * 0.9
       col[i * 3] = Math.min(1, tmp.r * bright)
       col[i * 3 + 1] = Math.min(1, tmp.g * bright)
       col[i * 3 + 2] = Math.min(1, tmp.b * bright)
     }
     return { targets: tgt, starts: st, delays: dl, colors: col, radii: rad }
   }, [])
+
 
   const uniforms = useMemo(
     () => ({
@@ -246,7 +270,7 @@ function Ring() {
       const infl = uniforms.uActive.value * (1 - recenter)
       const mx = uniforms.uMouse.value.x
       const my = uniforms.uMouse.value.y
-      const targetX = 0.95 - my * 0.18 * infl // 살짝 눕힘 + 마우스 위 → 뒤로 젖힘
+      const targetX = 0.95 - my * 0.18 * infl // 원래 뷰(살짝 눕힘)
       const targetY = mx * 0.28 * infl // 마우스 좌우 → 좌우로 기울임
       ref.current.rotation.x += (targetX - ref.current.rotation.x) * 0.05
       ref.current.rotation.y += (targetY - ref.current.rotation.y) * 0.05
@@ -274,6 +298,7 @@ function Ring() {
           blending={THREE.AdditiveBlending}
         />
       </points>
+
     </group>
   )
 }
@@ -293,20 +318,27 @@ function Stars() {
         pos[i * 3] = r * Math.sin(phi) * Math.cos(theta)
         pos[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta)
         pos[i * 3 + 2] = r * Math.cos(phi) - spreadZ
-        // 대부분 흰색, 일부 골드/블루 별
+        // 블랙홀과 같은 팔레트: 골드/앰버 · 블루 · 화이트
         const t = rand()
         const b = 0.42 + rand() * 0.55
-        let cr = 1
-        let cg = 1
-        let cb = 1
-        if (t < 0.18) {
-          cr = 0.62
-          cg = 0.72
+        let cr
+        let cg
+        let cb
+        if (t < 0.42) {
+          // 골드/앰버
+          cr = 0.96
+          cg = 0.66
+          cb = 0.18
+        } else if (t < 0.72) {
+          // 블루
+          cr = 0.32
+          cg = 0.5
+          cb = 0.9
+        } else {
+          // 화이트
+          cr = 0.95
+          cg = 0.96
           cb = 1
-        } else if (t < 0.28) {
-          cr = 1
-          cg = 0.82
-          cb = 0.5
         }
         col[i * 3] = cr * b
         col[i * 3 + 1] = cg * b
