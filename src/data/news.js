@@ -28,13 +28,13 @@ export const news = [
     source: 'CEO스코어데일리',
     date: '2025-04-21',
     title: "네이버, 커머스 판 흔든다…쇼핑앱 500만 돌풍, 컬리·야놀자와 ‘맞손’",
-    href: '#',
+    href: 'https://www.ceoscoredaily.com/page/view/2025042116372566936',
   },
   {
     no: '05',
     source: '머니투데이',
     date: '2025-04-15',
     title: "유니드컴즈, 국내 최초 카카오모먼트 전용 AI 헬퍼 '1초 맞춤톡' 출시",
-    href: '#',
+    href: 'https://www.mt.co.kr/industry/2025/04/15/2025041117443137982',
   },
 ]
