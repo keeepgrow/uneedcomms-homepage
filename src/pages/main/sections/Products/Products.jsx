@@ -4,6 +4,8 @@ import styles from './Products.module.css'
 
 // 화면이 한 벌 폭보다 넓어도 이음새 없이 순환하도록 넉넉히 복제
 const COPIES = 4
+// 카드 사이 간격(css .card margin-right와 동일) — 스냅 시 첫 카드를 이만큼 띄움
+const CARD_GAP = 15
 
 export default function Products() {
   // 데스크톱 hover, 모바일 탭 토글, 카드 확장 상태
@@ -18,7 +20,7 @@ export default function Products() {
   const setWidthRef = useRef(0) // 한 벌(제품 전체) 폭
   const pausedRef = useRef(false)
   const dragRef = useRef({ active: false, axis: null, startX: 0, startY: 0, startOffset: 0, moved: false, captured: false })
-  const snapRef = useRef(null) // 스와이프 종료 후 카드 경계로 튕겨 정렬하는 트윈
+  const snapRef = useRef(null) // 스와이프 종료 후 한 칸 딱 스냅하는 트윈
 
   const loop = []
   for (let c = 0; c < COPIES; c++) loop.push(...products)
@@ -28,7 +30,8 @@ export default function Products() {
     pausedRef.current = hovering || tapPaused || activeId !== null
   }, [hovering, tapPaused, activeId])
 
-  // transform + 모듈러 기반의 진짜 무한 루프 (좌로 흐름, 양방향 스와이프)
+  // transform + 모듈러 기반의 무한 순환
+  // 평소: 왼쪽으로 연속 흐름 / 스와이프: 한 칸씩 딱 스냅 후 흐름 재개
   useEffect(() => {
     const track = trackRef.current
     if (!track) return
@@ -43,20 +46,21 @@ export default function Products() {
     let last = null
     const step = (t) => {
       if (last == null) last = t
-      const dt = t - last
+      // 탭 비활성/로딩 지연 등으로 프레임이 크게 벌어져도 튀지 않도록 dt 상한
+      const dt = Math.min(64, t - last)
       last = t
       const sw = setWidthRef.current
       if (sw > 0) {
         const anim = snapRef.current
         if (anim) {
-          // 카드 경계로 부드럽게 스냅 (easeOutCubic)
+          // 스와이프 후 한 칸 스냅 (easeOutCubic), 이후 흐름 재개
           anim.elapsed += dt
           const p = Math.min(1, anim.elapsed / anim.dur)
           const e = 1 - Math.pow(1 - p, 3)
           offsetRef.current = anim.from + (anim.to - anim.from) * e
           if (p >= 1) snapRef.current = null
         } else if (!reduce && !pausedRef.current && !dragRef.current.active) {
-          // 기존 마퀴와 동일한 페이스(한 벌 42초)
+          // 왼쪽으로 연속 흐름 (한 벌 42초 페이스)
           offsetRef.current += (sw / 42) * (dt / 1000)
         }
         // 한 벌 폭으로 모듈러 → 무한 순환 (음수 드래그도 정상 래핑)
@@ -113,12 +117,19 @@ export default function Products() {
       vp.style.cursor = 'grab'
       vp.releasePointerCapture?.(e.pointerId)
     }
-    // 스와이프 종료 → 가장 가까운 카드 경계로 딱 스냅
+    // 스와이프 종료 → 한 칸 스냅. 단, 화면 끝에 딱 붙이지 않고 카드 간격(GAP)만큼 띄워서 멈춤.
+    // (이전 카드 가장자리는 화면 끝에 닿고, 그 다음 GAP 간격, 그 다음 현재 카드)
     if (d.moved) {
-      const cardStep = setWidthRef.current / products.length
-      if (cardStep > 0) {
-        const target = Math.round(offsetRef.current / cardStep) * cardStep
-        snapRef.current = { from: offsetRef.current, to: target, dur: 340, elapsed: 0 }
+      const cs = setWidthRef.current / products.length
+      if (cs > 0) {
+        const moved = offsetRef.current - d.startOffset // +면 다음(왼쪽), -면 이전(오른쪽)
+        const base = Math.round(d.startOffset / cs) * cs
+        let boundary
+        if (Math.abs(moved) > 24) boundary = moved > 0 ? base + cs : base - cs
+        else boundary = Math.round(offsetRef.current / cs) * cs
+        // 경계에서 카드 간격만큼 빼면 카드가 화면 왼쪽에서 GAP만큼 떨어진 위치에 놓임
+        const target = boundary - CARD_GAP
+        snapRef.current = { from: offsetRef.current, to: target, dur: 320, elapsed: 0 }
       }
     }
     d.active = false
@@ -140,7 +151,7 @@ export default function Products() {
         </h2>
       </div>
 
-      {/* 자동 무한 흐름 + 좌우 스와이프 · hover/탭 시 정지 · 카드 클릭 시 확장 */}
+      {/* 풀블리드 마퀴: 흐를 땐 좌우 여백 없이, 스와이프-스냅 시 첫 카드가 카드간격만큼만 떨어져 멈춤 */}
       <div
         className={styles.marquee}
         ref={viewportRef}

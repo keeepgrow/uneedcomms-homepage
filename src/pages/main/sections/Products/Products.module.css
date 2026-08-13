@@ -22,8 +22,9 @@
   display: none;
 }
 
-/* ── 자동 무한 흐름 + 좌우 스와이프(드래그) 뷰포트 ─────── */
+/* ── 풀블리드 마퀴(왼쪽으로 연속 흐름) + 좌우 스와이프 뷰포트 ─── */
 .marquee {
+  /* 흐를 땐 좌우 여백 없이 화면 끝까지(풀블리드). 스와이프-스냅 위치만 JS에서 간격만큼 오프셋 */
   width: 100%;
   overflow: hidden;
   cursor: grab; /* 잡아서 스와이프 가능함을 암시 */
@@ -48,7 +49,7 @@
   position: relative;
   flex: 0 0 auto;
   width: clamp(320px, 26vw, 400px);
-  margin-right: 15px; /* 마퀴 이음새를 위해 gap 대신 margin 사용 */
+  margin-right: 15px; /* 카드 간격 */
   aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
@@ -164,11 +165,8 @@
   transform: scaleY(0);
 }
 
-/* 모바일: 한 장이 크게 부각되도록 (컨테이너가 작아지지 않게) */
+/* 모바일: 타이틀 간격만 조정 (카드 폭은 --cols:1로 컨테이너 꽉 참) */
 @media (max-width: 560px) {
-  .card {
-    width: 82vw;
-  }
   .title {
     margin-bottom: 36px;
   }
