@@ -1,95 +1,117 @@
 .section {
-  background: var(--color-white);
-  padding-block: 20px 80px;
+  padding-block: 100px 120px;
+  background: transparent; /* 배경 제거 */
 }
 
-.card {
-  background: var(--color-gray-00);
-  border-radius: var(--radius-lg);
-  padding: 100px 40px 60px;
-}
-
+/* Products 타이틀과 동일 스타일 */
 .title {
-  text-align: center;
-  font-size: 44px;
+  font-size: clamp(24px, 3.2vw, 36px);
   font-weight: 800;
   letter-spacing: -0.03em;
+  line-height: 1.3;
   color: var(--color-black);
-  margin-bottom: 60px;
+  text-align: center;
+  word-break: keep-all;
+  margin-bottom: 50px;
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .item {
+  border-top: 1px solid #000111;
+  transition: border-color 0.2s ease;
+}
+
+/* 호버 시 해당 항목과 그 아래 구분선 숨김 (파란 블록이 대체) */
+.item:hover,
+.item:hover + .item {
+  border-color: transparent;
+}
+
+.link {
   display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--color-gray-01);
-  transition: opacity 0.2s;
+  align-items: baseline;
+  gap: clamp(20px, 4vw, 56px);
+  padding: clamp(22px, 2.6vw, 32px) 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.25s ease, color 0.2s ease;
 }
 
-.item:hover {
-  opacity: 0.6;
+/* 호버: 파란 라운드 배경 + 흰 텍스트 */
+.link:hover {
+  background: #1566e7;
 }
 
-.no {
-  flex: 0 0 auto;
-  font-size: 24px;
-  font-weight: 700;
+/* 클릭(누름) 피드백 */
+.link:active {
+  background: #0f4fc0;
+}
+
+/* 앞 라벨 — 언론사 이름 */
+.label {
+  flex: none;
+  width: 120px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--color-gray-05);
-  min-width: 40px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
 }
 
+/* 제목 */
 .headline {
-  flex: 1;
-  text-align: right;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 700;
   letter-spacing: -0.02em;
+  line-height: 1.35;
   color: var(--color-black);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
 }
 
-.featured .no,
-.featured .headline {
-  color: var(--color-uneed-blue);
+.link:hover .label,
+.link:hover .headline,
+.link:hover .date {
+  color: #ffffff;
 }
 
-.itemArrow {
-  flex: 0 0 auto;
-  color: var(--color-uneed-blue);
+/* 호버 시 텍스트가 오른쪽으로 스무스하게 밀림 */
+.link:hover .label,
+.link:hover .headline {
+  transform: translateX(24px);
 }
 
-.more {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 6px;
-  margin-top: 28px;
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--color-gray-07);
+/* 날짜 — 제목 옆 위첨자 */
+.date {
+  margin-left: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-gray-05);
+  vertical-align: super;
+  white-space: nowrap;
 }
 
-.more:hover {
-  color: var(--color-black);
-}
-
-@media (max-width: 768px) {
-  .card {
-    padding: 56px 20px 40px;
+@media (max-width: 560px) {
+  .link {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 22px 2px;
   }
-  .title {
-    font-size: 30px;
+  .label {
+    width: 100%;
+    font-size: 13px;
   }
   .headline {
-    font-size: 16px;
+    font-size: 17px;
   }
-  .no {
-    font-size: 18px;
-    min-width: 28px;
+  .date {
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;
+    vertical-align: baseline;
   }
 }

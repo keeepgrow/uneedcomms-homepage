@@ -93,9 +93,9 @@
 .detail {
   margin: 0;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 1.55;
+  line-height: 1.5;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -123,7 +123,7 @@
 }
 
 .cardActive .detail {
-  max-height: 260px;
+  max-height: 360px;
   opacity: 1;
   margin-top: 16px; /* 뒤집기 전 태그라인이 있던 부컨텐츠 위치 */
 }
