@@ -281,3 +281,14 @@
     width: 92vw;
   }
 }
+
+/* 모바일: 결론 문구 둘째 줄("우리는 지혜로운 AI를 만듭니다.")이
+   한 줄에 들어오도록 뷰포트 비례로 폰트 축소 */
+@media (max-width: 520px) {
+  .s4main {
+    font-size: clamp(17px, 6vw, 28px);
+  }
+  .s4sub {
+    font-size: clamp(12px, 3.4vw, 16px);
+  }
+}

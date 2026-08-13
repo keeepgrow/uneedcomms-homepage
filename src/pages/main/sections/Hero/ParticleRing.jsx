@@ -58,9 +58,11 @@ const vertexShader = /* glsl */ `
       vec3 jitter = vec3(cos(rr * 6.2831), sin(rr2 * 6.2831), sin(rr * 3.1415));
       pos += (rdir * 1.0 + jitter * 0.85) * dp * 5.5;
     }
-    // 스태거 소멸: 입자마다 사라지는 시점이 달라 '일부는 먼저' 사라짐
-    float thr = 0.28 + 0.5 * rr;
-    vFade = 1.0 - smoothstep(thr, thr + 0.22, uProgress);
+    // 산개 시 대부분(약 2/3)은 산개 시작과 함께 바로 소멸 → 흩어지는 입자 수를 줄여 덜 난잡.
+    // 약 1/3(rr>=0.66)만 실제로 흩어져 남았다가 늦게 사라짐.
+    float keep = step(0.66, rr);
+    float thr = mix(0.05, 0.34 + 0.45 * rr, keep);
+    vFade = 1.0 - smoothstep(thr, thr + 0.18, uProgress);
 
     vColor = aColor;
     vT = t;
@@ -85,7 +87,8 @@ const vertexShader = /* glsl */ `
     float sv = 0.5 + 1.15 * fract(sin(aDelay * 57.31) * 434.17);
     // 원근 깊이: 앞(카메라 가까움)은 크게, 뒤는 작게
     float depthBoost = clamp((6.6 + mv.z) * 0.42 + 1.0, 0.4, 2.3);
-    gl_PointSize = uSize * sv * depthBoost * (260.0 / -mv.z) * (0.4 + 0.6 * e);
+    // 산개할수록 점 크기를 줄여 잦아들듯 사라지게 (커지며 지저분해지는 것 방지)
+    gl_PointSize = uSize * sv * depthBoost * (260.0 / -mv.z) * (0.4 + 0.6 * e) * (1.0 - 0.75 * dp);
     gl_Position = projectionMatrix * mv;
   }
 `

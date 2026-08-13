@@ -6,4 +6,6 @@
   z-index: 1;
   margin-top: 100vh;
   background: var(--color-white);
+  /* 좁은 화면에서 어떤 섹션도 페이지 가로 스크롤을 만들지 않도록 */
+  overflow-x: clip;
 }
