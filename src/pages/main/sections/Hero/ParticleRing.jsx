@@ -23,12 +23,14 @@ const vertexShader = /* glsl */ `
   uniform vec2 uMouse;    // NDC (-1..1)
   uniform float uAspect;
   uniform float uActive;  // 커서가 히어로 안에 있으면 1
+  uniform float uProgress; // 스크롤 커버 진행도 0..1 (산개/소멸)
   attribute vec3 aStart;
   attribute float aDelay;
   attribute vec3 aColor;
   attribute float aRadius;  // 소용돌이 속도용 반경
   varying vec3 vColor;
   varying float vT;
+  varying float vFade;
   void main() {
     float dur = 2.4;
     float t = clamp((uTime - aDelay) / dur, 0.0, 1.0);
@@ -46,6 +48,20 @@ const vertexShader = /* glsl */ `
     );
 
     vec3 pos = mix(aStart, disc, e);
+
+    // ── 스크롤 커버 시: 바깥으로 산개(팽창·흩뿌림) + 일부 먼저 소멸 (USTA 스타일) ──
+    float rr = fract(sin(aDelay * 91.7) * 4398.5453);
+    float rr2 = fract(sin(aRadius * 57.31) * 434.17);
+    float dp = uProgress;
+    if (dp > 0.001) {
+      vec3 rdir = normalize(pos + vec3(0.0001, 0.0001, 0.0001));
+      vec3 jitter = vec3(cos(rr * 6.2831), sin(rr2 * 6.2831), sin(rr * 3.1415));
+      pos += (rdir * 1.0 + jitter * 0.85) * dp * 5.5;
+    }
+    // 스태거 소멸: 입자마다 사라지는 시점이 달라 '일부는 먼저' 사라짐
+    float thr = 0.28 + 0.5 * rr;
+    vFade = 1.0 - smoothstep(thr, thr + 0.22, uProgress);
+
     vColor = aColor;
     vT = t;
 
@@ -78,15 +94,16 @@ const fragmentShader = /* glsl */ `
   precision mediump float;
   varying vec3 vColor;
   varying float vT;
+  varying float vFade;
   void main() {
     vec2 uv = gl_PointCoord - 0.5;
     float d = length(uv);
     float a = smoothstep(0.5, 0.0, d);
-    gl_FragColor = vec4(vColor, a * (0.35 + 0.65 * vT));
+    gl_FragColor = vec4(vColor, a * (0.35 + 0.65 * vT) * vFade);
   }
 `
 
-function Ring() {
+function Ring({ progressRef }) {
   const ref = useRef()
   const matRef = useRef()
   const lastMoveRef = useRef(0) // 마지막 마우스 움직임 시각
@@ -232,6 +249,7 @@ function Ring() {
       uMouse: { value: new THREE.Vector2(10, 10) }, // 초기값 화면 밖
       uAspect: { value: 1 },
       uActive: { value: 0 },
+      uProgress: { value: 0 },
     }),
     [],
   )
@@ -261,6 +279,7 @@ function Ring() {
   useFrame((state, delta) => {
     uniforms.uTime.value += delta
     uniforms.uAspect.value = size.width / size.height
+    uniforms.uProgress.value = progressRef && progressRef.current ? progressRef.current : 0
     const et = state.clock.elapsedTime
     if (ref.current) {
       // 마우스 방향에 따라 군체가 입체적으로 살짝 기울어짐 (패럴랙스, 부드럽게 lerp)
@@ -411,7 +430,7 @@ function Nebula() {
   )
 }
 
-export default function ParticleRing() {
+export default function ParticleRing({ progressRef }) {
   return (
     <Canvas
       camera={{ position: [0, 0, 6.6], fov: 58 }}
@@ -420,7 +439,7 @@ export default function ParticleRing() {
     >
       <color attach="background" args={['#000000']} />
       <Stars />
-      <Ring />
+      <Ring progressRef={progressRef} />
       <Effects disableGamma>
         <unrealBloomPass threshold={0.12} strength={0.75} radius={0.55} />
       </Effects>

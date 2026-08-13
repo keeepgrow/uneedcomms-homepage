@@ -1,27 +1,23 @@
 import { Suspense, lazy, useEffect, useRef } from 'react'
+import ErrorBoundary from '../../../../components/common/ErrorBoundary.jsx'
 import styles from './Hero.module.css'
 
 // three.js 번들이 크므로 지연 로딩
 const ParticleField = lazy(() => import('./ParticleRing.jsx'))
 const SplashCursor = lazy(() => import('../../../../components/ui/SplashCursor.jsx'))
 
-const MIN_HEIGHT = 760 // 스크롤 후 도달할 '지금 사이즈'
-
 export default function Hero() {
-  const heroRef = useRef(null)
+  // 히어로는 fixed로 화면에 고정되고, 다음 섹션이 위로 스크롤되며 덮는다.
+  // 덮이는 동안 블랙홀 파티클이 바깥으로 산개하며 일부는 사라짐(진행도 progressRef).
+  const progressRef = useRef(0)
 
-  // 스크롤 위치에 직결: 풀스크린(100vh) → MIN_HEIGHT 로 높이만 축소
   useEffect(() => {
-    const hero = heroRef.current
-    if (!hero) return
-
     let ticking = false
     const update = () => {
       ticking = false
-      const full = window.innerHeight
-      const min = Math.min(MIN_HEIGHT, full)
-      const h = Math.max(min, full - window.scrollY)
-      hero.style.height = `${h}px`
+      const winH = window.innerHeight
+      // 스크롤 0 → 0.85뷰포트 동안 산개 완료(콘텐츠가 덮기 직전)
+      progressRef.current = Math.min(1, Math.max(0, window.scrollY / (winH * 0.85)))
     }
     const onScroll = () => {
       if (!ticking) {
@@ -29,7 +25,6 @@ export default function Hero() {
         requestAnimationFrame(update)
       }
     }
-
     update()
     window.addEventListener('scroll', onScroll, { passive: true })
     window.addEventListener('resize', update)
@@ -41,25 +36,29 @@ export default function Hero() {
 
   return (
     <div className={styles.track} id="top">
-      <section className={styles.hero} ref={heroRef}>
+      <section className={styles.hero}>
         {/* 배경: 3D 파티클 지혜의 고리 + 유체 커서 */}
         <div className={styles.bg}>
-          <Suspense fallback={null}>
-            <ParticleField />
-          </Suspense>
-          <Suspense fallback={null}>
-            <SplashCursor
-              SIM_RESOLUTION={128}
-              DYE_RESOLUTION={1440}
-              DENSITY_DISSIPATION={3.5}
-              VELOCITY_DISSIPATION={2}
-              PRESSURE={0.1}
-              CURL={3}
-              SPLAT_RADIUS={0.2}
-              SPLAT_FORCE={6000}
-              COLOR_UPDATE_SPEED={10}
-            />
-          </Suspense>
+          <ErrorBoundary>
+            <Suspense fallback={null}>
+              <ParticleField progressRef={progressRef} />
+            </Suspense>
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Suspense fallback={null}>
+              <SplashCursor
+                SIM_RESOLUTION={128}
+                DYE_RESOLUTION={1440}
+                DENSITY_DISSIPATION={3.5}
+                VELOCITY_DISSIPATION={2}
+                PRESSURE={0.1}
+                CURL={3}
+                SPLAT_RADIUS={0.2}
+                SPLAT_FORCE={6000}
+                COLOR_UPDATE_SPEED={10}
+              />
+            </Suspense>
+          </ErrorBoundary>
           {/* 텍스트 가독성을 위한 스크림 */}
           <div className={styles.scrim} />
         </div>

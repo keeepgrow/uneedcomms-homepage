@@ -1,0 +1,9 @@
+/* studio-jt project_body 방식:
+   fixed 히어로 위로 스크롤되며 덮는 '콘텐츠 전체' 래퍼.
+   margin-top 1뷰포트 + 불투명 배경 + z-index로 히어로 위를 덮는다. */
+.body {
+  position: relative;
+  z-index: 1;
+  margin-top: 100vh;
+  background: var(--color-white);
+}

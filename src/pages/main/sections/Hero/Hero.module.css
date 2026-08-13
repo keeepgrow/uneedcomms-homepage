@@ -1,12 +1,13 @@
-/* 스크롤 트랙: 이 구간(100vh)을 지나는 동안 히어로가 축소됨 */
+/* studio-jt 방식: 히어로를 화면에 고정(fixed) → 다음 섹션이 위로 스크롤되며 덮음 */
 .track {
-  height: 100vh;
+  position: relative;
 }
 
 .hero {
-  position: sticky;
-  top: 0;
-  height: 100vh; /* JS가 스크롤에 따라 760px까지 축소 */
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  z-index: 0;
   overflow: hidden;
   background: radial-gradient(120% 80% at 50% 45%, #1a1440 0%, #05030f 60%, #000000 100%);
   color: var(--color-white);
