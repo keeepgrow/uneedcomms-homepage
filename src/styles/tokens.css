@@ -1,3 +1,11 @@
+/* SUIT 가변 폰트 (self-host) */
+@font-face {
+  font-family: 'SUIT Variable';
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../assets/fonts/SUIT-Variable.woff2') format('woff2-variations');
+}
+
 :root {
   /* ── Colors (Figma variables) ───────────────────────── */
   --color-white: #ffffff;
@@ -23,6 +31,6 @@
   --radius-sm: 16px;
 
   /* ── Typography ─────────────────────────────────────── */
-  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system,
-    BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  --font-sans: 'SUIT Variable', 'Pretendard Variable', 'Pretendard',
+    -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
 }

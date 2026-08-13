@@ -87,6 +87,17 @@ export default function Hero() {
             </p>
           </div>
         </div>
+
+        {/* 스크롤 유도 화살표 (하단 중앙) */}
+        <div className={styles.scrollCue} aria-hidden="true">
+          <svg width="15" height="25" viewBox="0 0 15 25" fill="none">
+            <path
+              d="M7.20715 0V23.5M13.7072 17L7.20715 23.5L0.707153 17"
+              stroke="currentColor"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
       </section>
     </div>
   )

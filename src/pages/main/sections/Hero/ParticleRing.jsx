@@ -193,11 +193,11 @@ function Ring() {
       tgt[i * 3 + 2] = tz
       rad[i] = r
 
-      // 시작점: 중심의 한 점(작은 구름) → 회전하며 바깥으로 퍼져 커짐
+      // 시작점: 넓게 흩어져 있던 입자 → 안쪽으로 모여들며 블랙홀 형성
       const su = rand() * 2 - 1
       const sth = rand() * TAU
       const ss = Math.sqrt(1 - su * su)
-      const sR = rand() * 0.3
+      const sR = 4.0 + Math.pow(rand(), 0.4) * 5.0 // 4~9 넓게 분산
       st[i * 3] = ss * Math.cos(sth) * sR
       st[i * 3 + 1] = ss * Math.sin(sth) * sR
       st[i * 3 + 2] = su * sR

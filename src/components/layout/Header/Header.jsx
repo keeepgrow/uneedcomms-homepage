@@ -49,9 +49,9 @@ export default function Header() {
           </nav>
 
           <div className={styles.lang}>
-            <button type="button" className={styles.langActive}>KOR</button>
+            <button type="button" className={styles.langActive}>KR</button>
             <span className={styles.langDivider} aria-hidden="true" />
-            <button type="button" className={styles.langInactive}>ENG</button>
+            <button type="button" className={styles.langInactive}>EN</button>
           </div>
         </div>
       </div>
