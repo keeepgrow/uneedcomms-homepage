@@ -1,9 +1,9 @@
-/* SUIT 가변 폰트 (self-host) */
+/* SUIT 가변 폰트 (self-host) — 영문·한글 모두 SUIT */
 @font-face {
   font-family: 'SUIT Variable';
   font-weight: 100 900;
   font-display: swap;
-  src: url('../assets/fonts/SUIT-Variable.woff2') format('woff2-variations');
+  src: url('../assets/fonts/SUIT-Variable.woff2') format('woff2');
 }
 
 :root {
