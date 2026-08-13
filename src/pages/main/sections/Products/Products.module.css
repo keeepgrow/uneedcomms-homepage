@@ -31,18 +31,8 @@
   will-change: transform;
 }
 
-/* hover 정지는 hover를 지원하는 기기(데스크톱)에서만 —
-   모바일은 sticky :hover가 남아 재생을 막으므로 제외 */
-@media (hover: hover) {
-  .marquee:hover .track {
-    animation-play-state: paused;
-  }
-}
-
-/* 클릭/탭 토글 정지 (모바일 포함 모든 기기) */
-.marquee.paused .track {
-  animation-play-state: paused;
-}
+/* 정지/재생은 track의 인라인 animation-play-state(JS)로 제어 —
+   CSS :hover를 쓰지 않아 모바일 sticky hover 문제 없음 */
 
 @keyframes marquee {
   from {
@@ -94,7 +84,8 @@
 }
 
 .logo {
-  height: clamp(17px, 1.4vw, 23px);
+  /* 제품별 --logo-scale로 시각 크기 미세 보정 (기본 1) */
+  height: calc(clamp(17px, 1.4vw, 23px) * var(--logo-scale, 1));
   width: auto;
   display: block;
   flex: none;

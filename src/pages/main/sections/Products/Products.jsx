@@ -3,7 +3,11 @@ import { products } from '../../../../data/products.js'
 import styles from './Products.module.css'
 
 export default function Products() {
-  const [paused, setPaused] = useState(false)
+  // 마우스 hover(데스크톱)와 탭 토글(모바일)을 분리해서 제어
+  const [hovering, setHovering] = useState(false)
+  const [tapPaused, setTapPaused] = useState(false)
+  const paused = hovering || tapPaused
+
   // 이음새 없는 무한 루프를 위해 카드 목록을 2벌로
   const loop = [...products, ...products]
 
@@ -13,14 +17,23 @@ export default function Products() {
         <h2 className={styles.title}>유니드컴즈가 만드는 것, 더 나은 일의 방식</h2>
       </div>
 
-      {/* 왼쪽으로 천천히 흐르는 마퀴 · hover/클릭 시 멈춤 */}
+      {/* 왼쪽으로 흐르는 마퀴 · 마우스 hover(데스크톱) 또는 탭(모바일) 시 멈춤 */}
       <div
-        className={`${styles.marquee} ${paused ? styles.paused : ''}`}
-        onClick={() => setPaused((v) => !v)}
+        className={styles.marquee}
+        onPointerEnter={(e) => {
+          if (e.pointerType !== 'touch') setHovering(true)
+        }}
+        onPointerLeave={(e) => {
+          if (e.pointerType !== 'touch') setHovering(false)
+        }}
+        onClick={() => setTapPaused((v) => !v)}
         role="group"
-        aria-label="제품 목록 — 클릭하면 멈춥니다"
+        aria-label="제품 목록 — 탭/클릭하면 멈춥니다"
       >
-        <div className={styles.track}>
+        <div
+          className={styles.track}
+          style={{ animationPlayState: paused ? 'paused' : 'running' }}
+        >
           {loop.map((p, i) => (
             <article
               key={i}
@@ -35,6 +48,7 @@ export default function Products() {
               <div className={styles.cardFoot}>
                 <img
                   className={`${styles.logo} ${p.logoInvert ? styles.logoInvert : ''}`}
+                  style={p.logoScale ? { '--logo-scale': p.logoScale } : undefined}
                   src={p.logo}
                   alt={`${p.name} 로고`}
                 />

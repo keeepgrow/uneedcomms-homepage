@@ -12,7 +12,7 @@ import modoLogo from '../assets/products/modo-logo.png'
 
 export const products = [
   { id: 'keepgrow', name: 'KeepGrow', tag: 'MARKETING', tagline: '누구나 고용하는 AI 마케팅 직원', image: keepgrow, logo: keepgrowLogo },
-  { id: 'mesion', name: 'Mesion', tag: 'SALES', tagline: '비회원까지 닿는 세일즈 채널', image: mesion, logo: mesionLogo },
+  { id: 'mesion', name: 'Mesion', tag: 'SALES', tagline: '비회원까지 닿는 세일즈 채널', image: mesion, logo: mesionLogo, logoScale: 1.22 },
   { id: 'decageo', name: 'DecaGEO', tag: 'GEO', tagline: 'See where AI ranks you', image: decageo, logo: decaLogo },
   { id: 'modoai', name: 'ModoAI', tag: 'CREATIVE', tagline: 'CD, Creative Director', image: modoai, logo: modoLogo },
 ]

@@ -282,9 +282,28 @@
   }
 }
 
-/* 모바일: 결론 문구 둘째 줄("우리는 지혜로운 AI를 만듭니다.")이
-   한 줄에 들어오도록 뷰포트 비례로 폰트 축소 */
+/* 모바일: 히어로 전체 텍스트(S1 합체 · S2·S3 순차 · S4 결론) 크기 축소 */
+@keyframes s1ScaleMobile {
+  0%,
+  45% {
+    transform: translate(-50%, -50%) scale(1.7); /* 모바일 합체 배율 축소(오버플로 방지) */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
 @media (max-width: 520px) {
+  .s1 {
+    font-size: clamp(18px, 6.4vw, 30px);
+    /* 합체 배율을 모바일용(1.7)으로 교체 */
+    animation:
+      s1ScaleMobile 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards,
+      s1Out 0.4s ease 2s forwards;
+  }
+  .seq {
+    font-size: clamp(18px, 6.4vw, 30px);
+  }
   .s4main {
     font-size: clamp(17px, 6vw, 28px);
   }
