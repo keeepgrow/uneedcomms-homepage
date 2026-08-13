@@ -1,4 +1,12 @@
-/* SUIT 가변 폰트 (self-host) — 영문·한글 모두 SUIT */
+/* 영문: Inter 가변 폰트 (self-host, 라틴). 한글은 SUIT로 폴백 */
+@font-face {
+  font-family: 'Inter Variable';
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('../assets/fonts/Inter-Variable.woff2') format('woff2');
+}
+
+/* 한글: SUIT 가변 폰트 (self-host) */
 @font-face {
   font-family: 'SUIT Variable';
   font-weight: 100 900;
@@ -31,6 +39,6 @@
   --radius-sm: 16px;
 
   /* ── Typography ─────────────────────────────────────── */
-  --font-sans: 'SUIT Variable', 'Pretendard Variable', 'Pretendard',
+  --font-sans: 'Inter Variable', 'SUIT Variable', 'Pretendard Variable', 'Pretendard',
     -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
 }
