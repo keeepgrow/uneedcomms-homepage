@@ -9,7 +9,7 @@
   height: 100vh;
   z-index: 0;
   overflow: hidden;
-  background: radial-gradient(120% 80% at 50% 45%, #1a1440 0%, #05030f 60%, #000000 100%);
+  background: #000a23;
   color: var(--color-white);
 }
 

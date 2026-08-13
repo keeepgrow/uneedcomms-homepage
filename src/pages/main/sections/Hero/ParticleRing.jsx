@@ -440,7 +440,9 @@ export default function ParticleRing({ progressRef }) {
       dpr={[1, 1.5]}
       gl={{ antialias: true, powerPreference: 'high-performance' }}
     >
-      <color attach="background" args={['#000000']} />
+      {/* disableGamma 파이프라인은 리니어로 출력하므로, sRGB #000a23이 그대로 보이도록
+          배경색의 리니어 값을 (0, 10/255, 35/255)로 직접 지정 (숫자 args = 리니어) */}
+      <color attach="background" args={[0, 0.039216, 0.137255]} />
       <Stars />
       <Ring progressRef={progressRef} />
       <Effects disableGamma>
