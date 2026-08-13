@@ -22,32 +22,33 @@
   display: none;
 }
 
-/* ── 왼쪽으로 흐르는 마퀴 ─────────────────────── */
+/* ── 자동 흐름 + 좌우 스와이프(드래그) 뷰포트 ─────────── */
 .marquee {
   width: 100%;
-  overflow: hidden;
-  cursor: pointer;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab; /* 잡아서 스와이프 가능함을 암시 */
+  /* 스크롤바 숨김 (자동 흐름/드래그로 조작) */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* 가로 스크롤이 브라우저 뒤로가기 제스처로 새지 않도록 */
+  overscroll-behavior-x: contain;
+}
+
+.marquee::-webkit-scrollbar {
+  display: none;
 }
 
 .track {
   display: flex;
   width: max-content;
-  animation: marquee 42s linear infinite;
-  will-change: transform;
+  /* 드래그 중 텍스트 선택 방지 */
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-/* 정지/재생은 track의 인라인 animation-play-state(JS)로 제어 —
+/* 자동 흐름 속도/정지는 JS(rAF + scrollLeft)로 제어 —
    CSS :hover를 쓰지 않아 모바일 sticky hover 문제 없음 */
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    /* 카드 2벌 중 첫 벌 폭만큼 이동 → 이음새 없이 순환 */
-    transform: translateX(-50%);
-  }
-}
 
 /* 다크 카드 (Figma: #2a2a2c, 정사각) */
 .card {
@@ -133,6 +134,8 @@
   width: auto;
   display: block;
   flex: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /* 흰색 로고 PNG는 밝은 카드에서 보이도록 다크로 반전 (컬러 로고는 반전하지 않음) */
@@ -179,12 +182,5 @@
   /* 모바일에서만 두 줄로 분할 */
   .mBreak {
     display: inline;
-  }
-}
-
-/* 모션 최소화 설정 시 흐름 정지 */
-@media (prefers-reduced-motion: reduce) {
-  .track {
-    animation: none;
   }
 }
