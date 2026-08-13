@@ -27,9 +27,6 @@
   width: 100%;
   overflow: hidden;
   cursor: pointer;
-  /* 카드가 위로 30px 뽑히듯 올라갈 때 잘리지 않도록 상단 여유 공간 */
-  padding-top: 34px;
-  margin-top: -34px;
 }
 
 .track {
@@ -66,8 +63,7 @@
   background: #f4f4f4;
   color: var(--color-black);
   overflow: hidden;
-  transition: background 0.4s ease,
-    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: background 0.5s ease;
 }
 
 .name {
@@ -108,10 +104,8 @@
 }
 
 .cardActive {
-  /* 제품별 --accent 로 배경색 지정 (기본 #4057DF) */
+  /* 제품별 --accent 로 배경색 지정 (기본 #4057DF) — 위로 상승 없이 색만 부드럽게 전환 */
   background: var(--accent, #4057df);
-  /* 카드 전체가 위로 30px 뽑히듯 상승 */
-  transform: translateY(-30px);
 }
 
 /* 활성 시: 한글명(흰색) 유지, 태그라인 숨김, 하단 로고 숨김 */
