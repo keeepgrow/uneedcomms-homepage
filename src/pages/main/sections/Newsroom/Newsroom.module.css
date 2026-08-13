@@ -23,7 +23,7 @@
 
 .item {
   border-top: 1px solid #000111;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.4s ease;
 }
 
 /* 호버 시 해당 항목과 그 아래 구분선 숨김 (파란 블록이 대체) */
@@ -39,7 +39,7 @@
   padding: clamp(22px, 2.6vw, 32px) 20px;
   text-decoration: none;
   color: inherit;
-  transition: background 0.25s ease, color 0.2s ease;
+  transition: background 0.4s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
 }
 
 /* 호버: 파란 라운드 배경 + 흰 텍스트 */
@@ -57,10 +57,11 @@
   flex: none;
   width: 120px;
   white-space: nowrap;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--color-gray-05);
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+  font-size: 16px;
+  font-weight: 700;
+  color: #656d77;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
+  will-change: transform;
 }
 
 /* 제목 */
@@ -70,7 +71,8 @@
   letter-spacing: -0.02em;
   line-height: 1.35;
   color: var(--color-black);
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
+  will-change: transform;
 }
 
 .link:hover .label,
@@ -88,9 +90,9 @@
 /* 날짜 — 제목 옆 위첨자 */
 .date {
   margin-left: 12px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--color-gray-05);
+  font-size: 16px;
+  font-weight: 700;
+  color: #656d77;
   vertical-align: super;
   white-space: nowrap;
 }
