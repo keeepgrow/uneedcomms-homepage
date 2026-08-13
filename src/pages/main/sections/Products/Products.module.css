@@ -22,32 +22,25 @@
   display: none;
 }
 
-/* ── 자동 흐름 + 좌우 스와이프(드래그) 뷰포트 ─────────── */
+/* ── 자동 무한 흐름 + 좌우 스와이프(드래그) 뷰포트 ─────── */
 .marquee {
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   cursor: grab; /* 잡아서 스와이프 가능함을 암시 */
-  /* 스크롤바 숨김 (자동 흐름/드래그로 조작) */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  /* 가로 스크롤이 브라우저 뒤로가기 제스처로 새지 않도록 */
-  overscroll-behavior-x: contain;
-}
-
-.marquee::-webkit-scrollbar {
-  display: none;
+  /* 세로 스와이프는 페이지 스크롤, 가로 스와이프는 캐러셀 드래그 */
+  touch-action: pan-y;
 }
 
 .track {
   display: flex;
   width: max-content;
+  will-change: transform;
   /* 드래그 중 텍스트 선택 방지 */
   user-select: none;
   -webkit-user-select: none;
 }
 
-/* 자동 흐름 속도/정지는 JS(rAF + scrollLeft)로 제어 —
+/* 자동 흐름/정지·순환은 JS(rAF + transform 모듈러)로 제어 —
    CSS :hover를 쓰지 않아 모바일 sticky hover 문제 없음 */
 
 /* 다크 카드 (Figma: #2a2a2c, 정사각) */

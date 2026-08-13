@@ -2,37 +2,40 @@ import { useEffect, useRef, useState } from 'react'
 import { products } from '../../../../data/products.js'
 import styles from './Products.module.css'
 
+// 화면이 한 벌 폭보다 넓어도 이음새 없이 순환하도록 넉넉히 복제
+const COPIES = 4
+
 export default function Products() {
   // 데스크톱 hover, 모바일 탭 토글, 카드 확장 상태
   const [hovering, setHovering] = useState(false)
   const [tapPaused, setTapPaused] = useState(false)
   const [activeId, setActiveId] = useState(null)
 
-  // 스크롤 뷰포트 + 자동흐름/드래그 제어 refs
+  // 무한 흐름/드래그 제어 refs
   const viewportRef = useRef(null)
+  const trackRef = useRef(null)
+  const offsetRef = useRef(0) // 누적 스크롤량(px). 표시 시 한 벌 폭으로 모듈러 처리
+  const setWidthRef = useRef(0) // 한 벌(제품 전체) 폭
   const pausedRef = useRef(false)
-  const interactingRef = useRef(false)
-  const dragRef = useRef({ active: false, startX: 0, startScroll: 0, moved: false })
+  const dragRef = useRef({ active: false, axis: null, startX: 0, startY: 0, startOffset: 0, moved: false, captured: false })
 
-  // 이음새 없는 무한 루프를 위해 카드 목록을 2벌로
-  const loop = [...products, ...products]
+  const loop = []
+  for (let c = 0; c < COPIES; c++) loop.push(...products)
 
   // 자동 흐름 일시정지 조건(hover · 탭정지 · 카드확장) 동기화
   useEffect(() => {
     pausedRef.current = hovering || tapPaused || activeId !== null
   }, [hovering, tapPaused, activeId])
 
-  // 자동 스크롤(좌로 흐름) — 스와이프와 공존하도록 scrollLeft 기반으로 구동
+  // transform + 모듈러 기반의 진짜 무한 루프 (좌로 흐름, 양방향 스와이프)
   useEffect(() => {
-    const vp = viewportRef.current
-    if (!vp) return
+    const track = trackRef.current
+    if (!track) return
 
-    // 좌우 양방향 무한 스와이프 여유를 위해 가운데(한 벌 폭)에서 시작
-    const recenter = () => {
-      const half = vp.scrollWidth / 2
-      if (half > 0) vp.scrollLeft = half
+    const measure = () => {
+      setWidthRef.current = track.scrollWidth / COPIES
     }
-    recenter()
+    measure()
 
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     let raf
@@ -41,74 +44,77 @@ export default function Products() {
       if (last == null) last = t
       const dt = t - last
       last = t
-      const half = vp.scrollWidth / 2
-      if (half > 0) {
-        if (!reduce && !pausedRef.current && !interactingRef.current) {
+      const sw = setWidthRef.current
+      if (sw > 0) {
+        if (!reduce && !pausedRef.current && !dragRef.current.active) {
           // 기존 마퀴와 동일한 페이스(한 벌 42초)
-          vp.scrollLeft += (half / 42) * (dt / 1000)
+          offsetRef.current += (sw / 42) * (dt / 1000)
         }
-        // 무한 루프: 가운데 밴드[0.5·half ~ 1.5·half] 유지 (드래그 기준점도 함께 보정)
-        if (vp.scrollLeft >= half * 1.5) {
-          vp.scrollLeft -= half
-          if (dragRef.current.active) dragRef.current.startScroll -= half
-        } else if (vp.scrollLeft <= half * 0.5) {
-          vp.scrollLeft += half
-          if (dragRef.current.active) dragRef.current.startScroll += half
-        }
+        // 한 벌 폭으로 모듈러 → 무한 순환 (음수 드래그도 정상 래핑)
+        const m = ((offsetRef.current % sw) + sw) % sw
+        track.style.transform = `translate3d(${-m}px, 0, 0)`
       }
       raf = requestAnimationFrame(step)
     }
     raf = requestAnimationFrame(step)
-    window.addEventListener('resize', recenter)
+    window.addEventListener('resize', measure)
     return () => {
       cancelAnimationFrame(raf)
-      window.removeEventListener('resize', recenter)
+      window.removeEventListener('resize', measure)
     }
   }, [])
 
-  // 데스크톱 마우스 드래그 스와이프 (터치는 네이티브 스크롤이 처리)
-  // 포인터 캡처는 "실제로 움직였을 때"만 걸어 클릭(카드 확장) 이벤트를 절대 가로채지 않게 함
+  // 좌우 스와이프(드래그) — 마우스/터치 공통, 수직 제스처는 페이지 스크롤에 양보
   const onPointerDown = (e) => {
-    interactingRef.current = true
-    const vp = viewportRef.current
-    dragRef.current = {
-      active: e.pointerType === 'mouse', // 마우스만 수동 드래그
-      startX: e.clientX,
-      startScroll: vp ? vp.scrollLeft : 0,
-      moved: false,
-      captured: false,
-    }
+    const d = dragRef.current
+    d.active = true
+    d.axis = null
+    d.moved = false
+    d.captured = false
+    d.startX = e.clientX
+    d.startY = e.clientY
+    d.startOffset = offsetRef.current
   }
   const onPointerMove = (e) => {
     const d = dragRef.current
     if (!d.active) return
-    const vp = viewportRef.current
     const dx = e.clientX - d.startX
-    if (Math.abs(dx) > 6) {
-      d.moved = true // 클릭/드래그 구분 임계값
-      if (!d.captured) {
-        vp.setPointerCapture?.(e.pointerId)
-        vp.style.cursor = 'grabbing'
-        d.captured = true
+    const dy = e.clientY - d.startY
+    if (!d.axis) {
+      if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return // 임계값 전까진 판정 보류
+      d.axis = Math.abs(dx) >= Math.abs(dy) ? 'x' : 'y'
+      if (d.axis === 'y') {
+        // 수직 스와이프 → 우리 드래그 종료, 브라우저 페이지 스크롤에 양보
+        d.active = false
+        return
       }
+      d.moved = true
+      const vp = viewportRef.current
+      vp.setPointerCapture?.(e.pointerId)
+      vp.style.cursor = 'grabbing'
+      d.captured = true
     }
-    if (d.moved) vp.scrollLeft = d.startScroll - dx
+    if (d.axis === 'x') offsetRef.current = d.startOffset - dx
   }
   const endPointer = (e) => {
-    interactingRef.current = false
     const d = dragRef.current
-    if (d.active) {
-      d.active = false
+    if (d.captured) {
       const vp = viewportRef.current
-      if (d.captured) {
-        vp.style.cursor = 'grab'
-        vp.releasePointerCapture?.(e.pointerId)
-      }
+      vp.style.cursor = 'grab'
+      vp.releasePointerCapture?.(e.pointerId)
     }
+    d.active = false
+  }
+
+  // 카드 밖(섹션 여백·갤러리 빈 곳) 클릭 → 확장 닫고 자동 흐름 재개
+  const onBackgroundClick = () => {
+    if (dragRef.current.moved) return // 스와이프 직후 클릭은 무시
+    setActiveId(null)
+    setTapPaused(false)
   }
 
   return (
-    <section className={styles.section} id="products">
+    <section className={styles.section} id="products" onClick={onBackgroundClick}>
       <div className="container">
         <h2 className={styles.title}>
           유니드컴즈가 만드는 것,{' '}
@@ -116,7 +122,7 @@ export default function Products() {
         </h2>
       </div>
 
-      {/* 자동 흐름 + 좌우 스와이프(드래그) · hover/탭 시 정지 · 카드 클릭 시 확장 */}
+      {/* 자동 무한 흐름 + 좌우 스와이프 · hover/탭 시 정지 · 카드 클릭 시 확장 */}
       <div
         className={styles.marquee}
         ref={viewportRef}
@@ -130,16 +136,10 @@ export default function Products() {
         onPointerMove={onPointerMove}
         onPointerUp={endPointer}
         onPointerCancel={endPointer}
-        onClick={() => {
-          // 드래그(스와이프) 후의 클릭은 무시
-          if (dragRef.current.moved) return
-          setActiveId(null)
-          setTapPaused(false)
-        }}
         role="group"
         aria-label="제품 목록"
       >
-        <div className={styles.track}>
+        <div className={styles.track} ref={trackRef}>
           {loop.map((p, i) => {
             const active = activeId === p.id
             return (
