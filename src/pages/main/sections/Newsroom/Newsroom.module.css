@@ -47,7 +47,6 @@
 .link {
   display: flex;
   align-items: baseline;
-  gap: clamp(20px, 4vw, 56px);
   padding: clamp(22px, 2.6vw, 32px) 20px;
   text-decoration: none;
   color: inherit;
@@ -68,12 +67,16 @@
 .label {
   flex: none;
   width: 120px;
+  margin-right: clamp(20px, 4vw, 56px);
+  overflow: hidden;
   white-space: nowrap;
   font-size: 16px;
   font-weight: 700;
   color: #656d77;
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease;
-  will-change: transform;
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    margin 0.45s cubic-bezier(0.22, 1, 0.36, 1), color 0.25s ease,
+    opacity 0.25s ease;
+  will-change: width;
 }
 
 /* 제목 (라벨 옆 영역을 채우고, 안의 텍스트는 width에 맞춰 말줄임) */
@@ -124,10 +127,21 @@
   padding-right: 56px;
 }
 
-.link:hover .label,
-.link:hover .headline,
-.link:hover .date {
+.link:hover .headline {
   color: #ffffff;
+}
+
+/* 호버: 언론사·날짜는 폭까지 접혀 사라지고 제목이 전체 폭으로 확장 */
+.link:hover .label {
+  width: 0;
+  margin-right: 0;
+  opacity: 0;
+}
+
+.link:hover .date {
+  max-width: 0;
+  margin-left: 0;
+  opacity: 0;
 }
 
 /* 호버: 말줄임 숨기고 제목을 왼쪽으로 흐르게 */
@@ -164,30 +178,36 @@
 .date {
   flex: none;
   margin-left: 12px;
+  max-width: 200px;
+  overflow: hidden;
   font-size: 16px;
   font-weight: 700;
   color: #656d77;
   white-space: nowrap;
   transform: translateY(-0.35em); /* 위첨자 느낌 */
+  transition: max-width 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    margin 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease,
+    color 0.25s ease;
 }
 
 @media (max-width: 560px) {
   .link {
-    flex-wrap: wrap;
-    gap: 6px;
-    padding: 22px 2px;
+    padding: 18px 2px;
   }
+  /* 언론사·제목·날짜를 한 줄로 유지 (언론사명이 길면 말줄임) */
   .label {
-    width: 100%;
+    width: auto;
+    max-width: 88px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 13px;
   }
   .headline {
-    font-size: 17px;
+    font-size: 16px;
   }
   .date {
-    display: block;
-    margin-left: 0;
-    margin-top: 6px;
-    vertical-align: baseline;
+    margin-left: 8px;
+    font-size: 12px;
   }
 }

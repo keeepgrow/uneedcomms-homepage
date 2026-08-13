@@ -18,6 +18,7 @@ export default function Products() {
   const setWidthRef = useRef(0) // 한 벌(제품 전체) 폭
   const pausedRef = useRef(false)
   const dragRef = useRef({ active: false, axis: null, startX: 0, startY: 0, startOffset: 0, moved: false, captured: false })
+  const snapRef = useRef(null) // 스와이프 종료 후 카드 경계로 튕겨 정렬하는 트윈
 
   const loop = []
   for (let c = 0; c < COPIES; c++) loop.push(...products)
@@ -46,7 +47,15 @@ export default function Products() {
       last = t
       const sw = setWidthRef.current
       if (sw > 0) {
-        if (!reduce && !pausedRef.current && !dragRef.current.active) {
+        const anim = snapRef.current
+        if (anim) {
+          // 카드 경계로 부드럽게 스냅 (easeOutCubic)
+          anim.elapsed += dt
+          const p = Math.min(1, anim.elapsed / anim.dur)
+          const e = 1 - Math.pow(1 - p, 3)
+          offsetRef.current = anim.from + (anim.to - anim.from) * e
+          if (p >= 1) snapRef.current = null
+        } else if (!reduce && !pausedRef.current && !dragRef.current.active) {
           // 기존 마퀴와 동일한 페이스(한 벌 42초)
           offsetRef.current += (sw / 42) * (dt / 1000)
         }
@@ -66,6 +75,7 @@ export default function Products() {
 
   // 좌우 스와이프(드래그) — 마우스/터치 공통, 수직 제스처는 페이지 스크롤에 양보
   const onPointerDown = (e) => {
+    snapRef.current = null // 진행 중이던 스냅 취소
     const d = dragRef.current
     d.active = true
     d.axis = null
@@ -102,6 +112,14 @@ export default function Products() {
       const vp = viewportRef.current
       vp.style.cursor = 'grab'
       vp.releasePointerCapture?.(e.pointerId)
+    }
+    // 스와이프 종료 → 가장 가까운 카드 경계로 딱 스냅
+    if (d.moved) {
+      const cardStep = setWidthRef.current / products.length
+      if (cardStep > 0) {
+        const target = Math.round(offsetRef.current / cardStep) * cardStep
+        snapRef.current = { from: offsetRef.current, to: target, dur: 340, elapsed: 0 }
+      }
     }
     d.active = false
   }
