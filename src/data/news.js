@@ -6,7 +6,7 @@ export const news = [
     date: '2026-04-02',
     title:
       '네이버 CRM ‘메시온’, 비회원까지 잡았다…출시 3개월 만에 2억 건 발송 돌파',
-    href: '#',
+    href: 'https://www.mediafine.co.kr/news/articleView.html?idxno=76658',
     featured: true,
   },
   {
@@ -14,14 +14,14 @@ export const news = [
     source: '머니투데이',
     date: '2026-02-02',
     title: "카페24, 유니드컴즈 '2026년 1월 베스트 파트너' 선정",
-    href: '#',
+    href: 'https://www.mt.co.kr/industry/2026/02/02/2026020211534330158',
   },
   {
     no: '03',
     source: '더벨',
     date: '2025-09-05',
     title: '[네이버 벤처투자 사업 점검] 커머스 특화 AI 집중, 네이버쇼핑과 시너지 무궁무진',
-    href: '#',
+    href: 'https://www.thebell.co.kr/front/newsview.asp?click=F&key=202509030944070480109262',
   },
   {
     no: '04',

@@ -15,7 +15,10 @@ export default function Products() {
   return (
     <section className={styles.section} id="products">
       <div className="container">
-        <h2 className={styles.title}>유니드컴즈가 만드는 것, 더 나은 일의 방식</h2>
+        <h2 className={styles.title}>
+          유니드컴즈가 만드는 것,{' '}
+          <br className={styles.mBreak} />더 나은 일의 방식
+        </h2>
       </div>
 
       {/* 왼쪽으로 흐르는 마퀴 · hover/탭 시 멈춤 · 카드 클릭 시 확장 */}

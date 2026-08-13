@@ -11,9 +11,10 @@
 
 .title {
   text-align: center;
-  font-size: 32px;
+  /* PC 32px, 모바일 최소 28px */
+  font-size: clamp(28px, 3vw, 32px);
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.3;
   letter-spacing: -0.02em;
   color: var(--color-white);
   margin-bottom: 48px;
@@ -59,9 +60,6 @@
 @media (max-width: 768px) {
   .card {
     padding: 48px 20px 56px;
-  }
-  .title {
-    font-size: 24px;
   }
   .tile {
     width: auto !important;
