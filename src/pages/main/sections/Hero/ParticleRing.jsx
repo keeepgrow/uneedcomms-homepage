@@ -440,7 +440,7 @@ export default function ParticleRing({ progressRef }) {
       dpr={[1, 1.5]}
       gl={{ antialias: true, powerPreference: 'high-performance' }}
     >
-      <color attach="background" args={['#000a23']} />
+      <color attach="background" args={['#000000']} />
       <Stars />
       <Ring progressRef={progressRef} />
       <Effects disableGamma>
