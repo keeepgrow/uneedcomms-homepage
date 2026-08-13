@@ -67,18 +67,16 @@ export default function Products() {
   }, [])
 
   // 데스크톱 마우스 드래그 스와이프 (터치는 네이티브 스크롤이 처리)
+  // 포인터 캡처는 "실제로 움직였을 때"만 걸어 클릭(카드 확장) 이벤트를 절대 가로채지 않게 함
   const onPointerDown = (e) => {
     interactingRef.current = true
-    if (e.pointerType === 'mouse') {
-      const vp = viewportRef.current
-      dragRef.current = {
-        active: true,
-        startX: e.clientX,
-        startScroll: vp.scrollLeft,
-        moved: false,
-      }
-      vp.style.cursor = 'grabbing'
-      vp.setPointerCapture?.(e.pointerId)
+    const vp = viewportRef.current
+    dragRef.current = {
+      active: e.pointerType === 'mouse', // 마우스만 수동 드래그
+      startX: e.clientX,
+      startScroll: vp ? vp.scrollLeft : 0,
+      moved: false,
+      captured: false,
     }
   }
   const onPointerMove = (e) => {
@@ -86,8 +84,15 @@ export default function Products() {
     if (!d.active) return
     const vp = viewportRef.current
     const dx = e.clientX - d.startX
-    if (Math.abs(dx) > 6) d.moved = true // 클릭/드래그 구분 임계값
-    vp.scrollLeft = d.startScroll - dx
+    if (Math.abs(dx) > 6) {
+      d.moved = true // 클릭/드래그 구분 임계값
+      if (!d.captured) {
+        vp.setPointerCapture?.(e.pointerId)
+        vp.style.cursor = 'grabbing'
+        d.captured = true
+      }
+    }
+    if (d.moved) vp.scrollLeft = d.startScroll - dx
   }
   const endPointer = (e) => {
     interactingRef.current = false
@@ -95,8 +100,10 @@ export default function Products() {
     if (d.active) {
       d.active = false
       const vp = viewportRef.current
-      vp.style.cursor = 'grab'
-      vp.releasePointerCapture?.(e.pointerId)
+      if (d.captured) {
+        vp.style.cursor = 'grab'
+        vp.releasePointerCapture?.(e.pointerId)
+      }
     }
   }
 
