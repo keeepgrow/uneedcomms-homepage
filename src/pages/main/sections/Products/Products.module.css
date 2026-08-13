@@ -22,6 +22,9 @@
   width: 100%;
   overflow: hidden;
   cursor: pointer;
+  /* 카드가 위로 30px 뽑히듯 올라갈 때 잘리지 않도록 상단 여유 공간 */
+  padding-top: 34px;
+  margin-top: -34px;
 }
 
 .track {
@@ -58,6 +61,8 @@
   background: #f4f4f4;
   color: var(--color-black);
   overflow: hidden;
+  transition: background 0.4s ease,
+    transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .name {
@@ -83,6 +88,46 @@
   gap: 12px;
 }
 
+/* ── 클릭 시 확장(파파고 배너 느낌) ─────────────── */
+/* 설명: 기본 숨김, 활성 시 태그라인(부컨텐츠) 자리에 노출 */
+.detail {
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.55;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.45s ease, max-height 0.45s ease, margin-top 0.45s ease;
+}
+
+.cardActive {
+  /* 제품별 --accent 로 배경색 지정 (기본 #4057DF) */
+  background: var(--accent, #4057df);
+  /* 카드 전체가 위로 30px 뽑히듯 상승 */
+  transform: translateY(-30px);
+}
+
+/* 활성 시: 한글명(흰색) 유지, 태그라인 숨김, 하단 로고 숨김 */
+.cardActive .name {
+  color: #ffffff;
+}
+
+.cardActive .desc {
+  display: none;
+}
+
+.cardActive .cardFoot .logo {
+  opacity: 0;
+}
+
+.cardActive .detail {
+  max-height: 260px;
+  opacity: 1;
+  margin-top: 16px; /* 뒤집기 전 태그라인이 있던 부컨텐츠 위치 */
+}
+
 .logo {
   /* 제품별 --logo-scale로 시각 크기 미세 보정 (기본 1) */
   height: calc(clamp(17px, 1.4vw, 23px) * var(--logo-scale, 1));
@@ -96,9 +141,32 @@
   filter: invert(1);
 }
 
-.plus {
+/* +↔− 모핑 아이콘 (회전 + 세로선 수축) */
+.toggleIcon {
   flex: none;
   color: #000111;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s ease;
+}
+
+.toggleIcon line {
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.lineV {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cardActive .toggleIcon {
+  color: #ffffff;
+  transform: rotate(180deg);
+}
+
+.cardActive .lineV {
+  transform: scaleY(0);
 }
 
 /* 모바일: 한 장이 크게 부각되도록 (컨테이너가 작아지지 않게) */
