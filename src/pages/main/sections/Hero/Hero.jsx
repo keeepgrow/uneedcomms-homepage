@@ -2,7 +2,8 @@ import { Suspense, lazy, useEffect, useRef } from 'react'
 import styles from './Hero.module.css'
 
 // three.js 번들이 크므로 지연 로딩
-const ParticleField = lazy(() => import('./ParticleRing.jsx'))
+// [실험] eventHorizon 배경. 원복: git reset --hard 9193844
+const GalaxyEventHorizon = lazy(() => import('./GalaxyEventHorizon.jsx'))
 const SplashCursor = lazy(() => import('../../../../components/ui/SplashCursor.jsx'))
 
 const MIN_HEIGHT = 760 // 스크롤 후 도달할 '지금 사이즈'
@@ -45,7 +46,7 @@ export default function Hero() {
         {/* 배경: 3D 파티클 지혜의 고리 + 유체 커서 */}
         <div className={styles.bg}>
           <Suspense fallback={null}>
-            <ParticleField />
+            <GalaxyEventHorizon />
           </Suspense>
           <Suspense fallback={null}>
             <SplashCursor
