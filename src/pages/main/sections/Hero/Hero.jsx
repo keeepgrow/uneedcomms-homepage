@@ -1,14 +1,10 @@
-import { Suspense, lazy, useEffect, useRef } from 'react'
-import ErrorBoundary from '../../../../components/common/ErrorBoundary.jsx'
+import { useEffect, useRef } from 'react'
 import styles from './Hero.module.css'
-
-// three.js 번들이 크므로 지연 로딩
-const ParticleField = lazy(() => import('./ParticleRing.jsx'))
-const SplashCursor = lazy(() => import('../../../../components/ui/SplashCursor.jsx'))
+import heroBg from '../../../../assets/hero-bg.jpg'
 
 export default function Hero() {
   // 히어로는 fixed로 화면에 고정되고, 다음 섹션이 위로 스크롤되며 덮는다.
-  // 덮이는 동안 블랙홀 파티클이 산개(progressRef)하고, 결론 문구는 화살표 방향으로 흩어진다.
+  // 덮이는 동안 결론 문구는 화살표 방향으로 흩어진다.
   const progressRef = useRef(0)
   const s4mainRef = useRef(null)
   const s4subRef = useRef(null)
@@ -58,28 +54,9 @@ export default function Hero() {
   return (
     <div className={styles.track} id="top">
       <section className={styles.hero}>
-        {/* 배경: 3D 파티클 지혜의 고리 + 유체 커서 */}
+        {/* 배경: 이미지 — 프레임보다 크게 시작해 부드럽게 줄어들며 페이드인 */}
         <div className={styles.bg}>
-          <ErrorBoundary>
-            <Suspense fallback={null}>
-              <ParticleField progressRef={progressRef} />
-            </Suspense>
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <Suspense fallback={null}>
-              <SplashCursor
-                SIM_RESOLUTION={128}
-                DYE_RESOLUTION={1440}
-                DENSITY_DISSIPATION={3.5}
-                VELOCITY_DISSIPATION={2}
-                PRESSURE={0.1}
-                CURL={3}
-                SPLAT_RADIUS={0.2}
-                SPLAT_FORCE={6000}
-                COLOR_UPDATE_SPEED={10}
-              />
-            </Suspense>
-          </ErrorBoundary>
+          <img className={styles.bgImg} src={heroBg} alt="" aria-hidden="true" />
           {/* 텍스트 가독성을 위한 스크림 */}
           <div className={styles.scrim} />
         </div>

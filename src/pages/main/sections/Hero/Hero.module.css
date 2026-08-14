@@ -13,15 +13,38 @@
   color: var(--color-white);
 }
 
-/* 배경 영상 레이어 (텍스트 뒤) — 로드 후 페이드인 */
+/* 배경 레이어 (텍스트 뒤) — 이미지가 스케일/페이드로 들어오므로 클립만 담당 */
 .bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
-  opacity: 0;
-  animation: bgIn 1s ease 0.2s forwards;
+}
+
+/* 히어로 배경 이미지 — 프레임보다 크게 시작 → 부드럽게 프레임에 맞춰 줄며 페이드인 */
+.bgImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 50%; /* 블랙홀(우측 상단)이 잘 보이도록 살짝 우측 */
+  display: block;
+  transform-origin: center;
+  /* 아주 천천히·부드럽게 — 전 구간 고르게 움직이도록 ease-in-out (ditther 히어로 느낌) */
+  animation: heroImgIn 5s cubic-bezier(0.37, 0, 0.63, 1) both;
+}
+
+@keyframes heroImgIn {
+  from {
+    opacity: 0;
+    transform: scale(1.16);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* 원본 영상은 화면에서 숨기고 canvas 렌더 소스로만 사용 */
