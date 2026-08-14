@@ -123,8 +123,8 @@
 }
 
 .logo {
-  /* 제품별 --logo-scale로 시각 크기 미세 보정 (기본 1) */
-  height: calc(clamp(17px, 1.4vw, 23px) * var(--logo-scale, 1));
+  /* 제품별 --logo-scale로 시각 크기 미세 보정 (기본 1) · 전체 1.3배 확대 */
+  height: calc(clamp(17px, 1.4vw, 23px) * 1.3 * var(--logo-scale, 1));
   width: auto;
   display: block;
   flex: none;
