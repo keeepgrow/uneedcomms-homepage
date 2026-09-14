@@ -16,6 +16,11 @@ function ScrollManager() {
     document.body.style.background = LIGHT_ROUTES.includes(pathname)
       ? 'var(--color-white)'
       : ''
+
+    // 메인은 고무줄(오버스크롤 바운스) 효과 제거, 서브페이지는 기본값
+    const noBounce = pathname === '/' ? 'none' : ''
+    document.documentElement.style.overscrollBehavior = noBounce
+    document.body.style.overscrollBehavior = noBounce
   }, [pathname])
 
   useEffect(() => {
