@@ -96,6 +96,14 @@
   transform: translateY(-1px);
 }
 
+.chevron {
+  transition: transform 0.25s ease;
+}
+
+.chevronUp {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
