@@ -4,20 +4,27 @@
   left: 0;
   right: 0;
   z-index: 100;
-  height: 96px;
-  background: transparent;
-  /* 히어로(밝은 하늘) 위 기본 = 다크 텍스트 */
-  color: var(--color-ink);
-  transition: background 0.3s, backdrop-filter 0.3s, color 0.3s, height 0.3s;
+  height: 126px;
+  background: transparent; /* 최상단 = 투명 */
+  color: var(--color-ink); /* 텍스트/로고 검정 */
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.3s ease;
+  will-change: transform;
 }
 
-/* 검정 섹션 위 → 화이트 텍스트 + 프로스트 다크 배경 */
-.header.onDark {
-  color: var(--color-white);
-  background: rgba(10, 10, 12, 0.6);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  height: 78px;
+/* 서브페이지 — 최상단에서도 하단 구분선 노출 */
+.header.bordered {
+  border-bottom: 1px solid #ededed;
+}
+
+/* 스크롤 시 흰 배경 (그림자 없음) */
+.header.scrolled {
+  background: var(--color-white);
+}
+
+/* 아래로 스크롤 시 위로 감춤 */
+.header.hidden {
+  transform: translateY(-100%);
 }
 
 .inner {
@@ -34,11 +41,10 @@
 }
 
 .logoMark {
-  height: 26px;
+  height: 28px;
   width: auto;
   display: block;
   color: inherit;
-  transition: color 0.3s;
 }
 
 .right {
@@ -54,47 +60,44 @@
 }
 
 .navLink {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   color: inherit;
-  opacity: 0.9;
   transition: opacity 0.2s;
 }
 
 .navLink:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .lang {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 15px;
-  font-weight: 600;
+  gap: 11px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .langActive {
   color: inherit;
+  font-weight: 700;
 }
 
 .langInactive {
   color: inherit;
-  opacity: 0.45;
+  opacity: 0.5;
 }
 
 .langDivider {
   width: 1px;
-  height: 12px;
+  height: 8px;
   background: currentColor;
-  opacity: 0.35;
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {
   .header {
-    height: 72px;
-  }
-  .header.onDark {
-    height: 64px;
+    height: 80px;
   }
   .nav {
     display: none;

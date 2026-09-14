@@ -3,13 +3,13 @@ import wave from '../../../../assets/making/trend-wave.png'
 import sphere from '../../../../assets/making/flywheel-sphere.png'
 import diagram from '../../../../assets/making/flywheel-diagram.svg'
 
-// 플라이휠 다이어그램 라벨 — Figma Frame 242(556×359) 좌표 기준 (%)
+// 플라이휠 다이어그램 라벨 — Figma Frame 242(556×358.98) inset(%) 기준
 const FW_LABELS = [
-  { text: '비지니스 기회', left: '41%', top: '0%' },
-  { text: '수익창출', left: '0%', top: '38.4%' },
-  { text: '사업부 신설', left: '87.6%', top: '38.4%' },
-  { text: '고객창출', left: '10.6%', top: '88.9%' },
-  { text: '사업부 플라이휠\n(4개 사업부)', left: '76.8%', top: '88.9%' },
+  { text: '비지니스 기회', style: { top: '0', left: '41.01%' } },
+  { text: '수익창출', style: { top: '38.44%', left: '0' } },
+  { text: '사업부 신설', style: { top: '38.44%', left: '87.59%' } },
+  { text: '고객창출', style: { top: '88.86%', left: '10.61%' } },
+  { text: '사업부 플라이휠\n(4개 사업부)', style: { top: '88.86%', left: '76.8%' } },
 ]
 
 export default function Making() {
@@ -28,17 +28,12 @@ export default function Making() {
               읽습니다. 모두가 트렌드라 부르기 전에, 제품을 내놓습니다.
             </p>
 
-            <div className={styles.waveWrap}>
-              <div className={styles.annotation}>
-                <span className={styles.annoDot} />
-                <div className={styles.annoLine} />
-                <div className={styles.annoText}>
-                  <span className={styles.annoHead}>트렌드 시그널</span>
-                  <span className={styles.annoSub}>시장이 움직이기 시작했다는 신호</span>
-                </div>
-              </div>
-              <img className={styles.wave} src={wave} alt="" aria-hidden="true" />
-            </div>
+            <img className={styles.wave} src={wave} alt="" aria-hidden="true" />
+
+            <span className={styles.annoLine} aria-hidden="true" />
+            <span className={styles.annoDot} aria-hidden="true" />
+            <span className={styles.annoHead}>트렌드 시그널</span>
+            <span className={styles.annoSub}>시장이 움직이기 시작했다는 신호</span>
           </article>
 
           {/* 플라이휠 (블루 카드) */}
@@ -50,21 +45,24 @@ export default function Making() {
               플라이휠을 빠르게 하는가.
             </p>
 
-            <div className={styles.fwGraphic}>
-              <img className={styles.sphere} src={sphere} alt="" aria-hidden="true" />
-              <div className={styles.diagram}>
-                <img className={styles.diagramSvg} src={diagram} alt="" aria-hidden="true" />
-                <span className={styles.fwCenter}>UNEEDCOMMS</span>
-                {FW_LABELS.map((l) => (
-                  <span
-                    key={l.text}
-                    className={styles.fwLabel}
-                    style={{ left: l.left, top: l.top }}
-                  >
-                    {l.text}
-                  </span>
-                ))}
+            {/* 하프톤 구체 (원본 흰배경 + mix-blend-multiply, -90° 회전 크롭) */}
+            <div className={styles.sphere} aria-hidden="true">
+              <div className={styles.sphereRot}>
+                <div className={styles.sphereBox}>
+                  <img className={styles.sphereImg} src={sphere} alt="" />
+                </div>
               </div>
+            </div>
+
+            {/* 플라이휠 다이어그램 */}
+            <div className={styles.diagram} aria-hidden="true">
+              <img className={styles.diagramSvg} src={diagram} alt="" />
+              <span className={`${styles.fwLabel} ${styles.fwCenter}`}>UNEEDCOMMS</span>
+              {FW_LABELS.map((l) => (
+                <span key={l.text} className={styles.fwLabel} style={l.style}>
+                  {l.text}
+                </span>
+              ))}
             </div>
           </article>
         </div>

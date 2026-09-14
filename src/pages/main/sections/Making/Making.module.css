@@ -5,8 +5,8 @@
 
 .title {
   text-align: center;
-  font-size: clamp(30px, 3.4vw, 48px);
-  font-weight: 700;
+  font-size: clamp(32px, 3.4vw, 56px);
+  font-weight: 400;
   letter-spacing: -0.02em;
   color: var(--color-white);
   margin-bottom: clamp(40px, 5vw, 72px);
@@ -18,147 +18,156 @@
   gap: 24px;
 }
 
+/* 카드 = Figma 644×615 좌표계. cqw(카드폭 기준)로 스케일. 모서리 직각. */
 .card {
   position: relative;
-  border-radius: var(--radius-md);
+  container-type: inline-size;
+  aspect-ratio: 644 / 615;
   overflow: hidden;
-  padding: clamp(32px, 3.4vw, 50px);
-  display: flex;
-  flex-direction: column;
-  min-height: 560px;
 }
 
-.cardTitle {
-  font-size: clamp(22px, 2vw, 28px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 22px;
-}
-
-.cardDesc {
-  font-size: 15px;
-  line-height: 1.75;
-  max-width: 520px;
-}
-
-/* ── 트렌드 시그널 (흰 카드) ─────────────────────────── */
 .trend {
   background: var(--color-white);
   color: var(--color-ink);
 }
 
-.trend .cardDesc {
-  color: #333;
-}
-
-.waveWrap {
-  position: relative;
-  margin-top: auto;
-  padding-top: 60px;
-}
-
-.wave {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.annotation {
-  position: absolute;
-  left: 42%;
-  top: 24px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.annoDot {
-  position: absolute;
-  left: -4px;
-  top: -4px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--color-brand);
-}
-
-.annoLine {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  height: 150px;
-  background: var(--color-brand);
-}
-
-.annoText {
-  position: absolute;
-  left: 12px;
-  top: -6px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  white-space: nowrap;
-}
-
-.annoHead {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--color-ink);
-}
-
-.annoSub {
-  font-size: 13px;
-  color: var(--color-gray-05);
-}
-
-/* ── 플라이휠 (블루 카드) ────────────────────────────── */
 .flywheel {
   background: var(--color-brand);
   color: var(--color-white);
 }
 
-.flywheel .cardDesc {
-  color: rgba(255, 255, 255, 0.92);
+/* ── 공통 제목/설명 (절대배치) ───────────────────────── */
+.cardTitle {
+  position: absolute;
+  top: 7.764cqw;
+  left: 7.764cqw;
+  margin: 0;
+  font-size: 4.658cqw;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
-.fwGraphic {
-  position: relative;
-  margin-top: auto;
-  width: 100%;
-  aspect-ratio: 556 / 359;
+.cardDesc {
+  position: absolute;
+  top: 18.012cqw;
+  left: 7.764cqw;
+  width: 84.472cqw;
+  margin: 0;
+  font-size: 2.795cqw;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
+/* ── 트렌드 시그널 웨이브 (원본 흰배경 + multiply) ───────── */
+.wave {
+  position: absolute;
+  left: -11.491cqw;
+  top: 36.18cqw;
+  width: 124.224cqw;
+  height: 69.876cqw;
+  max-width: none; /* 전역 img max-width:100% 무효화 (800px 유지) */
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* 주석: 파란 세로선 + 점 + 텍스트 */
+.annoLine {
+  position: absolute;
+  left: 42.702cqw;
+  top: 40.373cqw;
+  transform: translateX(-50%); /* 점과 동일 중심축 */
+  width: 1px;
+  height: 21.739cqw;
+  background: var(--color-brand);
+}
+
+.annoDot {
+  position: absolute;
+  left: 42.702cqw; /* 선과 동일 x → translateX(-50%)로 정확히 중앙 정렬 */
+  top: 40.373cqw;
+  transform: translate(-50%, -50%);
+  width: 1.24cqw;
+  height: 1.24cqw;
+  border-radius: 50%;
+  background: var(--color-brand);
+}
+
+.annoHead {
+  position: absolute;
+  left: 44.255cqw;
+  top: 39.286cqw;
+  font-size: 2.174cqw;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+.annoSub {
+  position: absolute;
+  left: 44.255cqw;
+  top: 42.702cqw;
+  font-size: 2.174cqw;
+  color: #a3a3a3;
+  white-space: nowrap;
+}
+
+/* ── 플라이휠 하프톤 구체 (602×701 @116,193, -90° 회전 크롭) ── */
 .sphere {
   position: absolute;
-  left: 50%;
-  bottom: -8%;
-  transform: translateX(-38%);
-  width: 74%;
-  height: auto;
-  z-index: 0;
-  mix-blend-mode: normal;
+  left: 18.012cqw;
+  top: 29.969cqw;
+  width: 93.478cqw;
+  height: 108.851cqw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
+.sphereRot {
+  transform: rotate(-90deg);
+  flex: none;
+}
+
+.sphereBox {
+  position: relative;
+  width: 108.851cqw;
+  height: 93.478cqw;
+  overflow: hidden;
+}
+
+.sphereImg {
+  position: absolute;
+  height: 161.79%;
+  width: 142.65%;
+  left: -21.97%;
+  top: -26.58%;
+  max-width: none;
+}
+
+/* ── 플라이휠 다이어그램 (556×358.98 @53,216) ──────────── */
 .diagram {
   position: absolute;
-  inset: 0;
-  z-index: 1;
+  left: 8.23cqw;
+  top: 33.54cqw;
+  width: 86.335cqw;
+  height: 55.74cqw;
 }
 
-/* 원/노드/중앙 로고 SVG — Frame 242 내 Group(62,27,419.8×331.98) */
+/* 원/노드/중앙 U 로고 그룹 (diagram 내 %) */
 .diagramSvg {
   position: absolute;
   left: 11.15%;
-  top: 7.5%;
-  width: 75.5%;
-  height: 92.5%;
+  top: 7.52%;
+  width: 74.55%;
+  height: 92.48%;
 }
 
-.fwLabel,
-.fwCenter {
+.fwLabel {
   position: absolute;
-  font-size: clamp(9px, 0.85vw, 12px);
-  font-weight: 500;
+  font-size: 2.174cqw;
   color: var(--color-white);
   white-space: pre-line;
   line-height: 1.25;
@@ -166,17 +175,14 @@
 }
 
 .fwCenter {
-  left: 39.2%;
-  top: 51.8%;
-  letter-spacing: 0.04em;
-  opacity: 0.9;
+  left: 48.47%;
+  top: 51.81%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 @media (max-width: 860px) {
   .cards {
     grid-template-columns: 1fr;
-  }
-  .card {
-    min-height: 480px;
   }
 }

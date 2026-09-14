@@ -1,40 +1,48 @@
+/* 제목+박스 섹션: 위·아래 전체 폭 수평선(풀블리드)으로 그리드 형성 */
 .section {
   background: var(--color-black);
-  padding-block: clamp(60px, 8vw, 110px);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
 }
 
 .inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
-  gap: clamp(32px, 5vw, 80px);
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  min-height: clamp(520px, 42vw, 660px);
 }
 
 .title {
-  font-size: clamp(28px, 3.2vw, 44px);
-  font-weight: 700;
+  align-self: start;
+  padding: clamp(60px, 6vw, 100px) 40px 0 0;
+  font-size: clamp(30px, 3.3vw, 54px);
+  font-weight: 400;
   letter-spacing: -0.02em;
   color: var(--color-white);
-  padding-top: 8px;
 }
 
+/* 수평·수직 보더 그리드: 좌·우 수직 레일(상·하단 전체 폭 수평선과 연결) */
 .right {
   min-width: 0;
+  border-left: 1px solid var(--color-line);
+  border-right: 1px solid var(--color-line);
+  display: flex;
+  flex-direction: column;
 }
 
 .list {
-  border-top: 1px solid var(--color-line);
 }
 
 .item {
   display: block;
-  padding: 26px 4px;
+  padding: 25px;
   border-bottom: 1px solid var(--color-line);
   transition: background 0.2s;
 }
 
+/* hover 시 기사 배경 #191919 */
 .item:hover {
-  background: rgba(255, 255, 255, 0.02);
+  background: #191919;
 }
 
 .itemTop {
@@ -42,27 +50,38 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .source {
-  padding: 4px 10px;
-  border: 1px solid #3a3a3a;
-  border-radius: 4px;
+  padding: 7px 5px;
+  border: 1px solid var(--color-white);
+  border-radius: 0;
   font-size: 12px;
-  font-weight: 500;
-  color: var(--color-gray-04);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-white);
+  background: transparent;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* hover 시 출처 칩 → 파란 채움(#3847FF) */
+.item:hover .source {
+  background: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-white);
 }
 
 .date {
-  font-size: 13px;
-  color: var(--color-gray-06);
+  font-size: 12px;
+  font-weight: 400;
+  color: #a3a3a3;
 }
 
 .headline {
-  font-size: clamp(17px, 1.5vw, 21px);
-  font-weight: 600;
-  line-height: 1.4;
+  font-size: clamp(18px, 1.7vw, 24px);
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--color-white);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -70,34 +89,53 @@
 }
 
 .moreWrap {
-  margin-top: 40px;
+  flex: 1;
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 32px 0;
 }
 
+/* 라인 버튼 — 유니드컴즈가 만드는 것(바로가기)와 동일 스타일 */
 .more {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 15px 30px;
-  background: var(--color-card);
-  border: 1px solid var(--color-line);
-  color: var(--color-gray-02);
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 8px;
-  transition: background 0.2s, color 0.2s;
+  gap: 20px;
+  padding: 16px 25px;
+  background: transparent;
+  border: 1px solid #a3a3a3;
+  color: #a3a3a3;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 0;
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 .more:hover {
-  background: var(--color-white);
-  color: var(--color-black);
+  border-color: var(--color-white);
+  color: var(--color-white);
 }
 
 @media (max-width: 900px) {
   .inner {
     grid-template-columns: 1fr;
-    gap: 28px;
+    min-height: 0;
+  }
+  .title {
+    align-self: start;
+    padding: clamp(48px, 9vw, 72px) 0 28px;
+  }
+  /* 모바일: 리스트를 좌우 풀블리드(컨테이너 거터 상쇄) + 좌·우 레일 제거,
+     상단 전체 폭 라인만 유지 → 수평선 그리드 */
+  .right {
+    margin-inline: calc(var(--gutter) * -1);
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--color-line);
+  }
+  /* 안의 콘텐츠는 타이틀 그리드와 동일하게 — 거터 맞춤 */
+  .item {
+    padding: 25px var(--gutter);
   }
   .headline {
     white-space: normal;

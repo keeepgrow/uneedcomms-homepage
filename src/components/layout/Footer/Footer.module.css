@@ -2,20 +2,26 @@
   width: 100%;
 }
 
-/* ── 블루 상단 ───────────────────────────────────────── */
+/* ── 블루 사이트맵 (Figma uneed_사이트맵, 1680×450) ─────── */
 .top {
   background: var(--color-brand);
-  padding-block: clamp(48px, 6vw, 80px);
+  padding-block: clamp(40px, 4.2vw, 60px) clamp(80px, 10vw, 146px);
 }
 
 .topInner {
   display: flex;
   flex-direction: column;
-  gap: clamp(40px, 6vw, 90px);
+  align-items: flex-start;
 }
 
+.logoLink {
+  display: inline-flex;
+  color: var(--color-white);
+}
+
+/* 대형 로고 738×124 (좌측 정렬) */
 .logo {
-  height: clamp(40px, 4.5vw, 60px);
+  height: clamp(56px, 8.6vw, 124px);
   width: auto;
   color: var(--color-white);
 }
@@ -23,19 +29,19 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: clamp(28px, 4vw, 56px);
+  gap: 50px;
+  margin-top: clamp(48px, 7vw, 100px);
 }
 
 .navLink {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-white);
-  opacity: 0.95;
   transition: opacity 0.2s;
 }
 
 .navLink:hover {
-  opacity: 0.7;
+  opacity: 0.65;
 }
 
 /* ── 블랙 하단 ───────────────────────────────────────── */

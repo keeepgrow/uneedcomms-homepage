@@ -1,29 +1,46 @@
+import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 import Logo from '../Header/Logo.jsx'
 
 const NAV = [
-  { label: '처음으로', href: '#top' },
-  { label: '회사소개', href: '#about' },
-  { label: '뉴스룸', href: '#newsroom' },
-  { label: '채용', href: '#careers' },
+  { label: '처음으로', to: '/' },
+  { label: '회사소개', to: '/about' },
+  { label: '뉴스룸', to: '/newsroom' },
+  { label: '채용', href: 'https://uneedcomms.ninehire.site/', external: true },
 ]
 
-export default function Footer() {
+export default function Footer({ sitemap = true }) {
   return (
     <footer className={styles.footer}>
-      {/* 블루 상단 — 대형 로고 + 메뉴 */}
-      <div className={styles.top}>
-        <div className={`container ${styles.topInner}`}>
-          <Logo className={styles.logo} mono />
-          <nav className={styles.nav}>
-            {NAV.map((item) => (
-              <a key={item.href} href={item.href} className={styles.navLink}>
-                {item.label}
-              </a>
-            ))}
-          </nav>
+      {/* 블루 사이트맵 — 홈에서만 노출 (서브페이지는 sitemap={false}) */}
+      {sitemap && (
+        <div className={styles.top}>
+          <div className={`container ${styles.topInner}`}>
+            <Link to="/" className={styles.logoLink} aria-label="유니드컴즈 홈">
+              <Logo className={styles.logo} mono />
+            </Link>
+            <nav className={styles.nav}>
+              {NAV.map((item) =>
+                item.external ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className={styles.navLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link key={item.to} to={item.to} className={styles.navLink}>
+                    {item.label}
+                  </Link>
+                )
+              )}
+            </nav>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* 블랙 하단 — 회사 정보 */}
       <div className={styles.bottom}>

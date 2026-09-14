@@ -1,0 +1,40 @@
+.arrow {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex: none;
+}
+
+/* 기본 ∨(아래 쉐브론): (0,0) (4,4) (8,0) — dir에 따라 회전 */
+.shape {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 8px;
+  transform: translate(-50%, -50%) rotate(var(--rot, -90deg));
+  transition: transform 0.3s ease;
+}
+
+.sq {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--dot, #fff);
+}
+
+.sq:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.sq:nth-child(2) {
+  left: 4px;
+  top: 4px;
+}
+
+.sq:nth-child(3) {
+  left: 8px;
+  top: 0;
+}

@@ -1,45 +1,68 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 import Logo from './Logo.jsx'
 
 const NAV = [
-  { label: '처음으로', href: '#top' },
-  { label: '회사소개', href: '#about' },
-  { label: '뉴스룸', href: '#newsroom' },
-  { label: '채용', href: '#careers' },
+  { label: '처음으로', to: '/' },
+  { label: '회사소개', to: '/about' },
+  { label: '뉴스룸', to: '/newsroom' },
+  { label: '채용', href: 'https://uneedcomms.ninehire.site/', external: true },
 ]
 
-export default function Header() {
-  // 히어로(밝은 하늘) 위 → 다크 텍스트 / 검정 섹션 위 → 화이트 텍스트 + 프로스트 배경
-  const [onDark, setOnDark] = useState(false)
+export default function Header({ bordered = false }) {
+  const [scrolled, setScrolled] = useState(false) // 스크롤 시 흰 배경
+  const [hidden, setHidden] = useState(false) // 다운=숨김 / 업=노출
+  const lastY = useRef(0)
 
   useEffect(() => {
     const onScroll = () => {
-      setOnDark(window.scrollY > window.innerHeight * 0.82)
+      const y = window.scrollY
+      setScrolled(y > 40)
+      if (y < 80) {
+        setHidden(false)
+      } else if (y > lastY.current + 4) {
+        setHidden(true)
+      } else if (y < lastY.current - 4) {
+        setHidden(false)
+      }
+      lastY.current = y
     }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onScroll)
-    }
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
-    <header className={`${styles.header} ${onDark ? styles.onDark : ''}`}>
+    <header
+      className={`${styles.header} ${bordered ? styles.bordered : ''} ${
+        scrolled ? styles.scrolled : ''
+      } ${hidden ? styles.hidden : ''}`}
+    >
       <div className={`container ${styles.inner}`}>
-        <a href="#top" className={styles.logo} aria-label="유니드컴즈 홈">
+        <Link to="/" className={styles.logo} aria-label="유니드컴즈 홈">
           <Logo className={styles.logoMark} />
-        </a>
+        </Link>
 
         <div className={styles.right}>
           <nav className={styles.nav}>
-            {NAV.map((item) => (
-              <a key={item.href} href={item.href} className={styles.navLink}>
-                {item.label}
-              </a>
-            ))}
+            {NAV.map((item) =>
+              item.external ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className={styles.navLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link key={item.to} to={item.to} className={styles.navLink}>
+                  {item.label}
+                </Link>
+              )
+            )}
           </nav>
 
           <div className={styles.lang}>

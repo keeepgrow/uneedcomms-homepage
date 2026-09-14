@@ -1,0 +1,155 @@
+/* 뉴스룸 서브페이지 — 라이트 테마 (흰 배경 · 검정 텍스트) */
+.page {
+  background: var(--color-white);
+  color: var(--color-ink);
+}
+
+/* 하단 여백 없음 — 리스트 마지막 라인이 푸터에 바로 붙음 */
+.section {
+  padding-bottom: 0;
+}
+
+/* '//' 태그 */
+.tag {
+  /* 고정 헤더(126px) 아래로 콘텐츠가 들어가지 않도록 + 피그마 상단 여백 */
+  padding-top: clamp(160px, 15vw, 232px);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #8f8f8f;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: clamp(30px, 3.3vw, 54px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+
+/* ── 기사 리스트 ─────────────────────────────────────── */
+/* 상·하단 마감 라인은 풀블리드(뷰포트 전체폭), 항목 구분선만 컨테이너 폭 */
+.topRule {
+  margin-top: clamp(40px, 5vw, 72px);
+  width: 100%;
+  height: 1px;
+  background: #dfdfdf;
+}
+
+.bottomRule {
+  width: 100%;
+  height: 1px;
+  background: #dfdfdf;
+}
+
+/* 좌·우 수직 레일 + 항목 구분선(item border-bottom) = 컨테이너 폭 */
+.list {
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+}
+
+/* 마지막 항목 구분선 제거 — 풀블리드 하단 라인(.bottomRule)과 중첩 방지 */
+.list li:last-child .item {
+  border-bottom: none;
+}
+
+.item {
+  display: block;
+  padding: 26px 30px;
+  border-bottom: 1px solid #dfdfdf;
+  transition: background 0.25s ease;
+}
+
+/* 링크 있는 기사만 hover 시 옅은 회색 배경 */
+a.item:hover {
+  background: #f7f7f7;
+}
+
+.itemTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+/* 출처 칩 — 블루 아웃라인 */
+.source {
+  padding: 7px 6px;
+  border: 1px solid var(--color-brand);
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-brand);
+  background: transparent;
+  white-space: nowrap;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* hover 시 출처 칩 → 블루 채움 */
+a.item:hover .source {
+  background: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-white);
+}
+
+.date {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #a3a3a3;
+}
+
+.headline {
+  font-size: clamp(18px, 1.7vw, 24px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── 페이징 (이전/다음 도트 화살표) ─────────────────────── */
+/* 마진 대신 패딩 — 마진 병합(margin collapse)으로 하단 여백이 사라지는 것 방지 */
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: clamp(48px, 6vw, 70px) 0 clamp(56px, 7vw, 80px);
+}
+
+.pageBtn {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dfdfdf;
+  background: var(--color-white);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: #f7f7f7;
+  border-color: #111;
+}
+
+.pageBtn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .item {
+    padding: 22px 20px;
+  }
+  .headline {
+    white-space: normal;
+  }
+}

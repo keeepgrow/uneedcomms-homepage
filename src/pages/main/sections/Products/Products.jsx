@@ -27,13 +27,17 @@ export default function Products() {
                   <span className={styles.name}>{p.name}</span>
                 </button>
 
-                <div className={styles.panel} hidden={!active}>
-                  <img className={styles.logo} src={p.logo} alt={`${p.name} 로고`} />
-                  <p className={styles.tagline}>{p.tagline}</p>
-                  <p className={styles.desc}>{p.description}</p>
-                  <a href={p.href} className={styles.link}>
-                    바로가기
-                  </a>
+                <div className={styles.panelWrap} aria-hidden={!active}>
+                  <div className={styles.panelClip}>
+                    <div className={styles.panel}>
+                      <img className={styles.logo} src={p.logo} alt={`${p.name} 로고`} />
+                      <p className={styles.tagline}>{p.tagline}</p>
+                      <p className={styles.desc}>{p.description}</p>
+                      <a href={p.href} className={styles.link} tabIndex={active ? 0 : -1}>
+                        바로가기
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             )

@@ -1,4 +1,5 @@
 import styles from './Hero.module.css'
+import DotArrow from '../../../../components/ui/DotArrow.jsx'
 import sky from '../../../../assets/hero/sky.png'
 import mtn1 from '../../../../assets/hero/mtn1.png'
 import mtn2 from '../../../../assets/hero/mtn2.png'
@@ -26,9 +27,7 @@ export default function Hero() {
 
         <a href="#about" className={styles.cta}>
           더 알아보기
-          <svg width="8" height="12" viewBox="0 0 8 12" fill="none" aria-hidden="true">
-            <path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" strokeWidth="1.6" />
-          </svg>
+          <DotArrow dir="right" />
         </a>
       </div>
     </section>

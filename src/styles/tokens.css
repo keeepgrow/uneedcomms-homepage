@@ -26,7 +26,7 @@
 
   /* 다크 UI */
   --color-card: #202020; /* 파트너/제품 카드 배경 */
-  --color-line: #2c2c2e; /* 구분선 */
+  --color-line: #474747; /* 구분선 (Figma) */
   --color-line-soft: rgba(255, 255, 255, 0.12);
 
   /* 그레이 텍스트 */
