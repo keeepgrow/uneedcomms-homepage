@@ -82,11 +82,11 @@
 }
 
 .bigYear {
-  font-family: 'Courier New', 'SUIT Variable', monospace;
-  font-weight: 800;
-  font-size: clamp(110px, 17vw, 230px);
+  font-family: 'DotGothic16', 'Courier New', monospace;
+  font-weight: 400;
+  font-size: clamp(120px, 18vw, 250px);
   line-height: 0.9;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   flex: none;
   user-select: none;
 }
