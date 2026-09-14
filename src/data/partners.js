@@ -1,44 +1,28 @@
-// 투자사 · 파트너사 로고 (Figma export, assets/partners/*)
-// width = Figma 카드 폭(px) 기준
-import naver from '../assets/partners/naver.png'
-import cjenm from '../assets/partners/cjenm.png'
-import kolon from '../assets/partners/kolon.png'
-import bonangels from '../assets/partners/bonangels.png'
-import sj from '../assets/partners/sj-investment.png'
-import magna from '../assets/partners/magna.png'
-import ts from '../assets/partners/ts-investment.png'
-import daekyung from '../assets/partners/daekyung.png'
-import google from '../assets/partners/google.png'
-import meta from '../assets/partners/meta.png'
-import aws from '../assets/partners/aws.png'
-import shopify from '../assets/partners/shopify.png'
-import kakao from '../assets/partners/kakao.png'
-import cafe24 from '../assets/partners/cafe24.png'
-import make from '../assets/partners/make.png'
-import imweb from '../assets/partners/imweb.png'
+// 투자사 · 파트너사 — 무채색(화이트) 로고 (Figma export, assets/partners-w/*)
+import google from '../assets/partners-w/google.png'
+import meta from '../assets/partners-w/meta.png'
+import aws from '../assets/partners-w/aws.png'
+import shopify from '../assets/partners-w/shopify.png'
+import naver from '../assets/partners-w/naver.png'
+import kakao from '../assets/partners-w/kakao.png'
+import cafe24 from '../assets/partners-w/cafe24.png'
+import makeshop from '../assets/partners-w/makeshop.png'
+import imweb from '../assets/partners-w/imweb.png'
+import bonangels from '../assets/partners-w/bonangels.png'
+import sj from '../assets/partners-w/sj.png'
+import cjenm from '../assets/partners-w/cjenm.png'
 
-export const partnerRows = [
-  // 1행: 투자사
-  [
-    { name: 'NAVER', image: naver, width: 180 },
-    { name: 'CJ ENM', image: cjenm, width: 180 },
-    { name: 'KOLON', image: kolon, width: 190 },
-    { name: 'BonAngels', image: bonangels, width: 190 },
-    { name: 'SJ Investment Partners', image: sj, width: 340 },
-    { name: 'MAGNA Investment', image: magna, width: 190 },
-    { name: 'TS Investment', image: ts, width: 120 },
-    { name: '대경인베스트먼트', image: daekyung, width: 220 },
-  ],
-  // 2행: 기술 파트너사
-  [
-    { name: 'Google', image: google, width: 180 },
-    { name: 'Meta', image: meta, width: 180 },
-    { name: 'AWS', image: aws, width: 120 },
-    { name: 'Shopify', image: shopify, width: 190 },
-    { name: 'NAVER', image: naver, width: 180 },
-    { name: 'kakao', image: kakao, width: 180 },
-    { name: 'cafe24', image: cafe24, width: 180 },
-    { name: 'make', image: make, width: 180 },
-    { name: 'imweb', image: imweb, width: 190 },
-  ],
+export const partners = [
+  { name: '구글', logo: google, type: '파트너' },
+  { name: '메타', logo: meta, type: '파트너' },
+  { name: 'AWS', logo: aws, type: '파트너' },
+  { name: '쇼피파이', logo: shopify, type: '파트너' },
+  { name: '네이버', logo: naver, type: '파트너' },
+  { name: '카카오', logo: kakao, type: '파트너' },
+  { name: '카페24', logo: cafe24, type: '파트너' },
+  { name: '메이크샵', logo: makeshop, type: '파트너' },
+  { name: '아임웹', logo: imweb, type: '파트너' },
+  { name: '본엔젤스', logo: bonangels, type: '투자사' },
+  { name: 'SJ 인베스트먼트', logo: sj, type: '투자사' },
+  { name: 'CJ이엔엠', logo: cjenm, type: '투자사' },
 ]

@@ -3,21 +3,19 @@ import styles from './Header.module.css'
 import Logo from './Logo.jsx'
 
 const NAV = [
+  { label: '처음으로', href: '#top' },
   { label: '회사소개', href: '#about' },
   { label: '뉴스룸', href: '#newsroom' },
   { label: '채용', href: '#careers' },
 ]
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false) // 스크롤 시 프로스트 배경
-  const [onLight, setOnLight] = useState(false) // 흰 배경 섹션 위 → 다크 텍스트
+  // 히어로(밝은 하늘) 위 → 다크 텍스트 / 검정 섹션 위 → 화이트 텍스트 + 프로스트 배경
+  const [onDark, setOnDark] = useState(false)
 
   useEffect(() => {
     const onScroll = () => {
-      const y = window.scrollY
-      setScrolled(y > 40)
-      // 히어로(≈100vh)를 지나 밝은 섹션이 헤더에 닿으면 다크로 전환
-      setOnLight(y > window.innerHeight * 0.9)
+      setOnDark(window.scrollY > window.innerHeight * 0.82)
     }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -29,11 +27,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header
-      className={`${styles.header} ${scrolled ? styles.scrolled : ''} ${
-        onLight ? styles.onLight : ''
-      }`}
-    >
+    <header className={`${styles.header} ${onDark ? styles.onDark : ''}`}>
       <div className={`container ${styles.inner}`}>
         <a href="#top" className={styles.logo} aria-label="유니드컴즈 홈">
           <Logo className={styles.logoMark} />

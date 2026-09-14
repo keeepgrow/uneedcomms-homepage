@@ -1,0 +1,119 @@
+.section {
+  background: var(--color-black);
+  padding-block: clamp(60px, 8vw, 100px) clamp(80px, 10vw, 140px);
+  overflow: hidden;
+}
+
+.head {
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(28px, 3.2vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+
+.subtitle {
+  margin-top: 18px;
+  font-size: 15px;
+  color: var(--color-gray-05);
+}
+
+/* ── 연도 눈금자 ─────────────────────────────────────── */
+.rulerWrap {
+  margin-top: clamp(36px, 4vw, 56px);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  padding-block: 22px;
+}
+
+.ruler {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.tick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  flex: 1;
+}
+
+.tickMark {
+  width: 1px;
+  height: 10px;
+  background: var(--color-gray-07);
+  transition: height 0.2s, background 0.2s;
+}
+
+.tickLabel {
+  font-size: 13px;
+  color: var(--color-gray-05);
+  transition: color 0.2s;
+}
+
+.tickActive .tickMark {
+  height: 18px;
+  background: var(--color-brand);
+}
+
+.tickActive .tickLabel {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+.tick:hover .tickLabel {
+  color: var(--color-gray-02);
+}
+
+/* ── 대형 연도 캐러셀 ────────────────────────────────── */
+.stage {
+  margin-top: clamp(50px, 7vw, 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px, 8vw, 140px);
+  width: 100%;
+}
+
+.bigYear {
+  font-family: 'Courier New', 'SUIT Variable', monospace;
+  font-weight: 800;
+  font-size: clamp(110px, 17vw, 230px);
+  line-height: 0.9;
+  letter-spacing: 0.06em;
+  flex: none;
+  user-select: none;
+}
+
+.center {
+  color: var(--color-brand);
+}
+
+.side {
+  color: #1a1a1a;
+  /* 좌우 연도는 화면 밖으로 넘쳐 잘리도록 */
+  flex: none;
+}
+
+.caption {
+  margin-top: clamp(36px, 5vw, 64px);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+@media (max-width: 640px) {
+  .tickLabel {
+    font-size: 10px;
+  }
+  .bigYear {
+    font-size: clamp(80px, 22vw, 130px);
+  }
+}

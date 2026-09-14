@@ -7,28 +7,37 @@
 }
 
 :root {
-  /* ── Colors (Figma variables) ───────────────────────── */
+  /* ── Colors (Figma) ─────────────────────────────────── */
   --color-white: #ffffff;
-  --color-black: #000111;
-  --color-uneed-blue: #312fd8;
-  --color-gray-00: #f3f3f6;
-  --color-gray-01: #e5e5e7;
-  --color-gray-02: #c6c6ca;
-  --color-gray-05: #9999a0;
-  --color-gray-07: #4a4a56;
+  --color-black: #000000; /* 섹션 배경 */
+  --color-ink: #000111; /* 히어로 헤드라인(밝은 배경 위 다크 텍스트) */
 
-  /* 다크 섹션(투자사/파트너·푸터) 네이비 */
-  --color-navy: #14142b;
+  /* 브랜드 블루 (버튼·플라이휠·푸터·연도 하이라이트) */
+  --color-brand: #3847ff;
+
+  /* 다크 UI */
+  --color-card: #202020; /* 파트너/제품 카드 배경 */
+  --color-line: #2c2c2e; /* 구분선 */
+  --color-line-soft: rgba(255, 255, 255, 0.12);
+
+  /* 그레이 텍스트 */
+  --color-gray-00: #f3f3f6;
+  --color-gray-02: #c6c6ca;
+  --color-gray-04: #8f8f8f;
+  --color-gray-05: #717171;
+  --color-gray-06: #656565;
+  --color-gray-07: #474747;
 
   /* ── Layout ─────────────────────────────────────────── */
-  --content-max: 1600px;   /* 콘텐츠 기준폭 */
-  --gutter: 160px;         /* 데스크톱 좌우 여백 (1920 기준) */
-  --header-h: 84px;
+  /* Figma 1680 프레임 · 좌우 184px 여백 → 콘텐츠 1312px */
+  --content-max: 1312px;
+  --gutter: clamp(20px, 5.5vw, 40px);
+  --header-h: 126px;
 
   /* ── Radius ─────────────────────────────────────────── */
-  --radius-lg: 40px;
-  --radius-md: 24px;
-  --radius-sm: 16px;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
 
   /* ── Typography ─────────────────────────────────────── */
   --font-sans: 'SUIT Variable', 'Pretendard Variable', 'Pretendard',

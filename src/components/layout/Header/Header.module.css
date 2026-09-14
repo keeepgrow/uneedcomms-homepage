@@ -4,26 +4,20 @@
   left: 0;
   right: 0;
   z-index: 100;
-  height: var(--header-h);
-  /* 처음엔 배경 없음(완전 투명) */
+  height: 96px;
   background: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  /* 텍스트/로고 기본 흰색 → 밝은 섹션에서 다크로 */
-  color: #ffffff;
-  transition: background 0.3s, backdrop-filter 0.3s, color 0.3s;
+  /* 히어로(밝은 하늘) 위 기본 = 다크 텍스트 */
+  color: var(--color-ink);
+  transition: background 0.3s, backdrop-filter 0.3s, color 0.3s, height 0.3s;
 }
 
-/* 스크롤할 때만 DAN25 동일 프로스트 배경/오퍼시티 생성 */
-.header.scrolled {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
-}
-
-/* 밝은 섹션 위 → 텍스트·로고 #000111 로 전환 */
-.header.onLight {
-  color: #000111;
+/* 검정 섹션 위 → 화이트 텍스트 + 프로스트 다크 배경 */
+.header.onDark {
+  color: var(--color-white);
+  background: rgba(10, 10, 12, 0.6);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  height: 78px;
 }
 
 .inner {
@@ -40,30 +34,30 @@
 }
 
 .logoMark {
-  height: 25px;
+  height: 26px;
   width: auto;
   display: block;
-  color: inherit; /* currentColor → 흰↔다크 */
+  color: inherit;
   transition: color 0.3s;
 }
 
 .right {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 56px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 50px;
 }
 
 .navLink {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 600;
   color: inherit;
-  opacity: 0.85;
+  opacity: 0.9;
   transition: opacity 0.2s;
 }
 
@@ -74,18 +68,18 @@
 .lang {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-.langActive,
-.langInactive {
+  gap: 10px;
   font-size: 15px;
   font-weight: 600;
+}
+
+.langActive {
   color: inherit;
 }
 
 .langInactive {
-  opacity: 0.5;
+  color: inherit;
+  opacity: 0.45;
 }
 
 .langDivider {
@@ -96,6 +90,12 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    height: 72px;
+  }
+  .header.onDark {
+    height: 64px;
+  }
   .nav {
     display: none;
   }
