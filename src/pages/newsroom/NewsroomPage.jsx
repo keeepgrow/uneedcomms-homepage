@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import Header from '../../components/layout/Header/Header.jsx'
 import Footer from '../../components/layout/Footer/Footer.jsx'
 import DotArrow from '../../components/ui/DotArrow.jsx'
+import { useLang } from '../../i18n/LanguageContext.jsx'
 import { news } from '../../data/news.js'
 import styles from './NewsroomPage.module.css'
 
@@ -15,6 +16,7 @@ const SORTS = [
 ]
 
 export default function NewsroomPage() {
+  const { t } = useLang()
   const [sort, setSort] = useState('recent')
   const [page, setPage] = useState(1)
 
@@ -56,7 +58,7 @@ export default function NewsroomPage() {
         <section className={styles.section} id="newsroom">
           <div className="container">
             <p className={styles.tag}>{'// 기사 및 보도자료'}</p>
-            <h1 className={styles.title}>언론 속의 유니드컴즈</h1>
+            <h1 className={styles.title}>{t('언론 속의 유니드컴즈')}</h1>
           </div>
 
           {/* 제목 아래 풀블리드 라인 */}

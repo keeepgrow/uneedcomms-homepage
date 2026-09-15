@@ -92,12 +92,15 @@
 }
 
 @media (max-width: 768px) {
-  /* 모바일: 메일 + 저작권(코퍼레이션 마크)을 하단 오른쪽에 한 줄로 */
+  /* 모바일: © 저작권(왼쪽) · 메일(오른쪽) 한 줄 */
   .legal {
     width: 100%;
     margin-top: 24px;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 14px;
     font-size: 13px;
+  }
+  .copyright {
+    order: -1; /* 저작권을 왼쪽으로 */
   }
 }

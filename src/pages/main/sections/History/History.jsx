@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { historyYears, historyDefaultYear } from '../../../../data/history.js'
+import { useLang } from '../../../../i18n/LanguageContext.jsx'
 import styles from './History.module.css'
 
 export default function History() {
+  const { t } = useLang()
   const startIdx = Math.max(
     0,
     historyYears.findIndex((y) => y.year === historyDefaultYear),
@@ -69,8 +71,8 @@ export default function History() {
   return (
     <section className={styles.section} id="history">
       <div className={`container ${styles.head}`}>
-        <h2 className={styles.title}>유니드컴즈가 걸어온 길</h2>
-        <p className={styles.subtitle}>유니드컴즈의 변화는 세상을 놀랍게 만듭니다</p>
+        <h2 className={styles.title}>{t('유니드컴즈가 걸어온 길')}</h2>
+        <p className={styles.subtitle}>{t('유니드컴즈의 변화는 세상을 놀랍게 만듭니다')}</p>
       </div>
 
       {/* 연도 눈금자 */}
@@ -134,7 +136,7 @@ export default function History() {
 
       <div className={styles.caption} key={index}>
         {cur.items.map((it, i) => (
-          <p key={i}>{it}</p>
+          <p key={i}>{t(it)}</p>
         ))}
       </div>
     </section>

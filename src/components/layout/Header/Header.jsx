@@ -13,6 +13,7 @@ const NAV = [
 
 // NAV 아이템 렌더링 (외부 링크는 새창, 내부는 라우터 Link)
 function NavItem({ item, className, onClick }) {
+  const { t } = useLang()
   return item.external ? (
     <a
       href={item.href}
@@ -21,11 +22,11 @@ function NavItem({ item, className, onClick }) {
       rel="noopener noreferrer"
       onClick={onClick}
     >
-      {item.label}
+      {t(item.label)}
     </a>
   ) : (
     <Link to={item.to} className={className} onClick={onClick}>
-      {item.label}
+      {t(item.label)}
     </Link>
   )
 }

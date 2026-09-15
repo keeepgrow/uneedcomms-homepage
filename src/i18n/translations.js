@@ -10,6 +10,25 @@
 // 번역 추가:
 //   '유니드컴즈가 만드는 것': 'What We Build',
 export const translations = {
+  // ── 공통: NAV / 사이트맵 ─────────────────────────────
+  처음으로: 'Welcome',
+  회사소개: 'About',
+  뉴스룸: 'Newsroom',
+  채용: 'Careers',
+
+  // ── 공통: 푸터 회사 정보 ─────────────────────────────
+  '(주) 유니드컴즈': 'UneedComms Co., Ltd.',
+  '대표자: 양재필, 전형신    사업자등록번호 : 220-88-93926':
+    'CEO: Jaepil Yang, Hyeongshin Jeon    Business Registration No. 220-88-93926',
+  '주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)':
+    'L105, L1, FastFive Hapjeong, 81 Yanghwa-ro, Mapo-gu, Seoul, Republic of Korea',
+  'public@uneedcomms.com': 'Contact: public@uneedcomms.com',
+
+  // ── 메인: 히어로 ─────────────────────────────────────
+  '한 사람이 해낼 수 있는 일의\n넓이와 깊이를 바꾸는,\n지혜로운 AI 에이전트를 만듭니다.':
+    'We build wise AI agents\nthat expand the breadth and depth\nof what one person can accomplish.',
+  '더 알아보기': 'Learn more',
+
   // ── 메인: 유니드컴즈가 만드는 것 (제품) ──────────────
   '유니드컴즈가 만드는 것': 'What We Build',
   바로가기: 'Learn more',
@@ -47,6 +66,13 @@ export const translations = {
   '유니드컴즈와 함께하는 투자사 · 파트너사': 'Our Investors & Partners',
   '유니드의 혁신과 성장에 뜻을 함께하는 글로벌 파트너 및 투자사입니다':
     'The global partners and investors who believe in our vision — and grow with us.',
+  // 열어서 더보기 / 닫기 토글 ('닫기'는 현재 Partners 에서만 t() 사용)
+  '열어서 더보기': 'Show more',
+  닫기: 'Show less',
+
+  // ── 메인/서브: 뉴스룸 ────────────────────────────────
+  '언론 속의 유니드컴즈': 'In the News',
+  '이야기 더보기': 'View all',
   // 칩 (AWS 는 동일하여 미등록)
   파트너: 'Partner',
   투자사: 'Investor',
@@ -68,4 +94,30 @@ export const translations = {
   '마그나 인베스트먼트': 'MAGNA Investment',
   '대경 인베스트먼트': 'Daekyung Investment',
   'TS 인베스트먼트': 'TS Investment',
+
+  // ── 메인: 연혁 (How We Got Here) ─────────────────────
+  '유니드컴즈가 걸어온 길': 'How We Got Here',
+  '유니드컴즈의 변화는 세상을 놀랍게 만듭니다':
+    'The story of change that keeps surprising the world.',
+  // 연도별 마일스톤
+  '㈜유니드컴즈 설립': 'Founded UneedComms',
+  '스마트스킨 출시': 'Launched SmartSkin',
+  '스마트앱·타겟북 출시': 'Launched SmartApp and TargetBook',
+  'K-Global 300 선정': 'Selected for K-Global 300',
+  '시드 투자 유치': 'Raised seed funding',
+  'Meta Business Partners 선정': 'Became a Meta Business Partner',
+  'Pre-Series A 투자 유치': 'Raised Pre-Series A',
+  'AWS 글로벌 기술 파트너 선정': 'Became an AWS global technology partner',
+  'Shopify 에이전시 파트너 선정': 'Became a Shopify agency partner',
+  'Google 기술 채널 파트너 선정': 'Became a Google technology channel partner',
+  '킵그로우(KeepGrow) 출시': 'Launched KeepGrow',
+  "킵그로우 '1초 회원가입' 출시": 'Launched KeepGrow 1-second sign-up',
+  'Series A 투자 유치': 'Raised Series A',
+  '네이버 커머스솔루션마켓 입점': 'Listed on Naver Commerce Solution Market',
+  '카페24 베스트파트너 3년 연속 선정':
+    'Became Cafe24 Best Partner, three years running',
+  '데카(DecaGEO)·모도(ModoAI) 글로벌 출시':
+    'Launched DecaGEO and ModoAI globally',
+  '메시온(Mesion) 출시': 'Launched Mesion',
+  'NVIDIA Inception 프로그램 선정': 'Joined NVIDIA Inception program',
 }

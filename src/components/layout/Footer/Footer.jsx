@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 import Logo from '../Header/Logo.jsx'
+import { useLang } from '../../../i18n/LanguageContext.jsx'
 
 const NAV = [
   { label: '처음으로', to: '/' },
@@ -10,6 +11,7 @@ const NAV = [
 ]
 
 export default function Footer({ sitemap = true }) {
+  const { t } = useLang()
   return (
     <footer className={styles.footer}>
       {/* 블루 사이트맵 — 홈에서만 노출 (서브페이지는 sitemap={false}) */}
@@ -29,11 +31,11 @@ export default function Footer({ sitemap = true }) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {item.label}
+                    {t(item.label)}
                   </a>
                 ) : (
                   <Link key={item.to} to={item.to} className={styles.navLink}>
-                    {item.label}
+                    {t(item.label)}
                   </Link>
                 )
               )}
@@ -46,17 +48,21 @@ export default function Footer({ sitemap = true }) {
       <div className={styles.bottom}>
         <div className={`container ${styles.bottomInner}`}>
           <div className={styles.company}>
-            <p className={styles.companyName}>(주) 유니드컴즈</p>
+            <p className={styles.companyName}>{t('(주) 유니드컴즈')}</p>
             <p className={styles.info}>
-              대표자: 양재필, 전형신&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 : 220-88-93926
+              {t(
+                '대표자: 양재필, 전형신    사업자등록번호 : 220-88-93926'
+              )}
             </p>
             <p className={styles.info}>
-              주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)
+              {t(
+                '주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)'
+              )}
             </p>
           </div>
           <div className={styles.legal}>
             <a href="mailto:public@uneedcomms.com" className={styles.email}>
-              public@uneedcomms.com
+              {t('public@uneedcomms.com')}
             </a>
             <span className={styles.copyright}>© 2026 UNEEDCOMMS.</span>
           </div>
