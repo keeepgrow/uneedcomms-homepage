@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 import Logo from './Logo.jsx'
+import { useLang } from '../../../i18n/LanguageContext.jsx'
 
 const NAV = [
   { label: '처음으로', to: '/' },
@@ -30,6 +31,7 @@ function NavItem({ item, className, onClick }) {
 }
 
 export default function Header({ bordered = false }) {
+  const { lang, setLang } = useLang()
   const [scrolled, setScrolled] = useState(false) // 스크롤 시 흰 배경
   const [hidden, setHidden] = useState(false) // 다운=숨김 / 업=노출
   const [menuOpen, setMenuOpen] = useState(false) // 모바일 메뉴 드롭박스
@@ -98,9 +100,23 @@ export default function Header({ bordered = false }) {
           </button>
 
           <div className={styles.lang}>
-            <button type="button" className={styles.langActive}>KR</button>
+            <button
+              type="button"
+              className={lang === 'ko' ? styles.langActive : styles.langInactive}
+              onClick={() => setLang('ko')}
+              aria-pressed={lang === 'ko'}
+            >
+              KR
+            </button>
             <span className={styles.langDivider} aria-hidden="true" />
-            <button type="button" className={styles.langInactive}>EN</button>
+            <button
+              type="button"
+              className={lang === 'en' ? styles.langActive : styles.langInactive}
+              onClick={() => setLang('en')}
+              aria-pressed={lang === 'en'}
+            >
+              EN
+            </button>
           </div>
         </div>
       </div>
