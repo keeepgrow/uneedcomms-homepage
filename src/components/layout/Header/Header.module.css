@@ -14,7 +14,7 @@
 
 /* 서브페이지 — 최상단에서도 하단 구분선 노출 */
 .header.bordered {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 /* 스크롤 시 흰 배경 (그림자 없음) */
@@ -95,6 +95,24 @@
   opacity: 0.5;
 }
 
+/* 모바일 메뉴 토글 텍스트 — 데스크탑 숨김 */
+.menuBtn {
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+.menuBtn:hover {
+  opacity: 0.6;
+}
+
+/* 모바일 화이트 드롭박스 — 데스크탑 숨김 */
+.mobileMenu {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header {
     height: 80px;
@@ -103,6 +121,55 @@
     display: none;
   }
   .right {
-    gap: 0;
+    gap: 34px;
+  }
+
+  /* 메뉴 열림 시 헤더 흰 배경 (드롭박스와 연결) */
+  .menuActive {
+    background: var(--color-white);
+  }
+
+  .menuBtn {
+    display: inline-flex;
+  }
+
+  /* 화이트 드롭박스 — 헤더 바로 아래, 부드럽게 펼침 */
+  .mobileMenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobileMenuOpen {
+    max-height: 320px;
+  }
+
+  /* 메뉴 항목: 가운데 정렬 · 각각 1줄씩 (최하단 라인 포함) */
+  .mobileMenuInner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .mobileLink {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-ink);
+    border-top: 1px solid #dfdfdf;
+  }
+
+  .mobileLink:first-child {
+    border-top: none;
   }
 }

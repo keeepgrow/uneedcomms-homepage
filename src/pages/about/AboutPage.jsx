@@ -168,7 +168,7 @@ export default function AboutPage() {
         </section>
 
         {/* 6. 우리가 일하는 방식 (타이틀 밴드) */}
-        <section className={styles.band}>
+        <section className={`${styles.band} ${styles.bandWork}`}>
           <div className="container">
             <h2 className={styles.bandTitle}>우리가 일하는 방식</h2>
           </div>

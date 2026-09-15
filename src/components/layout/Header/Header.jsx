@@ -10,9 +10,29 @@ const NAV = [
   { label: '채용', href: 'https://uneedcomms.ninehire.site/', external: true },
 ]
 
+// NAV 아이템 렌더링 (외부 링크는 새창, 내부는 라우터 Link)
+function NavItem({ item, className, onClick }) {
+  return item.external ? (
+    <a
+      href={item.href}
+      className={className}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={onClick}
+    >
+      {item.label}
+    </a>
+  ) : (
+    <Link to={item.to} className={className} onClick={onClick}>
+      {item.label}
+    </Link>
+  )
+}
+
 export default function Header({ bordered = false }) {
   const [scrolled, setScrolled] = useState(false) // 스크롤 시 흰 배경
   const [hidden, setHidden] = useState(false) // 다운=숨김 / 업=노출
+  const [menuOpen, setMenuOpen] = useState(false) // 모바일 메뉴 드롭박스
   const lastY = useRef(0)
 
   useEffect(() => {
@@ -33,43 +53,57 @@ export default function Header({ bordered = false }) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const closeMenu = () => setMenuOpen(false)
+
   return (
     <header
       className={`${styles.header} ${bordered ? styles.bordered : ''} ${
         scrolled ? styles.scrolled : ''
-      } ${hidden ? styles.hidden : ''}`}
+      } ${hidden ? styles.hidden : ''} ${menuOpen ? styles.menuActive : ''}`}
     >
       <div className={`container ${styles.inner}`}>
-        <Link to="/" className={styles.logo} aria-label="유니드컴즈 홈">
+        <Link to="/" className={styles.logo} aria-label="유니드컴즈 홈" onClick={closeMenu}>
           <Logo className={styles.logoMark} />
         </Link>
 
         <div className={styles.right}>
           <nav className={styles.nav}>
-            {NAV.map((item) =>
-              item.external ? (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className={styles.navLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {item.label}
-                </a>
-              ) : (
-                <Link key={item.to} to={item.to} className={styles.navLink}>
-                  {item.label}
-                </Link>
-              )
-            )}
+            {NAV.map((item) => (
+              <NavItem key={item.label} item={item} className={styles.navLink} />
+            ))}
           </nav>
+
+          {/* 모바일 전용 메뉴 토글 텍스트 */}
+          <button
+            type="button"
+            className={styles.menuBtn}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((o) => !o)}
+          >
+            {menuOpen ? '닫기' : '메뉴'}
+          </button>
 
           <div className={styles.lang}>
             <button type="button" className={styles.langActive}>KR</button>
             <span className={styles.langDivider} aria-hidden="true" />
             <button type="button" className={styles.langInactive}>EN</button>
           </div>
+        </div>
+      </div>
+
+      {/* 모바일 화이트 드롭박스 — 상단 메뉴, 가운데 정렬·1줄씩 */}
+      <div
+        className={`${styles.mobileMenu} ${menuOpen ? styles.mobileMenuOpen : ''}`}
+      >
+        <div className={styles.mobileMenuInner}>
+          {NAV.map((item) => (
+            <NavItem
+              key={item.label}
+              item={item}
+              className={styles.mobileLink}
+              onClick={closeMenu}
+            />
+          ))}
         </div>
       </div>
     </header>
