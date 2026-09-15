@@ -11,16 +11,12 @@ const LIGHT_ROUTES = ['/about', '/newsroom']
 function ScrollManager() {
   const { pathname, hash } = useLocation()
 
-  // 페이지 배경(맥북 고무줄 오버스크롤 시 상단에 노출되는 색)을 라우트에 맞춤
+  // 페이지 배경(고무줄 오버스크롤 시 상단에 노출되는 색)을 라우트에 맞춤
   useEffect(() => {
     document.body.style.background = LIGHT_ROUTES.includes(pathname)
       ? 'var(--color-white)'
       : ''
-
-    // 메인은 고무줄(오버스크롤 바운스) 효과 제거, 서브페이지는 기본값
-    const noBounce = pathname === '/' ? 'none' : ''
-    document.documentElement.style.overscrollBehavior = noBounce
-    document.body.style.overscrollBehavior = noBounce
+    // overscroll-behavior 는 pull-to-refresh 와 동일 동작이라 건드리지 않음(기본값 유지)
   }, [pathname])
 
   useEffect(() => {
