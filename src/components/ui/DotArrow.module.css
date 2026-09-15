@@ -22,6 +22,7 @@
   width: 4px;
   height: 4px;
   background: var(--dot, #fff);
+  transition: background 0.3s ease;
 }
 
 .sq:nth-child(1) {

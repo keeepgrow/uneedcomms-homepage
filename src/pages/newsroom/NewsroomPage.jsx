@@ -133,7 +133,7 @@ export default function NewsroomPage() {
                   disabled={page === 1}
                   aria-label="이전 페이지"
                 >
-                  <DotArrow dir="left" color="#111" />
+                  <DotArrow dir="left" />
                 </button>
                 <button
                   type="button"
@@ -142,7 +142,7 @@ export default function NewsroomPage() {
                   disabled={page === totalPages}
                   aria-label="다음 페이지"
                 >
-                  <DotArrow dir="right" color="#111" />
+                  <DotArrow dir="right" />
                 </button>
               </nav>
             </div>
