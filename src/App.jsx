@@ -16,7 +16,9 @@ function ScrollManager() {
     document.body.style.background = LIGHT_ROUTES.includes(pathname)
       ? 'var(--color-white)'
       : ''
-    // overscroll-behavior 는 pull-to-refresh 와 동일 동작이라 건드리지 않음(기본값 유지)
+    // 메인 라우트 표시 — 고무줄 제거는 CSS에서 '데스크탑(비터치)'에만 적용
+    // (터치기기는 당겨서 새로고침을 위해 기본 동작 유지)
+    document.documentElement.classList.toggle('main-route', pathname === '/')
   }, [pathname])
 
   useEffect(() => {

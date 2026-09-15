@@ -34,6 +34,19 @@ export default function Header({ bordered = false }) {
   const [hidden, setHidden] = useState(false) // 다운=숨김 / 업=노출
   const [menuOpen, setMenuOpen] = useState(false) // 모바일 메뉴 드롭박스
   const lastY = useRef(0)
+  const headerRef = useRef(null)
+
+  // 메뉴 열림 시: 헤더/메뉴 바깥(빈 화면) 클릭하면 닫기
+  useEffect(() => {
+    if (!menuOpen) return
+    const onPointerDown = (e) => {
+      if (headerRef.current && !headerRef.current.contains(e.target)) {
+        setMenuOpen(false)
+      }
+    }
+    document.addEventListener('pointerdown', onPointerDown)
+    return () => document.removeEventListener('pointerdown', onPointerDown)
+  }, [menuOpen])
 
   useEffect(() => {
     const onScroll = () => {
@@ -57,6 +70,7 @@ export default function Header({ bordered = false }) {
 
   return (
     <header
+      ref={headerRef}
       className={`${styles.header} ${bordered ? styles.bordered : ''} ${
         scrolled ? styles.scrolled : ''
       } ${hidden ? styles.hidden : ''} ${menuOpen ? styles.menuActive : ''}`}
