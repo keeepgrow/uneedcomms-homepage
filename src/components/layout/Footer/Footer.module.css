@@ -92,34 +92,12 @@
 }
 
 @media (max-width: 768px) {
-  /* 모바일: 회사명(좌) · 메일(우)을 한 줄, 정보/저작권은 아래로 */
-  .bottomInner {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas:
-      'name  email'
-      'info  info'
-      'copy  copy';
-    align-items: center;
-    row-gap: 18px;
-    column-gap: 16px;
-  }
-  .company,
+  /* 모바일: 메일 + 저작권(코퍼레이션 마크)을 하단 오른쪽에 한 줄로 */
   .legal {
-    display: contents;
-  }
-  .companyName {
-    grid-area: name;
-    margin-bottom: 0;
-  }
-  .infoBlock {
-    grid-area: info;
-  }
-  .email {
-    grid-area: email;
-    justify-self: end;
-  }
-  .copyright {
-    grid-area: copy;
+    width: 100%;
+    margin-top: 24px;
+    justify-content: flex-end;
+    gap: 14px;
+    font-size: 13px;
   }
 }
