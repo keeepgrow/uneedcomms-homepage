@@ -47,12 +47,14 @@ export default function Footer({ sitemap = true }) {
         <div className={`container ${styles.bottomInner}`}>
           <div className={styles.company}>
             <p className={styles.companyName}>(주) 유니드컴즈</p>
-            <p className={styles.info}>
-              대표자: 양재필, 전형신&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 : 220-88-93926
-            </p>
-            <p className={styles.info}>
-              주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)
-            </p>
+            <div className={styles.infoBlock}>
+              <p className={styles.info}>
+                대표자: 양재필, 전형신&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 : 220-88-93926
+              </p>
+              <p className={styles.info}>
+                주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)
+              </p>
+            </div>
           </div>
           <div className={styles.legal}>
             <a href="mailto:public@uneedcomms.com" className={styles.email}>
