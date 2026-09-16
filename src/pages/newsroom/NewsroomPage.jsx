@@ -128,7 +128,7 @@ export default function NewsroomPage() {
                   {lang === 'en' ? `// Page ${page}` : `// ${page}페이지`}
                 </span>
                 <span className={styles.totalCount}>
-                  {lang === 'en' ? `${TOTAL} articles` : `총 ${TOTAL}개`}
+                  {lang === 'en' ? `Total ${TOTAL}` : `총 ${TOTAL}개`}
                 </span>
               </div>
               <nav className={styles.pager} aria-label="뉴스룸 페이지 이동">
