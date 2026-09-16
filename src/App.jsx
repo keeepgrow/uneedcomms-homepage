@@ -29,7 +29,8 @@ function ScrollManager() {
         return
       }
     }
-    window.scrollTo(0, 0)
+    // 라우트 이동은 즉시 상단으로 (CSS scroll-behavior:smooth 무시 — 끌어올리는 효과 제거)
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
   }, [pathname, hash])
   return null
 }
