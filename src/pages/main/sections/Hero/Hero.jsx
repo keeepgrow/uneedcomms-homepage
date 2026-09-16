@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Hero.module.css'
 import DotArrow from '../../../../components/ui/DotArrow.jsx'
 import { useLang } from '../../../../i18n/LanguageContext.jsx'
@@ -36,10 +37,10 @@ export default function Hero() {
           />
         </h1>
 
-        <a href="#about" className={styles.cta}>
+        <Link to="/about" className={styles.cta}>
           {t('더 알아보기')}
           <DotArrow dir="right" />
-        </a>
+        </Link>
       </div>
     </section>
   )
