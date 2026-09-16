@@ -9,7 +9,7 @@ import styles from './Newsroom.module.css'
 const featured = latestNews(5)
 
 export default function Newsroom() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   return (
     <section className={styles.section} id="newsroom">
       <div className={`container ${styles.inner}`}>
@@ -26,10 +26,14 @@ export default function Newsroom() {
                   rel="noopener noreferrer"
                 >
                   <div className={styles.itemTop}>
-                    <span className={styles.source}>{item.source}</span>
+                    <span className={styles.source}>
+                      {lang === 'en' && item.sourceEn ? item.sourceEn : item.source}
+                    </span>
                     <span className={styles.date}>{item.date}</span>
                   </div>
-                  <p className={styles.headline}>{item.title}</p>
+                  <p className={styles.headline}>
+                    {lang === 'en' && item.titleEn ? item.titleEn : item.title}
+                  </p>
                 </a>
               </li>
             ))}

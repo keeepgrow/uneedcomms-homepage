@@ -22,19 +22,21 @@ export default function NewsroomPage() {
 
   const sorted = useMemo(() => {
     const arr = [...news]
+    const src = (x) => (lang === 'en' && x.sourceEn ? x.sourceEn : x.source)
     if (sort === 'old') {
       arr.sort((a, b) => a.date.localeCompare(b.date))
     } else if (sort === 'source') {
       arr.sort(
         (a, b) =>
-          a.source.localeCompare(b.source, 'ko') || b.date.localeCompare(a.date)
+          src(a).localeCompare(src(b), lang === 'en' ? 'en' : 'ko') ||
+          b.date.localeCompare(a.date)
       )
     } else {
       // recent (기본): 최신글부터
       arr.sort((a, b) => b.date.localeCompare(a.date))
     }
     return arr
-  }, [sort])
+  }, [sort, lang])
 
   const totalPages = Math.ceil(sorted.length / PER_PAGE)
   const start = (page - 1) * PER_PAGE
@@ -91,10 +93,14 @@ export default function NewsroomPage() {
                 const inner = (
                   <>
                     <div className={styles.itemTop}>
-                      <span className={styles.source}>{item.source}</span>
+                      <span className={styles.source}>
+                        {lang === 'en' && item.sourceEn ? item.sourceEn : item.source}
+                      </span>
                       <span className={styles.date}>{item.date}</span>
                     </div>
-                    <p className={styles.headline}>{item.title}</p>
+                    <p className={styles.headline}>
+                      {lang === 'en' && item.titleEn ? item.titleEn : item.title}
+                    </p>
                   </>
                 )
                 return (

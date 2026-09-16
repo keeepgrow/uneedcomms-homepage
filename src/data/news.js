@@ -15,8 +15,10 @@ function parseNews(xmlString) {
   return [...doc.getElementsByTagName('article')].map((el) => {
     const item = {
       source: text(el, 'source'),
+      sourceEn: text(el, 'source_en'),
       date: text(el, 'date'),
       title: text(el, 'title'),
+      titleEn: text(el, 'title_en'),
     }
     const href = text(el, 'href')
     if (href) item.href = href
