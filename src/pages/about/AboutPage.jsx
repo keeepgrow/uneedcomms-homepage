@@ -1,8 +1,20 @@
 import Header from '../../components/layout/Header/Header.jsx'
 import Footer from '../../components/layout/Footer/Footer.jsx'
+import { useLang } from '../../i18n/LanguageContext.jsx'
 import spiritImg from '../../assets/about/spirit.png'
 import flywheelImg from '../../assets/about/flywheel.png'
 import styles from './AboutPage.module.css'
+
+// 줄바꿈(\n)을 <br />로 렌더
+function MultiLine({ text }) {
+  const lines = text.split('\n')
+  return lines.map((line, i) => (
+    <span key={i}>
+      {line}
+      {i < lines.length - 1 && <br />}
+    </span>
+  ))
+}
 
 const introBody = [
   '세상에는 지식만으로 되지 않는 일들이 있습니다.',
@@ -86,6 +98,7 @@ const principles = [
 ]
 
 export default function AboutPage() {
+  const { t } = useLang()
   return (
     <>
       <Header bordered />
@@ -93,15 +106,15 @@ export default function AboutPage() {
         {/* 1. 소개 / 미션 */}
         <section className={styles.intro} id="about">
           <div className="container">
-            <p className={styles.tag}>{'// 유니드컴즈 소개'}</p>
+            <p className={styles.tag}>{t('// 유니드컴즈 소개')}</p>
             <h1 className={styles.headline}>
-              한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는,
-              <br />
-              지혜로운 AI 에이전트를 만듭니다.
+              <MultiLine
+                text={t('한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는,\n지혜로운 AI 에이전트를 만듭니다.')}
+              />
             </h1>
             <div className={styles.introBody}>
               {introBody.map((line, i) => (
-                <p key={i}>{line}</p>
+                <p key={i}>{t(line)}</p>
               ))}
             </div>
           </div>

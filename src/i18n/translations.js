@@ -120,4 +120,19 @@ export const translations = {
     'Launched DecaGEO and ModoAI globally',
   '메시온(Mesion) 출시': 'Launched Mesion',
   'NVIDIA Inception 프로그램 선정': 'Joined NVIDIA Inception program',
+
+  // ── 회사소개: 인트로 / 미션 ──────────────────────────
+  '// 유니드컴즈 소개': '// About UneedComms',
+  '한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는,\n지혜로운 AI 에이전트를 만듭니다.':
+    'We build wise AI agents\nthat expand the breadth and depth\nof what one person can accomplish.',
+  '세상에는 지식만으로 되지 않는 일들이 있습니다.':
+    "Some things can't be done with knowledge alone.",
+  '그날의 재료에 맞게 불과 간을 조절하는 요리사의 감각, 아이의 표정만 보고도 어디가 아픈지 아는 부모의 눈. 우리는 그것을 지혜라고 부릅니다.':
+    "A chef's instinct — same recipe, but heat and seasoning adjusted to the day's ingredients. A parent's eye, knowing where it hurts just from their child's face. We call that wisdom.",
+  '이제 우리는 무엇이든 AI에게 묻고, AI는 무엇이든 답합니다. 그러나 똑똑한 AI는 많아도, 지혜로운 AI는 없습니다.':
+    'Today we ask AI everything, and AI answers everything. Yet smart AI is everywhere, and wise AI is nowhere to be found.',
+  '유니드컴즈는 지금 이 상황에 맞게 스스로 판단하는, 지혜로운 AI 에이전트를 만듭니다.':
+    'UneedComms builds wise AI agents that judge for themselves what each moment calls for.',
+  '경험의 한계를 넘어, 한 사람이 해낼 수 있는 일의 넓이와 깊이가 달라지도록. 그 변화가 쌓여, 세상이 일하는 방식을 바꿉니다.':
+    "Beyond the limits of one person's experience, expanding the breadth and depth of what one person can accomplish. And as those changes add up, they reshape how the world gets work done.",
 }
