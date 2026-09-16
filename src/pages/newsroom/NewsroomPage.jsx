@@ -16,7 +16,7 @@ const SORTS = [
 ]
 
 export default function NewsroomPage() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const [sort, setSort] = useState('recent')
   const [page, setPage] = useState(1)
 
@@ -57,7 +57,7 @@ export default function NewsroomPage() {
       <main className={styles.page}>
         <section className={styles.section} id="newsroom">
           <div className="container">
-            <p className={styles.tag}>{'// 기사 및 보도자료'}</p>
+            <p className={styles.tag}>{t('// 기사 및 보도자료')}</p>
             <h1 className={styles.title}>{t('언론 속의 유니드컴즈')}</h1>
           </div>
 
@@ -76,7 +76,7 @@ export default function NewsroomPage() {
                   }`}
                   onClick={() => changeSort(s.key)}
                 >
-                  {s.label}
+                  {t(s.label)}
                 </button>
               ))}
             </div>
@@ -124,8 +124,12 @@ export default function NewsroomPage() {
           <div className="container">
             <div className={styles.bottomBar}>
               <div className={styles.pageInfo}>
-                <span className={styles.pageNum}>{`// ${page}페이지`}</span>
-                <span className={styles.totalCount}>{`총 ${TOTAL}개`}</span>
+                <span className={styles.pageNum}>
+                  {lang === 'en' ? `// Page ${page}` : `// ${page}페이지`}
+                </span>
+                <span className={styles.totalCount}>
+                  {lang === 'en' ? `${TOTAL} articles` : `총 ${TOTAL}개`}
+                </span>
               </div>
               <nav className={styles.pager} aria-label="뉴스룸 페이지 이동">
                 <button

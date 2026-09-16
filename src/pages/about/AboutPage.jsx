@@ -16,6 +16,9 @@ function MultiLine({ text }) {
   ))
 }
 
+// 원칙 칩 EN 라벨 (KR '// 다섯'이 두 번이라 인덱스로 One~Six 매핑)
+const EN_PRINCIPLE_TAGS = ['// One', '// Two', '// Three', '// Four', '// Five', '// Six']
+
 const introBody = [
   '세상에는 지식만으로 되지 않는 일들이 있습니다.',
   '그날의 재료에 맞게 불과 간을 조절하는 요리사의 감각, 아이의 표정만 보고도 어디가 아픈지 아는 부모의 눈. 우리는 그것을 지혜라고 부릅니다.',
@@ -98,7 +101,7 @@ const principles = [
 ]
 
 export default function AboutPage() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   return (
     <>
       <Header bordered />
@@ -124,10 +127,10 @@ export default function AboutPage() {
         <section className={styles.spirit}>
           <div className={`container ${styles.spiritGrid}`}>
             <div className={styles.spiritText}>
-              <h2 className={styles.colTitle}>한끗이 있는 사람</h2>
+              <h2 className={styles.colTitle}>{t('한끗이 있는 사람')}</h2>
               <div className={styles.spiritBody}>
                 {spiritBody.map((line, i) => (
-                  <p key={i}>{line}</p>
+                  <p key={i}>{t(line)}</p>
                 ))}
               </div>
             </div>
@@ -144,7 +147,7 @@ export default function AboutPage() {
         {/* 3. 유니드컴즈가 나아가는 방식 (타이틀 밴드) */}
         <section className={styles.band}>
           <div className="container">
-            <h2 className={styles.bandTitle}>유니드컴즈가 나아가는 방식</h2>
+            <h2 className={styles.bandTitle}>{t('유니드컴즈가 나아가는 방식')}</h2>
           </div>
         </section>
 
@@ -164,13 +167,13 @@ export default function AboutPage() {
         {/* 5. 플라이휠 본문 */}
         <section className={styles.flywheel}>
           <div className={`container ${styles.flywheelGrid}`}>
-            <p className={styles.tag}>{'// 플라이 휠'}</p>
+            <p className={styles.tag}>{t('// 플라이 휠')}</p>
             <div className={styles.flywheelText}>
               {flywheelGroups.map((group, gi) => (
                 <p key={gi}>
                   {group.map((line, li) => (
                     <span key={li}>
-                      {line}
+                      {t(line)}
                       {li < group.length - 1 && <br />}
                     </span>
                   ))}
@@ -183,23 +186,25 @@ export default function AboutPage() {
         {/* 6. 우리가 일하는 방식 (타이틀 밴드) */}
         <section className={`${styles.band} ${styles.bandWork}`}>
           <div className="container">
-            <h2 className={styles.bandTitle}>우리가 일하는 방식</h2>
+            <h2 className={styles.bandTitle}>{t('우리가 일하는 방식')}</h2>
           </div>
         </section>
 
         {/* 7. 일하는 원칙 */}
         <section className={styles.principles}>
           <div className={`container ${styles.principlesGrid}`}>
-            <p className={styles.tag}>{'// 한끗이 있는 사람들은, 매일 이렇게 일합니다.'}</p>
+            <p className={styles.tag}>{t('// 한끗이 있는 사람들은, 매일 이렇게 일합니다.')}</p>
             <div className={styles.principlesList}>
               {principles.map((p, i) => (
                 <article key={i} className={styles.principle}>
                   <div className={styles.pTagRow}>
-                    <span className={styles.pBox}>{p.tag}</span>
+                    <span className={styles.pBox}>
+                      {lang === 'en' ? EN_PRINCIPLE_TAGS[i] : p.tag}
+                    </span>
                     {p.label && <span className={styles.pLabel}>{p.label}</span>}
                   </div>
-                  <h3 className={styles.pTitle}>{p.title}</h3>
-                  <p className={styles.pDesc}>{p.desc}</p>
+                  <h3 className={styles.pTitle}>{t(p.title)}</h3>
+                  <p className={styles.pDesc}>{t(p.desc)}</p>
                 </article>
               ))}
             </div>
@@ -210,9 +215,9 @@ export default function AboutPage() {
         <section className={styles.closing}>
           <div className="container">
             <p className={styles.closingText}>
-              한 사람의 지혜가 기록으로 남을 때,
-              <br />
-              모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.
+              <MultiLine
+                text={t('한 사람의 지혜가 기록으로 남을 때,\n모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.')}
+              />
             </p>
           </div>
         </section>
