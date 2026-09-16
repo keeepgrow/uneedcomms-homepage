@@ -23,7 +23,7 @@ export default function Reveal({ children, className = '' }) {
           }
         })
       },
-      { threshold: 0.18, rootMargin: '0px 0px -16% 0px' }
+      { threshold: 0.14, rootMargin: '0px 0px -8% 0px' }
     )
     io.observe(el)
     return () => io.disconnect()
