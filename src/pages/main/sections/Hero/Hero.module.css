@@ -1,12 +1,21 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 620px;
+  /* 피그마 프레임(1680×992) 비율 — 씬 전체가 잘림 없이 보임 (vh 강제 안 함) */
+  aspect-ratio: 1680 / 992;
   overflow: hidden;
   /* 하늘 상단 색(디더 하늘의 밝은 회색)으로 여백 보정 */
   background: #ececec;
   color: var(--color-ink);
+}
+
+/* 세로 화면(모바일/태블릿 세로)은 프레임 비율이면 너무 짧아짐 → 뷰포트 높이 유지 */
+@media (max-aspect-ratio: 1 / 1) {
+  .hero {
+    aspect-ratio: auto;
+    height: 100vh;
+    min-height: 620px;
+  }
 }
 
 /* ── 배경: 디더링 씨스케이프 다중 레이어 (패럴랙스) ───── */
@@ -49,14 +58,16 @@
 }
 
 /* ── 콘텐츠: 좌상단 헤드라인 + CTA ───────────────────── */
-/* 헤드라인은 상단 22vh, 버튼은 헤드라인에서 40px 아래(고정 간격) */
+/* 피그마 프레임 기준: 헤드라인 y221/992 ≈ 22.3%. 버튼은 헤드라인 40px 아래 */
 .content {
-  position: relative;
+  position: absolute;
+  top: 22.3%;
+  left: 0;
+  right: 0;
   z-index: 5;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 22vh;
+  align-items: flex-start;
   /* 영상 배경 위에서 스크롤 복귀 시 텍스트가 사라지는 모바일 리페인트 버그 방지 —
      콘텐츠를 독립 GPU 레이어로 승격 */
   transform: translateZ(0);
@@ -122,8 +133,3 @@
   }
 }
 
-@media (max-width: 640px) {
-  .content {
-    padding-top: 18vh;
-  }
-}
