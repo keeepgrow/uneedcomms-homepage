@@ -25,8 +25,6 @@ export const translations = {
   'public@uneedcomms.com': 'Contact: public@uneedcomms.com',
 
   // ── 메인: 히어로 ─────────────────────────────────────
-  '한 사람이 해낼 수 있는 일의\n넓이와 깊이를 바꾸는,\n지혜로운 AI 에이전트를 만듭니다.':
-    'We build wise AI agents\nthat expand the breadth and depth\nof what one person can accomplish.',
   '더 알아보기': 'Learn more',
 
   // ── 메인: 유니드컴즈가 만드는 것 (제품) ──────────────
