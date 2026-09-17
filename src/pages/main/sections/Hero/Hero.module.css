@@ -62,7 +62,7 @@
 /* 타이틀은 화면이 좁아질수록 자연스럽게(fluid) 작아짐.
    단일 clamp라 단조 감소 — 좁히다 다시 커지는 현상 없음 */
 .headline {
-  font-size: clamp(26px, 3vw, 48px);
+  font-size: clamp(30px, 3vw, 48px);
   font-weight: 400;
   line-height: 1.32;
   letter-spacing: -0.02em;
