@@ -37,7 +37,7 @@
   will-change: transform;
 }
 
-/* 전경 래퍼 — 전경 이미지 + 하단 검정 스커트를 함께 이동 */
+/* 전경 래퍼 — 전경 이미지(연장 하단 포함)를 패럴랙스로 이동 */
 .fgWrap {
   position: absolute;
   inset: 0;
@@ -45,16 +45,26 @@
   pointer-events: none;
 }
 
-/* 검정 스커트 — 히어로 하단 아래로 이어지는 검정 (전경이 크게 떠올라도 빈틈 없음)
-   top을 100%보다 살짝 위로 올려 앞산 이미지 하단(solid 검정)과 겹쳐, 스크롤 시
-   이미지-스커트 경계(1px 렌더링 seam)가 보이지 않게 함 */
-.fgSkirt {
+/* 앞산 — 프레임 부분은 히어로에 정확히 맞고, 긴 하단(연장)은 히어로 아래로.
+   fg.png = 3360×2612 (프레임 1984 + 연장 628). 연장 렌더높이 = 628/3360*100vw = 18.69vw */
+.fgLayer {
   position: absolute;
   left: 0;
-  right: 0;
-  top: calc(100% - 14px);
-  height: 70vh;
-  background: #000;
+  bottom: -18.69vw;
+  width: 100%;
+  height: auto;
+}
+
+/* 세로 화면(모바일)은 커버로 채움 */
+@media (max-aspect-ratio: 1 / 1) {
+  .fgLayer {
+    inset: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+  }
 }
 
 /* ── 콘텐츠: 좌상단 헤드라인 + CTA ───────────────────── */

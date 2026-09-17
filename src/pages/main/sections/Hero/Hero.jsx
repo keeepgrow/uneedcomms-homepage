@@ -110,10 +110,10 @@ export default function Hero() {
             />
           )
         )}
-        {/* 전경: 검정 스커트를 하단에 이어 붙여 크게 떠올라도 하단 빈틈 없음 */}
+        {/* 전경(앞산) — 긴 하단(solid 검정)을 프레임 아래로 연장 렌더링해
+            스크롤 시 하단 빈틈/띠 없이 검정으로 덮음 */}
         <div ref={fgRef} className={styles.fgWrap}>
-          <img className={styles.layer} src={fg} alt="" />
-          <span className={styles.fgSkirt} />
+          <img className={styles.fgLayer} src={fg} alt="" />
         </div>
       </div>
 
