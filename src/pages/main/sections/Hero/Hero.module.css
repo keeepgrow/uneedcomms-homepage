@@ -57,6 +57,10 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 22vh;
+  /* 영상 배경 위에서 스크롤 복귀 시 텍스트가 사라지는 모바일 리페인트 버그 방지 —
+     콘텐츠를 독립 GPU 레이어로 승격 */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 /* 타이틀은 화면이 좁아질수록 자연스럽게(fluid) 작아짐.
