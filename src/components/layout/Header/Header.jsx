@@ -97,7 +97,13 @@ export default function Header({ bordered = false }) {
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((o) => !o)}
           >
-            {menuOpen ? '닫기' : '메뉴'}
+            {menuOpen
+              ? lang === 'en'
+                ? 'Close'
+                : '닫기'
+              : lang === 'en'
+                ? 'Menu'
+                : '메뉴'}
           </button>
 
           <div className={styles.lang}>
