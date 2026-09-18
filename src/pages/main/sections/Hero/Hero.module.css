@@ -55,15 +55,17 @@
   height: auto;
 }
 
-/* 세로 화면(모바일)은 커버로 채움 */
+/* 세로 화면(모바일): height 기반 — 프레임 부분(top 1984/2612)이 히어로 높이와 정확히
+   일치하도록 height:131.65%(=2612/1984). 연장분은 아래로. 가로 중앙 정렬 */
 @media (max-aspect-ratio: 1 / 1) {
   .fgLayer {
-    inset: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center bottom;
+    inset: auto;
+    top: 0;
+    left: 50%;
+    width: auto;
+    max-width: none; /* 전역 img max-width:100% 해제 — width:auto가 비율대로 커지게(찌그러짐 방지) */
+    height: 131.65%;
+    transform: translateX(-50%);
   }
 }
 
