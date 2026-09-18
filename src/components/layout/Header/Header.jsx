@@ -5,7 +5,7 @@ import Logo from './Logo.jsx'
 import { useLang } from '../../../i18n/LanguageContext.jsx'
 
 const NAV = [
-  { label: '처음으로', to: '/' },
+  { label: '홈', to: '/' },
   { label: '회사소개', to: '/about' },
   { label: '뉴스룸', to: '/newsroom' },
   { label: '채용', href: 'https://uneedcomms.ninehire.site/', external: true },

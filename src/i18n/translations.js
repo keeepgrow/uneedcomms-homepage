@@ -11,7 +11,7 @@
 //   '유니드컴즈가 만드는 것': 'What We Build',
 export const translations = {
   // ── 공통: NAV / 사이트맵 ─────────────────────────────
-  처음으로: 'Welcome',
+  홈: 'Home',
   회사소개: 'About',
   뉴스룸: 'Newsroom',
   채용: 'Careers',
@@ -72,8 +72,8 @@ export const translations = {
   '언론 속의 유니드컴즈': 'In the News',
   '전체보기': 'View all',
   '// 기사 및 보도자료': '// Articles & Press Releases',
-  '최신글부터': 'Newest first',
-  '과거글부터': 'Oldest first',
+  '최신순': 'Newest first',
+  '오래된순': 'Oldest first',
   '언론사별': 'By outlet',
   // 칩 (AWS 는 동일하여 미등록)
   파트너: 'Partner',

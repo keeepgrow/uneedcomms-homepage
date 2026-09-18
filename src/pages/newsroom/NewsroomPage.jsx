@@ -10,8 +10,8 @@ const PER_PAGE = 10
 const TOTAL = news.length
 
 const SORTS = [
-  { key: 'recent', label: '최신글부터' },
-  { key: 'old', label: '과거글부터' },
+  { key: 'recent', label: '최신순' },
+  { key: 'old', label: '오래된순' },
   { key: 'source', label: '언론사별' },
 ]
 
@@ -59,8 +59,8 @@ export default function NewsroomPage() {
       <main className={styles.page}>
         <section className={styles.section} id="newsroom">
           <div className="container">
-            <p className={styles.tag}>{t('// 기사 및 보도자료')}</p>
-            <h1 className={styles.title}>{t('언론 속의 유니드컴즈')}</h1>
+            <p className={styles.tag}>{/* {t('// 기사 및 보도자료')} */}</p>
+            <h1 className={styles.title}>{t('뉴스룸')}</h1>
           </div>
 
           {/* 제목 아래 풀블리드 라인 */}
