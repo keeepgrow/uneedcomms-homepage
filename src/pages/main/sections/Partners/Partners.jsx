@@ -14,9 +14,9 @@ export default function Partners() {
     <section className={styles.section} id="partners">
       <div className={`container ${styles.inner}`}>
         <h2 className={styles.title}>{t('유니드컴즈와 함께하는 투자사 · 파트너사')}</h2>
-        <p className={styles.subtitle}>
+        {/* <p className={styles.subtitle}>
           {t('유니드의 혁신과 성장에 뜻을 함께하는 글로벌 파트너 및 투자사입니다')}
-        </p>
+        </p> */}
 
         <div className={styles.grid}>
           {shown.map((p, idx) => {

@@ -72,7 +72,7 @@ export default function History() {
     <section className={styles.section} id="history">
       <div className={`container ${styles.head}`}>
         <h2 className={styles.title}>{t('유니드컴즈가 걸어온 길')}</h2>
-        <p className={styles.subtitle}>{t('유니드컴즈의 변화는 세상을 놀랍게 만듭니다')}</p>
+        {/* <p className={styles.subtitle}>{t('유니드컴즈의 변화는 세상을 놀랍게 만듭니다')}</p> */}
       </div>
 
       {/* 연도 눈금자 */}
