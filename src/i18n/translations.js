@@ -44,7 +44,7 @@ export const translations = {
   // 설명
   'KeepGrow는 마케팅 자동화 도구가 아니라, 이커머스의 매출 성장을 책임지는 AI 마케터입니다. 1초 회원가입과 성과 기반 쿠폰으로 방문자를 고객으로 전환하고, 신규 획득부터 재구매까지 성장 사이클을 완성합니다.':
     "KeepGrow isn't a marketing automation tool. It's an AI marketer that owns your e-commerce revenue growth. With 1-second sign-up and performance-based coupons, it turns visitors into customers and completes the growth cycle, from first purchase to repeat purchase.",
-  'Mesion은 메시지 발송 도구가 아니라, 프로모션으로 놓치던 고객을 매출로 바꾸는 세일즈 채널입니다. 기존 회원을 넘어 네이버페이 비회원 결제 고객까지 네이버 스마트톡톡으로 도달해, 비회원 매출을 총매출 성장으로 전환합니다.':
+  'Mesion은 메시지 발송 도구가 아니라, 프로모션으로 놓치던 고객을 매출로 바꾸는 세일즈 채널입니다. 기존 회원을 넘어 네이버페이 비회원 결제 고객까지 네이버 스마트 톡톡으로 도달해, 비회원 매출을 총매출 성장으로 전환합니다.':
     "Mesion isn't a messaging tool. It's a sales channel that uses promotions to turn the customers you'd otherwise miss into revenue. Through Naver TalkTalk, it reaches beyond your registered customers to Naver Pay guest shoppers, turning guest purchases into top-line growth.",
   'DecaGEO는 순위 조회 도구가 아니라, AI 추천의 기준을 세우는 표준 랭킹입니다. ChatGPT 같은 AI가 어떤 브랜드를 왜 추천하는지 매주 편향 없이 공개하고, 경쟁 브랜드 대비 내 위치를 확인해 다음 전략을 찾게 합니다.':
     "DecaGEO isn't a rank checker. It's the benchmark for how AI recommends brands. Every week, it shows — without bias — which brands AI models like ChatGPT recommend, and why. See where you stand against competitors, and find your next move.",
