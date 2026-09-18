@@ -8,7 +8,7 @@ export const historyYears = [
   {
     year: 2018,
     items: [
-      'Pre-Series A 투자 유치',
+      '프리 시리즈 A 투자 유치',
       'AWS 글로벌 기술 파트너 선정',
       'Shopify 에이전시 파트너 선정',
     ],
@@ -16,7 +16,7 @@ export const historyYears = [
   { year: 2019, items: ['Google 기술 채널 파트너 선정'] },
   { year: 2020, items: ['킵그로우(KeepGrow) 출시'] },
   { year: 2021, items: ["킵그로우 '1초 회원가입' 출시"] },
-  { year: 2022, items: ['Series A 투자 유치'] },
+  { year: 2022, items: ['시리즈 A 투자 유치'] },
   { year: 2023, items: ['네이버 커머스솔루션마켓 입점'] },
   { year: 2025, items: ['카페24 베스트파트너 3년 연속 선정'] },
   {
