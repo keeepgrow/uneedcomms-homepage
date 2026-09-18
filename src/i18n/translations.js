@@ -70,7 +70,7 @@ export const translations = {
 
   // ── 메인/서브: 뉴스룸 ────────────────────────────────
   '언론 속의 유니드컴즈': 'In the News',
-  '이야기 더보기': 'View all',
+  '전체보기': 'View all',
   '// 기사 및 보도자료': '// Articles & Press Releases',
   '최신글부터': 'Newest first',
   '과거글부터': 'Oldest first',

@@ -41,7 +41,7 @@ export default function Newsroom() {
 
           <div className={styles.moreWrap}>
             <Link to="/newsroom" className={styles.more}>
-              {t('이야기 더보기')}
+              {t('전체보기')}
               <DotArrow dir="right" />
             </Link>
           </div>
