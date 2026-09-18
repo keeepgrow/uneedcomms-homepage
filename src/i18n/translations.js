@@ -64,7 +64,9 @@ export const translations = {
   '유니드컴즈와 함께하는 투자사 · 파트너사': 'Our Investors & Partners',
   '유니드의 혁신과 성장에 뜻을 함께하는 글로벌 파트너 및 투자사입니다':
     'The global partners and investors who believe in our vision — and grow with us.',
-  // 열어서 더보기 / 닫기 토글 ('닫기'는 현재 Partners 에서만 t() 사용)
+  // 파트너 더보기/접기 토글
+  더보기: 'Show more',
+  접기: 'Show less',
   '열어서 더보기': 'Show more',
   닫기: 'Show less',
 

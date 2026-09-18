@@ -53,7 +53,7 @@ export default function Partners() {
               aria-expanded={expanded}
               onClick={() => setExpanded((v) => !v)}
             >
-              {expanded ? t('닫기') : t('전체보기')}
+              {expanded ? t('접기') : t('더보기')}
               <DotArrow dir={expanded ? 'up' : 'down'} />
             </button>
           </div>
