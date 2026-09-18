@@ -29,7 +29,7 @@ export const translations = {
 
   // ── 메인: 유니드컴즈가 만드는 것 (제품) ──────────────
   '유니드컴즈가 만드는 것': 'What We Build',
-  바로가기: 'Learn more',
+  바로가기: 'Visit site',
 
   // 제품명 (KeepGrow, Mesion 은 동일하여 미등록)
   DECA: 'DecaGEO',
