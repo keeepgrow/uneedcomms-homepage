@@ -22,7 +22,7 @@ export const historyYears = [
   {
     year: 2026,
     items: [
-      '데카(DecaGEO)·모도(ModoAI) 글로벌 출시',
+      '데카(DecaGEO)·모도(modoAI) 글로벌 출시',
       '메시온(Mesion) 출시',
       'NVIDIA Inception 프로그램 선정',
     ],

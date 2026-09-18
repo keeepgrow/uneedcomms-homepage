@@ -118,8 +118,8 @@ export const translations = {
   '네이버 커머스솔루션마켓 입점': 'Listed on Naver Commerce Solution Market',
   '카페24 베스트파트너 3년 연속 선정':
     'Became Cafe24 Best Partner, three years running',
-  '데카(DecaGEO)·모도(ModoAI) 글로벌 출시':
-    'Launched DecaGEO and ModoAI globally',
+  '데카(DecaGEO)·모도(modoAI) 글로벌 출시':
+    'Launched DecaGEO and modoAI globally',
   '메시온(Mesion) 출시': 'Launched Mesion',
   'NVIDIA Inception 프로그램 선정': 'Joined NVIDIA Inception program',
 
