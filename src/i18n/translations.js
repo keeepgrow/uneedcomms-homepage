@@ -19,7 +19,7 @@ export const translations = {
   // ── 공통: 푸터 회사 정보 ─────────────────────────────
   '(주) 유니드컴즈': 'UneedComms Co., Ltd.',
   '대표자: 양재필, 전형신    사업자등록번호 : 220-88-93926':
-    'CEO: Jaepil Yang, Hyeongshin Jeon    Business Registration No. 220-88-93926',
+    'Co-CEOs: Jaepil Yang, Hyeongshin Jeon    Business Registration No. 220-88-93926',
   '주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)':
     'L105, L1, FastFive Hapjeong, 81 Yanghwa-ro, Mapo-gu, Seoul, Republic of Korea',
   'public@uneedcomms.com': 'Contact: public@uneedcomms.com',
