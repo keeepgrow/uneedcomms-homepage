@@ -15,7 +15,9 @@ export default function Partners() {
       <div className={`container ${styles.inner}`}>
         <h2 className={styles.title}>{t('유니드컴즈와 함께하는 투자사 · 파트너사')}</h2>
         <p className={styles.subtitle}>
-          {t('지혜로운 AI와 함께 일할 때, 한 사람의 일은 어디까지 달라질까요? 유니드컴즈는 그 답을 향해, 지금도 나아가고 있습니다.')}
+          {t('지혜로운 AI와 함께 일할 때, 한 사람의 일은 어디까지 달라질까요?')}{' '}
+          <br className={styles.mobileBr} />
+          {t('유니드컴즈는 그 답을 향해, 지금도 나아가고 있습니다.')}
         </p>
 
         <div className={styles.grid}>

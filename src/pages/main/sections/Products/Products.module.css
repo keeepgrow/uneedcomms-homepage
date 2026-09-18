@@ -13,13 +13,23 @@
   min-height: clamp(520px, 40vw, 640px);
 }
 
-.title {
+.titleWrap {
   align-self: start;
   padding: clamp(60px, 6vw, 100px) 40px 0 0;
+}
+
+.title {
   font-size: clamp(30px, 3.3vw, 54px);
   font-weight: 400;
   letter-spacing: -0.02em;
   color: var(--color-white);
+}
+
+/* 부제목 — 파트너사 섹션과 동일한 스타일 */
+.subtitle {
+  margin-top: 18px;
+  font-size: 15px;
+  color: var(--color-gray-05);
 }
 
 /* ── 아코디언 ─────────────────────────────────────────── */
@@ -138,7 +148,7 @@
     grid-template-columns: 1fr;
     min-height: 0;
   }
-  .title {
+  .titleWrap {
     align-self: start;
     padding: clamp(48px, 9vw, 72px) 0 32px;
   }

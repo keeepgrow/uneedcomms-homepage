@@ -18,6 +18,17 @@
   margin-top: 18px;
   font-size: 15px;
   color: var(--color-gray-05);
+  word-break: keep-all; /* 단어 중간 줄바꿈 방지(달라질/까요? 방지) */
+}
+
+/* 부제목 줄바꿈 — 데스크탑에선 한 줄, 모바일에선 '달라질까요?' 뒤 줄바꿈 */
+.mobileBr {
+  display: none;
+}
+@media (max-width: 640px) {
+  .mobileBr {
+    display: inline;
+  }
 }
 
 .grid {
