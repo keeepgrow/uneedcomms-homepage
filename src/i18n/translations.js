@@ -62,6 +62,11 @@ export const translations = {
 
   // ── 메인: 투자사 · 파트너사 (Our Investors & Partners) ──
   '유니드컴즈와 함께하는 투자사 · 파트너사': 'Our Investors & Partners',
+  // 부제목 — 모바일 줄바꿈 위해 두 부분(질문/답)으로 분리
+  '지혜로운 AI와 함께 일할 때, 한 사람의 일은 어디까지 달라질까요?':
+    'How much can one person accomplish, working with wise AI?',
+  '유니드컴즈는 그 답을 향해, 지금도 나아가고 있습니다.':
+    'UneedComms is building toward that answer.',
   '유니드의 혁신과 성장에 뜻을 함께하는 글로벌 파트너 및 투자사입니다':
     'The global partners and investors who believe in our vision — and grow with us.',
   // 파트너 더보기/접기 토글
@@ -142,6 +147,8 @@ export const translations = {
 
   // ── 회사소개: 나아가는 방식 (밴드 타이틀) ────────────
   '유니드컴즈가 나아가는 방식': 'How We Move Forward',
+  '// 유니드컴즈는, 매일 이 바퀴를 더 빠르게 합니다.':
+    '// Every day, we make this wheel turn faster.',
 
   // ── 회사소개: 클로징 스테이트먼트 ────────────────────
   '한 사람의 지혜가 기록으로 남을 때,\n모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.':
