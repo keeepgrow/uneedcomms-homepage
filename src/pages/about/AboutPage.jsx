@@ -167,7 +167,7 @@ export default function AboutPage() {
         {/* 5. 플라이휠 본문 */}
         <section className={styles.flywheel}>
           <div className={`container ${styles.flywheelGrid}`}>
-            <p className={styles.tag}>{t('//유니드컴즈는, 매일 이 바퀴를 더 빠르게 합니다.')}</p>
+            <p className={styles.tag}>{t('// 유니드컴즈는, 매일 이 바퀴를 더 빠르게 합니다.')}</p>
             <div className={styles.flywheelText}>
               {flywheelGroups.map((group, gi) => (
                 <p key={gi}>
