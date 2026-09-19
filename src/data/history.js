@@ -27,6 +27,6 @@ export const historyYears = [
       'NVIDIA Inception 프로그램 선정',
     ],
   },
-]
+].reverse() // 캘린더 갤러리 역순 표시 (2026 → 2014)
 
-export const historyDefaultYear = 2014
+export const historyDefaultYear = 2026

@@ -28,14 +28,14 @@ export const partners = [
   { name: '메이크샵', logo: makeshop, type: '파트너' },
   { name: '아임웹', logo: imweb, type: '파트너' },
   { name: '본엔젤스', logo: bonangels, type: '투자사' },
+  { name: 'TS 인베스트먼트', logo: ts, type: '투자사' },
+  { name: '코오롱 인베스트먼트', logo: kolon, type: '투자사' },
+  // ── 열어서 더보기로 노출되는 추가 투자사 ──
+  { name: '네이버 D2', logo: naverD2, type: '투자사' },
   { name: 'SJ 인베스트먼트', logo: sj, type: '투자사' },
   { name: 'CJ이엔엠', logo: cjenm, type: '투자사' },
-  // ── 열어서 더보기로 노출되는 추가 투자사 ──
-  { name: '코오롱 인베스트먼트', logo: kolon, type: '투자사' },
-  { name: '네이버 D2', logo: naverD2, type: '투자사' },
   { name: '마그나 인베스트먼트', logo: magna, type: '투자사' },
   { name: '대경 인베스트먼트', logo: daekyung, type: '투자사' },
-  { name: 'TS 인베스트먼트', logo: ts, type: '투자사' },
 ]
 
 // 기본 노출 개수(나머지는 "열어서 더보기"로 펼침)
