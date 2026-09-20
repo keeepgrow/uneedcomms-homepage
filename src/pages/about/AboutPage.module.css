@@ -119,6 +119,20 @@
   height: auto;
 }
 
+/* 모바일: 가로형 다이어그램을 4:3으로 마스크(크롭) → 확대 표시 */
+@media (max-width: 640px) {
+  .diagramFrame {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+  .diagramImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
 /* ── 5. 플라이휠 본문 ───────────────────────────── */
 .flywheel {
   padding-top: 60px;
