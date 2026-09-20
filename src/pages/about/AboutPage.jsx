@@ -3,6 +3,7 @@ import Footer from '../../components/layout/Footer/Footer.jsx'
 import { useLang } from '../../i18n/LanguageContext.jsx'
 import spiritImg from '../../assets/about/spirit.png'
 import flywheelImg from '../../assets/about/flywheel.png'
+import flywheelEnImg from '../../assets/about/flywheel-en.png'
 import styles from './AboutPage.module.css'
 
 // 줄바꿈(\n)을 <br />로 렌더
@@ -157,7 +158,7 @@ export default function AboutPage() {
             <div className={styles.diagramFrame}>
               <img
                 className={styles.diagramImg}
-                src={flywheelImg}
+                src={lang === 'en' ? flywheelEnImg : flywheelImg}
                 alt="유니드컴즈 플라이휠 다이어그램"
               />
             </div>
