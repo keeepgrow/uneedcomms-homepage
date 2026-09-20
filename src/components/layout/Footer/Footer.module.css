@@ -127,11 +127,6 @@
 }
 
 @media (max-width: 768px) {
-  /* 모바일: 파도 이미지 1/2 축소 (가로세로 비율 유지) */
-  .dots {
-    width: 960px;
-  }
-
   /* 모바일: 영문 클로징 문구 2줄 처리 */
   .closing span {
     display: block;
