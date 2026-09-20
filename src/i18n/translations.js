@@ -55,6 +55,13 @@ export const translations = {
   '유니드컴즈를 만드는 것': 'What Builds Us',
   '트렌드 시그널': 'Trend Signal',
   플라이휠: 'Flywheel',
+  '시장이 움직이기 시작했다는 신호': 'A sign that the market has started to move',
+  // 플라이휠 다이어그램 라벨 (피그마 KR/EN 기준)
+  '비지니스 기회': 'Business Opportunity',
+  수익창출: 'Revenue',
+  '사업부 신설': 'New\nBusiness Unit',
+  고객창출: 'Customers',
+  '사업부 플라이휠\n(4개 사업부)': "Each Unit's Flywheel\n(4 units)",
   '좋은 제품만으로는 충분하지 않다는 것을, 우리는 경험으로 배웠습니다. 그래서 시장이 움직이기 시작했다는 신호, ‘트렌드 시그널’을 먼저 읽습니다. 모두가 트렌드라 부르기 전에, 제품을 내놓습니다.':
     "We learned from experience that a good product alone isn't enough. So we read the Trend Signal first — the sign that a market has started to move. Before everyone calls it a trend, we've already shipped.",
   '유니드컴즈는 플라이휠로 움직입니다. 우리의 목표는 여기서 나오고, 새로운 일을 시작할지도 여기서 정합니다. 질문은 하나입니다. 이 플라이휠을 빠르게 하는가.':

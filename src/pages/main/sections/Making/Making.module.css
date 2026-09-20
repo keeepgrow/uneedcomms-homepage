@@ -76,7 +76,7 @@
 .annoLine {
   position: absolute;
   left: 42.702cqw;
-  top: 40.373cqw;
+  top: 40.99cqw; /* 점을 head(트렌드 시그널) 텍스트 수직 중앙에 맞춤 */
   transform: translateX(-50%); /* 점과 동일 중심축 */
   width: 1px;
   height: 21.739cqw;
@@ -86,7 +86,7 @@
 .annoDot {
   position: absolute;
   left: 42.702cqw; /* 선과 동일 x → translateX(-50%)로 정확히 중앙 정렬 */
-  top: 40.373cqw;
+  top: 40.99cqw; /* head 텍스트 수직 중앙 정렬 */
   transform: translate(-50%, -50%);
   width: 1.24cqw;
   height: 1.24cqw;
