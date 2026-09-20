@@ -55,18 +55,45 @@
   height: auto;
 }
 
+/* 세로 화면(모바일): 씬 이미지를 1/2 스케일로 표시.
+   씬 레이어를 하단 50% 박스로 두면 cover 스케일이 절반 → 배·산 등이 절반 크기.
+   object-position(위치 룰)은 그대로 유지. 하늘(video bg)은 전체 유지. */
+@media (max-aspect-ratio: 1 / 1) {
+  img.layer {
+    top: auto;
+    bottom: 0;
+    height: 50%;
+  }
+}
+
 /* 세로 화면(모바일): height 기반 — 프레임 부분(top 1984/2612)이 히어로 높이와 정확히
    일치하도록 height:131.65%(=2612/1984). 연장분은 아래로. 가로 중앙 정렬 */
 @media (max-aspect-ratio: 1 / 1) {
   .fgLayer {
     inset: auto;
-    top: 0;
+    top: 50%; /* 씬과 동일하게 1/2 스케일 — 프레임부가 하단 50%(50%~100%)에 위치 */
     left: 50%;
     width: auto;
     max-width: none; /* 전역 img max-width:100% 해제 — width:auto가 비율대로 커지게(찌그러짐 방지) */
-    height: 131.65%;
+    height: 65.83%; /* 131.65% / 2 */
     transform: translateX(-50%);
   }
+
+  /* 전경 아래 검정 보정 — 스크롤로 전경이 올라가도 하단 빈틈 없이 검정 유지 */
+  .fgFill {
+    display: block;
+  }
+}
+
+/* 전경 하단 검정 연장 (기본 숨김, 모바일에서만 노출) */
+.fgFill {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%; /* 히어로 하단부터 아래로 */
+  height: 80vh;
+  background: var(--color-black);
 }
 
 /* ── 콘텐츠: 좌상단 헤드라인 + CTA ───────────────────── */

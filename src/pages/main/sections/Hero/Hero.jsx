@@ -114,6 +114,7 @@ export default function Hero() {
             스크롤 시 하단 빈틈/띠 없이 검정으로 덮음 */}
         <div ref={fgRef} className={styles.fgWrap}>
           <img className={styles.fgLayer} src={fg} alt="" />
+          <div className={styles.fgFill} aria-hidden="true" />
         </div>
       </div>
 
