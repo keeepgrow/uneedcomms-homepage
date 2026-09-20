@@ -13,7 +13,7 @@ const NAV = [
 ]
 
 export default function Footer({ sitemap = true }) {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const dotsRef = useRef(null)
 
   // 푸터 끝으로 스크롤할수록 도트가 부드럽게 위로 최대 100px 상승 (스크롤 연동)
@@ -82,7 +82,14 @@ export default function Footer({ sitemap = true }) {
             </nav>
           </div>
           <p className={styles.closing}>
-            {t('한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.')}
+            {lang === 'en' ? (
+              <>
+                <span>When one person&apos;s wisdom is written down, it expands </span>
+                <span>the breadth and depth of what everyone can accomplish.</span>
+              </>
+            ) : (
+              t('한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.')
+            )}
           </p>
         </div>
       )}
