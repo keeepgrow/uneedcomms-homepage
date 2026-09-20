@@ -126,6 +126,15 @@
   color: var(--color-white);
 }
 
+/* 세로 화면(모바일): 도트 크기를 히어로와 동일하게.
+   히어로는 이미지(높이 1984px)를 100vh로 cover → 배율 100vh/1984.
+   푸터 파일(3840px)을 같은 배율로: 3840/1984×100vh = 193.55vh */
+@media (max-aspect-ratio: 1 / 1) {
+  .dots {
+    width: 193.55vh;
+  }
+}
+
 @media (max-width: 768px) {
   /* 모바일: 영문 클로징 문구 2줄 처리 */
   .closing span {
