@@ -22,11 +22,18 @@
 .title {
   /* 뉴스룸 텍스트 위 여백 60px (헤더 아래로부터) */
   margin-top: 60px;
-  font-size: 32px;
+  font-size: 56px;
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.2;
   color: var(--color-ink);
+}
+
+/* EN 전용 부제목 — 메인 페이지 부제목 크기(15px) 참고 */
+.subtitle {
+  margin-top: 16px;
+  font-size: 15px;
+  color: var(--color-gray-05);
 }
 
 /* ── 풀블리드 구분선 (뷰포트 전체폭) ─────────────────── */

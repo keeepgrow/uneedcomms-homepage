@@ -61,6 +61,9 @@ export default function NewsroomPage() {
           <div className="container">
             <p className={styles.tag}>{/* {t('// 기사 및 보도자료')} */}</p>
             <h1 className={styles.title}>{t('뉴스룸')}</h1>
+            {lang === 'en' && (
+              <p className={styles.subtitle}>Press coverage is in Korean.</p>
+            )}
           </div>
 
           {/* 제목 아래 풀블리드 라인 */}
