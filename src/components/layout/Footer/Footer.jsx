@@ -1,6 +1,8 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 import Logo from '../Header/Logo.jsx'
+import dots from '../../../assets/footer-dots.png'
 import { useLang } from '../../../i18n/LanguageContext.jsx'
 
 const NAV = [
@@ -12,11 +14,49 @@ const NAV = [
 
 export default function Footer({ sitemap = true }) {
   const { t } = useLang()
+  const dotsRef = useRef(null)
+
+  // 푸터 끝으로 스크롤할수록 도트가 부드럽게 위로 최대 100px 상승 (스크롤 연동)
+  useEffect(() => {
+    if (!sitemap) return
+    const el = dotsRef.current
+    if (!el) return
+    const RANGE = 600 // 하단 600px 구간에서 서서히 상승
+    let raf = 0
+    const update = () => {
+      raf = 0
+      const winBottom = window.scrollY + window.innerHeight
+      const docHeight = document.documentElement.scrollHeight
+      const dist = docHeight - winBottom // 페이지 맨 아래에서 0
+      const p = Math.min(Math.max(1 - dist / RANGE, 0), 1)
+      el.style.transform = `translate(-50%, ${(1 - p) * 100}px)`
+    }
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update)
+    }
+    update()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+      if (raf) cancelAnimationFrame(raf)
+    }
+  }, [sitemap])
+
   return (
     <footer className={styles.footer}>
       {/* 블루 사이트맵 — 홈에서만 노출 (서브페이지는 sitemap={false}) */}
       {sitemap && (
         <div className={styles.top}>
+          {/* 도트 산맥 (전체폭, 하단) — 검은 배경 원본을 invert+multiply로 블루 위 어둡게 */}
+          <img
+            ref={dotsRef}
+            className={styles.dots}
+            src={dots}
+            alt=""
+            aria-hidden="true"
+          />
           <div className={`container ${styles.topInner}`}>
             <Link to="/" className={styles.logoLink} aria-label="유니드컴즈 홈">
               <Logo className={styles.logo} mono />
@@ -41,6 +81,9 @@ export default function Footer({ sitemap = true }) {
               )}
             </nav>
           </div>
+          <p className={styles.closing}>
+            {t('한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.')}
+          </p>
         </div>
       )}
 

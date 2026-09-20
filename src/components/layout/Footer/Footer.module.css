@@ -2,16 +2,51 @@
   width: 100%;
 }
 
-/* ── 블루 사이트맵 (Figma uneed_사이트맵, 1680×450) ─────── */
+/* ── 블루 사이트맵 (Figma uneed_사이트맵, 1680×700) ─────── */
 .top {
+  position: relative;
+  overflow: hidden;
   background: var(--color-brand);
+  min-height: clamp(520px, 41.67vw, 700px);
   padding-block: clamp(40px, 4.2vw, 60px) clamp(80px, 10vw, 146px);
 }
 
+/* 도트 산맥 — 전체폭, 하단. 원본(검은 배경+밝은 도트)을 invert+multiply로
+   블루 위에 어두운 도트로 표현. 최하단 도달 시 위로 100px 상승. */
+.dots {
+  position: absolute;
+  left: 50%;
+  top: 140px; /* 프레임 상단 기준 140px */
+  width: 1920px; /* 원본 그대로, 1920px 중앙정렬 (Figma x=-120) */
+  max-width: none;
+  height: auto;
+  pointer-events: none;
+  /* 기본(JS 로드 전): 피그마 위치보다 100px 아래. 스크롤 연동으로 JS가 transform 갱신 */
+  transform: translate(-50%, 100px);
+  will-change: transform;
+}
+
 .topInner {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+/* 하단 중앙 클로징 문구 */
+.closing {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(56px, 8vw, 110px);
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
+  padding-inline: var(--gutter);
+  text-align: center;
+  font-size: clamp(12px, 1.05vw, 15px);
+  color: var(--color-white);
+  letter-spacing: -0.01em;
 }
 
 .logoLink {
@@ -92,6 +127,11 @@
 }
 
 @media (max-width: 768px) {
+  /* 모바일: 파도 이미지 1/2 축소 (가로세로 비율 유지) */
+  .dots {
+    width: 960px;
+  }
+
   /* 모바일: © 저작권(왼쪽) · 메일(오른쪽) 한 줄 */
   .legal {
     width: 100%;

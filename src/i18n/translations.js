@@ -161,6 +161,10 @@ export const translations = {
   '한 사람의 지혜가 기록으로 남을 때,\n모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.':
     "When one person's wisdom is written down,\nit expands the breadth and depth of what everyone can accomplish.",
 
+  // ── 푸터 사이트맵: 클로징 문구 (한 줄) ────────────────
+  '한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.':
+    "When one person's wisdom is written down, it expands the breadth and depth of what everyone can accomplish.",
+
   // ── 회사소개: 우리가 일하는 방식 (How We Work) ────────
   '우리가 일하는 방식': 'How We Work',
   '// 한끗이 있는 사람들은, 매일 이렇게 일합니다.':
