@@ -82,14 +82,7 @@ export default function Footer({ sitemap = true }) {
             </nav>
           </div>
           <p className={styles.closing}>
-            {lang === 'en' ? (
-              <>
-                <span>When one person&apos;s wisdom is written down, it expands </span>
-                <span>the breadth and depth of what everyone can accomplish.</span>
-              </>
-            ) : (
-              t('한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.')
-            )}
+            {lang === 'en' ? 'Beyond Knowledge. Toward Wisdom.' : '지식을 넘어, 지혜로,'}
           </p>
         </div>
       )}

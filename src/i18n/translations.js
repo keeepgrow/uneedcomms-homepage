@@ -53,6 +53,7 @@ export const translations = {
 
   // ── 메인: 유니드컴즈를 만드는 것 (What Builds Us) ──────
   '유니드컴즈를 만드는 것': 'What Builds Us',
+  '시작과 판단의 기준이, 여기에 있습니다.': 'This is where we start, and how we decide.',
   '트렌드 시그널': 'Trend Signal',
   플라이휠: 'Flywheel',
   '시장이 움직이기 시작했다는 신호': 'A sign that a market has started to move',
@@ -69,11 +70,8 @@ export const translations = {
 
   // ── 메인: 투자사 · 파트너사 (Our Investors & Partners) ──
   '유니드컴즈와 함께하는 투자사 · 파트너사': 'Our Investors & Partners',
-  // 부제목 — 모바일 줄바꿈 위해 두 부분(질문/답)으로 분리
-  '지혜로운 AI와 함께 일할 때, 한 사람의 일은 어디까지 달라질까요?':
-    'How much can one person accomplish, working with wise AI?',
-  '유니드컴즈는 그 답을 향해, 지금도 나아가고 있습니다.':
-    'UneedComms is building toward that answer.',
+  // 부제목
+  '유니드컴즈는, 혼자 만들어지지 않았습니다.': "UneedComms wasn't built alone.",
   '유니드의 혁신과 성장에 뜻을 함께하는 글로벌 파트너 및 투자사입니다':
     'The global partners and investors who believe in our vision — and grow with us.',
   // 파트너 더보기/접기 토글
@@ -113,6 +111,8 @@ export const translations = {
 
   // ── 메인: 연혁 (How We Got Here) ─────────────────────
   '유니드컴즈가 걸어온 길': 'How We Got Here',
+  '성공은 한 번의 혁신이 아니라, 축적의 결과라고 믿습니다.':
+    'Success comes from compounding, not a single breakthrough.',
   '유니드컴즈의 변화는 세상을 놀랍게 만듭니다':
     'The story of change that keeps surprising the world.',
   // 연도별 마일스톤

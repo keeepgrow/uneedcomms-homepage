@@ -20,6 +20,7 @@ export default function Making() {
     <section className={styles.section} id="about">
       <div className={`container ${styles.inner}`}>
         <h2 className={styles.title}>{t('유니드컴즈를 만드는 것')}</h2>
+        <p className={styles.subtitle}>{t('시작과 판단의 기준이, 여기에 있습니다.')}</p>
 
         <div className={styles.cards}>
           {/* 트렌드 시그널 (흰 카드) */}
