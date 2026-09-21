@@ -55,7 +55,7 @@ export const translations = {
   '유니드컴즈를 만드는 것': 'What Builds Us',
   '트렌드 시그널': 'Trend Signal',
   플라이휠: 'Flywheel',
-  '시장이 움직이기 시작했다는 신호': 'A sign that the market has started to move',
+  '시장이 움직이기 시작했다는 신호': 'A sign that a market has started to move',
   // 플라이휠 다이어그램 라벨 (피그마 KR/EN 기준)
   '비지니스 기회': 'Business Opportunity',
   수익창출: 'Revenue',
