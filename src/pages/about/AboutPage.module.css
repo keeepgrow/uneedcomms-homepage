@@ -253,6 +253,14 @@
   color: var(--color-ink);
 }
 
+/* 여섯 원칙 하단 흐린 회색 한 줄 (피그마) */
+.principlesClosing {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-gray-04);
+}
+
 /* ── 8. 클로징 스테이트먼트 ─────────────────────── */
 .closing {
   background: #f1f1f1;

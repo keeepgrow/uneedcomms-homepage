@@ -1,0 +1,2669 @@
+<canvas id="0:1" name="Page 1" x="0" y="0" width="0" height="0">
+  <frame id="45:468" name="메인" x="5666" y="332" width="1680" height="6642">
+    <frame id="50:12" name="hero" x="0" y="0" width="1680" height="992">
+      <rounded-rectangle id="50:5" name="배경" x="-120" y="0" width="1920" height="1041" />
+      <rounded-rectangle id="50:8" name="산1" x="-120" y="234" width="1920" height="872" />
+      <rounded-rectangle id="50:10" name="산2" x="-120" y="580" width="1920" height="526" />
+      <rounded-rectangle id="50:11" name="산3" x="-120" y="647" width="1920" height="345" />
+      <text id="50:2" name="한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는, 지혜로운 AI 에이전트를 만듭니다." x="184" y="221" width="758" height="195" />
+      <frame id="91:1956" name="더보기 버튼" x="186" y="466" width="142" height="52">
+        <text id="91:1957" name="더 알아보기" x="25" y="16" width="64" height="20" />
+        <frame id="91:1958" name="arrow" x="109" y="32" width="8.000000524536517" height="12.000000349691163" />
+      </frame>
+    </frame>
+    <frame id="45:527" name="NAV" x="0" y="0" width="1680" height="126">
+      <frame id="45:507" name="uneed_logo" x="184" y="49" width="168" height="28" />
+      <frame id="45:534" name="Frame 3" x="1063" y="53" width="319" height="21">
+        <text id="45:535" name="처음으로" x="0" y="0" width="52" height="21" />
+        <text id="327:2729" name="회사소개" x="102" y="0" width="52" height="21" />
+        <text id="45:536" name="뉴스룸" x="204" y="0" width="39" height="21" />
+        <text id="45:537" name="채용" x="293" y="0" width="26" height="21" />
+      </frame>
+      <frame id="46:548" name="Frame 4" x="1442" y="54" width="54" height="18">
+        <text id="45:543" name="KR" x="0" y="0" width="16" height="18" />
+        <vector id="46:547" name="Vector 1" x="27" y="5" width="0" height="8" />
+        <text id="45:546" name="EN" x="38" y="0" width="16" height="18" />
+      </frame>
+    </frame>
+    <frame id="50:518" name="uneed_product" x="0" y="1092" width="1680" height="670">
+      <frame id="50:505" name="uneed_product" x="840" y="0" width="658" height="670">
+        <frame id="91:1946" name="상품" x="1" y="0" width="656" height="670">
+          <frame id="50:476" name="킵그로우-열기" x="0" y="0" width="656" height="430">
+            <frame id="1171:128" name="버튼" x="25" y="328" width="100" height="52">
+              <text id="1171:129" name="바로가기" x="26" y="16" width="48" height="20" />
+            </frame>
+            <text id="50:421" name="KeepGrow는 마케팅 자동화 도구가 아니라, 이커머스의 매출 성장을 책임지는 AI 마케터입니다. 1초 회원가입과 성과 기반 쿠폰으로 방문자를 고객으로 전환하고, 신규 획득부터 재구매까지 성장 사이클을 완성합니다." x="25" y="230" width="606" height="63" />
+            <text id="50:414" name="누구나 고용하는 AI 마케팅 직원" x="25" y="170" width="606" height="20" />
+            <frame id="50:393" name="로고" x="25" y="105" width="203" height="35" />
+            <text id="50:418" name="KeepGrow" x="25" y="25" width="606" height="30" />
+          </frame>
+          <frame id="50:477" name="메시온" x="0" y="430" width="656" height="80">
+            <text id="50:480" name="Mesion" x="20" y="25" width="619" height="30" />
+          </frame>
+          <frame id="50:501" name="데카" x="0" y="510" width="656" height="80">
+            <text id="50:502" name="DECA" x="20" y="25" width="619" height="30" />
+          </frame>
+          <frame id="50:503" name="모도AI" x="0" y="590" width="656" height="80">
+            <text id="50:504" name="modoAI" x="20" y="25" width="619" height="30" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="91:1965" name="title" x="184" y="0" width="656" height="593">
+        <text id="50:509" name="유니드컴즈가 만드는 것" x="0" y="100" width="528" height="65" />
+        <text id="50:510" name="지혜로운 AI를 향해, 오늘의 제품을 만듭니다." x="0" y="205" width="334" height="22" hidden="true" />
+      </frame>
+    </frame>
+    <frame id="53:790" name="uneed_연혁" x="0" y="2721" width="1680" height="1296">
+      <text id="53:834" name="유니드컴즈와 함께하는 투자사 · 파트너사" x="184" y="100" width="1312" height="84" />
+      <text id="53:835" name="유니드의 혁신과 성장에 뜻을 함께하는 글로벌 파트너 및 투자사입니다" x="184" y="224" width="1312" height="22" />
+      <frame id="53:868" name="01" x="184" y="326" width="310" height="240">
+        <frame id="53:917" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1060" name="구글" x="70" y="66" width="130" height="43" hidden="true" />
+          <frame id="53:1068" name="구글-화이트" x="70" y="66" width="130" height="43" />
+        </frame>
+        <frame id="53:915" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:907" name="구글" x="0" y="5.5" width="30" height="19" />
+          <frame id="53:912" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:913" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:918" name="02" x="518" y="325" width="310" height="240">
+        <frame id="53:923" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1082" name="메타" x="66" y="73" width="139" height="28" hidden="true" />
+          <frame id="53:1088" name="메타-화이트" x="66" y="73" width="139" height="28" />
+        </frame>
+        <frame id="53:919" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:920" name="메타" x="0" y="5.5" width="30" height="19" />
+          <frame id="53:921" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:922" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:931" name="03" x="852" y="326" width="310" height="240">
+        <frame id="53:936" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1094" name="AWS" x="91" y="61" width="88" height="53" hidden="true" />
+          <frame id="53:1101" name="AWS-화이트" x="91" y="61" width="88" height="53" />
+        </frame>
+        <frame id="53:932" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:933" name="AWS" x="0" y="5.5" width="36" height="19" />
+          <frame id="53:934" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:935" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:986" name="04" x="1186" y="326" width="310" height="240">
+        <frame id="53:991" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1118" name="쇼피파이" x="71" y="67" width="128" height="40" hidden="true" />
+          <frame id="53:1124" name="쇼피파이-화이트" x="71" y="67" width="128" height="40" />
+        </frame>
+        <frame id="53:987" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:988" name="쇼피파이" x="0" y="5.5" width="59" height="19" />
+          <frame id="53:989" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:990" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:1013" name="05" x="184" y="590" width="310" height="240">
+        <frame id="53:1018" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1019" name="네이버 로고" x="77" y="76" width="117" height="22" />
+        </frame>
+        <frame id="53:1014" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:1015" name="네이버" x="0" y="5.5" width="45" height="19" />
+          <frame id="1173:1008" name="Frame 240" x="224" y="0" width="46" height="30">
+            <frame id="53:1016" name="Frame 8" x="0" y="0" width="46" height="30">
+              <text id="53:1017" name="파트너" x="5" y="7" width="36" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:1000" name="06" x="518" y="590" width="310" height="240">
+        <frame id="53:1005" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1108" name="카카오" x="84" y="72" width="102" height="31" hidden="true" />
+          <frame id="53:1113" name="카카오-화이트" x="80" y="71" width="110" height="33" />
+        </frame>
+        <frame id="53:1001" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:1002" name="카카오" x="0" y="5.5" width="45" height="19" />
+          <frame id="53:1003" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:1004" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:1026" name="07" x="852" y="590" width="310" height="240">
+        <frame id="53:1031" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1147" name="카페24" x="61" y="74" width="148" height="27" hidden="true" />
+          <frame id="53:1159" name="카페24-화이트" x="61" y="74" width="148" height="27" />
+        </frame>
+        <frame id="53:1027" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:1028" name="카페24" x="0" y="5.5" width="50" height="19" />
+          <frame id="53:1029" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:1030" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:1039" name="08" x="1186" y="590" width="310" height="240">
+        <frame id="53:1044" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1183" name="메이크샵" x="67" y="82" width="137" height="30" hidden="true" />
+          <frame id="53:1175" name="메이크샵-화이트" x="67" y="72" width="137" height="30" />
+        </frame>
+        <frame id="53:1040" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:1041" name="메이크샵" x="0" y="5.5" width="59" height="19" />
+          <frame id="53:1042" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:1043" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:1187" name="09" x="184" y="854" width="310" height="240">
+        <frame id="53:1192" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1279" name="아임웹" x="43" y="55" width="185" height="64" hidden="true" />
+          <frame id="53:1292" name="아임웹-화이트" x="43" y="55" width="185" height="64" />
+        </frame>
+        <frame id="53:1188" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:1189" name="아임웹" x="0" y="5.5" width="45" height="19" />
+          <frame id="53:1190" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:1191" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:1201" name="10" x="518" y="854" width="310" height="240">
+        <frame id="53:1206" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="53:1308" name="본엔젤스" x="98" y="61" width="75" height="52" hidden="true" />
+          <frame id="53:1312" name="본엔젤스-화이트" x="98" y="61" width="75" height="52" />
+        </frame>
+        <frame id="53:1202" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:1203" name="본엔젤스" x="0" y="5.5" width="59" height="19" />
+          <frame id="53:1204" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:1205" name="투자사" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:1214" name="11" x="852" y="854" width="310" height="240">
+        <frame id="53:1219" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="56:1341" name="sj" x="96" y="54" width="79" height="66" hidden="true" />
+          <frame id="56:1346" name="sj-화이트" x="96" y="54" width="79" height="66" />
+        </frame>
+        <frame id="53:1215" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:1216" name="SJ 인베스트먼트" x="0" y="5.5" width="112" height="19" />
+          <frame id="53:1217" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:1218" name="투자사" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="53:1242" name="12" x="1186" y="854" width="310" height="240">
+        <frame id="53:1247" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="56:1386" name="CJ_ENM" x="61" y="62" width="148" height="71" hidden="true" />
+          <frame id="56:1398" name="CJ_ENM-화이트" x="61" y="62" width="148" height="71" />
+        </frame>
+        <frame id="53:1243" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="53:1244" name="CJ이엔엠" x="0" y="5.5" width="65" height="19" />
+          <frame id="53:1245" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="53:1246" name="투자사" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="56:1410" name="13" x="182" y="1118" width="310" height="240" hidden="true">
+        <frame id="56:1415" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="56:1494" name="코오롱" x="50" y="72" width="170" height="31" hidden="true" />
+          <frame id="56:1505" name="코오롱-화이트" x="50" y="72" width="170" height="31" />
+        </frame>
+        <frame id="56:1411" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="56:1412" name="코오롱 인베스트먼트" x="0" y="5.5" width="137" height="19" />
+          <frame id="56:1413" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="56:1414" name="투자사" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="56:1440" name="14" x="516" y="1118" width="310" height="240" hidden="true">
+        <frame id="56:1445" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="56:1528" name="네이버 D2" x="52" y="75" width="167" height="45" hidden="true" />
+          <frame id="56:1540" name="네이버 D2-화이트" x="52" y="65" width="167" height="45" />
+        </frame>
+        <frame id="56:1441" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="56:1442" name="네이버 D2" x="0" y="5.5" width="70" height="19" />
+          <frame id="56:1443" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="56:1444" name="투자사" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="56:1452" name="15" x="850" y="1118" width="310" height="240" hidden="true">
+        <frame id="56:1457" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="56:1593" name="마그나" x="63" y="71" width="145" height="31" hidden="true" />
+          <frame id="56:1613" name="마그나" x="63" y="71" width="145" height="31" />
+        </frame>
+        <frame id="56:1453" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="56:1454" name="마그나 인베스트먼트" x="0" y="5.5" width="137" height="19" />
+          <frame id="56:1455" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="56:1456" name="투자사" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="56:1466" name="16" x="1184" y="1118" width="310" height="240" hidden="true">
+        <frame id="56:1471" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="56:1633" name="대경" x="93" y="63" width="84" height="69" hidden="true" />
+          <frame id="56:1637" name="대경-화이트" x="93" y="63" width="84" height="69" />
+        </frame>
+        <frame id="56:1467" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="56:1468" name="대경 인베스트먼트" x="0" y="5.5" width="123" height="19" />
+          <frame id="56:1469" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="56:1470" name="투자사" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="57:1641" name="17" x="182" y="1382" width="310" height="240" hidden="true">
+        <frame id="57:1646" name="로고 영역" x="20" y="12" width="270" height="174">
+          <frame id="57:1667" name="Layer_1" x="91" y="59" width="88" height="57" />
+        </frame>
+        <frame id="57:1642" name="Frame 9" x="20" y="198" width="270" height="30">
+          <text id="57:1643" name="TS 인베스트먼트" x="0" y="5.5" width="114" height="19" />
+          <frame id="57:1644" name="Frame 8" x="224" y="0" width="46" height="30">
+            <text id="57:1645" name="투자사" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="91:1692" name="더보기 버튼" x="761" y="1164" width="158" height="52">
+        <text id="91:1701" name="열어서 더보기" x="25" y="16" width="76" height="20" />
+        <frame id="91:1693" name="arrow" x="121" y="22" width="12" height="8" />
+      </frame>
+    </frame>
+    <frame id="91:2040" name="uneed_이야기" x="0" y="4017" width="1680" height="782">
+      <frame id="91:2041" name="uneed_product" x="840" y="0" width="656" height="782">
+        <frame id="91:2042" name="1" x="1" y="0" width="654" height="132">
+          <frame id="91:2043" name="킵그로우" x="0" y="0" width="654" height="132">
+            <frame id="91:2129" name="언론사/날짜" x="25" y="25" width="604" height="25">
+              <frame id="91:2077" name="tag" x="0" y="0" width="71" height="25">
+                <text id="91:2045" name="미디어 파인" x="6" y="8" width="59" height="9" />
+              </frame>
+              <text id="91:2128" name="2026-04-06" x="533" y="8" width="71" height="9" />
+            </frame>
+            <text id="91:2044" name="네이버 CRM ‘메시온’, 비회원까지 잡았다…출시 3개월 만에 2억 건 발송 돌파" x="25" y="70" width="604" height="36" />
+          </frame>
+        </frame>
+        <frame id="91:2130" name="2" x="1" y="132" width="654" height="132">
+          <frame id="91:2131" name="킵그로우" x="0" y="0" width="654" height="132">
+            <frame id="91:2132" name="언론사/날짜" x="25" y="25" width="604" height="25">
+              <frame id="91:2133" name="tag" x="0" y="0" width="68" height="25">
+                <text id="91:2134" name="머니투데이" x="6" y="8" width="56" height="9" />
+              </frame>
+              <text id="91:2135" name="2026-02-02" x="533" y="8" width="71" height="9" />
+            </frame>
+            <text id="91:2136" name="카페24, 유니드컴즈 &#39;2026년 1월 베스트 파트너&#39; 선정" x="25" y="70" width="604" height="36" />
+          </frame>
+        </frame>
+        <frame id="91:2137" name="3" x="1" y="264" width="654" height="132">
+          <frame id="91:2138" name="킵그로우" x="0" y="0" width="654" height="132">
+            <frame id="91:2139" name="언론사/날짜" x="25" y="25" width="604" height="25">
+              <frame id="91:2140" name="tag" x="0" y="0" width="35" height="25">
+                <text id="91:2141" name="더벨" x="6" y="8" width="23" height="9" />
+              </frame>
+              <text id="91:2142" name="2025-09-09" x="533" y="8" width="71" height="9" />
+            </frame>
+            <text id="91:2143" name="커머스 특화 AI 집중, 네이버 쇼핑과 시너지 무궁무진" x="25" y="70" width="604" height="36" />
+          </frame>
+        </frame>
+        <frame id="91:2144" name="4" x="1" y="396" width="654" height="132">
+          <frame id="91:2145" name="킵그로우" x="0" y="0" width="654" height="132">
+            <frame id="91:2146" name="언론사/날짜" x="25" y="25" width="604" height="25">
+              <frame id="91:2147" name="tag" x="0" y="0" width="104" height="25">
+                <text id="91:2148" name="CEO스코어데일리" x="6" y="8" width="92" height="9" />
+              </frame>
+              <text id="91:2149" name="2025-04-25" x="534" y="8" width="70" height="9" />
+            </frame>
+            <text id="91:2150" name="네이버, 커머스 판 흔든다…쇼핑앱 500만 돌풍, 컬리·야놀자와 ‘맞손’" x="25" y="70" width="604" height="36" />
+          </frame>
+        </frame>
+        <frame id="91:2152" name="5" x="1" y="528" width="654" height="132">
+          <frame id="91:2153" name="킵그로우" x="0" y="0" width="654" height="132">
+            <frame id="91:2154" name="언론사/날짜" x="25" y="25" width="604" height="25">
+              <frame id="91:2155" name="tag" x="0" y="0" width="68" height="25">
+                <text id="91:2156" name="머니투데이" x="6" y="8" width="56" height="9" />
+              </frame>
+              <text id="91:2157" name="2025-04-15" x="535" y="8" width="69" height="9" />
+            </frame>
+            <text id="91:2158" name="유니드컴즈, 국내 최초 카카오모먼트 전용 AI 헬퍼 &#39;1초 맞춤톡&#39; 출시" x="25" y="70" width="604" height="36" />
+          </frame>
+        </frame>
+        <frame id="91:2167" name="더보기 버튼" x="250" y="695" width="156" height="54">
+          <text id="91:2168" name="이야기 더보기" x="26" y="17" width="76" height="20" />
+          <frame id="91:2169" name="arrow" x="122" y="33" width="8.000000524536517" height="12.000000349690708" />
+        </frame>
+      </frame>
+      <frame id="91:2073" name="title" x="184" y="0" width="656" height="782">
+        <frame id="91:2178" name="Frame 10" x="0" y="100" width="631" height="65">
+          <text id="91:2074" name="언론 속의 유니드컴즈" x="0" y="0" width="631" height="65" />
+          <text id="91:2075" name="유니드컴즈가 기록하는 오늘 우리의 이야기" x="0" y="105" width="631" height="22" hidden="true" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="91:2179" name="uneed_유니드컴즈를 만드는 것" x="2" y="1762" width="1677" height="959">
+      <text id="91:2180" name="유니드컴즈를 만드는 것" x="183" y="100" width="1312" height="84" />
+      <frame id="92:2546" name="Frame 11" x="183" y="264" width="644" height="615">
+        <text id="91:2542" name="트렌드 시그널" x="50" y="50" width="175" height="36" />
+        <text id="91:2544" name="좋은 제품만으로는 충분하지 않다는 것을, 우리는 경험으로 배웠습니다. 그래서 시장이 움직이기 시작했다는 신호, &#39;트렌드 시그널&#39;을 먼저 읽습니다. 모두가 트렌드라 부르기 전에, 제품을 내놓습니다." x="50" y="116" width="544" height="81" />
+        <frame id="94:2558" name="더보기 버튼" x="-284" y="249" width="178" height="52">
+          <text id="94:2559" name="채용으로 이동하기" x="25" y="16" width="100" height="20" />
+          <frame id="94:2560" name="arrow" x="145" y="32" width="8.000000524536517" height="12.000000349691163" />
+        </frame>
+        <rounded-rectangle id="1174:1104" name="ascii-magic-9 1" x="-74" y="233" width="800" height="450" />
+        <vector id="1179:1106" name="Vector 7855" x="275" y="260" width="0" height="140" />
+        <text id="1179:1107" name="트렌드 시그널" x="285" y="253" width="82" height="17" />
+        <text id="1179:1108" name="시장이 움직이기 시작했다는 신호" x="285" y="275" width="193" height="17" />
+      </frame>
+      <frame id="1173:996" name="Frame 12" x="851" y="264" width="644" height="615">
+        <rounded-rectangle id="1173:1029" name="ascii-magic-5 1" x="116.00003051757812" y="894" width="602.000030641686" height="701.0000263142579" />
+        <text id="1173:997" name="플라이휠" x="50" y="50" width="111" height="36" />
+        <text id="1173:998" name="유니드컴즈는 플라이휠로 움직입니다. 우리의 목표는 여기서 나오고, 새로운 일을 시작할지도 여기서 정합니다. 질문은 하나입니다. 이 플라이휠을 빠르게 하는가." x="50" y="116" width="544" height="81" />
+        <frame id="1173:999" name="더보기 버튼" x="-284" y="249" width="178" height="52">
+          <text id="1173:1000" name="채용으로 이동하기" x="25" y="16" width="100" height="20" />
+          <frame id="1173:1001" name="arrow" x="145" y="32" width="8.000000524536517" height="12.000000349691163" />
+        </frame>
+        <frame id="1179:1179" name="Frame 242" x="53" y="216" width="556" height="358.9800109863281">
+          <text id="1174:1090" name="수익창출" x="12" y="142" width="52" height="17" />
+          <text id="1174:1096" name="사업부 신설" x="477" y="143" width="69" height="17" />
+          <text id="1174:1098" name="사업부 플라이휠 (4개 사업부)" x="421" y="303" width="95" height="34" />
+          <text id="1174:1091" name="고객창출" x="67" y="309" width="52" height="17" />
+          <text id="1174:1089" name="비지니스 기회" x="229" y="7" width="82" height="17" />
+          <text id="1173:1076" name="UNEEDCOMMS" x="218" y="186" width="103" height="17" />
+          <frame id="2119:78" name="Group 1707479418" x="78.2314453125" y="40" width="382.03692626953125" height="305.98004150390625">
+            <ellipse id="2119:79" name="Ellipse 1" x="263.48948669433594" y="39.999999999999545" width="11.981866836547852" height="11.981866836547852" />
+            <ellipse id="2119:80" name="Ellipse 3" x="120.6287727355957" y="144.1500701904297" width="11.981866836547852" height="11.981866836547852" />
+            <ellipse id="2119:81" name="Ellipse 4" x="405.42852783203125" y="144.1500701904297" width="11.981866836547852" height="11.981866836547852" />
+            <ellipse id="2119:82" name="Ellipse 5" x="350.1275939941406" y="310.9745178222656" width="11.981866836547852" height="11.981866836547852" />
+            <ellipse id="2119:83" name="Ellipse 5" x="175.0080108642578" y="310.9745178222656" width="11.981866836547852" height="11.981866836547852" />
+            <frame id="2119:84" name="Layer_1" x="117.86372756958008" y="43.68672823905945" width="301.555908203125" height="302.29327392578125">
+              <vector id="2119:85" name="Vector" x="168.7046661376953" y="3.170586109161377" width="118.42692565917969" height="85.76250457763672" />
+              <vector id="2119:86" name="Vector" x="282.3757019042969" y="84.2693862915039" width="6.755944728851318" height="5.566960334777832" />
+              <vector id="2119:87" name="Vector" x="15.078718185424805" y="3.25353741645813" width="118.15962982177734" height="86.13118743896484" />
+              <vector id="2119:88" name="Vector" x="129.1460723876953" y="0" width="5.087688446044922" height="7.45640754699707" />
+              <vector id="2119:89" name="Vector" x="1.411521077156067" y="123.14593505859375" width="48.19340133666992" height="138.98965454101562" />
+              <vector id="2119:90" name="Vector" x="0" y="122.16895294189453" width="7.428757190704346" height="5.133761405944824" />
+              <vector id="2119:91" name="Vector" x="78.35218811035156" y="282.6890869140625" width="146.2156219482422" height="19.143264770507812" />
+              <vector id="2119:92" name="Vector" x="77.4765853881836" y="280.9655456542969" width="5.576179027557373" height="6.682194709777832" />
+              <vector id="2119:93" name="Vector" x="253.20448303222656" y="122.63900756835938" width="47.89054870605469" height="139.13710021972656" />
+              <vector id="2119:94" name="Vector" x="252.47634887695312" y="256.9188537597656" width="5.530091762542725" height="5.530092239379883" />
+            </frame>
+            <vector id="2119:95" name="Vector 7852" x="132.61063766479492" y="317.4263000488281" width="42.85821533203125" height="0" />
+            <vector id="2119:96" name="Vector 7852" x="78.23139894008636" y="150.60184478759766" width="42.85821533203125" height="0" />
+            <vector id="2119:97" name="Vector 7853" x="417.410400390625" y="150.60184478759766" width="42.85821533203125" height="0" />
+            <vector id="2119:98" name="Vector 7854" x="362.1094665527344" y="317.4263000488281" width="42.85821533203125" height="0" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="104:2590" name="uneed_사이트맵" x="0" y="5713" width="1680" height="700">
+      <frame id="327:2731" name="Frame 3" x="184" y="284" width="319" height="21">
+        <text id="327:2732" name="처음으로" x="0" y="0" width="52" height="21" />
+        <text id="327:2733" name="회사소개" x="102" y="0" width="52" height="21" />
+        <text id="327:2734" name="뉴스룸" x="204" y="0" width="39" height="21" />
+        <text id="327:2735" name="채용" x="293" y="0" width="26" height="21" />
+      </frame>
+      <frame id="290:2681" name="Layer_1" x="185" y="60" width="738" height="124">
+        <frame id="290:2682" name="Group" x="0" y="0" width="106.95807647705078" height="124" />
+        <frame id="290:2689" name="Group" x="149.7306365966797" y="30.629777908325195" width="588.2694091796875" height="67.6090316772461">
+          <vector id="290:2690" name="Vector" x="149.7306216850884" y="31.92954659461975" width="49.87453842163086" height="66.29881286621094" />
+          <vector id="290:2691" name="Vector" x="258.45348358154297" y="49.19941711425781" width="48.19532012939453" height="49.028953552246094" />
+          <vector id="290:2692" name="Vector" x="312.25340270996094" y="49.19941711425781" width="48.1953125" height="49.028953552246094" />
+          <vector id="290:2693" name="Vector" x="365.95704650878906" y="31.92954659461975" width="49.874549865722656" height="66.29881286621094" />
+          <vector id="290:2694" name="Vector" x="426.1637725830078" y="30.629779351275147" width="61.99288558959961" height="67.58793640136719" />
+          <vector id="290:2695" name="Vector" x="492.0713348388672" y="49.19941711425781" width="49.318382263183594" height="49.028953552246094" />
+          <vector id="290:2696" name="Vector" x="699.6876068115234" y="49.21006774902344" width="38.31239318847656" height="49.028953552246094" />
+          <vector id="290:2697" name="Vector" x="208.20458984375" y="49.19941711425781" width="43.53193283081055" height="47.72919464111328" />
+          <vector id="290:2698" name="Vector" x="547.9569549560547" y="48.943721771240234" width="69.1377182006836" height="47.72918701171875" />
+          <vector id="290:2699" name="Vector" x="624.0682220458984" y="48.943721771240234" width="69.1377182006836" height="47.72918701171875" />
+        </frame>
+      </frame>
+      <rounded-rectangle id="2122:167" name="ascii-magic-49 1" x="-120" y="190" width="1920" height="785" />
+      <frame id="2122:168" name="Frame 236" x="585" y="579" width="510" height="21">
+        <text id="2122:169" name="한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다." x="0" y="0" width="510" height="21" />
+      </frame>
+    </frame>
+    <frame id="327:2714" name="uneed_채용" x="0" y="6413" width="1680" height="229">
+      <text id="104:2602" name="(주) 유니드컴즈" x="184" y="60" width="1312" height="24" />
+      <frame id="104:2603" name="Frame 235" x="184" y="117" width="349" height="21">
+        <frame id="104:2604" name="Frame 62" x="0" y="0" width="349" height="21">
+          <text id="104:2605" name="대표자: 양재필, 전형신" x="0" y="0" width="132" height="21" />
+          <text id="104:2606" name="사업자등록번호 : 220-88-93926" x="147" y="0" width="202" height="21" />
+        </frame>
+      </frame>
+      <frame id="104:2616" name="Frame 236" x="184" y="143" width="461" height="21">
+        <text id="104:2611" name="주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)" x="0" y="0" width="461" height="21" />
+      </frame>
+      <text id="327:2724" name="© 2026 UNEEDCOMMS." x="1273" y="139" width="223" height="30" />
+      <text id="327:2725" name="public@uneedcomms.com" x="1006" y="139" width="237" height="30" />
+    </frame>
+    <frame id="50:550" name="uneed_연혁" x="0" y="4799" width="1680" height="914">
+      <frame id="53:663" name="페이징" x="0" y="286" width="1680" height="114">
+        <frame id="1607:2648" name="페이징" x="380" y="30" width="920" height="54">
+          <frame id="53:665" name="눈금" x="340" y="0" width="480" height="10">
+            <frame id="53:666" name="Group 1707479415" x="-320" y="0" width="880" height="10">
+              <vector id="1607:2640" name="2014" x="-320" y="0" width="0" height="10" />
+              <vector id="1607:2641" name="1" x="-300" y="0" width="0" height="5" />
+              <vector id="1607:2642" name="2" x="-280" y="0" width="0" height="5" />
+              <vector id="1607:2643" name="3" x="-260" y="0" width="0" height="5" />
+              <vector id="1607:2632" name="2015" x="-240" y="0" width="0" height="10" />
+              <vector id="1607:2633" name="1" x="-220" y="0" width="0" height="5" />
+              <vector id="1607:2634" name="2" x="-200" y="0" width="0" height="5" />
+              <vector id="1607:2635" name="3" x="-180" y="0" width="0" height="5" />
+              <vector id="1607:2622" name="2016" x="-160" y="0" width="0" height="10" />
+              <vector id="1607:2623" name="1" x="-140" y="0" width="0" height="5" />
+              <vector id="1607:2624" name="2" x="-120" y="0" width="0" height="5" />
+              <vector id="1607:2625" name="3" x="-100" y="0" width="0" height="5" />
+              <vector id="1607:2615" name="2017" x="-80" y="0" width="0" height="10" />
+              <vector id="1607:2616" name="1" x="-60" y="0" width="0" height="5" />
+              <vector id="1607:2617" name="2" x="-40" y="0" width="0" height="5" />
+              <vector id="1607:2618" name="3" x="-20" y="0" width="0" height="5" />
+              <vector id="53:667" name="2018" x="0" y="0" width="0" height="10" />
+              <vector id="53:668" name="1" x="20" y="0" width="0" height="5" />
+              <vector id="53:669" name="2" x="40" y="0" width="0" height="5" />
+              <vector id="53:670" name="3" x="60" y="0" width="0" height="5" />
+              <vector id="53:671" name="2019" x="80" y="0" width="0" height="10" />
+              <vector id="53:672" name="1" x="100" y="0" width="0" height="5" />
+              <vector id="53:673" name="2" x="120" y="0" width="0" height="5" />
+              <vector id="53:674" name="3" x="140" y="0" width="0" height="5" />
+              <vector id="53:675" name="2020" x="160" y="0" width="0" height="10" />
+              <vector id="53:676" name="1" x="180" y="0" width="0" height="5" />
+              <vector id="53:677" name="2" x="200" y="0" width="0" height="5" />
+              <vector id="53:678" name="3" x="220" y="0" width="0" height="5" />
+              <vector id="53:679" name="2021" x="240" y="0" width="0" height="10" />
+              <vector id="53:680" name="1" x="260" y="0" width="0" height="5" />
+              <vector id="53:681" name="2" x="280" y="0" width="0" height="5" />
+              <vector id="53:682" name="3" x="300" y="0" width="0" height="5" />
+              <vector id="53:683" name="2022" x="320" y="0" width="0" height="10" />
+              <vector id="53:684" name="1" x="340" y="0" width="0" height="5" />
+              <vector id="53:685" name="2" x="360" y="0" width="0" height="5" />
+              <vector id="53:686" name="3" x="380" y="0" width="0" height="5" />
+              <vector id="53:687" name="2023" x="400" y="0" width="0" height="10" />
+              <vector id="53:688" name="1" x="420" y="0" width="0" height="5" />
+              <vector id="53:689" name="2" x="440" y="0" width="0" height="5" />
+              <vector id="53:690" name="3" x="460" y="0" width="0" height="5" />
+              <vector id="53:691" name="2025" x="480" y="0" width="0" height="10" />
+              <vector id="1606:2608" name="1" x="500" y="0" width="0" height="5" />
+              <vector id="1606:2609" name="2" x="520" y="0" width="0" height="5" />
+              <vector id="1606:2610" name="3" x="540" y="0" width="0" height="5" />
+              <vector id="1606:2611" name="2026" x="560" y="0" width="0" height="10" />
+            </frame>
+          </frame>
+          <frame id="1607:2645" name="2014" x="0" y="31" width="40" height="23">
+            <text id="1607:2646" name="2014" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="1607:2637" name="2015" x="80" y="31" width="40" height="23">
+            <text id="1607:2638" name="2015" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="1607:2629" name="2016" x="160" y="31" width="40" height="23">
+            <text id="1607:2630" name="2016" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="1607:2620" name="2017" x="240" y="31" width="40" height="23">
+            <text id="1607:2621" name="2017" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="53:692" name="2018" x="320" y="31" width="40" height="23">
+            <text id="53:693" name="2018" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="53:694" name="2019" x="400" y="31" width="40" height="23">
+            <text id="53:695" name="2019" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="53:696" name="2020" x="480" y="31" width="40" height="23">
+            <text id="53:697" name="2020" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="53:698" name="2021" x="560" y="31" width="40" height="23">
+            <text id="53:699" name="2021" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="53:700" name="2022" x="640" y="31" width="40" height="23">
+            <text id="53:701" name="2022" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="53:702" name="2023" x="720" y="31" width="40" height="23">
+            <text id="53:703" name="2023" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="53:704" name="2025" x="800" y="31" width="40" height="23">
+            <text id="53:705" name="2025" x="0" y="0" width="40" height="23" />
+          </frame>
+          <frame id="1606:2612" name="2026" x="880" y="31" width="40" height="23">
+            <text id="1606:2613" name="2026" x="0" y="0" width="40" height="23" />
+          </frame>
+        </frame>
+      </frame>
+      <text id="50:512" name="유니드컴즈가 걸어온 길" x="184" y="100" width="1312" height="84" />
+      <text id="50:513" name="유니드컴즈의 변화는 세상을 놀랍게 만듭니다" x="184" y="224" width="1312" height="22" />
+      <frame id="53:726" name="2022" x="-175" y="480" width="610" height="354">
+        <text id="53:727" name="2022" x="0" y="0" width="610" height="250" />
+        <text id="53:728" name="킵그로우 &#39;1초 회원가입&#39; 출시" x="0" y="310" width="610" height="22" />
+      </frame>
+      <frame id="53:725" name="2023" x="535" y="480" width="610" height="354">
+        <text id="53:717" name="2022" x="0" y="0" width="610" height="250" />
+        <text id="53:723" name="Series A 투자 유치" x="0" y="310" width="610" height="22" />
+      </frame>
+      <frame id="53:732" name="2024" x="1245" y="480" width="610" height="354">
+        <text id="53:733" name="2022" x="0" y="0" width="610" height="250" />
+        <text id="53:734" name="네이버 커머스솔루션마켓 입점" x="0" y="310" width="610" height="22" />
+      </frame>
+    </frame>
+  </frame>
+  <rounded-rectangle id="2122:170" name="ascii-magic-49 1" x="5546" y="7296" width="1920" height="785" />
+  <frame id="2118:2" name="uneed_유니드컴즈를 만드는 것 EN" x="3891" y="2094" width="1677" height="959">
+    <text id="2118:3" name="What Builds Us" x="183" y="100" width="1312" height="84" />
+    <frame id="2118:4" name="Frame 11" x="183" y="264" width="644" height="615">
+      <text id="2118:5" name="Trend Signal" x="49" y="50" width="177" height="36" />
+      <text id="2118:6" name="We learned from experience that a good product alone isn&#39;t enough. So we read the Trend Signal first — the sign that a market has started to move. Before everyone calls it a trend, we&#39;ve already shipped." x="50" y="116" width="544" height="108" />
+      <frame id="2118:7" name="더보기 버튼" x="-284" y="249" width="178" height="52">
+        <text id="2118:8" name="채용으로 이동하기" x="25" y="16" width="100" height="20" />
+        <frame id="2118:9" name="arrow" x="145" y="32" width="8.000000524536517" height="12.000000349691163" />
+      </frame>
+      <rounded-rectangle id="2118:13" name="ascii-magic-9 1" x="-74" y="233" width="800" height="450" />
+      <vector id="2118:14" name="Vector 7855" x="275" y="260" width="0" height="140" />
+      <text id="2118:15" name="트렌드 시그널" x="285" y="253" width="82" height="17" />
+      <text id="2118:16" name="When a market starts to move" x="285" y="275" width="199" height="17" />
+    </frame>
+    <frame id="2118:17" name="Frame 12" x="851" y="264" width="644" height="615">
+      <rounded-rectangle id="2118:18" name="ascii-magic-5 1" x="116.00003051757812" y="894" width="602.000030641686" height="701.0000263142579" />
+      <text id="2118:19" name="Flywheel" x="50" y="50" width="126" height="36" />
+      <text id="2118:20" name="UneedComms runs on a flywheel. Our goals come from it, and so do our decisions about what to start next. There&#39;s only one question: Does this make the flywheel turn faster?" x="50" y="116" width="544" height="81" />
+      <frame id="2118:21" name="더보기 버튼" x="-284" y="249" width="178" height="52">
+        <text id="2118:22" name="채용으로 이동하기" x="25" y="16" width="100" height="20" />
+        <frame id="2118:23" name="arrow" x="145" y="32" width="8.000000524536517" height="12.000000349691163" />
+      </frame>
+      <frame id="2118:27" name="Frame 242" x="53" y="226" width="556" height="358.9800109863281">
+        <frame id="2118:28" name="Group 1707479417" x="78.2314453125" y="40" width="382.03692626953125" height="305.98004150390625">
+          <ellipse id="2118:29" name="Ellipse 1" x="263.48948669433594" y="39.999999999999545" width="11.981866836547852" height="11.981866836547852" />
+          <ellipse id="2118:30" name="Ellipse 3" x="120.6287727355957" y="144.1500701904297" width="11.981866836547852" height="11.981866836547852" />
+          <ellipse id="2118:31" name="Ellipse 4" x="405.42852783203125" y="144.1500701904297" width="11.981866836547852" height="11.981866836547852" />
+          <ellipse id="2118:32" name="Ellipse 5" x="350.1275939941406" y="310.9745178222656" width="11.981866836547852" height="11.981866836547852" />
+          <ellipse id="2118:33" name="Ellipse 5" x="175.0080108642578" y="310.9745178222656" width="11.981866836547852" height="11.981866836547852" />
+          <frame id="2118:34" name="Layer_1" x="117.86372756958008" y="43.68672823905945" width="301.555908203125" height="302.29327392578125">
+            <vector id="2118:35" name="Vector" x="168.7046661376953" y="3.170586109161377" width="118.42692565917969" height="85.76250457763672" />
+            <vector id="2118:36" name="Vector" x="282.3757019042969" y="84.2693862915039" width="6.755944728851318" height="5.566960334777832" />
+            <vector id="2118:37" name="Vector" x="15.078718185424805" y="3.25353741645813" width="118.15962982177734" height="86.13118743896484" />
+            <vector id="2118:38" name="Vector" x="129.1460723876953" y="0" width="5.087688446044922" height="7.45640754699707" />
+            <vector id="2118:39" name="Vector" x="1.411521077156067" y="123.14593505859375" width="48.19340133666992" height="138.98965454101562" />
+            <vector id="2118:40" name="Vector" x="0" y="122.16895294189453" width="7.428757190704346" height="5.133761405944824" />
+            <vector id="2118:41" name="Vector" x="78.35218811035156" y="282.6890869140625" width="146.2156219482422" height="19.143264770507812" />
+            <vector id="2118:42" name="Vector" x="77.4765853881836" y="280.9655456542969" width="5.576179027557373" height="6.682194709777832" />
+            <vector id="2118:43" name="Vector" x="253.20448303222656" y="122.63900756835938" width="47.89054870605469" height="139.13710021972656" />
+            <vector id="2118:44" name="Vector" x="252.47634887695312" y="256.9188537597656" width="5.530091762542725" height="5.530092239379883" />
+          </frame>
+          <vector id="2118:45" name="Vector 7852" x="132.61063766479492" y="317.4263000488281" width="42.85821533203125" height="0" />
+          <vector id="2118:46" name="Vector 7852" x="78.23139894008636" y="150.60184478759766" width="42.85821533203125" height="0" />
+          <vector id="2118:47" name="Vector 7853" x="417.410400390625" y="150.60184478759766" width="42.85821533203125" height="0" />
+          <vector id="2118:48" name="Vector 7854" x="362.1094665527344" y="317.4263000488281" width="42.85821533203125" height="0" />
+        </frame>
+        <text id="2118:49" name="Revenue" x="5" y="141" width="57" height="17" />
+        <text id="2118:50" name="New Business Unit" x="475" y="134" width="90" height="34" />
+        <text id="2118:51" name="Each Unit&#39;s Flywheel (4 units)" x="420" y="300" width="137" height="34" />
+        <text id="2118:52" name="Customers" x="44" y="308" width="72" height="17" />
+        <text id="2118:53" name="Business Opportunity" x="197" y="0" width="143" height="17" />
+        <text id="2118:54" name="UNEEDCOMMS" x="218" y="186" width="103" height="17" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="2084:4682" name="hero- 이미지 변경" x="2395" y="332" width="1680" height="992">
+    <rounded-rectangle id="2084:4683" name="배경" x="-120" y="0" width="1920" height="1041" />
+    <rounded-rectangle id="2093:4751" name="해" x="1178" y="571" width="195" height="195" />
+    <rounded-rectangle id="2090:4717" name="산3" x="-125" y="542" width="1920" height="145" />
+    <rounded-rectangle id="2092:4728" name="범선 1" x="1124" y="393" width="399" height="260" />
+    <rounded-rectangle id="2101:4823" name="바다" x="-120" y="653" width="1920" height="641" />
+    <rounded-rectangle id="2102:4826" name="산2" x="-120" y="422" width="1920" height="448" />
+    <frame id="2094:4773" name="산1" x="-120" y="557" width="1920" height="750">
+      <rounded-rectangle id="2094:4774" name="ascii-magic-21 1" x="0" y="0" width="1920" height="517" />
+      <rounded-rectangle id="2094:4775" name="Rectangle 6" x="0" y="517" width="1920" height="233" />
+    </frame>
+    <frame id="2084:4688" name="더보기 버튼" x="186" y="391" width="142" height="52">
+      <text id="2084:4689" name="더 알아보기" x="25" y="16" width="64" height="20" />
+      <frame id="2084:4690" name="arrow" x="109" y="32" width="8.000000524536517" height="12.000000349691163" />
+    </frame>
+    <text id="2084:4687" name="한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는, 지혜로운 AI 에이전트를 만듭니다." x="184" y="221" width="1131" height="130" />
+    <frame id="2094:4786" name="NAV" x="0" y="0" width="1680" height="126">
+      <frame id="2094:4787" name="uneed_logo" x="184" y="49" width="168" height="28" />
+      <frame id="2094:4806" name="Frame 3" x="1063" y="53" width="319" height="21">
+        <text id="2094:4807" name="처음으로" x="0" y="0" width="52" height="21" />
+        <text id="2094:4808" name="회사소개" x="102" y="0" width="52" height="21" />
+        <text id="2094:4809" name="뉴스룸" x="204" y="0" width="39" height="21" />
+        <text id="2094:4810" name="채용" x="293" y="0" width="26" height="21" />
+      </frame>
+      <frame id="2094:4811" name="Frame 4" x="1442" y="54" width="54" height="18">
+        <text id="2094:4812" name="KR" x="0" y="0" width="16" height="18" />
+        <vector id="2094:4813" name="Vector 1" x="27" y="5" width="0" height="8" />
+        <text id="2094:4814" name="EN" x="38" y="0" width="16" height="18" />
+      </frame>
+    </frame>
+  </frame>
+  <rounded-rectangle id="2094:4785" name="산2" x="2252" y="-1419" width="1920" height="354" />
+  <frame id="2093:4752" name="hero- 이미지 변경 - 스크롤 후" x="572" y="332" width="1680" height="1092">
+    <rounded-rectangle id="2093:4753" name="배경" x="-120" y="0" width="1920" height="1041" />
+    <rounded-rectangle id="2093:4761" name="해" x="1178" y="571" width="195" height="195" />
+    <rounded-rectangle id="2093:4762" name="산3" x="-120" y="540" width="1920" height="145" />
+    <rounded-rectangle id="2093:4766" name="범선 1" x="1124" y="233" width="399" height="260" />
+    <rounded-rectangle id="2093:4763" name="바다" x="-120" y="473" width="1920" height="641" />
+    <rounded-rectangle id="2093:4764" name="ascii-magic-25 1" x="-120" y="564" width="1920" height="354" />
+    <frame id="2093:4767" name="산1" x="-120" y="456" width="1920" height="750">
+      <rounded-rectangle id="2093:4768" name="ascii-magic-21 1" x="0" y="0" width="1920" height="517" />
+      <rounded-rectangle id="2093:4769" name="Rectangle 6" x="0" y="517" width="1920" height="233" />
+    </frame>
+    <frame id="2094:4777" name="더보기 버튼" x="186" y="466" width="142" height="52">
+      <text id="2094:4778" name="더 알아보기" x="25" y="16" width="64" height="20" />
+      <frame id="2094:4779" name="arrow" x="109" y="32" width="8.000000524536631" height="12.000000349691163" />
+    </frame>
+    <text id="2094:4783" name="한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는, 지혜로운 AI 에이전트를 만듭니다." x="184" y="221" width="758" height="195" />
+  </frame>
+  <rounded-rectangle id="2092:4746" name="범선 1" x="6462" y="-1549" width="399" height="260" />
+  <rounded-rectangle id="2092:4742" name="산3" x="5360" y="-2068" width="1920" height="145" />
+  <rounded-rectangle id="2092:4743" name="바다" x="4486" y="-707" width="1920" height="641" />
+  <rounded-rectangle id="2092:4744" name="산2" x="4542" y="-1130" width="1920" height="354" />
+  <frame id="1661:3889" name="hero" x="7446" y="332" width="1680" height="992">
+    <rounded-rectangle id="1661:3890" name="배경" x="-120" y="0" width="1920" height="1041" />
+    <rounded-rectangle id="1661:3891" name="산1" x="-120" y="234" width="1920" height="872" />
+    <rounded-rectangle id="1661:3892" name="산2" x="-120" y="580" width="1920" height="526" />
+    <rounded-rectangle id="1661:3893" name="산3" x="-120" y="647" width="1920" height="345" />
+    <text id="1661:3894" name="한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는, 지혜로운 AI 에이전트를 만듭니다." x="184" y="221" width="758" height="195" />
+    <frame id="1661:3895" name="더보기 버튼" x="186" y="466" width="142" height="52">
+      <text id="1661:3896" name="더 알아보기" x="25" y="16" width="64" height="20" />
+      <frame id="1661:3897" name="arrow" x="109" y="32" width="8.000000524536517" height="12.000000349691163" />
+    </frame>
+    <frame id="1661:3901" name="NAV" x="0" y="0" width="1680" height="126">
+      <frame id="1661:3902" name="uneed_logo" x="184" y="49" width="168" height="28" />
+      <frame id="1661:3921" name="Frame 3" x="1063" y="53" width="319" height="21">
+        <text id="1661:3922" name="처음으로" x="0" y="0" width="52" height="21" />
+        <text id="1661:3923" name="회사소개" x="102" y="0" width="52" height="21" />
+        <text id="1661:3924" name="뉴스룸" x="204" y="0" width="39" height="21" />
+        <text id="1661:3925" name="채용" x="293" y="0" width="26" height="21" />
+      </frame>
+      <frame id="1661:3926" name="Frame 4" x="1442" y="54" width="54" height="18">
+        <text id="1661:3927" name="KR" x="0" y="0" width="16" height="18" />
+        <vector id="1661:3928" name="Vector 1" x="27" y="5" width="0" height="8" />
+        <text id="1661:3929" name="EN" x="38" y="0" width="16" height="18" />
+      </frame>
+    </frame>
+    <text id="2093:4754" name="한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는, 지혜로운 AI 에이전트를 만듭니다." x="-7146" y="221" width="758" height="195" />
+    <frame id="2093:4755" name="더보기 버튼" x="-7144" y="466" width="142" height="52">
+      <text id="2093:4756" name="더 알아보기" x="25" y="16" width="64" height="20" />
+      <frame id="2093:4757" name="arrow" x="109" y="32" width="8.000000524536631" height="12.000000349691163" />
+    </frame>
+  </frame>
+  <frame id="1660:3181" name="uneed_이야기" x="7446" y="4148" width="1680" height="782">
+    <frame id="1660:3182" name="uneed_product" x="840" y="0" width="656" height="782">
+      <frame id="1660:3183" name="1" x="1" y="0" width="654" height="130">
+        <frame id="1660:3184" name="킵그로우" x="0" y="0" width="654" height="130">
+          <frame id="1660:3185" name="언론사/날짜" x="25" y="25" width="604" height="23">
+            <frame id="1660:3186" name="tag" x="0" y="0" width="69" height="23">
+              <text id="1660:3187" name="미디어 파인" x="5" y="7" width="59" height="9" />
+            </frame>
+            <text id="1660:3188" name="2026-04-06" x="533" y="7" width="71" height="9" />
+          </frame>
+          <text id="1660:3189" name="네이버 CRM ‘메시온’, 비회원까지 잡았다…출시 3개월 만에 2억 건 발송 돌파" x="25" y="68" width="604" height="36" />
+        </frame>
+      </frame>
+      <frame id="1660:3190" name="2" x="1" y="132" width="654" height="132">
+        <frame id="1660:3191" name="킵그로우" x="0" y="0" width="654" height="132">
+          <frame id="1660:3192" name="언론사/날짜" x="25" y="25" width="604" height="25">
+            <frame id="1660:3193" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1660:3194" name="머니투데이" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1660:3195" name="2026-02-02" x="533" y="8" width="71" height="9" />
+          </frame>
+          <text id="1660:3196" name="카페24, 유니드컴즈 &#39;2026년 1월 베스트 파트너&#39; 선정" x="25" y="70" width="604" height="36" />
+        </frame>
+      </frame>
+      <frame id="1660:3197" name="3" x="1" y="264" width="654" height="132">
+        <frame id="1660:3198" name="킵그로우" x="0" y="0" width="654" height="132">
+          <frame id="1660:3199" name="언론사/날짜" x="25" y="25" width="604" height="25">
+            <frame id="1660:3200" name="tag" x="0" y="0" width="35" height="25">
+              <text id="1660:3201" name="더벨" x="6" y="8" width="23" height="9" />
+            </frame>
+            <text id="1660:3202" name="2025-09-09" x="533" y="8" width="71" height="9" />
+          </frame>
+          <text id="1660:3203" name="커머스 특화 AI 집중, 네이버 쇼핑과 시너지 무궁무진" x="25" y="70" width="604" height="36" />
+        </frame>
+      </frame>
+      <frame id="1660:3204" name="4" x="1" y="396" width="654" height="132">
+        <frame id="1660:3205" name="킵그로우" x="0" y="0" width="654" height="132">
+          <frame id="1660:3206" name="언론사/날짜" x="25" y="25" width="604" height="25">
+            <frame id="1660:3207" name="tag" x="0" y="0" width="104" height="25">
+              <text id="1660:3208" name="CEO스코어데일리" x="6" y="8" width="92" height="9" />
+            </frame>
+            <text id="1660:3209" name="2025-04-25" x="534" y="8" width="70" height="9" />
+          </frame>
+          <text id="1660:3210" name="네이버, 커머스 판 흔든다…쇼핑앱 500만 돌풍, 컬리·야놀자와 ‘맞손’" x="25" y="70" width="604" height="36" />
+        </frame>
+      </frame>
+      <frame id="1660:3211" name="5" x="1" y="528" width="654" height="132">
+        <frame id="1660:3212" name="킵그로우" x="0" y="0" width="654" height="132">
+          <frame id="1660:3213" name="언론사/날짜" x="25" y="25" width="604" height="25">
+            <frame id="1660:3214" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1660:3215" name="머니투데이" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1660:3216" name="2025-04-15" x="535" y="8" width="69" height="9" />
+          </frame>
+          <text id="1660:3217" name="유니드컴즈, 국내 최초 카카오모먼트 전용 AI 헬퍼 &#39;1초 맞춤톡&#39; 출시" x="25" y="70" width="604" height="36" />
+        </frame>
+      </frame>
+      <frame id="1660:3218" name="더보기 버튼" x="250" y="695" width="156" height="54">
+        <text id="1660:3219" name="이야기 더보기" x="26" y="17" width="76" height="20" />
+        <frame id="1660:3220" name="arrow" x="122" y="33" width="8.000000524536517" height="12.000000349690708" />
+      </frame>
+    </frame>
+    <frame id="1660:3224" name="title" x="184" y="0" width="656" height="782">
+      <frame id="1660:3225" name="Frame 10" x="0" y="100" width="631" height="65">
+        <text id="1660:3226" name="언론 속의 유니드컴즈" x="0" y="0" width="631" height="65" />
+        <text id="1660:3227" name="유니드컴즈가 기록하는 오늘 우리의 이야기" x="0" y="105" width="631" height="22" hidden="true" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="1658:2736" name="uneed_연혁" x="7446" y="2209" width="1680" height="1824">
+    <text id="1658:2737" name="유니드컴즈와 함께하는 투자사 · 파트너사" x="184" y="100" width="1312" height="84" />
+    <text id="1658:2738" name="유니드의 혁신과 성장에 뜻을 함께하는 글로벌 파트너 및 투자사입니다" x="184" y="224" width="1312" height="22" />
+    <frame id="1658:2739" name="01" x="184" y="326" width="310" height="240">
+      <frame id="1658:2740" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2741" name="구글" x="70" y="66" width="130" height="43" hidden="true" />
+        <frame id="1658:2748" name="구글-화이트" x="70" y="66" width="130" height="43" />
+      </frame>
+      <frame id="1658:2755" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2756" name="구글" x="0" y="5.5" width="30" height="19" />
+        <frame id="1658:2757" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2758" name="파트너" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2759" name="02" x="518" y="325" width="310" height="240">
+      <frame id="1658:2760" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2761" name="메타" x="66" y="73" width="139" height="28" hidden="true" />
+        <frame id="1658:2766" name="메타-화이트" x="66" y="73" width="139" height="28" />
+      </frame>
+      <frame id="1658:2771" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2772" name="메타" x="0" y="5.5" width="30" height="19" />
+        <frame id="1658:2773" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2774" name="파트너" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2775" name="03" x="852" y="326" width="310" height="240">
+      <frame id="1658:2776" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2777" name="AWS" x="91" y="61" width="88" height="53" hidden="true" />
+        <frame id="1658:2783" name="AWS-화이트" x="91" y="61" width="88" height="53" />
+      </frame>
+      <frame id="1658:2789" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2790" name="AWS" x="0" y="5.5" width="36" height="19" />
+        <frame id="1658:2791" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2792" name="파트너" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2793" name="04" x="1186" y="326" width="310" height="240">
+      <frame id="1658:2794" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2795" name="쇼피파이" x="71" y="67" width="128" height="40" hidden="true" />
+        <frame id="1658:2800" name="쇼피파이-화이트" x="71" y="67" width="128" height="40" />
+      </frame>
+      <frame id="1658:2806" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2807" name="쇼피파이" x="0" y="5.5" width="59" height="19" />
+        <frame id="1658:2808" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2809" name="파트너" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2810" name="05" x="184" y="590" width="310" height="240">
+      <frame id="1658:2811" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2812" name="네이버 로고" x="77" y="76" width="117" height="22" />
+      </frame>
+      <frame id="1658:2819" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2820" name="네이버" x="0" y="5.5" width="45" height="19" />
+        <frame id="1658:2821" name="Frame 240" x="224" y="0" width="46" height="30">
+          <frame id="1658:2822" name="Frame 8" x="0" y="0" width="46" height="30">
+            <text id="1658:2823" name="파트너" x="5" y="7" width="36" height="16" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2824" name="06" x="518" y="590" width="310" height="240">
+      <frame id="1658:2825" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2826" name="카카오" x="84" y="72" width="102" height="31" hidden="true" />
+        <frame id="1658:2830" name="카카오-화이트" x="80" y="71" width="110" height="33" />
+      </frame>
+      <frame id="1658:2834" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2835" name="카카오" x="0" y="5.5" width="45" height="19" />
+        <frame id="1658:2836" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2837" name="파트너" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2838" name="07" x="852" y="590" width="310" height="240">
+      <frame id="1658:2839" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2840" name="카페24" x="61" y="74" width="148" height="27" hidden="true" />
+        <frame id="1658:2851" name="카페24-화이트" x="61" y="74" width="148" height="27" />
+      </frame>
+      <frame id="1658:2862" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2863" name="카페24" x="0" y="5.5" width="50" height="19" />
+        <frame id="1658:2864" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2865" name="파트너" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2866" name="08" x="1186" y="590" width="310" height="240">
+      <frame id="1658:2867" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2868" name="메이크샵" x="67" y="82" width="137" height="30" hidden="true" />
+        <frame id="1658:2871" name="메이크샵-화이트" x="67" y="72" width="137" height="30" />
+      </frame>
+      <frame id="1658:2874" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2875" name="메이크샵" x="0" y="5.5" width="59" height="19" />
+        <frame id="1658:2876" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2877" name="파트너" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2878" name="09" x="184" y="854" width="310" height="240">
+      <frame id="1658:2879" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2880" name="아임웹" x="43" y="55" width="185" height="64" hidden="true" />
+        <frame id="1658:2892" name="아임웹-화이트" x="43" y="55" width="185" height="64" />
+      </frame>
+      <frame id="1658:2904" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2905" name="아임웹" x="0" y="5.5" width="45" height="19" />
+        <frame id="1658:2906" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2907" name="파트너" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2908" name="10" x="518" y="854" width="310" height="240">
+      <frame id="1658:2909" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2910" name="본엔젤스" x="98" y="61" width="75" height="52" hidden="true" />
+        <frame id="1658:2913" name="본엔젤스-화이트" x="98" y="61" width="75" height="52" />
+      </frame>
+      <frame id="1658:2916" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2917" name="본엔젤스" x="0" y="5.5" width="59" height="19" />
+        <frame id="1658:2918" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2919" name="투자사" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2920" name="11" x="852" y="854" width="310" height="240">
+      <frame id="1658:2921" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2922" name="sj" x="96" y="54" width="79" height="66" hidden="true" />
+        <frame id="1658:2926" name="sj-화이트" x="96" y="54" width="79" height="66" />
+      </frame>
+      <frame id="1658:2930" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2931" name="SJ 인베스트먼트" x="0" y="5.5" width="112" height="19" />
+        <frame id="1658:2932" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2933" name="투자사" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2934" name="12" x="1186" y="854" width="310" height="240">
+      <frame id="1658:2935" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2936" name="CJ_ENM" x="61" y="62" width="148" height="71" hidden="true" />
+        <frame id="1658:2947" name="CJ_ENM-화이트" x="61" y="62" width="148" height="71" />
+      </frame>
+      <frame id="1658:2958" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2959" name="CJ이엔엠" x="0" y="5.5" width="65" height="19" />
+        <frame id="1658:2960" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2961" name="투자사" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2962" name="13" x="182" y="1118" width="310" height="240">
+      <frame id="1658:2963" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2964" name="코오롱" x="50" y="72" width="170" height="31" hidden="true" />
+        <frame id="1658:2974" name="코오롱-화이트" x="50" y="72" width="170" height="31" />
+      </frame>
+      <frame id="1658:2984" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:2985" name="코오롱 인베스트먼트" x="0" y="5.5" width="137" height="19" />
+        <frame id="1658:2986" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:2987" name="투자사" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:2988" name="14" x="516" y="1118" width="310" height="240">
+      <frame id="1658:2989" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:2990" name="네이버 D2" x="52" y="75" width="167" height="45" hidden="true" />
+        <frame id="1658:3001" name="네이버 D2-화이트" x="52" y="65" width="167" height="45" />
+      </frame>
+      <frame id="1658:3012" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:3013" name="네이버 D2" x="0" y="5.5" width="70" height="19" />
+        <frame id="1658:3014" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:3015" name="투자사" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:3016" name="15" x="850" y="1118" width="310" height="240">
+      <frame id="1658:3017" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:3018" name="마그나" x="63" y="71" width="145" height="31" hidden="true" />
+        <frame id="1658:3037" name="마그나" x="63" y="71" width="145" height="31" />
+      </frame>
+      <frame id="1658:3056" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:3057" name="마그나 인베스트먼트" x="0" y="5.5" width="137" height="19" />
+        <frame id="1658:3058" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:3059" name="투자사" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:3060" name="16" x="1184" y="1118" width="310" height="240">
+      <frame id="1658:3061" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:3062" name="대경" x="93" y="63" width="84" height="69" hidden="true" />
+        <frame id="1658:3065" name="대경-화이트" x="93" y="63" width="84" height="69" />
+      </frame>
+      <frame id="1658:3068" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:3069" name="대경 인베스트먼트" x="0" y="5.5" width="123" height="19" />
+        <frame id="1658:3070" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:3071" name="투자사" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:3072" name="17" x="182" y="1382" width="310" height="240">
+      <frame id="1658:3073" name="로고 영역" x="20" y="12" width="270" height="174">
+        <frame id="1658:3074" name="Layer_1" x="91" y="59" width="88" height="57" />
+      </frame>
+      <frame id="1658:3084" name="Frame 9" x="20" y="198" width="270" height="30">
+        <text id="1658:3085" name="TS 인베스트먼트" x="0" y="5.5" width="114" height="19" />
+        <frame id="1658:3086" name="Frame 8" x="224" y="0" width="46" height="30">
+          <text id="1658:3087" name="투자사" x="5" y="7" width="36" height="16" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1658:3088" name="더보기 버튼" x="786" y="1692" width="108" height="54">
+      <text id="1658:3089" name="닫기" x="26" y="17" width="24" height="20" />
+      <frame id="1658:3090" name="arrow" x="82" y="31" width="12.000000699381417" height="8.00000104907349" />
+    </frame>
+  </frame>
+  <frame id="1607:2649" name="uneed_연혁_2014" x="7446" y="5045" width="1680" height="914">
+    <frame id="1607:2650" name="페이징" x="0" y="286" width="1680" height="114">
+      <frame id="1607:2651" name="페이징" x="380" y="30" width="920" height="54">
+        <frame id="1607:2652" name="눈금" x="340" y="0" width="480" height="10">
+          <frame id="1607:2653" name="Group 1707479415" x="-320" y="0" width="880" height="10">
+            <vector id="1607:2654" name="2014" x="-320" y="0" width="0" height="10" />
+            <vector id="1607:2655" name="1" x="-300" y="0" width="0" height="5" />
+            <vector id="1607:2656" name="2" x="-280" y="0" width="0" height="5" />
+            <vector id="1607:2657" name="3" x="-260" y="0" width="0" height="5" />
+            <vector id="1607:2658" name="2015" x="-240" y="0" width="0" height="10" />
+            <vector id="1607:2659" name="1" x="-220" y="0" width="0" height="5" />
+            <vector id="1607:2660" name="2" x="-200" y="0" width="0" height="5" />
+            <vector id="1607:2661" name="3" x="-180" y="0" width="0" height="5" />
+            <vector id="1607:2662" name="2016" x="-160" y="0" width="0" height="10" />
+            <vector id="1607:2663" name="1" x="-140" y="0" width="0" height="5" />
+            <vector id="1607:2664" name="2" x="-120" y="0" width="0" height="5" />
+            <vector id="1607:2665" name="3" x="-100" y="0" width="0" height="5" />
+            <vector id="1607:2666" name="2017" x="-80" y="0" width="0" height="10" />
+            <vector id="1607:2667" name="1" x="-60" y="0" width="0" height="5" />
+            <vector id="1607:2668" name="2" x="-40" y="0" width="0" height="5" />
+            <vector id="1607:2669" name="3" x="-20" y="0" width="0" height="5" />
+            <vector id="1607:2670" name="2018" x="0" y="0" width="0" height="10" />
+            <vector id="1607:2671" name="1" x="20" y="0" width="0" height="5" />
+            <vector id="1607:2672" name="2" x="40" y="0" width="0" height="5" />
+            <vector id="1607:2673" name="3" x="60" y="0" width="0" height="5" />
+            <vector id="1607:2674" name="2019" x="80" y="0" width="0" height="10" />
+            <vector id="1607:2675" name="1" x="100" y="0" width="0" height="5" />
+            <vector id="1607:2676" name="2" x="120" y="0" width="0" height="5" />
+            <vector id="1607:2677" name="3" x="140" y="0" width="0" height="5" />
+            <vector id="1607:2678" name="2020" x="160" y="0" width="0" height="10" />
+            <vector id="1607:2679" name="1" x="180" y="0" width="0" height="5" />
+            <vector id="1607:2680" name="2" x="200" y="0" width="0" height="5" />
+            <vector id="1607:2681" name="3" x="220" y="0" width="0" height="5" />
+            <vector id="1607:2682" name="2021" x="240" y="0" width="0" height="10" />
+            <vector id="1607:2683" name="1" x="260" y="0" width="0" height="5" />
+            <vector id="1607:2684" name="2" x="280" y="0" width="0" height="5" />
+            <vector id="1607:2685" name="3" x="300" y="0" width="0" height="5" />
+            <vector id="1607:2686" name="2022" x="320" y="0" width="0" height="10" />
+            <vector id="1607:2687" name="1" x="340" y="0" width="0" height="5" />
+            <vector id="1607:2688" name="2" x="360" y="0" width="0" height="5" />
+            <vector id="1607:2689" name="3" x="380" y="0" width="0" height="5" />
+            <vector id="1607:2690" name="2023" x="400" y="0" width="0" height="10" />
+            <vector id="1607:2691" name="1" x="420" y="0" width="0" height="5" />
+            <vector id="1607:2692" name="2" x="440" y="0" width="0" height="5" />
+            <vector id="1607:2693" name="3" x="460" y="0" width="0" height="5" />
+            <vector id="1607:2694" name="2025" x="480" y="0" width="0" height="10" />
+            <vector id="1607:2695" name="1" x="500" y="0" width="0" height="5" />
+            <vector id="1607:2696" name="2" x="520" y="0" width="0" height="5" />
+            <vector id="1607:2697" name="3" x="540" y="0" width="0" height="5" />
+            <vector id="1607:2698" name="2026" x="560" y="0" width="0" height="10" />
+          </frame>
+        </frame>
+        <frame id="1607:2699" name="2014" x="0" y="31" width="40" height="23">
+          <text id="1607:2700" name="2014" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2701" name="2015" x="80" y="31" width="40" height="23">
+          <text id="1607:2702" name="2015" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2703" name="2016" x="160" y="31" width="40" height="23">
+          <text id="1607:2704" name="2016" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2705" name="2017" x="240" y="31" width="40" height="23">
+          <text id="1607:2706" name="2017" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2707" name="2018" x="320" y="31" width="40" height="23">
+          <text id="1607:2708" name="2018" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2709" name="2019" x="400" y="31" width="40" height="23">
+          <text id="1607:2710" name="2019" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2711" name="2020" x="480" y="31" width="40" height="23">
+          <text id="1607:2712" name="2020" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2713" name="2021" x="560" y="31" width="40" height="23">
+          <text id="1607:2714" name="2021" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2715" name="2022" x="640" y="31" width="40" height="23">
+          <text id="1607:2716" name="2022" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2717" name="2023" x="720" y="31" width="40" height="23">
+          <text id="1607:2718" name="2023" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2719" name="2025" x="800" y="31" width="40" height="23">
+          <text id="1607:2720" name="2025" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1607:2721" name="2026" x="880" y="31" width="40" height="23">
+          <text id="1607:2722" name="2026" x="0" y="0" width="40" height="23" />
+        </frame>
+      </frame>
+    </frame>
+    <text id="1607:2723" name="유니드컴즈가 걸어온 길" x="184" y="100" width="1312" height="84" />
+    <text id="1607:2724" name="유니드컴즈의 변화는 세상을 놀랍게 만듭니다" x="184" y="224" width="1312" height="22" />
+    <frame id="1607:2725" name="2022" x="-175" y="480" width="610" height="354" />
+    <frame id="1607:2728" name="2023" x="535" y="480" width="610" height="354">
+      <text id="1607:2729" name="2014" x="0" y="0" width="610" height="250" />
+      <text id="1607:2730" name="㈜유니드컴즈 설립" x="0" y="310" width="610" height="22" />
+    </frame>
+    <frame id="1607:2731" name="2024" x="1245" y="480" width="610" height="354">
+      <text id="1607:2732" name="2022" x="0" y="0" width="610" height="250" />
+      <text id="1607:2733" name="스마트스킨 출시입점" x="0" y="310" width="610" height="22" />
+    </frame>
+  </frame>
+  <frame id="1658:3094" name="uneed_연혁_2015" x="9226" y="5045" width="1680" height="914">
+    <frame id="1658:3095" name="페이징" x="0" y="286" width="1680" height="114">
+      <frame id="1658:3096" name="페이징" x="380" y="30" width="920" height="54">
+        <frame id="1658:3097" name="눈금" x="340" y="0" width="480" height="10">
+          <frame id="1658:3098" name="Group 1707479415" x="-320" y="0" width="880" height="10">
+            <vector id="1658:3099" name="2014" x="-320" y="0" width="0" height="10" />
+            <vector id="1658:3100" name="1" x="-300" y="0" width="0" height="5" />
+            <vector id="1658:3101" name="2" x="-280" y="0" width="0" height="5" />
+            <vector id="1658:3102" name="3" x="-260" y="0" width="0" height="5" />
+            <vector id="1658:3103" name="2015" x="-240" y="0" width="0" height="10" />
+            <vector id="1658:3104" name="1" x="-220" y="0" width="0" height="5" />
+            <vector id="1658:3105" name="2" x="-200" y="0" width="0" height="5" />
+            <vector id="1658:3106" name="3" x="-180" y="0" width="0" height="5" />
+            <vector id="1658:3107" name="2016" x="-160" y="0" width="0" height="10" />
+            <vector id="1658:3108" name="1" x="-140" y="0" width="0" height="5" />
+            <vector id="1658:3109" name="2" x="-120" y="0" width="0" height="5" />
+            <vector id="1658:3110" name="3" x="-100" y="0" width="0" height="5" />
+            <vector id="1658:3111" name="2017" x="-80" y="0" width="0" height="10" />
+            <vector id="1658:3112" name="1" x="-60" y="0" width="0" height="5" />
+            <vector id="1658:3113" name="2" x="-40" y="0" width="0" height="5" />
+            <vector id="1658:3114" name="3" x="-20" y="0" width="0" height="5" />
+            <vector id="1658:3115" name="2018" x="0" y="0" width="0" height="10" />
+            <vector id="1658:3116" name="1" x="20" y="0" width="0" height="5" />
+            <vector id="1658:3117" name="2" x="40" y="0" width="0" height="5" />
+            <vector id="1658:3118" name="3" x="60" y="0" width="0" height="5" />
+            <vector id="1658:3119" name="2019" x="80" y="0" width="0" height="10" />
+            <vector id="1658:3120" name="1" x="100" y="0" width="0" height="5" />
+            <vector id="1658:3121" name="2" x="120" y="0" width="0" height="5" />
+            <vector id="1658:3122" name="3" x="140" y="0" width="0" height="5" />
+            <vector id="1658:3123" name="2020" x="160" y="0" width="0" height="10" />
+            <vector id="1658:3124" name="1" x="180" y="0" width="0" height="5" />
+            <vector id="1658:3125" name="2" x="200" y="0" width="0" height="5" />
+            <vector id="1658:3126" name="3" x="220" y="0" width="0" height="5" />
+            <vector id="1658:3127" name="2021" x="240" y="0" width="0" height="10" />
+            <vector id="1658:3128" name="1" x="260" y="0" width="0" height="5" />
+            <vector id="1658:3129" name="2" x="280" y="0" width="0" height="5" />
+            <vector id="1658:3130" name="3" x="300" y="0" width="0" height="5" />
+            <vector id="1658:3131" name="2022" x="320" y="0" width="0" height="10" />
+            <vector id="1658:3132" name="1" x="340" y="0" width="0" height="5" />
+            <vector id="1658:3133" name="2" x="360" y="0" width="0" height="5" />
+            <vector id="1658:3134" name="3" x="380" y="0" width="0" height="5" />
+            <vector id="1658:3135" name="2023" x="400" y="0" width="0" height="10" />
+            <vector id="1658:3136" name="1" x="420" y="0" width="0" height="5" />
+            <vector id="1658:3137" name="2" x="440" y="0" width="0" height="5" />
+            <vector id="1658:3138" name="3" x="460" y="0" width="0" height="5" />
+            <vector id="1658:3139" name="2025" x="480" y="0" width="0" height="10" />
+            <vector id="1658:3140" name="1" x="500" y="0" width="0" height="5" />
+            <vector id="1658:3141" name="2" x="520" y="0" width="0" height="5" />
+            <vector id="1658:3142" name="3" x="540" y="0" width="0" height="5" />
+            <vector id="1658:3143" name="2026" x="560" y="0" width="0" height="10" />
+          </frame>
+        </frame>
+        <frame id="1658:3144" name="2014" x="0" y="31" width="40" height="23">
+          <text id="1658:3145" name="2014" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3146" name="2015" x="80" y="31" width="40" height="23">
+          <text id="1658:3147" name="2015" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3148" name="2016" x="160" y="31" width="40" height="23">
+          <text id="1658:3149" name="2016" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3150" name="2017" x="240" y="31" width="40" height="23">
+          <text id="1658:3151" name="2017" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3152" name="2018" x="320" y="31" width="40" height="23">
+          <text id="1658:3153" name="2018" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3154" name="2019" x="400" y="31" width="40" height="23">
+          <text id="1658:3155" name="2019" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3156" name="2020" x="480" y="31" width="40" height="23">
+          <text id="1658:3157" name="2020" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3158" name="2021" x="560" y="31" width="40" height="23">
+          <text id="1658:3159" name="2021" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3160" name="2022" x="640" y="31" width="40" height="23">
+          <text id="1658:3161" name="2022" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3162" name="2023" x="720" y="31" width="40" height="23">
+          <text id="1658:3163" name="2023" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3164" name="2025" x="800" y="31" width="40" height="23">
+          <text id="1658:3165" name="2025" x="0" y="0" width="40" height="23" />
+        </frame>
+        <frame id="1658:3166" name="2026" x="880" y="31" width="40" height="23">
+          <text id="1658:3167" name="2026" x="0" y="0" width="40" height="23" />
+        </frame>
+      </frame>
+    </frame>
+    <text id="1658:3168" name="유니드컴즈가 걸어온 길" x="184" y="100" width="1312" height="84" />
+    <text id="1658:3169" name="유니드컴즈의 변화는 세상을 놀랍게 만듭니다" x="184" y="224" width="1312" height="22" />
+    <frame id="1658:3170" name="2022" x="-175" y="480" width="610" height="354">
+      <text id="1658:3171" name="킵그로우 &#39;1초 회원가입&#39; 출시" x="0" y="310" width="610" height="22" />
+      <text id="1658:3178" name="2014" x="0" y="0" width="610" height="250" />
+    </frame>
+    <frame id="1658:3172" name="2023" x="535" y="480" width="610" height="354">
+      <text id="1658:3173" name="2015" x="0" y="0" width="610" height="250" />
+      <text id="1658:3174" name="스마트스킨 출시" x="0" y="310" width="610" height="22" />
+    </frame>
+    <frame id="1658:3175" name="2024" x="1245" y="480" width="610" height="354">
+      <text id="1658:3176" name="2022" x="0" y="0" width="610" height="250" />
+      <text id="1658:3177" name="스마트앱·타겟북 출시 / K-Global 300 선정" x="0" y="310" width="610" height="22" />
+    </frame>
+  </frame>
+  <frame id="1171:131" name="uneed_product 2" x="7446" y="1424" width="1680" height="670">
+    <frame id="1171:132" name="uneed_product" x="840" y="0" width="658" height="670">
+      <frame id="1171:133" name="상품" x="1" y="0" width="656" height="670">
+        <frame id="1171:160" name="킵그로우" x="0" y="0" width="656" height="80">
+          <text id="1171:161" name="KeepGrow" x="20" y="25" width="619" height="30" />
+        </frame>
+        <frame id="1171:134" name="메시온-열기" x="0" y="80" width="656" height="430">
+          <frame id="1171:158" name="버튼" x="25" y="328" width="100" height="52">
+            <text id="1171:159" name="바로가기" x="26" y="16" width="48" height="20" />
+          </frame>
+          <text id="1171:135" name="Mesion은 메시지 발송 도구가 아니라, 프로모션으로 놓치던 고객을 매출로 바꾸는 세일즈 채널입니다. 기존 회원을 넘어 네이버 페이 비회원 결제 고객까지 네이버 스마트 톡톡으로 도달해, 비회원 매출을 총매출 성장으로 전환합니다." x="25" y="230" width="606" height="63" />
+          <text id="1171:136" name="비회원까지 닿는 세일즈 채널" x="25" y="170" width="606" height="20" />
+          <frame id="1171:537" name="로고" x="25" y="105" width="132" height="35" />
+          <text id="1171:157" name="Mesion" x="25" y="25" width="606" height="30" />
+        </frame>
+        <frame id="1171:162" name="데카" x="0" y="510" width="656" height="80">
+          <text id="1171:163" name="DECA" x="20" y="25" width="619" height="30" />
+        </frame>
+        <frame id="1171:164" name="모도AI" x="0" y="590" width="656" height="80">
+          <text id="1171:165" name="modoAI" x="20" y="25" width="619" height="30" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1171:166" name="title" x="184" y="0" width="656" height="593">
+      <text id="1171:167" name="유니드컴즈가 만드는 것" x="0" y="100" width="528" height="65" />
+      <text id="1171:168" name="지혜로운 AI를 향해, 오늘의 제품을 만듭니다." x="0" y="205" width="334" height="22" hidden="true" />
+    </frame>
+  </frame>
+  <frame id="1171:539" name="uneed_product 3" x="9226" y="1424" width="1680" height="670">
+    <frame id="1171:540" name="uneed_product" x="840" y="0" width="658" height="670">
+      <frame id="1171:541" name="상품" x="1" y="0" width="656" height="670">
+        <frame id="1171:542" name="킵그로우" x="0" y="0" width="656" height="80">
+          <text id="1171:543" name="KeepGrow" x="20" y="25" width="619" height="30" />
+        </frame>
+        <frame id="1171:729" name="메시온" x="0" y="80" width="656" height="80">
+          <text id="1171:730" name="Mesion" x="20" y="25" width="619" height="30" />
+        </frame>
+        <frame id="1171:544" name="데카-열기" x="0" y="160" width="656" height="430">
+          <frame id="1171:545" name="버튼" x="25" y="328" width="100" height="52">
+            <text id="1171:546" name="바로가기" x="26" y="16" width="48" height="20" />
+          </frame>
+          <text id="1171:547" name="DecaGEO는 순위 조회 도구가 아니라, AI 추천의 기준을 세우는 표준 랭킹입니다. ChatGPT 같은 AI가 어떤 브랜드를 왜 추천하는지 매주 편향 없이 공개하고, 경쟁 브랜드 대비 내 위치를 확인해 다음 전략을 찾게 합니다." x="25" y="230" width="606" height="63" />
+          <text id="1171:548" name="See where AI ranks you" x="25" y="170" width="606" height="20" />
+          <frame id="1171:933" name="로고" x="25" y="105" width="159" height="35" />
+          <text id="1171:728" name="DECA" x="25" y="25" width="606" height="30" />
+        </frame>
+        <frame id="1171:731" name="모도AI" x="0" y="590" width="656" height="80">
+          <text id="1171:732" name="modoAI" x="20" y="25" width="619" height="30" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1171:733" name="title" x="184" y="0" width="656" height="593">
+      <text id="1171:734" name="유니드컴즈가 만드는 것" x="0" y="100" width="528" height="65" />
+      <text id="1171:735" name="지혜로운 AI를 향해, 오늘의 제품을 만듭니다." x="0" y="205" width="334" height="22" hidden="true" />
+    </frame>
+  </frame>
+  <frame id="1171:736" name="uneed_product 4" x="11006" y="1424" width="1680" height="670">
+    <frame id="1171:737" name="uneed_product" x="840" y="0" width="658" height="670">
+      <frame id="1171:738" name="상품" x="1" y="0" width="656" height="670">
+        <frame id="1171:739" name="킵그로우" x="0" y="0" width="656" height="80">
+          <text id="1171:740" name="KeepGrow" x="20" y="25" width="619" height="30" />
+        </frame>
+        <frame id="1171:926" name="데카" x="0" y="80" width="656" height="80">
+          <text id="1171:927" name="DECA" x="20" y="25" width="619" height="30" />
+        </frame>
+        <frame id="1171:928" name="메시온" x="0" y="160" width="656" height="80">
+          <text id="1171:929" name="modoAI" x="20" y="25" width="619" height="30" />
+        </frame>
+        <frame id="1171:741" name="모도AI-열기" x="0" y="240" width="656" height="430">
+          <frame id="1171:742" name="버튼" x="25" y="328" width="100" height="52">
+            <text id="1171:743" name="바로가기" x="26" y="16" width="48" height="20" />
+          </frame>
+          <text id="1171:744" name="모도AI는 이미지 생성 AI가 아니라, 글로벌 소상공인의 판매 성과(Sales Performance)를 만드는 Creative Director입니다. No Prompting, No Editing — 취향을 매출로 전환하여, 작은 브랜드도 자신만의 스타일로 더 많이 판매하도록 돕습니다." x="25" y="230" width="606" height="63" />
+          <text id="1171:745" name="CD, Creative Director" x="25" y="170" width="606" height="20" />
+          <text id="1171:925" name="Mesion" x="25" y="25" width="606" height="30" />
+          <frame id="1171:977" name="modo logo" x="25" y="105" width="219" height="35" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="1171:930" name="title" x="184" y="0" width="656" height="593">
+      <text id="1171:931" name="유니드컴즈가 만드는 것" x="0" y="100" width="528" height="65" />
+      <text id="1171:932" name="지혜로운 AI를 향해, 오늘의 제품을 만듭니다." x="0" y="205" width="334" height="22" hidden="true" />
+    </frame>
+  </frame>
+  <frame id="330:2747" name="회사소개" x="7512" y="7468" width="1680" height="5629">
+    <frame id="346:96" name="footer" x="0" y="5400" width="1680" height="229">
+      <text id="346:97" name="(주) 유니드컴즈" x="184" y="60" width="1312" height="24" />
+      <frame id="346:98" name="Frame 235" x="184" y="117" width="349" height="21">
+        <frame id="346:99" name="Frame 62" x="0" y="0" width="349" height="21">
+          <text id="346:100" name="대표자: 양재필, 전형신" x="0" y="0" width="132" height="21" />
+          <text id="346:101" name="사업자등록번호 : 220-88-93926" x="147" y="0" width="202" height="21" />
+        </frame>
+      </frame>
+      <frame id="346:102" name="Frame 236" x="184" y="143" width="461" height="21">
+        <text id="346:103" name="주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)" x="0" y="0" width="461" height="21" />
+      </frame>
+      <text id="346:104" name="© 2026 UNEEDCOMMS." x="1273" y="139" width="223" height="30" />
+      <text id="346:105" name="public@uneedcomms.com" x="1006" y="139" width="237" height="30" />
+    </frame>
+    <frame id="344:50" name="way of working text" x="0" y="3091" width="1680" height="2026">
+      <frame id="346:68" name="Frame 239" x="696" y="0" width="800" height="2009">
+        <frame id="346:63" name="1" x="1" y="0" width="798" height="318">
+          <frame id="1179:1114" name="box" x="40" y="60" width="82" height="47">
+            <text id="1179:1116" name="// 하나" x="21" y="15" width="40" height="17" />
+          </frame>
+          <text id="344:51" name="&quot;원래 그렇게 해&quot;를 의심한다." x="40" y="137" width="718" height="36" />
+          <text id="346:60" name="당연한 것에는 이유가 없을 때가 많습니다. 남들이 정해둔 방식을 그대로 따르지 않고, 왜 그런지 다시 묻고 더 나은 길을 만듭니다." x="40" y="203" width="718" height="54" />
+        </frame>
+        <frame id="346:65" name="2" x="1" y="318" width="798" height="318">
+          <frame id="1179:1118" name="box" x="40" y="60" width="69" height="47">
+            <text id="1179:1119" name="// 둘" x="21" y="15" width="27" height="17" />
+          </frame>
+          <text id="346:66" name="될 때까지 파고든다." x="40" y="137" width="718" height="36" />
+          <text id="346:67" name="&quot;일단 됐어&quot;는 끝이 아닙니다. 진짜 원인이 나올 때까지, 파고 또 파고듭니다. 우리에게 책임은 실패하지 않는 것이 아니라, 포기하지 않는 것입니다." x="40" y="203" width="718" height="54" />
+        </frame>
+        <frame id="346:69" name="3" x="1" y="636" width="798" height="318">
+          <frame id="1179:1121" name="box" x="40" y="60" width="69" height="47">
+            <text id="1179:1122" name="// 셋" x="21" y="15" width="27" height="17" />
+          </frame>
+          <text id="346:70" name="예의는 전문가의 기본" x="40" y="137" width="718" height="36" />
+          <text id="346:71" name="예의는 격식이 아니라, 상대의 시간과 판단을 존중하는 일입니다. 동료를 100% 신뢰하고 시작하며, 동료의 자리에서 한 번 더 생각합니다. 전문가는 전문가를 그렇게 대합니다." x="40" y="203" width="718" height="54" />
+        </frame>
+        <frame id="346:73" name="4" x="1" y="954" width="798" height="318">
+          <frame id="1179:1124" name="box" x="40" y="60" width="69" height="47">
+            <text id="1179:1125" name="// 넷" x="21" y="15" width="27" height="17" />
+          </frame>
+          <text id="346:74" name="일은 내가 끌고 간다." x="40" y="137" width="718" height="36" />
+          <text id="346:75" name="닥친 일을 쳐내는 사람과, 계획을 세워 일을 장악하는 사람은 다릅니다. 우리는 시작하기 전에 순서를 설계하고, 무엇부터 할지 스스로 정합니다. 사람은 일을 주도할 때, 가장 큰 힘을 냅니다." x="40" y="203" width="718" height="54" />
+        </frame>
+        <frame id="346:77" name="5" x="1" y="1272" width="798" height="345">
+          <frame id="1179:1133" name="Frame 241" x="40" y="60" width="197" height="47">
+            <frame id="1179:1127" name="box" x="0" y="0" width="82" height="47">
+              <text id="1179:1128" name="// 다섯" x="21" y="15" width="40" height="17" />
+            </frame>
+            <text id="1179:1134" name="FOR HUMANS" x="102" y="15" width="95" height="17" />
+          </frame>
+          <text id="346:78" name="나만 알지 않는다." x="40" y="137" width="718" height="36" />
+          <text id="346:79" name="내가 아는 것은 나의 것이 아니라, 우리의 것이 될 때 힘이 됩니다. 그래서 우리는 공개를 기본값으로 둡니다. 알게 된 것은 머릿속에 두지 않고, 동료가 볼 수 있는 곳에 남깁니다. 결과만이 아니라 왜 그렇게 판단했는지까지 남을 때, 내 경험이 동료의 경험이 됩니다." x="40" y="203" width="718" height="81" />
+        </frame>
+        <frame id="346:81" name="6" x="1" y="1617" width="798" height="392">
+          <frame id="1179:1140" name="Frame 241" x="40" y="60" width="191" height="47">
+            <frame id="1179:1141" name="box" x="0" y="0" width="82" height="47">
+              <text id="1179:1142" name="// 여섯" x="21" y="15" width="40" height="17" />
+            </frame>
+            <text id="1179:1143" name="FOR AGENTS" x="102" y="15" width="89" height="17" />
+          </frame>
+          <text id="346:82" name="우리의 기록을, 이제 AI 에이전트도 읽는다." x="40" y="137" width="718" height="36" />
+          <text id="346:83" name="그리고 이제, 그 기록을 동료만 읽지 않습니다. 에이전트는 어깨너머로 배우지 못합니다. 기록된 것만 배웁니다. 그래서 기록을 남기는 일은, 함께 일할 에이전트를 가르치는 일이기도 합니다. 그렇게 배운 에이전트가 이미 우리 곁에서 일하고 있습니다." x="40" y="203" width="718" height="81" />
+          <text id="2547:171" name="한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다." x="40" y="314" width="507" height="17" />
+        </frame>
+      </frame>
+      <text id="344:52" name="// 한끗이 있는 사람들은, 매일 이렇게 일합니다." x="184" y="60" width="472" height="30" />
+    </frame>
+    <frame id="346:116" name="fly wheel img" x="0" y="5100" width="1680" height="300">
+      <text id="346:119" name="한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다." x="184" y="134" width="1312" height="126" />
+    </frame>
+    <frame id="344:48" name="way of working" x="0" y="2788" width="1680" height="303">
+      <text id="344:49" name="우리가 일하는 방식" x="184" y="215" width="1312" height="48" />
+    </frame>
+    <frame id="344:41" name="fly wheel text" x="0" y="2067" width="1680" height="721">
+      <text id="344:43" name="우리가 나아가는 방식은, 한 문장이 아니라 하나의 플라이휠(Flywheel)입니다. 문장은 하나의 목적지에서 끝나지만, 바퀴는 돌면서 다음 목적지를 계속 만들어냅니다. 비즈니스 기회를 포착하면 새로운 사업부를 신설합니다. 이 순환 안에서 각 사업부는 스스로 판단하고 결정하며, 자기만의 플라이휠을 돌립니다. 그렇게 고객을 만들어 수익을 내고, 그 수익을 다음 사업에 재투자합니다. 지금은 킵그로우, 메시온, 데카, 모도, 네 개의 사업부가 각자의 플라이휠을 돌리고 있습니다. 이 플라이휠은 발명이 아니라 발견입니다. 오랜 시행착오 끝에, 우리를 여기까지 오게 한 방식에 이름을 붙인 것입니다. 회사가 어디로 가는지 궁금할 때는 플라이휠 전체를 보고, 오늘 내 일이 무엇을 위한 것인지 궁금할 때는 내 일이 어느 단계에 연결되는지 봅니다. 이 플라이휠이 한 바퀴 돌아 만들어내는 것은 하나의 기능이나 제품이 아니라, 하나의 사업입니다. 무거운 플라이휠은 처음 돌리는 데 가장 큰 힘이 들지만, 한번 돌기 시작하면 엔진을 꺼도 쉽게 멈추지 않습니다. 그래서 우리는 눈앞의 숫자에 조급해하지 않습니다. 이 플라이휠은 이미, 돌기 시작했습니다. 그래서 우리는 새로운 일 앞에서 묻습니다. 이것이 플라이휠을 빠르게 하는가. 그리고 하루의 끝에 다시 묻습니다. 오늘 우리는, 이 플라이휠을 빠르게 했는가." x="759" y="60" width="737" height="621" />
+      <text id="344:46" name="// 플라이 휠" x="184" y="60" width="525" height="30" />
+    </frame>
+    <frame id="344:37" name="fly wheel img" x="0" y="1417" width="1680" height="650">
+      <frame id="1662:3969" name="border" x="184" y="0" width="1312" height="650">
+        <frame id="344:39" name="img" x="0" y="0" width="1312" height="650">
+          <frame id="1179:1232" name="Frame 245" x="231" y="134" width="849" height="382">
+            <frame id="1179:1181" name="Group 1707479417" x="-502" y="-267" width="1816" height="866">
+              <rounded-rectangle id="1180:1482" name="ascii-magic-17 1" x="-502" y="-267" width="1816" height="866" />
+              <ellipse id="1179:1182" name="Ellipse 1" x="263" y="27" width="13" height="13" />
+              <ellipse id="1179:1183" name="Ellipse 3" x="108" y="140" width="13" height="13" />
+              <ellipse id="1179:1184" name="Ellipse 4" x="417" y="140" width="13" height="13" />
+              <ellipse id="1179:1185" name="Ellipse 5" x="357" y="321" width="13" height="13" />
+              <ellipse id="1179:1186" name="Ellipse 5" x="167" y="321" width="13" height="13" />
+              <frame id="1179:1187" name="Layer_1" x="105" y="31" width="327.17999267578125" height="327.9800109863281">
+                <vector id="1179:1188" name="Vector" x="183.0399932861328" y="3.440000057220459" width="128.49000549316406" height="93.04999542236328" />
+                <vector id="1179:1189" name="Vector" x="306.3699951171875" y="91.43000030517578" width="7.33001708984375" height="6.040000915527344" />
+                <vector id="1179:1190" name="Vector" x="16.360000610351562" y="3.5299999713897705" width="128.1999969482422" height="93.45000457763672" />
+                <vector id="1179:1191" name="Vector" x="140.1199951171875" y="0" width="5.5200042724609375" height="8.09000015258789" />
+                <vector id="1179:1192" name="Vector" x="1.5314620733261108" y="133.61000061035156" width="52.288536071777344" height="150.8000030517578" />
+                <vector id="1179:1193" name="Vector" x="0" y="132.5500030517578" width="8.0600004196167" height="5.5699920654296875" />
+                <vector id="1179:1194" name="Vector" x="85.01000213623047" y="306.7099914550781" width="158.63998413085938" height="20.76992416381836" />
+                <vector id="1179:1195" name="Vector" x="84.05999755859375" y="304.8399963378906" width="6.0500030517578125" height="7.25" />
+                <vector id="1179:1196" name="Vector" x="274.7200012207031" y="133.05999755859375" width="51.9599494934082" height="150.95999145507812" />
+                <vector id="1179:1197" name="Vector" x="273.92999267578125" y="278.75" width="6" height="6" />
+              </frame>
+              <vector id="1179:1198" name="Vector 7852" x="121" y="328" width="46.5" height="0" />
+              <vector id="1179:1199" name="Vector 7852" x="62" y="147" width="46.5" height="0" />
+              <vector id="1179:1200" name="Vector 7853" x="430" y="147" width="46.5" height="0" />
+              <vector id="1179:1201" name="Vector 7854" x="370" y="328" width="46.5" height="0" />
+            </frame>
+            <text id="1179:1202" name="수익창출" x="0" y="138" width="52" height="17" />
+            <text id="1179:1203" name="사업부 신설" x="487" y="138" width="69" height="17" />
+            <text id="1179:1204" name="사업부 플라이휠" x="427" y="319" width="95" height="17" />
+            <text id="1179:1205" name="고객창출" x="59" y="319" width="52" height="17" />
+            <text id="1179:1206" name="비지니스 기회" x="228" y="0" width="82" height="17" />
+            <text id="1179:1207" name="UNEEDCOMMS" x="218" y="186" width="103" height="17" />
+            <frame id="1179:1231" name="Frame 244" x="538" y="49" width="311" height="284">
+              <frame id="1179:1218" name="Frame 243" x="242" y="0" width="69" height="284">
+                <text id="1179:1213" name="KeepGrow" x="0" y="0" width="69" height="17" />
+                <text id="1179:1215" name="Mesion" x="0" y="89" width="69" height="17" />
+                <text id="1179:1216" name="DECA" x="0" y="178" width="69" height="17" />
+                <text id="1179:1217" name="modoAI" x="0" y="267" width="69" height="17" />
+              </frame>
+              <vector id="1179:1219" name="Vector 7856" x="0" y="10" width="224" height="266" />
+              <vector id="1179:1222" name="Vector 7857" x="0" y="100" width="224" height="176" />
+              <vector id="1179:1224" name="Vector 7858" x="0" y="187.5" width="224" height="88.5" />
+              <vector id="1179:1226" name="Vector 7859" x="0" y="276" width="224" height="0" />
+            </frame>
+          </frame>
+          <text id="1179:1229" name="각 사업부는 자기만의 플라이휠을 각자, 독립적으로, 자기 속도로 돌립니다" x="930" y="526" width="230" height="34" hidden="true" />
+          <text id="1179:1235" name="한 바퀴가 돌면, 하나의 사업이 만들어집니다." x="296" y="543" width="260" height="17" hidden="true" />
+        </frame>
+      </frame>
+    </frame>
+    <frame id="344:33" name="fly wheel" x="0" y="1114" width="1680" height="303">
+      <text id="344:34" name="유니드컴즈가 나아가는 방식" x="184" y="215" width="1312" height="48" />
+    </frame>
+    <frame id="344:22" name="mistion text" x="0" y="644" width="1680" height="470">
+      <frame id="344:29" name="img" x="774" y="0" width="722" height="470">
+        <rounded-rectangle id="344:18" name="back" x="0" y="0" width="800" height="470" />
+        <rounded-rectangle id="1180:1244" name="화투" x="-57" y="16" width="836" height="470" />
+        <rounded-rectangle id="1180:1246" name="ascii-magic-15 1" x="-108" y="18" width="908" height="433" hidden="true" />
+        <rounded-rectangle id="1180:1480" name="702d669c-7c1e-44cc-9d0a-f5df64e244f0 1" x="-157" y="48" width="908" height="433" hidden="true" />
+        <rounded-rectangle id="1606:2600" name="11f1a41e-76a1-4ef2-94e5-05615d29321f 1" x="-962" y="-188" width="1816" height="866" />
+      </frame>
+      <text id="344:26" name="한끗이 있는 사람" x="184" y="180" width="606" height="48" />
+      <text id="344:27" name="우리는 혼자 모든 걸 해내는 &#39;완성된 천재&#39;가 아닙니다. 우리는 한끗이 있는 사람들입니다. 어려운 문제를 끝까지 파고들어, 제품으로 만들어내는 사람. 모르는 것을 모른다고 말하고, 계속 배우는 사람. 동료에게 박수를 아끼지 않는 사람. 지금 완성되어 있지 않아도 됩니다. 실력으로 자라고, 사람으로 깊어지는 사람이면 됩니다." x="184" y="268" width="550" height="162" />
+      <rounded-rectangle id="1606:2075" name="a208ec09-4db0-4dd8-96b2-0353667eee4a 1" x="-94" y="-253" width="1816" height="866" hidden="true" />
+    </frame>
+    <frame id="335:10" name="mistion" x="0" y="126" width="1680" height="518">
+      <text id="330:2755" name="한 사람이 해낼 수 있는 일의 넓이와 깊이를 바꾸는, 지혜로운 AI 에이전트를 만듭니다." x="184" y="215" width="1312" height="96" />
+      <text id="333:3337" name="// 유니드컴즈 소개" x="184" y="125" width="1312" height="30" />
+      <text id="333:3336" name="세상에는 지식만으로 되지 않는 일들이 있습니다. 그날의 재료에 맞게 불과 간을 조절하는 요리사의 감각, 아이의 표정만 보고도 어디가 아픈지 아는 부모의 눈. 우리는 그것을 지혜라고 부릅니다. 이제 우리는 무엇이든 AI에게 묻고, AI는 무엇이든 답합니다. 그러나 똑똑한 AI는 많아도, 지혜로운 AI는 없습니다. 유니드컴즈는 지금 이 상황에 맞게 스스로 판단하는, 지혜로운 AI 에이전트를 만듭니다. 경험의 한계를 넘어, 한 사람이 해낼 수 있는 일의 넓이와 깊이가 달라지도록. 그 변화가 쌓여, 세상이 일하는 방식을 바꿉니다." x="184" y="343" width="1312" height="135" />
+    </frame>
+    <frame id="330:2762" name="NAV" x="0" y="0" width="1680" height="126">
+      <frame id="330:2763" name="uneed_logo" x="184" y="49" width="168" height="28" />
+      <frame id="330:2782" name="Frame 3" x="1063" y="53" width="319" height="21">
+        <text id="330:2783" name="처음으로" x="0" y="0" width="52" height="21" />
+        <text id="330:2784" name="회사소개" x="102" y="0" width="52" height="21" />
+        <text id="330:2785" name="뉴스룸" x="204" y="0" width="39" height="21" />
+        <text id="330:2786" name="채용" x="293" y="0" width="26" height="21" />
+      </frame>
+      <frame id="330:2787" name="Frame 4" x="1442" y="54" width="54" height="18">
+        <text id="330:2788" name="KR" x="0" y="0" width="16" height="18" />
+        <vector id="330:2789" name="Vector 1" x="27" y="5" width="0" height="8" />
+        <text id="330:2790" name="EN" x="38" y="0" width="16" height="18" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="2121:100" name="fly wheel img" x="5732" y="8885" width="1680" height="650">
+    <frame id="2121:101" name="border" x="184" y="0" width="1312" height="650">
+      <frame id="2121:102" name="img" x="0" y="0" width="1312" height="650">
+        <frame id="2121:103" name="Frame 245" x="231" y="134" width="849" height="382">
+          <frame id="2121:104" name="Group 1707479417" x="-502" y="-267" width="1816" height="866">
+            <rounded-rectangle id="2121:105" name="ascii-magic-17 1" x="-502" y="-267" width="1816" height="866" />
+            <ellipse id="2121:106" name="Ellipse 1" x="263" y="27" width="13" height="13" />
+            <ellipse id="2121:107" name="Ellipse 3" x="108" y="140" width="13" height="13" />
+            <ellipse id="2121:108" name="Ellipse 4" x="417" y="140" width="13" height="13" />
+            <ellipse id="2121:109" name="Ellipse 5" x="357" y="321" width="13" height="13" />
+            <ellipse id="2121:110" name="Ellipse 5" x="167" y="321" width="13" height="13" />
+            <frame id="2121:111" name="Layer_1" x="105" y="31" width="327.17999267578125" height="327.9800109863281">
+              <vector id="2121:112" name="Vector" x="183.0399932861328" y="3.440000057220459" width="128.49000549316406" height="93.04999542236328" />
+              <vector id="2121:113" name="Vector" x="306.3699951171875" y="91.43000030517578" width="7.33001708984375" height="6.040000915527344" />
+              <vector id="2121:114" name="Vector" x="16.360000610351562" y="3.5299999713897705" width="128.1999969482422" height="93.45000457763672" />
+              <vector id="2121:115" name="Vector" x="140.1199951171875" y="0" width="5.5200042724609375" height="8.09000015258789" />
+              <vector id="2121:116" name="Vector" x="1.5314620733261108" y="133.61000061035156" width="52.288536071777344" height="150.8000030517578" />
+              <vector id="2121:117" name="Vector" x="0" y="132.5500030517578" width="8.0600004196167" height="5.5699920654296875" />
+              <vector id="2121:118" name="Vector" x="85.01000213623047" y="306.7099914550781" width="158.63998413085938" height="20.76992416381836" />
+              <vector id="2121:119" name="Vector" x="84.05999755859375" y="304.8399963378906" width="6.0500030517578125" height="7.25" />
+              <vector id="2121:120" name="Vector" x="274.7200012207031" y="133.05999755859375" width="51.9599494934082" height="150.95999145507812" />
+              <vector id="2121:121" name="Vector" x="273.92999267578125" y="278.75" width="6" height="6" />
+            </frame>
+            <vector id="2121:122" name="Vector 7852" x="121" y="328" width="46.5" height="0" />
+            <vector id="2121:123" name="Vector 7852" x="62" y="147" width="46.5" height="0" />
+            <vector id="2121:124" name="Vector 7853" x="430" y="147" width="46.5" height="0" />
+            <vector id="2121:125" name="Vector 7854" x="370" y="328" width="46.5" height="0" />
+          </frame>
+          <text id="2121:126" name="Revenue" x="-5" y="138" width="57" height="17" />
+          <text id="2121:127" name="New Business Unit" x="487" y="138" width="124" height="17" />
+          <text id="2121:128" name="Each Unit&#39;s Flywheel" x="427" y="319" width="74" height="34" />
+          <text id="2121:129" name="Customers" x="37" y="319" width="72" height="17" />
+          <text id="2121:130" name="Business Opportunity" x="198" y="0" width="143" height="17" />
+          <text id="2121:131" name="UNEEDCOMMS" x="218" y="186" width="103" height="17" />
+          <frame id="2121:132" name="Frame 244" x="538" y="49" width="311" height="284">
+            <frame id="2121:133" name="Frame 243" x="242" y="0" width="69" height="284">
+              <text id="2121:134" name="KeepGrow" x="0" y="0" width="69" height="17" />
+              <text id="2121:135" name="Mesion" x="0" y="89" width="69" height="17" />
+              <text id="2121:136" name="DECA" x="0" y="178" width="69" height="17" />
+              <text id="2121:137" name="modoAI" x="0" y="267" width="69" height="17" />
+            </frame>
+            <vector id="2121:138" name="Vector 7856" x="0" y="10" width="224" height="266" />
+            <vector id="2121:139" name="Vector 7857" x="0" y="100" width="224" height="176" />
+            <vector id="2121:140" name="Vector 7858" x="0" y="187.5" width="224" height="88.5" />
+            <vector id="2121:141" name="Vector 7859" x="0" y="276" width="224" height="0" />
+          </frame>
+        </frame>
+        <text id="2121:142" name="각 사업부는 자기만의 플라이휠을 각자, 독립적으로, 자기 속도로 돌립니다" x="930" y="526" width="230" height="34" hidden="true" />
+        <text id="2121:143" name="한 바퀴가 돌면, 하나의 사업이 만들어집니다." x="296" y="543" width="260" height="17" hidden="true" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="1662:3932" name="way of working text" x="5732" y="10559" width="1680" height="1962">
+    <frame id="1662:3933" name="Frame 239" x="696" y="0" width="800" height="1960">
+      <frame id="1662:3934" name="1" x="1" y="0" width="798" height="316">
+        <frame id="1662:3935" name="box" x="40" y="60" width="80" height="45">
+          <text id="1662:3936" name="// 하나" x="20" y="14" width="40" height="17" />
+        </frame>
+        <text id="1662:3937" name="&quot;원래 그렇게 해&quot;를 의심한다." x="40" y="135" width="718" height="36" />
+        <text id="1662:3938" name="당연한 것에는 이유가 없을 때가 많습니다. 남들이 정해둔 방식을 그대로 따르지 않고, 왜 그런지 다시 묻고 더 나은 길을 만듭니다." x="40" y="201" width="718" height="54" />
+      </frame>
+      <frame id="1662:3939" name="2" x="1" y="316" width="798" height="318">
+        <frame id="1662:3940" name="box" x="40" y="60" width="69" height="47">
+          <text id="1662:3941" name="// 둘" x="21" y="15" width="27" height="17" />
+        </frame>
+        <text id="1662:3942" name="될 때까지 파고든다." x="40" y="137" width="718" height="36" />
+        <text id="1662:3943" name="&quot;일단 됐어&quot;는 끝이 아닙니다. 진짜 원인이 나올 때까지, 파고 또 파고듭니다. 우리에게 책임은 실패하지 않는 것이 아니라, 포기하지 않는 것입니다." x="40" y="203" width="718" height="54" />
+      </frame>
+      <frame id="1662:3944" name="3" x="1" y="634" width="798" height="318">
+        <frame id="1662:3945" name="box" x="40" y="60" width="69" height="47">
+          <text id="1662:3946" name="// 셋" x="21" y="15" width="27" height="17" />
+        </frame>
+        <text id="1662:3947" name="예의는 전문가의 기본" x="40" y="137" width="718" height="36" />
+        <text id="1662:3948" name="예의는 격식이 아니라, 상대의 시간과 판단을 존중하는 일입니다. 동료를 100% 신뢰하고 시작하며, 동료의 자리에서 한 번 더 생각합니다. 전문가는 전문가를 그렇게 대합니다." x="40" y="203" width="718" height="54" />
+      </frame>
+      <frame id="1662:3949" name="4" x="1" y="952" width="798" height="318">
+        <frame id="1662:3950" name="box" x="40" y="60" width="69" height="47">
+          <text id="1662:3951" name="// 넷" x="21" y="15" width="27" height="17" />
+        </frame>
+        <text id="1662:3952" name="일은 내가 끌고 간다." x="40" y="137" width="718" height="36" />
+        <text id="1662:3953" name="닥친 일을 쳐내는 사람과, 계획을 세워 일을 장악하는 사람은 다릅니다. 우리는 시작하기 전에 순서를 설계하고, 무엇부터 할지 스스로 정합니다. 사람은 일을 주도할 때, 가장 큰 힘을 냅니다." x="40" y="203" width="718" height="54" />
+      </frame>
+      <frame id="1662:3954" name="5" x="1" y="1270" width="798" height="345">
+        <frame id="1662:3955" name="Frame 241" x="40" y="60" width="197" height="47">
+          <frame id="1662:3956" name="box" x="0" y="0" width="82" height="47">
+            <text id="1662:3957" name="// 다섯" x="21" y="15" width="40" height="17" />
+          </frame>
+          <text id="1662:3958" name="FOR HUMANS" x="102" y="15" width="95" height="17" />
+        </frame>
+        <text id="1662:3959" name="나만 알지 않는다." x="40" y="137" width="718" height="36" />
+        <text id="1662:3960" name="내가 아는 것은 나의 것이 아니라, 우리의 것이 될 때 힘이 됩니다. 그래서 우리는 공개를 기본값으로 둡니다. 알게 된 것은 머릿속에 두지 않고, 동료가 볼 수 있는 곳에 남깁니다. 결과만이 아니라 왜 그렇게 판단했는지까지 남을 때, 내 경험이 동료의 경험이 됩니다." x="40" y="203" width="718" height="81" />
+      </frame>
+      <frame id="1662:3961" name="6" x="1" y="1615" width="798" height="345">
+        <frame id="1662:3962" name="Frame 241" x="40" y="60" width="191" height="47">
+          <frame id="1662:3963" name="box" x="0" y="0" width="82" height="47">
+            <text id="1662:3964" name="// 다섯" x="21" y="15" width="40" height="17" />
+          </frame>
+          <text id="1662:3965" name="FOR AGENTS" x="102" y="15" width="89" height="17" />
+        </frame>
+        <text id="1662:3966" name="우리의 기록을, 이제 AI 에이전트도 읽는다." x="40" y="137" width="718" height="36" />
+        <text id="1662:3967" name="그리고 이제, 그 기록을 동료만 읽지 않습니다. 에이전트는 어깨너머로 배우지 못합니다. 기록된 것만 배웁니다. 그래서 기록을 남기는 일은, 함께 일할 에이전트를 가르치는 일이기도 합니다. 그렇게 배운 에이전트가 이미 우리 곁에서 일하고 있습니다." x="40" y="203" width="718" height="81" />
+      </frame>
+    </frame>
+    <text id="1662:3968" name="// 한끗이 있는 사람들은, 매일 이렇게 일합니다." x="184" y="60" width="472" height="30" />
+  </frame>
+  <frame id="1601:1488" name="뉴스룸" x="-1645" y="332" width="1680" height="13858">
+    <frame id="1601:1491" name="footer" x="0" y="13629" width="1680" height="229">
+      <text id="1601:1492" name="(주) 유니드컴즈" x="184" y="60" width="1312" height="24" />
+      <frame id="1601:1493" name="Frame 235" x="184" y="117" width="349" height="21">
+        <frame id="1601:1494" name="Frame 62" x="0" y="0" width="349" height="21">
+          <text id="1601:1495" name="대표자: 양재필, 전형신" x="0" y="0" width="132" height="21" />
+          <text id="1601:1496" name="사업자등록번호 : 220-88-93926" x="147" y="0" width="202" height="21" />
+        </frame>
+      </frame>
+      <frame id="1601:1497" name="Frame 236" x="184" y="143" width="461" height="21">
+        <text id="1601:1498" name="주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)" x="0" y="0" width="461" height="21" />
+      </frame>
+      <text id="1601:1499" name="© 2026 UNEEDCOMMS." x="1273" y="139" width="223" height="30" />
+      <text id="1601:1500" name="public@uneedcomms.com" x="1006" y="139" width="237" height="30" />
+    </frame>
+    <frame id="1601:1598" name="mistion" x="0" y="126" width="1680" height="303">
+      <text id="1601:1599" name="언론 속의 유니드컴즈" x="184" y="215" width="1312" height="48" />
+      <text id="1601:1600" name="// 기사 및 보도자료" x="184" y="125" width="1312" height="30" />
+    </frame>
+    <frame id="1601:1602" name="NAV" x="0" y="0" width="1680" height="126">
+      <frame id="1601:1603" name="uneed_logo" x="184" y="49" width="168" height="28" />
+      <frame id="1601:1622" name="Frame 3" x="1063" y="53" width="319" height="21">
+        <text id="1601:1623" name="처음으로" x="0" y="0" width="52" height="21" />
+        <text id="1601:1624" name="회사소개" x="102" y="0" width="52" height="21" />
+        <text id="1601:1625" name="뉴스룸" x="204" y="0" width="39" height="21" />
+        <text id="1601:1626" name="채용" x="293" y="0" width="26" height="21" />
+      </frame>
+      <frame id="1601:1627" name="Frame 4" x="1442" y="54" width="54" height="18">
+        <text id="1601:1628" name="KR" x="0" y="0" width="16" height="18" />
+        <vector id="1601:1629" name="Vector 1" x="27" y="5" width="0" height="8" />
+        <text id="1601:1630" name="EN" x="38" y="0" width="16" height="18" />
+      </frame>
+    </frame>
+    <frame id="1605:1832" name="uneed_product" x="184" y="429" width="1313" height="13200">
+      <frame id="1605:1886" name="Frame 247" x="0" y="0" width="1313" height="13200">
+        <frame id="1605:1833" name="1" x="0" y="0" width="1313" height="132">
+          <frame id="1605:1834" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1835" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1836" name="tag" x="0" y="0" width="71" height="25">
+                <text id="1605:1837" name="미디어 파인" x="6" y="8" width="59" height="9" />
+              </frame>
+              <text id="1605:1838" name="2026-04-06" x="1192" y="8" width="71" height="9" />
+            </frame>
+            <text id="1605:1839" name="네이버 CRM ‘메시온’, 비회원까지 잡았다…출시 3개월 만에 2억 건 발송 돌파" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1840" name="2" x="0" y="132" width="1313" height="132">
+          <frame id="1605:1841" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1842" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1843" name="tag" x="0" y="0" width="68" height="25">
+                <text id="1605:1844" name="머니투데이" x="6" y="8" width="56" height="9" />
+              </frame>
+              <text id="1605:1845" name="2026-02-02" x="1192" y="8" width="71" height="9" />
+            </frame>
+            <text id="1605:1846" name="카페24, 유니드컴즈 &#39;2026년 1월 베스트 파트너&#39; 선정" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1847" name="3" x="0" y="264" width="1313" height="132">
+          <frame id="1605:1848" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1849" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1850" name="tag" x="0" y="0" width="35" height="25">
+                <text id="1605:1851" name="더벨" x="6" y="8" width="23" height="9" />
+              </frame>
+              <text id="1605:1852" name="2025-09-09" x="1192" y="8" width="71" height="9" />
+            </frame>
+            <text id="1605:1853" name="커머스 특화 AI 집중, 네이버 쇼핑과 시너지 무궁무진" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1854" name="4" x="0" y="396" width="1313" height="132">
+          <frame id="1605:1855" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1856" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1857" name="tag" x="0" y="0" width="104" height="25">
+                <text id="1605:1858" name="CEO스코어데일리" x="6" y="8" width="92" height="9" />
+              </frame>
+              <text id="1605:1859" name="2025-04-25" x="1193" y="8" width="70" height="9" />
+            </frame>
+            <text id="1605:1860" name="네이버, 커머스 판 흔든다…쇼핑앱 500만 돌풍, 컬리·야놀자와 ‘맞손’" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1861" name="5" x="0" y="528" width="1313" height="132">
+          <frame id="1605:1862" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1863" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1864" name="tag" x="0" y="0" width="68" height="25">
+                <text id="1605:1865" name="머니투데이" x="6" y="8" width="56" height="9" />
+              </frame>
+              <text id="1605:1866" name="2025-04-15" x="1194" y="8" width="69" height="9" />
+            </frame>
+            <text id="1605:1867" name="유니드컴즈, 국내 최초 카카오모먼트 전용 AI 헬퍼 &#39;1초 맞춤톡&#39; 출시" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1895" name="6" x="0" y="660" width="1313" height="132">
+          <frame id="1605:1896" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1897" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1898" name="tag" x="0" y="0" width="68" height="25">
+                <text id="1605:1899" name="어패럴뉴스" x="6" y="8" width="56" height="9" />
+              </frame>
+              <text id="1605:1900" name="2025-03-11" x="1196" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:1901" name="CJ온스타일, 中企 발굴 ‘CJ온큐베이팅’ 4기 모집" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1903" name="7" x="0" y="792" width="1313" height="132">
+          <frame id="1605:1904" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1905" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1906" name="tag" x="0" y="0" width="68" height="25">
+                <text id="1605:1907" name="프라임경제" x="6" y="8" width="56" height="9" />
+              </frame>
+              <text id="1605:1908" name="2025-03-04" x="1192" y="8" width="71" height="9" />
+            </frame>
+            <text id="1605:1909" name="유니드컴즈 &#39;1초 회원가입&#39; 고도몰 론칭" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1911" name="8" x="0" y="924" width="1313" height="132">
+          <frame id="1605:1912" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1913" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1914" name="tag" x="0" y="0" width="79" height="25">
+                <text id="1605:1915" name="한국정경신문" x="6" y="8" width="67" height="9" />
+              </frame>
+              <text id="1605:1916" name="2025-02-05" x="1193" y="8" width="70" height="9" />
+            </frame>
+            <text id="1605:1917" name="네이버, AI 쇼핑몰 페이지 제작 스타트업에 33억 투자" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1919" name="9" x="0" y="1056" width="1313" height="132">
+          <frame id="1605:1920" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1921" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1922" name="tag" x="0" y="0" width="57" height="25">
+                <text id="1605:1923" name="이데일리" x="6" y="8" width="45" height="9" />
+              </frame>
+              <text id="1605:1924" name="2024-11-08" x="1196" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:1925" name="유니드컴즈, 이커머스 특화 AI 에이전트로 ‘중기 기술혁신개발&#39; 선정" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1928" name="10" x="0" y="1188" width="1313" height="132">
+          <frame id="1605:1929" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1930" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1931" name="tag" x="0" y="0" width="46" height="25">
+                <text id="1605:1932" name="뉴스핌" x="6" y="8" width="34" height="9" />
+              </frame>
+              <text id="1605:1933" name="2024-11-08" x="1196" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:1934" name="유니드컴즈, 중기부 &#39;2024 중소기업 기술 혁신 개발사업&#39; 선정" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1936" name="11" x="0" y="1320" width="1313" height="132">
+          <frame id="1605:1937" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1938" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1939" name="tag" x="0" y="0" width="90" height="25">
+                <text id="1605:1940" name="비즈니스포스트" x="6" y="8" width="78" height="9" />
+              </frame>
+              <text id="1605:1941" name="2024-08-12" x="1194" y="8" width="69" height="9" />
+            </frame>
+            <text id="1605:1942" name="[Who Is ?] 윤상현 CJENM 대표이사" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1944" name="12" x="0" y="1452" width="1313" height="132">
+          <frame id="1605:1945" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1946" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1947" name="tag" x="0" y="0" width="57" height="25">
+                <text id="1605:1948" name="전자신문" x="6" y="8" width="45" height="9" />
+              </frame>
+              <text id="1605:1949" name="2024-02-23" x="1193" y="8" width="70" height="9" />
+            </frame>
+            <text id="1605:1950" name="[자사몰 키우는 혁신 앱] 마케팅·자동화 솔루션 기업 &#39;유니드컴즈&#39;" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1952" name="13" x="0" y="1584" width="1313" height="132">
+          <frame id="1605:1953" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1954" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1955" name="tag" x="0" y="0" width="101" height="25">
+                <text id="1605:1956" name="바이라인네트워크" x="6" y="8" width="89" height="9" />
+              </frame>
+              <text id="1605:1957" name="2024-11-16" x="1196" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:1958" name="[커머스BN] 10만 판매자 홀렸다 ‘네이버 커머스솔루션마켓’" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1960" name="14" x="0" y="1716" width="1313" height="132">
+          <frame id="1605:1961" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1962" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1963" name="tag" x="0" y="0" width="46" height="25">
+                <text id="1605:1964" name="플래텀" x="6" y="8" width="34" height="9" />
+              </frame>
+              <text id="1605:1965" name="2024-01-11" x="1198" y="8" width="65" height="9" />
+            </frame>
+            <text id="1605:1966" name="[스타트업 단신] 올거나이즈, 카모아, 드라마앤컴퍼니, 유니드컴즈" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1968" name="15" x="0" y="1848" width="1313" height="132">
+          <frame id="1605:1969" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1970" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1971" name="tag" x="0" y="0" width="46" height="25">
+                <text id="1605:1972" name="뉴스핌" x="6" y="8" width="34" height="9" />
+              </frame>
+              <text id="1605:1973" name="2024-01-11" x="1198" y="8" width="65" height="9" />
+            </frame>
+            <text id="1605:1974" name="유니드컴즈, 이커머스 마케팅 업무 자동화 솔루션으로 3만 고객사 돌파" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1976" name="16" x="0" y="1980" width="1313" height="132">
+          <frame id="1605:1977" name="킵그로우" x="0" y="0" width="1313" height="132">
+            <frame id="1605:1978" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+              <frame id="1605:1979" name="tag" x="0" y="0" width="90" height="25">
+                <text id="1605:1980" name="비즈니스포스트" x="6" y="8" width="78" height="9" />
+              </frame>
+              <text id="1605:1981" name="2024-01-08" x="1194" y="8" width="69" height="9" />
+            </frame>
+            <text id="1605:1982" name="CJENM 소방수 역량 입증한 구창근 윤상현, 다가올 인사에서 자리 지킬까" x="25" y="70" width="1263" height="36" />
+          </frame>
+        </frame>
+        <frame id="1605:1984" name="킵그로우" x="0" y="2112" width="1313" height="132">
+          <frame id="1605:1985" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:1986" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1605:1987" name="머니투데이" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1605:1988" name="2023-12-20" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1605:1989" name="유니드컴즈, AI 마케팅 혁신으로 &#39;중소기업 기술혁신개발사업&#39; 선정" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:1991" name="킵그로우" x="0" y="2244" width="1313" height="132">
+          <frame id="1605:1992" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:1993" name="tag" x="0" y="0" width="46" height="25">
+              <text id="1605:1994" name="뉴시안" x="6" y="8" width="34" height="9" />
+            </frame>
+            <text id="1605:1995" name="2023-11-24" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1605:1996" name="[초점] 지구촌 ‘초거대 AI’ 경쟁에 사활...한국의 현주소는?" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:1998" name="킵그로우" x="0" y="2376" width="1313" height="132">
+          <frame id="1605:1999" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2000" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1605:2001" name="포쓰저널" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1605:2002" name="2023-11-22" x="1197" y="8" width="66" height="9" />
+          </frame>
+          <text id="1605:2003" name="[카드뉴스] &#39;초거대 AI&#39; 일상속으로...한국은 잘 준비하고 있나?" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2005" name="킵그로우" x="0" y="2508" width="1313" height="132">
+          <frame id="1605:2006" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2007" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1605:2008" name="전자신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1605:2009" name="2023-11-17" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1605:2010" name="유니드컴즈, &#39;카카오 AI CRM&#39; 서비스 론칭" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2012" name="킵그로우" x="0" y="2640" width="1313" height="132">
+          <frame id="1605:2013" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2014" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1605:2015" name="아이티데일리" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:2016" name="2023-11-17" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1605:2017" name="[기획특집] IT개발자 인력난 해결책으로 떠오르는 ‘LCNC’" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2019" name="킵그로우" x="0" y="2772" width="1313" height="132">
+          <frame id="1605:2020" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2021" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1605:2022" name="디아이투데이" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:2023" name="2023-11-15" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1605:2024" name="이루다마케팅, 광고주에 ‘카카오 AI CRM’ 제공한다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2026" name="킵그로우" x="0" y="2904" width="1313" height="132">
+          <frame id="1605:2027" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2028" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1605:2029" name="디지털타임스" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:2030" name="2023-09-23" x="1192" y="8" width="71" height="9" />
+          </frame>
+          <text id="1605:2031" name="[테크&amp;포커스] 취향 읽고 역시즌 상품 척척… 네이버, AI 판매사원 파견" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2033" name="킵그로우" x="0" y="3036" width="1313" height="132">
+          <frame id="1605:2034" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2035" name="tag" x="0" y="0" width="90" height="25">
+              <text id="1605:2036" name="파이낸셜투데이" x="6" y="8" width="78" height="9" />
+            </frame>
+            <text id="1605:2037" name="2023-09-07" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1605:2038" name="상생으로 윈윈…유통가, 중소기업 및 스타트업 미래 밝힌다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2040" name="킵그로우" x="0" y="3168" width="1313" height="132">
+          <frame id="1605:2041" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2042" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1605:2043" name="지디넷코리아" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:2044" name="2023-08-09" x="1192" y="8" width="71" height="9" />
+          </frame>
+          <text id="1605:2045" name="CJ온스타일, 중소 H&amp;B 발굴 프로그램 ‘온큐베이팅’ 2기 모집" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2047" name="킵그로우" x="0" y="3300" width="1313" height="132">
+          <frame id="1605:2048" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2049" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1605:2050" name="지디넷코리아" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1605:2051" name="2023-07-17" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1605:2052" name="네이버, 커머스솔루션마켓으로 기술 스타트업과 동반 성장" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2054" name="킵그로우" x="0" y="3432" width="1313" height="132">
+          <frame id="1605:2055" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2056" name="tag" x="0" y="0" width="46" height="25">
+              <text id="1605:2057" name="뉴시스" x="6" y="8" width="34" height="9" />
+            </frame>
+            <text id="1605:2058" name="2023-07-14" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1605:2059" name="하이퍼클로바X 먼저 써본다…스타트업과 AI 생태계 키우는 네이버" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2061" name="킵그로우" x="0" y="3564" width="1313" height="132">
+          <frame id="1605:2062" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1605:2063" name="tag" x="0" y="0" width="119" height="25">
+              <text id="1605:2064" name="소비자가 만드는 신문" x="6" y="8" width="107" height="9" />
+            </frame>
+            <text id="1605:2065" name="2023-06-26" x="1192" y="8" width="71" height="9" />
+          </frame>
+          <text id="1605:2066" name="실적 하락세 CJ온스타일, 스타트업 투자 지속 확대...생산-홈쇼핑판매 시너지 노린다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1605:2068" name="킵그로우" x="0" y="3696" width="1313" height="132">
+          <frame id="1605:2069" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2091" name="tag" x="0" y="0" width="90" height="25">
+              <text id="1606:2092" name="비지니스포스트" x="6" y="8" width="78" height="9" />
+            </frame>
+            <text id="1605:2072" name="2023-06-15" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1605:2073" name="CJENM 커머스부문 다시 도는 투자시계, 윤상현 원플랫폼 전략 가속화" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2094" name="킵그로우" x="0" y="3828" width="1313" height="132">
+          <frame id="1606:2095" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2096" name="tag" x="0" y="0" width="46" height="25">
+              <text id="1606:2097" name="뉴시스" x="6" y="8" width="34" height="9" />
+            </frame>
+            <text id="1606:2098" name="2023-06-15" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2099" name="&quot;에이피알에 투자&quot; CJ온스타일, 홈쇼핑 넘어 새 먹거리 찾기 분주" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2101" name="킵그로우" x="0" y="3960" width="1313" height="132">
+          <frame id="1606:2102" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2103" name="tag" x="0" y="0" width="104" height="25">
+              <text id="1606:2104" name="CEO스코어데일리" x="6" y="8" width="92" height="9" />
+            </frame>
+            <text id="1606:2105" name="2023-06-05" x="1192" y="8" width="71" height="9" />
+          </frame>
+          <text id="1606:2106" name="[챗GPT발 AI 대전, 갈 길 먼 한국] ③ ‘한국형 AI’로 빅테크와 맞대결…네이버 “‘하이퍼클로바X’ AI 생태계 확장”" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2108" name="킵그로우" x="0" y="4092" width="1313" height="132">
+          <frame id="1606:2109" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2110" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2111" name="딜사이트" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2112" name="2023-04-19" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2113" name="타 법인 출자 감소...허리띠 졸라맨 한 해" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2115" name="킵그로우" x="0" y="4224" width="1313" height="132">
+          <frame id="1606:2116" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2117" name="tag" x="0" y="0" width="90" height="25">
+              <text id="1606:2118" name="파이낸셜투데이" x="6" y="8" width="78" height="9" />
+            </frame>
+            <text id="1606:2119" name="2023-04-12" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2120" name="진격의 CJ온스타일…지난해 아픔 씻는다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2122" name="킵그로우" x="0" y="4356" width="1313" height="132">
+          <frame id="1606:2123" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2124" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2125" name="아시아경제" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2126" name="2023-04-03" x="1191" y="8" width="72" height="9" />
+          </frame>
+          <text id="1606:2127" name="CJ온스타일, H&amp;B 중소브랜드 발굴·육성 프로 &#39;온큐베이팅&#39; 선봬" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2129" name="킵그로우" x="0" y="4488" width="1313" height="132">
+          <frame id="1606:2130" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2131" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2132" name="세계일보" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2133" name="2023-03-06" x="1192" y="8" width="71" height="9" />
+          </frame>
+          <text id="1606:2134" name="쿠팡서 빠진 ‘햇반’, 네이버 도착보장 입점… 브랜드 D2C 생태계 확장" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2136" name="킵그로우" x="0" y="4620" width="1313" height="132">
+          <frame id="1606:2137" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2138" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2139" name="아시아경제" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2140" name="2023-02-27" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2141" name="네이버 &#39;커머스솔루션마켓&#39;, 스타트업·판매자 함께 성장한다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2143" name="킵그로우" x="0" y="4752" width="1313" height="132">
+          <frame id="1606:2144" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2145" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2146" name="전자신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2147" name="2023-02-15" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2148" name="[스폐셜리포트]&quot;첫 한국형 챗GPT&quot; 신경전...&quot;수익 모델 확보&quot; 속도전" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2150" name="킵그로우" x="0" y="4884" width="1313" height="132">
+          <frame id="1606:2151" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2152" name="tag" x="0" y="0" width="46" height="25">
+              <text id="1606:2153" name="플래텀" x="6" y="8" width="34" height="9" />
+            </frame>
+            <text id="1606:2154" name="2023-02-07" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2155" name="[스타트업 단신] 노틸러스, 유니드컴즈, 팀스파르타, 굿닥, 비플" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2157" name="킵그로우" x="0" y="5016" width="1313" height="132">
+          <frame id="1606:2158" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2159" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2160" name="디지털투데이" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2161" name="2023-02-07" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2162" name="유니드컴즈, 네이버 커머스솔루션마켓에 입점" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2164" name="킵그로우" x="0" y="5148" width="1313" height="132">
+          <frame id="1606:2165" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2166" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2167" name="디지털타임스" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2168" name="2023-02-07" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2169" name="네이버·유니드컴즈, 업무 자동화 솔루션으로 SME 운영 부담 줄인다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2171" name="킵그로우" x="0" y="5280" width="1313" height="132">
+          <frame id="1606:2172" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2173" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2174" name="한국금융신문" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2175" name="2023-02-06" x="1192" y="8" width="71" height="9" />
+          </frame>
+          <text id="1606:2176" name="윤상현 CJ ENM 커머스부문 대표, TV 밖으로 나가 TV홈쇼핑 성장 이끄는 전략통" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2178" name="킵그로우" x="0" y="5412" width="1313" height="132">
+          <frame id="1606:2179" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2180" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2181" name="어패럴뉴스" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2182" name="2023-01-25" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2183" name="CJ온스타일, 자체 브랜드(PB) 구축 가속" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2185" name="킵그로우" x="0" y="5544" width="1313" height="132">
+          <frame id="1606:2186" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2187" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2188" name="전자신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2189" name="2022-12-28" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2190" name="네이버 D2SF, 패션 콘텐츠 스타트업 &#39;온더룩&#39;에 후속 투자" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2192" name="킵그로우" x="0" y="5676" width="1313" height="132">
+          <frame id="1606:2193" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2194" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2195" name="조선비즈" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2196" name="2022-12-22" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2197" name="옥석 가린다” 네이버·카카오, 불황에도 스타트업 공격적 투자" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2199" name="킵그로우" x="0" y="5808" width="1313" height="132">
+          <frame id="1606:2200" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2201" name="tag" x="0" y="0" width="35" height="25">
+              <text id="1606:2202" name="한경" x="6" y="8" width="23" height="9" />
+            </frame>
+            <text id="1606:2203" name="2022-12-20" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2204" name="투자 &#39;혹한기&#39;인데…&#39;돈 폭탄&#39; 뿌린 네이버·카카오의 속내" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2206" name="킵그로우" x="0" y="5940" width="1313" height="132">
+          <frame id="1606:2207" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2208" name="tag" x="0" y="0" width="93" height="25">
+              <text id="1606:2209" name="인사이트 코리아" x="6" y="8" width="81" height="9" />
+            </frame>
+            <text id="1606:2210" name="2022-12-12" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2211" name="TV홈쇼핑 우울한 겨울…&#39;탈TV·자체 브랜드&#39;로 내년 대반격 노린다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2213" name="킵그로우" x="0" y="6072" width="1313" height="132">
+          <frame id="1606:2214" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2215" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2216" name="전자신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2217" name="2022-11-04" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2218" name="네이버 AI 사용에 1000개 중소 기업 &#39;노크&#39;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2220" name="킵그로우" x="0" y="6204" width="1313" height="132">
+          <frame id="1606:2221" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2222" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2223" name="팍스넷뉴스" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2224" name="2022-10-05" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2225" name="CJ온스타일, 투자 확대로 경쟁력 확보할까" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2227" name="킵그로우" x="0" y="6336" width="1313" height="132">
+          <frame id="1606:2228" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2229" name="tag" x="0" y="0" width="45" height="25">
+              <text id="1606:2230" name="테크M" x="6" y="8" width="33" height="9" />
+            </frame>
+            <text id="1606:2231" name="2022-09-19" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2232" name="[네이버 D2게더] &quot;MZ세대 &#39;최애&#39; 채널 섭렵...취향저격 해버리죠&quot;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2234" name="킵그로우" x="0" y="6468" width="1313" height="132">
+          <frame id="1606:2235" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2236" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2237" name="전자신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2238" name="2022-09-15" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2239" name="네이버 14곳·카카오 25곳 스타트업 투자" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2241" name="킵그로우" x="0" y="6600" width="1313" height="132">
+          <frame id="1606:2242" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2243" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2244" name="지디넷코리아" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2245" name="2022-09-14" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2246" name="투자 침체기에도 VC가 믿고 택한 스타트업 어디" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2248" name="킵그로우" x="0" y="6732" width="1313" height="132">
+          <frame id="1606:2249" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2250" name="tag" x="0" y="0" width="46" height="25">
+              <text id="1606:2251" name="뉴시스" x="6" y="8" width="34" height="9" />
+            </frame>
+            <text id="1606:2252" name="2022-08-19" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2253" name="&#39;스타트업 겨울&#39; 실감나네…네이버·카카오 상반기 투자 &#39;주춤&#39;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2255" name="킵그로우" x="0" y="6864" width="1313" height="132">
+          <frame id="1606:2256" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2257" name="tag" x="0" y="0" width="90" height="25">
+              <text id="1606:2258" name="비즈니스포스트" x="6" y="8" width="78" height="9" />
+            </frame>
+            <text id="1606:2259" name="2022-08-07" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2260" name="CJENM 커머스 부문 부진 이어져, 윤상현 &#39;탈TV&#39; 전략 성과 언제 나오나" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2262" name="킵그로우" x="0" y="6996" width="1313" height="132">
+          <frame id="1606:2263" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2264" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2265" name="아시아투데이" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2266" name="2022-08-04" x="1192" y="8" width="71" height="9" />
+          </frame>
+          <text id="1606:2267" name="CJ온스타일, 2분기 영업익 195억원 전년比 34.7%↓…수익성 개선은 언제쯤?" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2269" name="킵그로우" x="0" y="7128" width="1313" height="132">
+          <frame id="1606:2270" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2271" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2272" name="매일일보" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2273" name="2022-07-04" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2274" name="“스타트업이 미래다”…유통업계, 경쟁적 투자" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2276" name="킵그로우" x="0" y="7260" width="1313" height="132">
+          <frame id="1606:2277" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2278" name="tag" x="0" y="0" width="35" height="25">
+              <text id="1606:2279" name="더벨" x="6" y="8" width="23" height="9" />
+            </frame>
+            <text id="1606:2280" name="2022-06-27" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2281" name="CJ ENM, 커머스부문 ‘MD 차별화’ 사활 건다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2284" name="킵그로우" x="0" y="7392" width="1313" height="132">
+          <frame id="1606:2285" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2286" name="tag" x="0" y="0" width="40" height="25">
+              <text id="1606:2287" name="뉴스1" x="6" y="8" width="28" height="9" />
+            </frame>
+            <text id="1606:2288" name="2022-06-25" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2289" name="올해 19곳 투자…스타트업 키우는 네이버D2SF &quot;스타트업과 함께 큰다&quot;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2291" name="킵그로우" x="0" y="7524" width="1313" height="132">
+          <frame id="1606:2292" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2293" name="tag" x="0" y="0" width="90" height="25">
+              <text id="1606:2294" name="비즈니스포스트" x="6" y="8" width="78" height="9" />
+            </frame>
+            <text id="1606:2295" name="2022-06-21" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2296" name="[Who Is ?] 윤상현 CJENM 커머스부문 대표이사" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2298" name="킵그로우" x="0" y="7656" width="1313" height="132">
+          <frame id="1606:2299" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2300" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2301" name="조선비즈" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2302" name="2022-06-21" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2303" name="네이버 ‘커머스’ vs 카카오 ‘헬스케어’… 스타트업에 꽂힌 네·카" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2305" name="킵그로우" x="0" y="7788" width="1313" height="132">
+          <frame id="1606:2306" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2307" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2308" name="벤처스퀘어" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2309" name="2022-06-16" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2310" name="네이버 D2SF, 로보틱스 기술 스타트업 ‘세이프틱스’·’플로틱’ 후속 투자" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2312" name="킵그로우" x="0" y="7920" width="1313" height="132">
+          <frame id="1606:2313" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2314" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2315" name="이슈앤비즈" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2316" name="2022-06-16" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2317" name="네이버D2SF, 세이프틱스등 기술 스타트업에 공격 투자 &#39;주목&#39;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2319" name="킵그로우" x="0" y="8052" width="1313" height="132">
+          <frame id="1606:2320" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2321" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2322" name="머니투데이" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2323" name="2022-06-07" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2324" name="유니드컴즈, 36억 원 규모 &#39;시리즈 A&#39; 투자 유치 완료" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2326" name="킵그로우" x="0" y="8184" width="1313" height="132">
+          <frame id="1606:2327" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2328" name="tag" x="0" y="0" width="46" height="25">
+              <text id="1606:2329" name="뉴시스" x="6" y="8" width="34" height="9" />
+            </frame>
+            <text id="1606:2330" name="2022-05-26" x="1193" y="8" width="70" height="9" />
+          </frame>
+          <text id="1606:2331" name="네이버 D2SF, 온더룩·유니드컴즈 투자…&quot;커머스 솔루션 협력 강화&quot;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2333" name="킵그로우" x="0" y="8316" width="1313" height="132">
+          <frame id="1606:2334" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2335" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2336" name="전자신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2337" name="2022-03-15" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2338" name="유니드컴즈, TCB서 TI-3 등급 획득" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2340" name="킵그로우" x="0" y="8448" width="1313" height="132">
+          <frame id="1606:2341" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2342" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2343" name="매일경제" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2344" name="2021-12-14" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1606:2345" name="아임웹, 유니드컴즈와 제휴 맺고 &#39;카카오싱크 부스터&#39; 도입" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2347" name="킵그로우" x="0" y="8580" width="1313" height="132">
+          <frame id="1606:2348" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2349" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2350" name="이데일리" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2351" name="2021-12-08" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2352" name="카페24, 제3회 개발자 세미나…&quot;이커머스 앱 개발 노하우 공유&quot;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2354" name="킵그로우" x="0" y="8712" width="1313" height="132">
+          <frame id="1606:2355" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2356" name="tag" x="0" y="0" width="46" height="25">
+              <text id="1606:2357" name="블로터" x="6" y="8" width="34" height="9" />
+            </frame>
+            <text id="1606:2358" name="2021-11-08" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1606:2359" name="[테크체인저]1500개 쇼핑몰 SNS 마케팅 책임지는 유니드컴즈 &#39;디지털 알바&#39;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2361" name="킵그로우" x="0" y="8844" width="1313" height="132">
+          <frame id="1606:2362" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2363" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2364" name="테크월드뉴스" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2365" name="2021-07-26" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2366" name="유니드컴즈, ‘완전 재택근무제’ 공식 시행" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2368" name="킵그로우" x="0" y="8976" width="1313" height="132">
+          <frame id="1606:2369" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2370" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2371" name="디지털타임스" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2372" name="2021-06-25" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2373" name="㈜유니드컴즈, 카카오싱크 부스터 사업 확장" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2375" name="킵그로우" x="0" y="9108" width="1313" height="132">
+          <frame id="1606:2376" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2377" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2378" name="디지털타임스" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2379" name="2021-05-31" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2380" name="유니드컴즈, 루나소프트와 `카카오싱크 부스터` 전략적 사업 제휴" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2382" name="킵그로우" x="0" y="9240" width="1313" height="132">
+          <frame id="1606:2383" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2384" name="tag" x="0" y="0" width="46" height="25">
+              <text id="1606:2385" name="헬로티" x="6" y="8" width="34" height="9" />
+            </frame>
+            <text id="1606:2386" name="2021-01-01" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1606:2387" name="유니드컴즈, 도입 장벽 확 낮춘 ‘카카오 싱크 부스터’ 출시" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2389" name="킵그로우" x="0" y="9372" width="1313" height="132">
+          <frame id="1606:2390" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2391" name="tag" x="0" y="0" width="71" height="25">
+              <text id="1606:2392" name="매거진 한경" x="6" y="8" width="59" height="9" />
+            </frame>
+            <text id="1606:2393" name="2020-12-29" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2394" name="유니드컴즈, AI가 100% 대체하는 무인 아웃소싱 서비스… 마케터의 빠르고 똑똑한 로봇 동료 ‘킵그로우’" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2396" name="킵그로우" x="0" y="9504" width="1313" height="132">
+          <frame id="1606:2397" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2398" name="tag" x="0" y="0" width="35" height="25">
+              <text id="1606:2399" name="더벨" x="6" y="8" width="23" height="9" />
+            </frame>
+            <text id="1606:2400" name="2020-10-15" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2401" name="유니드컴즈 &quot;마케팅 자동화로 글로벌 SaaS시장 겨냥&quot;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2403" name="킵그로우" x="0" y="9636" width="1313" height="132">
+          <frame id="1606:2404" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2405" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2406" name="머니투데이" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2407" name="2020-10-13" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2408" name="로봇·AI 등 유망 스타트업 50곳, 청년기업가대회 본선행 확정" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2410" name="킵그로우" x="0" y="9768" width="1313" height="132">
+          <frame id="1606:2411" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2412" name="tag" x="0" y="0" width="35" height="25">
+              <text id="1606:2413" name="더벨" x="6" y="8" width="23" height="9" />
+            </frame>
+            <text id="1606:2414" name="2020-10-05" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2415" name="&#39;마케팅 SW&#39; 유니드컴즈, 50억 펀딩 본궤도" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2417" name="킵그로우" x="0" y="9900" width="1313" height="132">
+          <frame id="1606:2418" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2419" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2420" name="인공지능신문" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2421" name="2020-07-21" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2422" name="유니드컴즈, 마케팅 자동화 위한 인공지능 객체 탐지 엔진 개발한다" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2424" name="킵그로우" x="0" y="10032" width="1313" height="132">
+          <frame id="1606:2425" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2426" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2427" name="전자신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2428" name="2019-10-23" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2429" name="&quot;주 52시간 근무 시대에 꼭 필요한 마케팅 플랫폼&quot; 유니드컴즈, ‘킵그로우’ 업데이트" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2431" name="킵그로우" x="0" y="10164" width="1313" height="132">
+          <frame id="1606:2432" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2433" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2434" name="데일리시큐" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2435" name="2019-04-23" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2436" name="유니드컴즈 &#39;킵그로우(Keepgrow)&#39; 출시...충성고객 전환 필수툴" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2438" name="킵그로우" x="0" y="10296" width="1313" height="132">
+          <frame id="1606:2439" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2440" name="tag" x="0" y="0" width="61" height="25">
+              <text id="1606:2441" name="UNICON" x="6" y="8" width="49" height="9" />
+            </frame>
+            <text id="1606:2442" name="2019-01-09" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2443" name="PC보다 편한 모바일 쇼핑몰, &#39;유니드컴즈&#39;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2445" name="킵그로우" x="0" y="10428" width="1313" height="132">
+          <frame id="1606:2446" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2447" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2448" name="벤쳐스퀘어" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2449" name="2019-01-08" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2450" name="입소식 마친 ‘IBK창공 마포2기’" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2452" name="킵그로우" x="0" y="10560" width="1313" height="132">
+          <frame id="1606:2453" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2454" name="tag" x="0" y="0" width="45" height="25">
+              <text id="1606:2455" name="jobsN" x="6" y="8" width="33" height="9" />
+            </frame>
+            <text id="1606:2456" name="2018-11-13" x="1199" y="8" width="64" height="9" />
+          </frame>
+          <text id="1606:2457" name="어떻게 이런 광고를 보내지?...페이스북 본사, 스타일난다가 반한 스타트업" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2459" name="킵그로우" x="0" y="10692" width="1313" height="132">
+          <frame id="1606:2460" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2461" name="tag" x="0" y="0" width="35" height="25">
+              <text id="1606:2462" name="더벨" x="6" y="8" width="23" height="9" />
+            </frame>
+            <text id="1606:2463" name="2018-10-10" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1606:2464" name="유니드컴즈, &#39;iMS&#39; 업고 첫 VC 투자유치" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2466" name="킵그로우" x="0" y="10824" width="1313" height="132">
+          <frame id="1606:2467" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2468" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2469" name="에프이타임스" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2470" name="2018-09-20" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2471" name="유니드컴즈, 빅데이터 분석 온라인 쇼핑몰 트렌드 리포트 발표" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2473" name="킵그로우" x="0" y="10956" width="1313" height="132">
+          <frame id="1606:2474" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2475" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2476" name="데일리시큐" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2477" name="2018-09-11" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1606:2478" name="유니드컴즈, 타겟북 통한 프로그래매틱 광고 취급액 51억 달성" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2480" name="킵그로우" x="0" y="11088" width="1313" height="132">
+          <frame id="1606:2481" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2482" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2483" name="독서신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2484" name="2018-08-20" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2485" name="유니드컴즈, 쇼핑몰 마케팅 수신동의율 높이는 스마트스킨 추가커스텀 공개" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2487" name="킵그로우" x="0" y="11220" width="1313" height="132">
+          <frame id="1606:2488" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2489" name="tag" x="0" y="0" width="79" height="25">
+              <text id="1606:2490" name="이뉴스투데이" x="6" y="8" width="67" height="9" />
+            </frame>
+            <text id="1606:2491" name="2018-08-01" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2492" name="[스타트업] 유니드컴즈·에코마케팅, 마케팅 솔루션 영업·운영 제휴 체결" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2494" name="킵그로우" x="0" y="11352" width="1313" height="132">
+          <frame id="1606:2495" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2496" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2497" name="시사매거진" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2498" name="2018-07-09" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2499" name="유니드컴즈, 빅데이터 마케팅 플랫폼 &#39;iMs&#39; 출시.. 진단부터 처방까지 가능해" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2501" name="킵그로우" x="0" y="11484" width="1313" height="132">
+          <frame id="1606:2502" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2503" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2504" name="독서신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2505" name="2018-06-22" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2506" name="유니드컴즈, DCE 공개…&quot;쉬운 랜딩페이지 제작 도구&quot;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2508" name="킵그로우" x="0" y="11616" width="1313" height="132">
+          <frame id="1606:2509" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2510" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2511" name="아주경제" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2512" name="2018-05-25" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2513" name="유니드컴즈, 아마존 AWS 공식 기술 파트너로 등록" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2515" name="킵그로우" x="0" y="11748" width="1313" height="132">
+          <frame id="1606:2516" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2517" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2518" name="전자신문" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2519" name="2018-05-17" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2520" name="유니드컴즈, 타겟북 통한 해외수출기업 위한 맞춤형 서비스 공급 나서" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2522" name="킵그로우" x="0" y="11880" width="1313" height="132">
+          <frame id="1606:2523" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2524" name="tag" x="0" y="0" width="72" height="25">
+              <text id="1606:2525" name="패션비즈TV" x="6" y="8" width="60" height="9" />
+            </frame>
+            <text id="1606:2526" name="2018-01-25" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2527" name="유니드컴즈, 인터넷쇼핑몰 &#39;매출채굴기 iMs&#39; 찾아내~!!" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2529" name="킵그로우" x="0" y="12012" width="1313" height="132">
+          <frame id="1606:2530" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2531" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2532" name="머니투데이" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2533" name="2017-11-13" x="1200" y="8" width="63" height="9" />
+          </frame>
+          <text id="1606:2534" name="유니드컴즈, &#39;타겟북 셀프서비스&#39; 출시 오픈" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2536" name="킵그로우" x="0" y="12144" width="1313" height="132">
+          <frame id="1606:2537" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2538" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2539" name="이투데이" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2540" name="2017-09-04" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2541" name="전형신 유니드컴즈 대표 “빅데이터 광고솔루션으로 국내외 소호몰 마케팅 책임질 것”" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2543" name="킵그로우" x="0" y="12276" width="1313" height="132">
+          <frame id="1606:2544" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2545" name="tag" x="0" y="0" width="68" height="25">
+              <text id="1606:2546" name="아시아경제" x="6" y="8" width="56" height="9" />
+            </frame>
+            <text id="1606:2547" name="2017-08-15" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2548" name="&quot;온라인 쇼핑몰 모바일 진출, 정가제로 2주면 &#39;오케이&#39;&quot;" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2550" name="킵그로우" x="0" y="12408" width="1313" height="132">
+          <frame id="1606:2551" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2552" name="tag" x="0" y="0" width="51" height="25">
+              <text id="1606:2553" name="Platum" x="6" y="8" width="39" height="9" />
+            </frame>
+            <text id="1606:2554" name="2017-08-03" x="1194" y="8" width="69" height="9" />
+          </frame>
+          <text id="1606:2555" name="온라인쇼핑몰 마케팅 솔루션 ‘유니즈컴즈’, 본엔젤스 등으로부터 투자 유치" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2557" name="킵그로우" x="0" y="12540" width="1313" height="132">
+          <frame id="1606:2558" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2559" name="tag" x="0" y="0" width="48" height="25">
+              <text id="1606:2560" name="news1" x="6" y="8" width="36" height="9" />
+            </frame>
+            <text id="1606:2561" name="2017-05-11" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1606:2562" name="`유니드컴즈` 페이스북 마케팅 파트너로 선정" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2564" name="킵그로우" x="0" y="12672" width="1313" height="132">
+          <frame id="1606:2565" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2566" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2567" name="서울경제" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2568" name="2017-02-22" x="1195" y="8" width="68" height="9" />
+          </frame>
+          <text id="1606:2569" name="유니드컴즈, 이제는 타겟북 솔루션으로 전략 연결하는 페이스북 마케팅" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2571" name="킵그로우" x="0" y="12804" width="1313" height="132">
+          <frame id="1606:2572" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2573" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2574" name="서울경제" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2575" name="2017-01-18" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1606:2576" name="유니드컴즈, 혁신적인 HRD(인적자원개발)로 직원의 가치 높여주는 기업으로 자리매김" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2578" name="킵그로우" x="0" y="12936" width="1313" height="132">
+          <frame id="1606:2579" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2580" name="tag" x="0" y="0" width="51" height="25">
+              <text id="1606:2581" name="Platum" x="6" y="8" width="39" height="9" />
+            </frame>
+            <text id="1606:2582" name="2016-12-30" x="1196" y="8" width="67" height="9" />
+          </frame>
+          <text id="1606:2583" name="300개 ICT 유망 창업·벤처기업, 2기 ‘K-Global 300’으로 선정" x="25" y="70" width="1263" height="36" />
+        </frame>
+        <frame id="1606:2585" name="킵그로우" x="0" y="13068" width="1313" height="132">
+          <frame id="1606:2586" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+            <frame id="1606:2587" name="tag" x="0" y="0" width="57" height="25">
+              <text id="1606:2588" name="서울경제" x="6" y="8" width="45" height="9" />
+            </frame>
+            <text id="1606:2589" name="2016-12-15" x="1198" y="8" width="65" height="9" />
+          </frame>
+          <text id="1606:2590" name="양재필 유니드컴즈 대표 &quot;커머스 사업자, 페북 통한 해외마케팅 도울 것&quot;" x="25" y="70" width="1263" height="36" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="1662:3970" name="뉴스룸-페이징" x="-3425" y="332" width="1680" height="2218">
+    <frame id="1662:3973" name="footer" x="0" y="1989" width="1680" height="229">
+      <text id="1662:3974" name="(주) 유니드컴즈" x="184" y="60" width="1312" height="24" />
+      <frame id="1662:3975" name="Frame 235" x="184" y="117" width="349" height="21">
+        <frame id="1662:3976" name="Frame 62" x="0" y="0" width="349" height="21">
+          <text id="1662:3977" name="대표자: 양재필, 전형신" x="0" y="0" width="132" height="21" />
+          <text id="1662:3978" name="사업자등록번호 : 220-88-93926" x="147" y="0" width="202" height="21" />
+        </frame>
+      </frame>
+      <frame id="1662:3979" name="Frame 236" x="184" y="143" width="461" height="21">
+        <text id="1662:3980" name="주소: 서울특별시 마포구 양화로 81, L1층 L105호(서교동, 패스트파이브 합정점)" x="0" y="0" width="461" height="21" />
+      </frame>
+      <text id="1662:3981" name="© 2026 UNEEDCOMMS." x="1273" y="139" width="223" height="30" />
+      <text id="1662:3982" name="public@uneedcomms.com" x="1006" y="139" width="237" height="30" />
+    </frame>
+    <frame id="1662:3983" name="mistion" x="0" y="126" width="1680" height="303">
+      <text id="1662:3984" name="언론 속의 유니드컴즈" x="184" y="215" width="1312" height="48" />
+      <text id="1662:3985" name="// 기사 및 보도자료" x="184" y="125" width="1312" height="30" />
+    </frame>
+    <frame id="1662:3986" name="NAV" x="0" y="0" width="1680" height="126">
+      <frame id="1662:3987" name="uneed_logo" x="184" y="49" width="168" height="28" />
+      <frame id="1662:4006" name="Frame 3" x="1063" y="53" width="319" height="21">
+        <text id="1662:4007" name="처음으로" x="0" y="0" width="52" height="21" />
+        <text id="1662:4008" name="회사소개" x="102" y="0" width="52" height="21" />
+        <text id="1662:4009" name="뉴스룸" x="204" y="0" width="39" height="21" />
+        <text id="1662:4010" name="채용" x="293" y="0" width="26" height="21" />
+      </frame>
+      <frame id="1662:4011" name="Frame 4" x="1442" y="54" width="54" height="18">
+        <text id="1662:4012" name="KR" x="0" y="0" width="16" height="18" />
+        <vector id="1662:4013" name="Vector 1" x="27" y="5" width="0" height="8" />
+        <text id="1662:4014" name="EN" x="38" y="0" width="16" height="18" />
+      </frame>
+    </frame>
+    <frame id="1662:4655" name="uneed_product" x="0" y="549" width="1680" height="1320">
+      <frame id="1662:4015" name="uneed_product" x="184" y="0" width="1315" height="1320">
+        <frame id="1662:4016" name="Frame 247" x="1" y="0" width="1313" height="1320">
+          <frame id="1662:4017" name="1" x="0" y="0" width="1313" height="132">
+            <frame id="1662:4018" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4019" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4020" name="tag" x="0" y="0" width="71" height="25">
+                  <text id="1662:4021" name="미디어 파인" x="6" y="8" width="59" height="9" />
+                </frame>
+                <text id="1662:4022" name="2026-04-06" x="1192" y="8" width="71" height="9" />
+              </frame>
+              <text id="1662:4023" name="네이버 CRM ‘메시온’, 비회원까지 잡았다…출시 3개월 만에 2억 건 발송 돌파" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4024" name="2" x="0" y="132" width="1313" height="132">
+            <frame id="1662:4025" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4026" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4027" name="tag" x="0" y="0" width="68" height="25">
+                  <text id="1662:4028" name="머니투데이" x="6" y="8" width="56" height="9" />
+                </frame>
+                <text id="1662:4029" name="2026-02-02" x="1192" y="8" width="71" height="9" />
+              </frame>
+              <text id="1662:4030" name="카페24, 유니드컴즈 &#39;2026년 1월 베스트 파트너&#39; 선정" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4031" name="3" x="0" y="264" width="1313" height="132">
+            <frame id="1662:4032" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4033" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4034" name="tag" x="0" y="0" width="35" height="25">
+                  <text id="1662:4035" name="더벨" x="6" y="8" width="23" height="9" />
+                </frame>
+                <text id="1662:4036" name="2025-09-09" x="1192" y="8" width="71" height="9" />
+              </frame>
+              <text id="1662:4037" name="커머스 특화 AI 집중, 네이버 쇼핑과 시너지 무궁무진" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4038" name="4" x="0" y="396" width="1313" height="132">
+            <frame id="1662:4039" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4040" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4041" name="tag" x="0" y="0" width="104" height="25">
+                  <text id="1662:4042" name="CEO스코어데일리" x="6" y="8" width="92" height="9" />
+                </frame>
+                <text id="1662:4043" name="2025-04-25" x="1193" y="8" width="70" height="9" />
+              </frame>
+              <text id="1662:4044" name="네이버, 커머스 판 흔든다…쇼핑앱 500만 돌풍, 컬리·야놀자와 ‘맞손’" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4045" name="5" x="0" y="528" width="1313" height="132">
+            <frame id="1662:4046" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4047" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4048" name="tag" x="0" y="0" width="68" height="25">
+                  <text id="1662:4049" name="머니투데이" x="6" y="8" width="56" height="9" />
+                </frame>
+                <text id="1662:4050" name="2025-04-15" x="1194" y="8" width="69" height="9" />
+              </frame>
+              <text id="1662:4051" name="유니드컴즈, 국내 최초 카카오모먼트 전용 AI 헬퍼 &#39;1초 맞춤톡&#39; 출시" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4052" name="6" x="0" y="660" width="1313" height="132">
+            <frame id="1662:4053" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4054" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4055" name="tag" x="0" y="0" width="68" height="25">
+                  <text id="1662:4056" name="어패럴뉴스" x="6" y="8" width="56" height="9" />
+                </frame>
+                <text id="1662:4057" name="2025-03-11" x="1196" y="8" width="67" height="9" />
+              </frame>
+              <text id="1662:4058" name="CJ온스타일, 中企 발굴 ‘CJ온큐베이팅’ 4기 모집" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4059" name="7" x="0" y="792" width="1313" height="132">
+            <frame id="1662:4060" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4061" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4062" name="tag" x="0" y="0" width="68" height="25">
+                  <text id="1662:4063" name="프라임경제" x="6" y="8" width="56" height="9" />
+                </frame>
+                <text id="1662:4064" name="2025-03-04" x="1192" y="8" width="71" height="9" />
+              </frame>
+              <text id="1662:4065" name="유니드컴즈 &#39;1초 회원가입&#39; 고도몰 론칭" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4066" name="8" x="0" y="924" width="1313" height="132">
+            <frame id="1662:4067" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4068" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4069" name="tag" x="0" y="0" width="79" height="25">
+                  <text id="1662:4070" name="한국정경신문" x="6" y="8" width="67" height="9" />
+                </frame>
+                <text id="1662:4071" name="2025-02-05" x="1193" y="8" width="70" height="9" />
+              </frame>
+              <text id="1662:4072" name="네이버, AI 쇼핑몰 페이지 제작 스타트업에 33억 투자" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4073" name="9" x="0" y="1056" width="1313" height="132">
+            <frame id="1662:4074" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4075" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4076" name="tag" x="0" y="0" width="57" height="25">
+                  <text id="1662:4077" name="이데일리" x="6" y="8" width="45" height="9" />
+                </frame>
+                <text id="1662:4078" name="2024-11-08" x="1196" y="8" width="67" height="9" />
+              </frame>
+              <text id="1662:4079" name="유니드컴즈, 이커머스 특화 AI 에이전트로 ‘중기 기술혁신개발&#39; 선정" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+          <frame id="1662:4080" name="10" x="0" y="1188" width="1313" height="132">
+            <frame id="1662:4081" name="킵그로우" x="0" y="0" width="1313" height="132">
+              <frame id="1662:4082" name="언론사/날짜" x="25" y="25" width="1263" height="25">
+                <frame id="1662:4083" name="tag" x="0" y="0" width="46" height="25">
+                  <text id="1662:4084" name="뉴스핌" x="6" y="8" width="34" height="9" />
+                </frame>
+                <text id="1662:4085" name="2024-11-08" x="1196" y="8" width="67" height="9" />
+              </frame>
+              <text id="1662:4086" name="유니드컴즈, 중기부 &#39;2024 중소기업 기술 혁신 개발사업&#39; 선정" x="25" y="70" width="1263" height="36" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="2046:4660" name="tap" x="0" y="429" width="1680" height="120">
+      <frame id="2047:4666" name="Frame 248" x="184" y="40" width="90" height="40">
+        <text id="2047:4664" name="최신글부터" x="15" y="10" width="60" height="20" />
+      </frame>
+      <frame id="2047:4667" name="Frame 249" x="284" y="40" width="92" height="40">
+        <text id="2047:4668" name="과거글부터" x="16" y="10" width="60" height="20" />
+      </frame>
+      <frame id="2047:4669" name="Frame 250" x="386" y="40" width="80" height="40">
+        <text id="2047:4670" name="언론사별" x="16" y="10" width="48" height="20" />
+      </frame>
+    </frame>
+    <frame id="2047:4671" name="tap" x="0" y="1869" width="1680" height="120">
+      <frame id="1662:4653" name="paging" x="1389" y="35" width="110" height="50">
+        <frame id="1662:4646" name="left" x="0" y="0" width="50" height="50">
+          <frame id="1662:4641" name="arrow" x="29" y="19" width="8.000000524536745" height="12.000000349691163" />
+        </frame>
+        <frame id="1662:4647" name="right" x="60" y="0" width="50" height="50">
+          <frame id="1662:4648" name="arrow" x="21" y="31" width="8.000000524536745" height="12.000000349691163" />
+        </frame>
+      </frame>
+      <text id="2047:4678" name="// 1페이지" x="184" y="45" width="85" height="30" />
+      <text id="2047:4680" name="총 50개" x="289" y="49" width="47" height="21" />
+    </frame>
+  </frame>
+  <frame id="2092:4748" name="산1" x="3082" y="-2585" width="1920" height="750">
+    <rounded-rectangle id="2092:4745" name="ascii-magic-21 1" x="0" y="0" width="1920" height="517" />
+    <rounded-rectangle id="2092:4747" name="Rectangle 6" x="0" y="516" width="1920" height="234" />
+  </frame>
+  <rounded-rectangle id="2102:4825" name="ascii-magic-41 1" x="2252" y="-931" width="1920" height="448" />
+</canvas>IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.

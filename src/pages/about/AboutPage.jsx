@@ -98,6 +98,7 @@ const principles = [
     label: 'FOR AGENTS',
     title: '우리의 기록을, 이제 AI 에이전트도 읽는다.',
     desc: '그리고 이제, 그 기록을 동료만 읽지 않습니다. 에이전트는 어깨너머로 배우지 못합니다. 기록된 것만 배웁니다. 그래서 기록을 남기는 일은, 함께 일할 에이전트를 가르치는 일이기도 합니다. 그렇게 배운 에이전트가 이미 우리 곁에서 일하고 있습니다.',
+    closing: '한 사람의 지혜가 기록으로 남을 때, 모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.',
   },
 ]
 
@@ -206,20 +207,12 @@ export default function AboutPage() {
                   </div>
                   <h3 className={styles.pTitle}>{t(p.title)}</h3>
                   <p className={styles.pDesc}>{t(p.desc)}</p>
+                  {p.closing && (
+                    <p className={styles.principlesClosing}>{t(p.closing)}</p>
+                  )}
                 </article>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* 8. 클로징 스테이트먼트 */}
-        <section className={styles.closing}>
-          <div className="container">
-            <p className={styles.closingText}>
-              <MultiLine
-                text={t('한 사람의 지혜가 기록으로 남을 때,\n모두가 해낼 수 있는 일의 넓이와 깊이가 달라집니다.')}
-              />
-            </p>
           </div>
         </section>
       </main>
