@@ -130,9 +130,10 @@
     grid-template-columns: 1fr;
     min-height: 0;
   }
-  .title {
+  .titleWrap {
     align-self: start;
-    padding: clamp(48px, 9vw, 72px) 0 28px;
+    padding: clamp(40px, 8vw, 56px) 0 28px; /* 위 여백 축소, 하단 28px로 리스트 라인과 간격 */
+    text-align: center; /* 모바일: 제목·부제목 센터 정렬 */
   }
   /* 모바일: 리스트를 좌우 풀블리드(컨테이너 거터 상쇄) + 좌·우 레일 제거,
      상단 전체 폭 라인만 유지 → 수평선 그리드 */
