@@ -191,14 +191,23 @@
   transition: background 0.3s ease;
 }
 
-/* 마지막 항목은 라인 제거 — 섹션 하단 전체폭 라인과 중첩 방지 */
-.principle:last-child {
+/* 다섯↔여섯, 여섯↔클로징 구분선은 점선 (대시 크게·간격 넓게 — 배경 그라디언트로 제어) */
+.principle:nth-child(5),
+.principle:nth-child(6) {
   border-bottom: none;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--line) 0 6px,
+    transparent 6px 12px
+  );
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 1px;
 }
 
 /* hover: 배경 회색 + 박스 파란 채움 + 제목 파란색 (way of working text 참조) */
 .principle:hover {
-  background: #f1f1f1;
+  background-color: #f1f1f1; /* background-image(점선) 유지 위해 color만 */
 }
 
 .pTagRow {
@@ -253,10 +262,11 @@
   color: var(--color-ink);
 }
 
-/* 여섯 원칙 하단 흐린 회색 한 줄 (피그마) */
+/* 여섯 아래 분리된 클로징 한 줄 (점선으로 구분, 별도 행) */
 .principlesClosing {
-  margin-top: 10px;
-  font-size: 15px;
+  margin: 0;
+  padding: 40px;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--color-gray-04);
 }
