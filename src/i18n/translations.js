@@ -29,6 +29,8 @@ export const translations = {
 
   // ── 메인: 유니드컴즈가 만드는 것 (제품) ──────────────
   '유니드컴즈가 만드는 것': 'What We Build',
+  '그 지혜를 향해, 오늘의 제품을 만듭니다.':
+    'Every product we build today is a step toward that wisdom.',
   바로가기: 'Visit site',
 
   // 제품명 (KeepGrow, Mesion 은 동일하여 미등록)
@@ -82,6 +84,10 @@ export const translations = {
 
   // ── 메인/서브: 뉴스룸 ────────────────────────────────
   '언론 속의 유니드컴즈': 'In the News',
+  '지혜로운 AI와 함께 일할 때, 한 사람의 일은 어디까지 달라질까요?':
+    'How much can one person accomplish, working with wise AI?',
+  '유니드컴즈는 그 답을 향해, 지금도 나아가고 있습니다.':
+    'UneedComms is building toward that answer.',
   '전체보기': 'View all',
   '// 기사 및 보도자료': '// Articles & Press Releases',
   '최신순': 'Newest first',

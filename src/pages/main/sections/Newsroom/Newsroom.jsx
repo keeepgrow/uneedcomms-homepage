@@ -13,7 +13,14 @@ export default function Newsroom() {
   return (
     <section className={styles.section} id="newsroom">
       <div className={`container ${styles.inner}`}>
-        <h2 className={styles.title}>{t('언론 속의 유니드컴즈')}</h2>
+        <div className={styles.titleWrap}>
+          <h2 className={styles.title}>{t('언론 속의 유니드컴즈')}</h2>
+          <p className={styles.subtitle}>
+            {t('지혜로운 AI와 함께 일할 때, 한 사람의 일은 어디까지 달라질까요?')}
+            <br />
+            {t('유니드컴즈는 그 답을 향해, 지금도 나아가고 있습니다.')}
+          </p>
+        </div>
 
         <div className={styles.right}>
           <ul className={styles.list}>

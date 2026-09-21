@@ -12,13 +12,22 @@
   min-height: clamp(520px, 42vw, 660px);
 }
 
-.title {
+.titleWrap {
   align-self: start;
   padding: clamp(60px, 6vw, 100px) 40px 0 0;
+}
+
+.title {
   font-size: clamp(30px, 3.3vw, 54px);
   font-weight: 400;
   letter-spacing: -0.02em;
   color: var(--color-white);
+}
+
+.subtitle {
+  margin-top: 18px;
+  font-size: 15px;
+  color: var(--color-gray-05);
 }
 
 /* 수평·수직 보더 그리드: 좌·우 수직 레일(상·하단 전체 폭 수평선과 연결) */

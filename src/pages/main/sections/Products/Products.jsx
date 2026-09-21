@@ -12,9 +12,9 @@ export default function Products() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.titleWrap}>
           <h2 className={styles.title}>{t('유니드컴즈가 만드는 것')}</h2>
-          {/* <p className={styles.subtitle}>
+          <p className={styles.subtitle}>
             {t('그 지혜를 향해, 오늘의 제품을 만듭니다.')}
-          </p> */}
+          </p>
         </div>
 
         <div className={styles.accordion}>
