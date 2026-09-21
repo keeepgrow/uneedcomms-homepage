@@ -118,7 +118,7 @@ export const translations = {
   // ── 메인: 연혁 (How We Got Here) ─────────────────────
   '유니드컴즈가 걸어온 길': 'How We Got Here',
   '성공은 한 번의 혁신이 아니라, 축적의 결과라고 믿습니다.':
-    'Success comes from compounding, not a single breakthrough.',
+    'We believe success comes from compounding, not a single breakthrough.',
   '유니드컴즈의 변화는 세상을 놀랍게 만듭니다':
     'The story of change that keeps surprising the world.',
   // 연도별 마일스톤

@@ -82,7 +82,7 @@ export default function Footer({ sitemap = true }) {
             </nav>
           </div>
           <p className={styles.closing}>
-            {lang === 'en' ? 'Beyond Knowledge. Toward Wisdom.' : '지식을 넘어, 지혜로,'}
+            {lang === 'en' ? 'Beyond Knowledge, Toward Wisdom' : '지식을 넘어, 지혜로'}
           </p>
         </div>
       )}
