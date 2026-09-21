@@ -38,7 +38,7 @@
 .closing {
   position: absolute;
   left: 50%;
-  bottom: clamp(56px, 8vw, 110px);
+  bottom: clamp(34px, 4.8vw, 66px); /* 기존 대비 60% → 아래로 40% 하강 */
   transform: translateX(-50%);
   z-index: 1;
   width: 100%;
