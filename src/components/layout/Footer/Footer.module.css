@@ -17,7 +17,7 @@
   position: absolute;
   left: 50%;
   top: 140px; /* 프레임 상단 기준 140px */
-  width: 1920px; /* 원본 그대로, 1920px 중앙정렬 (Figma x=-120) */
+  width: 114.29vw; /* 히어로와 동일 배율: 파일3840 × (100vw/3360). 1680뷰포트=1920px */
   max-width: none;
   height: auto;
   pointer-events: none;
