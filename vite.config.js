@@ -37,9 +37,9 @@ function newsXmlDownload() {
   }
 }
 
-// 배포(GitHub Pages)는 /uneedcomms-homepage/ 하위 경로.
-// 로컬 dev/preview 는 루트('/')로 서빙 → http://localhost:5173/ 에서 바로 미리보기.
-export default defineConfig(({ command }) => ({
+// 로컬·배포 모두 루트('/')로 서빙. 라우팅·애셋 경로는 이 base를 따르므로
+// 서브경로 배포가 필요하면 이 값만 바꾸면 된다(소스에 경로 하드코딩 없음).
+export default defineConfig({
   plugins: [react(), spaFallback(), newsXmlDownload()],
-  base: command === 'build' ? '/uneedcomms-homepage/' : '/',
-}))
+  base: '/',
+})
