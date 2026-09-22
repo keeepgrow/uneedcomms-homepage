@@ -36,9 +36,9 @@ export const products = [
     id: 'modoai',
     name: 'modoAI',
     logo: modoLogo,
-    tagline: 'CD, Creative Director',
+    tagline: 'AI Creative Team',
     href: 'https://modoai.io/',
     description:
-      '모도AI는 이미지 생성 AI가 아니라, 글로벌 소상공인의 판매 성과(Sales Performance)를 만드는 Creative Director입니다. No Prompting, No Editing. 취향을 매출로 전환하여, 작은 브랜드도 자신만의 스타일로 더 많이 판매하도록 돕습니다.',
+      '모도AI는 이미지 생성 AI가 아니라, 판매 성과(Sales Performance)를 책임지는 AI 크리에이티브 팀입니다. Zero Prompting, Zero Editing. 브랜드가 쌓아온 취향을 기억하고 무엇을 왜 만들지까지 대신 판단해, 구매자를 움직이는 컷으로 그 취향을 매출로 바꿉니다.',
   },
 ]
