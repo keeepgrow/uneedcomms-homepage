@@ -34,7 +34,7 @@ export const products = [
   },
   {
     id: 'modoai',
-    name: 'modoAI',
+    name: 'ModoAI',
     logo: modoLogo,
     tagline: 'AI Creative Team',
     href: 'https://modoai.io/',

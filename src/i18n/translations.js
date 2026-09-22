@@ -35,7 +35,7 @@ export const translations = {
 
   // 제품명 (KeepGrow, Mesion 은 동일하여 미등록)
   DECA: 'DecaGEO',
-  modoAI: 'modoAI',
+  ModoAI: 'ModoAI',
 
   // 태그라인
   '누구나 고용하는 AI 마케팅 직원': 'The AI marketer anyone can hire',
@@ -51,7 +51,7 @@ export const translations = {
   'DecaGEO는 순위 조회 도구가 아니라, AI 추천의 기준을 세우는 표준 랭킹입니다. ChatGPT 같은 AI가 어떤 브랜드를 왜 추천하는지 매주 편향 없이 공개하고, 경쟁 브랜드 대비 내 위치를 확인해 다음 전략을 찾게 합니다.':
     "DecaGEO isn't a rank checker. It's the benchmark for how AI recommends brands. Every week, it shows — without bias — which brands AI models like ChatGPT recommend, and why. See where you stand against competitors, and find your next move.",
   '모도AI는 이미지 생성 AI가 아니라, 판매 성과(Sales Performance)를 책임지는 AI 크리에이티브 팀입니다. Zero Prompting, Zero Editing. 브랜드가 쌓아온 취향을 기억하고 무엇을 왜 만들지까지 대신 판단해, 구매자를 움직이는 컷으로 그 취향을 매출로 바꿉니다.':
-    "modoAI isn't an image generator. It's an AI creative team that owns your sales performance. Zero prompting. Zero editing. It remembers the taste your brand has built, decides what to make and why, and turns that taste into sales with the shots that move buyers.",
+    "ModoAI isn't an image generator. It's an AI creative team that owns your sales performance. Zero prompting. Zero editing. It remembers the taste your brand has built, decides what to make and why, and turns that taste into sales with the shots that move buyers.",
 
   // ── 메인: 유니드컴즈를 만드는 것 (What Builds Us) ──────
   '유니드컴즈를 만드는 것': 'What Builds Us',
@@ -138,8 +138,8 @@ export const translations = {
   '네이버 커머스솔루션마켓 입점': 'Listed on Naver Commerce Solution Market',
   '카페24 베스트파트너 3년 연속 선정':
     'Became Cafe24 Best Partner, three years running',
-  '데카(DecaGEO)·모도(modoAI) 글로벌 출시':
-    'Launched DecaGEO and modoAI globally',
+  '데카(DecaGEO)·모도(ModoAI) 글로벌 출시':
+    'Launched DecaGEO and ModoAI globally',
   '메시온(Mesion) 출시': 'Launched Mesion',
   'NVIDIA Inception 프로그램 선정': 'Joined NVIDIA Inception program',
 
@@ -220,7 +220,7 @@ export const translations = {
   '그렇게 고객을 만들어 수익을 내고, 그 수익을 다음 사업에 재투자합니다.':
     'It creates customers, generates revenue, and reinvests that revenue into the next business.',
   '지금은 킵그로우, 메시온, 데카, 모도, 네 개의 사업부가 각자의 플라이휠을 돌리고 있습니다.':
-    'Today, four units — KeepGrow, Mesion, DecaGEO, and modoAI — are each turning their own flywheel.',
+    'Today, four units — KeepGrow, Mesion, DecaGEO, and ModoAI — are each turning their own flywheel.',
   '이 플라이휠은 발명이 아니라 발견입니다.':
     "This flywheel is not an invention. It's a discovery.",
   '오랜 시행착오 끝에, 우리를 여기까지 오게 한 방식에 이름을 붙인 것입니다.':
