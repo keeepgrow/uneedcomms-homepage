@@ -2,7 +2,7 @@
 import keepgrowLogo from '../assets/products/keepgrow-logo-w.png'
 import mesionLogo from '../assets/products/mesion-logo-w.png'
 import decaLogo from '../assets/products/deca-logo-w.png'
-import modoLogo from '../assets/products/modo-logo-w.png'
+import modoLogo from '../assets/products/modo-logo-w.svg'
 
 export const products = [
   {
