@@ -7,7 +7,7 @@ import { useLang } from '../../../../i18n/LanguageContext.jsx'
 // 플라이휠 다이어그램 라벨 — 노드 기준 앵커링(길이 무관, KR/EN 공통)
 //  상단=중앙정렬, 좌측=우측정렬(노드쪽 고정), 우측=좌측정렬
 const FW_LABELS = [
-  { text: '비지니스 기회', style: { top: '0', left: '47.81%', transform: 'translateX(-50%)', textAlign: 'center' } },
+  { text: '비즈니스 기회', style: { top: '0', left: '47.81%', transform: 'translateX(-50%)', textAlign: 'center' } },
   { text: '수익창출', style: { top: '38.44%', left: '8.7%', transform: 'translateX(-100%)', textAlign: 'right' } },
   { text: '사업부 신설', style: { top: '38.44%', left: '87.59%', textAlign: 'left' } },
   { text: '고객창출', style: { top: '88.86%', left: '19.31%', transform: 'translateX(-100%)', textAlign: 'right' } },
