@@ -45,7 +45,7 @@ export const translations = {
 
   // 설명
   'KeepGrow는 이커머스의 매출을 책임지는 AI 마케터입니다. 1초 회원가입과 1초 쿠폰으로 방문자를 고객으로 바꾸고, AI 마케팅 자동화로 재구매까지 이어지는 성장 사이클을 완성합니다.':
-    "KeepGrow is the AI marketer that takes charge of your online store's revenue. 1-Second Signup and 1-Second Coupon turn visitors into customers. AI Marketing Automation turns customers into repeat buyers, closing the growth loop.",
+    'KeepGrow is the AI marketer that takes charge of your online store’s revenue. 1-Second Signup and 1-Second Coupon turn visitors into customers. AI Marketing Automation turns customers into repeat buyers, closing the growth loop.',
   'Mesion은 네이버 스마트 톡톡과 카카오 브랜드메시지로, 회원은 물론 네이버페이 비회원 고객까지 닿습니다. 캠페인 기획부터 타겟 선정, 문구·소재 제작, 성과 분석까지 AI 에이전트가 전담해, 총매출을 키웁니다.':
     "Mesion reaches beyond your registered customers to guest shoppers who pay with Naver Pay, through Naver Smart TalkTalk and Kakao Brand Message. Its AI agent runs the whole campaign, from planning to performance analysis, to grow your top line.",
   'DecaGEO는 순위 조회 도구가 아니라, AI 추천의 기준을 세우는 표준 랭킹입니다. ChatGPT 같은 AI가 어떤 브랜드를 왜 추천하는지 매주 편향 없이 공개하고, 경쟁 브랜드 대비 내 위치를 확인해 다음 전략을 찾게 합니다.':
