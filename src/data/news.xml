@@ -9,12 +9,44 @@
 -->
 <news>
   <article>
+    <source>스페셜타임스</source>
+    <source_en>Special Times</source_en>
+    <date>2026-10-28</date>
+    <title>유니드컴즈 킵그로우, 11월 2일 ‘1초 쿠폰’ 출시…쿠폰 적용 매출 33%↑</title>
+    <title_en>UneedComms' KeepGrow launches '1-Second Coupon' on Nov 2 — coupon-applied sales up 33%</title_en>
+    <href>https://www.specialtimes.co.kr/news/articleView.html?idxno=479186</href>
+  </article>
+  <article>
+    <source>알파경제</source>
+    <source_en>Alpha Economy</source_en>
+    <date>2026-07-02</date>
+    <title>유니드컴즈, 간편가입 확산 나선다…파트너 제휴로 셀러 접점 확대</title>
+    <title_en>UneedComms expands simple sign-up through a partner program, widening its reach to sellers</title_en>
+    <href>https://www.alphabiz.co.kr/news/articleView.html?idxno=162412</href>
+  </article>
+  <article>
+    <source>VIP뉴스</source>
+    <source_en>VIP News</source_en>
+    <date>2026-05-07</date>
+    <title>유니드컴즈 ‘Modo AI’, 가상 환경 기반 상품 이미지 자동화 모델 제시</title>
+    <title_en>UneedComms' Modo AI presents a product-image automation model built on virtual environments</title_en>
+    <href>http://www.viptoday.co.kr/3027</href>
+  </article>
+  <article>
     <source>미디어파인</source>
     <source_en>MediaFine</source_en>
-    <date>2026-04-06</date>
+    <date>2026-04-02</date>
     <title>네이버 CRM ‘메시온’, 비회원까지 잡았다…출시 3개월 만에 2억 건 발송 돌파</title>
     <title_en>Naver CRM Mesion reaches guest shoppers — 200 million messages sent within three months of launch</title_en>
     <href>https://www.mediafine.co.kr/news/articleView.html?idxno=76658</href>
+  </article>
+  <article>
+    <source>지디넷코리아</source>
+    <source_en>ZDNet Korea</source_en>
+    <date>2026-03-16</date>
+    <title>[ZD SW 투데이] 와들, 공구장터에 대화형 AI 에이전트 '젠투' 공급 外</title>
+    <title_en>[ZD SW Today] Wadle supplies conversational AI agent 'Gentoo' to Gonggu Market, and more</title_en>
+    <href>https://zdnet.co.kr/view/?no=20260316100109</href>
   </article>
   <article>
     <source>머니투데이</source>
